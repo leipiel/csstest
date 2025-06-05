@@ -163,7 +163,6 @@ html:not(.touch) ::-webkit-scrollbar-thumb {
 
 html {
   height: 100%;
-  font-size: 14px;
 }
 
 body {
@@ -8025,6 +8024,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   --color-primary-60: #1f54e7;
   --color-gray-90: #171717;
   --color-gray-50: #737373;
+  --color-gray-30: #d4d4d4;
   --color-bluegray-10: #f1f5f9;
   --color-bluegray-30: #cbd5e1;
   --color-white: #fff;
@@ -8047,8 +8047,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
 
 .input-group .icon::before {
   content: "";
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   display: inline-block;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
@@ -8110,6 +8110,21 @@ html.dark-mode .pgpkeyimport li.uid::before {
 }
 .task-login #login-form {
   max-width: 22.25rem;
+}
+.task-login #login-form .form-group {
+  margin-bottom: 0.75rem;
+}
+.task-login #login-form .input-group {
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-gray-30);
+  height: 3.5rem;
+}
+.task-login #login-form .input-group .input-group-text {
+  background-color: transparent;
+  border: none;
+}
+.task-login #login-form .input-group .form-control {
+  border: none;
 }
 .task-login .input-group .icon.user::before {
   content: "";
