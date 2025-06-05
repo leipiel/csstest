@@ -8051,7 +8051,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .task-login > #layout-content {
   width: auto;
 }
-.task-login > #layout-content #layout-content-items {
+.task-login > #layout-content .layout-content-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8059,13 +8059,25 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .task-login #logo {
   width: 9.875rem;
+  margin-bottom: 2.125rem;
+}
+.task-login #logo-text {
+  font-size: 1rem;
+  margin-top: 0.75rem;
 }
 
 @media screen and (min-width: 481px) {
   .task-login #logo {
     width: 11.875rem;
+  }
+  .task-login #logo-text {
+    font-size: 1rem;
+    margin-top: 0.75rem;
   }
 }

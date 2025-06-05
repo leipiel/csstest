@@ -7,14 +7,21 @@
   > #layout-content {
     width: auto;
 
-    #layout-content-items {
+    .layout-content-items {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
   }
 
   #logo {
     width: 9.875rem;
+    margin-bottom: 2.125rem;
+  }
+
+  #logo-text {
+    font-size: 1rem;
+    margin-top: 0.75rem;
   }
 }
 
@@ -23,6 +30,11 @@
   .task-login {
     #logo {
       width: 11.875rem;
+    }
+
+    #logo-text {
+      font-size: 1rem;
+      margin-top: 0.75rem;
     }
   }
 }
