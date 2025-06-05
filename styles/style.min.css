@@ -8024,6 +8024,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   --color-primary-50: #256ef4;
   --color-primary-60: #1f54e7;
   --color-gray-90: #171717;
+  --color-gray-50: #737373;
   --color-bluegray-10: #f1f5f9;
   --color-bluegray-30: #cbd5e1;
   --color-white: #fff;
@@ -8042,6 +8043,19 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .btn-lg {
   border-radius: 0.5rem;
   padding: 1rem 0.75rem;
+}
+
+.input-group .icon::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
 }
 
 #layout > div > .header {
@@ -8083,6 +8097,9 @@ html.dark-mode .pgpkeyimport li.uid::before {
   width: 9.875rem !important;
   margin-bottom: 2.125rem;
 }
+.task-login #logo-text-img {
+  width: 15.375rem;
+}
 .task-login #logo-text {
   font-size: 1rem;
   margin-top: 0.75rem;
@@ -8091,14 +8108,26 @@ html.dark-mode .pgpkeyimport li.uid::before {
   font-size: 1rem;
   font-weight: 600;
 }
+.task-login #login-form {
+  max-width: 22.25rem;
+}
+.task-login .input-group .icon.user::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:letter-linear.svg");
+          mask-image: url("https://api.iconify.design/solar:letter-linear.svg");
+  background-color: var(--color-gray-50);
+}
 
 @media screen and (min-width: 481px) {
   .task-login #logo {
     width: 11.875rem !important;
     margin-bottom: 2.5rem;
   }
+  .task-login #logo-text-img {
+    width: 18.5rem;
+  }
   .task-login #logo-text {
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-top: 0.75rem;
   }
 }

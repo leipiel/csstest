@@ -20,13 +20,30 @@
     margin-bottom: 2.125rem;
   }
 
+  #logo-text-img {
+    width: 15.375rem;
+  }
+
   #logo-text {
     font-size: 1rem;
     margin-top: 0.75rem;
   }
+
   .formbuttons {
     font-size: 1rem;
     font-weight: 600;
+  }
+
+  #login-form {
+    max-width: 22.25rem;
+  }
+
+  .input-group .icon.user {
+    &::before {
+      content: '';
+      mask-image: url('https://api.iconify.design/solar:letter-linear.svg');
+      background-color: var(--color-gray-50);
+    }
   }
 }
 
@@ -38,8 +55,12 @@
       margin-bottom: 2.5rem;
     }
 
+    #logo-text-img {
+      width: 18.5rem;
+    }
+
     #logo-text {
-      font-size: 1rem;
+      font-size: 1.25rem;
       margin-top: 0.75rem;
     }
   }

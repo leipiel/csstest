@@ -3,6 +3,7 @@
   --color-primary-60: #1f54e7;
 
   --color-gray-90: #171717;
+  --color-gray-50: #737373;
 
   --color-bluegray-10: #f1f5f9;
   --color-bluegray-30: #cbd5e1;
@@ -24,4 +25,16 @@
 .btn-lg {
   border-radius: 0.5rem;
   padding: 1rem 0.75rem;
+}
+
+.input-group .icon {
+  &::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    mask-repeat: no-repeat;
+    mask-position: center left;
+    mask-size: contain;
+  }
 }
