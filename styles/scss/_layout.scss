@@ -9,18 +9,13 @@
 }
 
 #layout-menu {
+  background-color: var(--color-primary-50);
 }
 
 //responsive
-@media screen and (min-width: 481px) {
-  #layout-menu {
-    //width: 2.75rem;
-    background-color: var(--color-primary-50);
-  }
+
+@media screen and (max-width: 480.99px) {
 }
 
-@media screen and (min-width: 1025px) {
-  #layout-menu {
-    //width: 5rem;
-  }
+@media screen and (max-width: 1024.99px) {
 }

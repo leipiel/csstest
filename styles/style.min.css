@@ -8064,11 +8064,10 @@ html.dark-mode .pgpkeyimport li.uid::before {
   border-bottom: 1px solid var(--color-bluegray-30);
 }
 
-@media screen and (min-width: 481px) {
-  #layout-menu {
-    background-color: var(--color-primary-50);
-  }
+#layout-menu {
+  background-color: var(--color-primary-50);
 }
+
 .task-login #layout {
   -webkit-box-align: center;
       -ms-flex-align: center;
