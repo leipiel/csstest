@@ -8098,7 +8098,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   margin-bottom: 2.125rem;
 }
 .task-login #logo-text-img {
-  width: 15.375rem;
+  width: 15.375rem !important;
 }
 .task-login #logo-text {
   font-size: 1rem;
@@ -8107,9 +8107,11 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .task-login .formbuttons {
   font-size: 1rem;
   font-weight: 600;
+  height: 3.5rem;
 }
 .task-login #login-form {
   max-width: 22.25rem;
+  width: calc(100% - 5rem);
 }
 .task-login #login-form .form-group {
   margin-bottom: 0.75rem;
@@ -8134,6 +8136,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   padding-left: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
+  font-size: 1rem;
 }
 .task-login .input-group .icon.user::before {
   content: "";
@@ -8154,7 +8157,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
     margin-bottom: 2.5rem;
   }
   .task-login #logo-text-img {
-    width: 18.5rem;
+    width: 18.5rem !important;
   }
   .task-login #logo-text {
     font-size: 1.25rem;

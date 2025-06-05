@@ -21,7 +21,7 @@
   }
 
   #logo-text-img {
-    width: 15.375rem;
+    width: 15.375rem !important;
   }
 
   #logo-text {
@@ -32,10 +32,12 @@
   .formbuttons {
     font-size: 1rem;
     font-weight: 600;
+    height: 3.5rem;
   }
 
   #login-form {
     max-width: 22.25rem;
+    width: calc(100% - 5rem);
 
     .form-group {
       margin-bottom: 0.75rem;
@@ -61,6 +63,7 @@
         height: 100%;
         padding-left: 0;
         box-shadow: none;
+        font-size: 1rem;
       }
     }
   }
@@ -91,7 +94,7 @@
     }
 
     #logo-text-img {
-      width: 18.5rem;
+      width: 18.5rem !important;
     }
 
     #logo-text {
