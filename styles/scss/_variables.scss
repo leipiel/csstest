@@ -1,5 +1,6 @@
 :root {
   --color-primary-50: #256ef4; //blue50 동일
+  --color-primary-60: #1f54e7;
 
   --color-gray-90: #171717;
 
@@ -8,4 +9,19 @@
 
   --color-white: #fff;
   --color-black: #000;
+}
+
+.btn-primary {
+  background-color: var(--color-primary-50);
+  border-color: var(--color-primary-50);
+
+  &:hover {
+    background-color: var(--color-primary-60);
+    border-color: var(--color-primary-60);
+  }
+}
+
+.btn-lg {
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
 }

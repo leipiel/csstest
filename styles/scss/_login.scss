@@ -12,10 +12,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5rem;
   }
 
   #logo {
-    width: 9.875rem;
+    width: 9.875rem !important;
     margin-bottom: 2.125rem;
   }
 
@@ -23,13 +24,18 @@
     font-size: 1rem;
     margin-top: 0.75rem;
   }
+  .formbuttons {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
 
 //responsive
 @media screen and (min-width: 481px) {
   .task-login {
     #logo {
-      width: 11.875rem;
+      width: 11.875rem !important;
+      margin-bottom: 2.5rem;
     }
 
     #logo-text {
