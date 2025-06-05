@@ -8051,7 +8051,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .task-login > #layout-content {
   width: auto;
 }
-.task-login > #layout-content .layout-content-items {
+.task-login .layout-content-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
