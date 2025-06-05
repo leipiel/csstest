@@ -8120,11 +8120,12 @@ html.dark-mode .pgpkeyimport li.uid::before {
   border-radius: 0.5rem;
   border: 1px solid var(--color-gray-30);
   height: 3.5rem;
+  -webkit-transition: border-color 0.15s ease-in-out, outline 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, outline 0.15s ease-in-out;
 }
 .task-login #login-form .input-group:has(.form-control:focus) {
   border-color: var(--color-primary-50);
-  -webkit-box-shadow: 0 0 1px var(--color-primary-50);
-          box-shadow: 0 0 1px var(--color-primary-50);
+  outline: 1px solid var(--color-primary-50);
 }
 .task-login #login-form .input-group .input-group-text {
   background-color: transparent;
