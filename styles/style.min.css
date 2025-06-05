@@ -8119,17 +8119,32 @@ html.dark-mode .pgpkeyimport li.uid::before {
   border: 1px solid var(--color-gray-30);
   height: 3.5rem;
 }
+.task-login #login-form .input-group:has(.form-control:focus) {
+  border-color: var(--color-primary-50);
+  -webkit-box-shadow: 0 0 1px var(--color-primary-50);
+          box-shadow: 0 0 1px var(--color-primary-50);
+}
 .task-login #login-form .input-group .input-group-text {
   background-color: transparent;
   border: none;
 }
 .task-login #login-form .input-group .form-control {
   border: none;
+  height: 100%;
+  padding-left: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .task-login .input-group .icon.user::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-linear.svg");
           mask-image: url("https://api.iconify.design/solar:letter-linear.svg");
+  background-color: var(--color-gray-50);
+}
+.task-login .input-group .icon.pass::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:key-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:key-minimalistic-outline.svg");
   background-color: var(--color-gray-50);
 }
 

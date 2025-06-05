@@ -46,6 +46,11 @@
       border: 1px solid var(--color-gray-30);
       height: 3.5rem;
 
+      &:has(.form-control:focus) {
+        border-color: var(--color-primary-50);
+        box-shadow: 0 0 1px var(--color-primary-50);
+      }
+
       .input-group-text {
         background-color: transparent;
         border: none;
@@ -53,6 +58,9 @@
 
       .form-control {
         border: none;
+        height: 100%;
+        padding-left: 0;
+        box-shadow: none;
       }
     }
   }
@@ -61,6 +69,14 @@
     &::before {
       content: '';
       mask-image: url('https://api.iconify.design/solar:letter-linear.svg');
+      background-color: var(--color-gray-50);
+    }
+  }
+
+  .input-group .icon.pass {
+    &::before {
+      content: '';
+      mask-image: url('https://api.iconify.design/solar:key-minimalistic-outline.svg');
       background-color: var(--color-gray-50);
     }
   }
