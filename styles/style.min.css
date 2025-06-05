@@ -8030,6 +8030,17 @@ html.dark-mode .pgpkeyimport li.uid::before {
   opacity: 1;
 }
 
-#layout > div .header {
+:root {
+  --color-primary-50: #256ef4;
+  --color-gray-90: #171717;
+  --color-bluegray-10: #f1f5f9;
+  --color-bluegray-30: #cbd5e1;
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+#layout > div > .header {
   height: 3.75rem;
+  background-color: var(--color-bluegray-10);
+  border-bottom: 1px solid var(--color-bluegray-30);
 }
