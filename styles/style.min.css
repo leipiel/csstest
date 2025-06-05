@@ -6563,13 +6563,6 @@ html.layout-phone .image-selector .attachmentslist {
   display: block;
 }
 
-.task-login #logo {
-  display: inline-block;
-  position: relative;
-  top: 16vh;
-  max-height: 100px;
-}
-
 #login-form {
   margin: 0 auto;
   top: 20vh;
