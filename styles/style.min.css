@@ -75,41 +75,39 @@ ul.treelist li div.treetoggle:before {
 }
 
 @font-face {
-  font-family: Icons;
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff");
 }
 @font-face {
-  font-family: Icons;
-  font-style: normal;
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
-  src: url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff");
-}
-@font-face {
-  font-family: Roboto;
   font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v29-regular.woff2") format("woff2"), url("../fonts/roboto-v29-regular.woff") format("woff");
 }
 @font-face {
-  font-family: Roboto;
-  font-style: italic;
-  font-weight: 400;
-  src: local("Roboto Italic"), local("Roboto-Italic"), url("../fonts/roboto-v29-italic.woff2") format("woff2"), url("../fonts/roboto-v29-italic.woff") format("woff");
-}
-@font-face {
-  font-family: Roboto;
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
   font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-v29-regular-700.woff2") format("woff2"), url("../fonts/roboto-v29-regular-700.woff") format("woff");
+  font-style: normal;
 }
-@font-face {
-  font-family: Roboto;
-  font-style: italic;
-  font-weight: 700;
-  src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"), url("../fonts/roboto-v29-italic-700.woff2") format("woff2"), url("../fonts/roboto-v29-italic-700.woff") format("woff");
+html {
+  font-size: 16px;
 }
+
 .popover,
 body,
 button,
@@ -117,7 +115,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: Roboto, sans-serif;
+  font-family: Pretendard, sans-serif;
 }
 
 button,
@@ -8043,4 +8041,10 @@ html.dark-mode .pgpkeyimport li.uid::before {
   height: 3.75rem;
   background-color: var(--color-bluegray-10);
   border-bottom: 1px solid var(--color-bluegray-30);
+}
+
+@media screen and (min-width: 481px) {
+  #layout-menu {
+    background-color: var(--color-primary-50);
+  }
 }
