@@ -8028,4 +8028,8 @@ html.dark-mode .pgpkeyimport div.key.revoked {
 
 html.dark-mode .pgpkeyimport li.uid::before {
   opacity: 1;
-}/*# sourceMappingURL=style.min.css.map */
+}
+
+#layout > div .header {
+  height: 3.75rem;
+}
