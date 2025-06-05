@@ -8048,3 +8048,14 @@ html.dark-mode .pgpkeyimport li.uid::before {
     background-color: var(--color-primary-50);
   }
 }
+.task-login #layout {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.task-login > #layout-content {
+  width: auto;
+}
