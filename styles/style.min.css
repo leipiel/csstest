@@ -6565,7 +6565,6 @@ html.layout-phone .image-selector .attachmentslist {
 
 #login-form {
   margin: 0 auto;
-  top: 20vh;
   width: 95%;
   max-width: 320px;
   position: relative;
@@ -8051,4 +8050,22 @@ html.dark-mode .pgpkeyimport li.uid::before {
 }
 .task-login > #layout-content {
   width: auto;
+}
+.task-login > #layout-content #layout-content-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.task-login #logo {
+  width: 9.875rem;
+}
+
+@media screen and (min-width: 481px) {
+  .task-login #logo {
+    width: 11.875rem;
+  }
 }

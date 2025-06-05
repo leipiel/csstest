@@ -6,5 +6,23 @@
 
   > #layout-content {
     width: auto;
+
+    #layout-content-items {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  #logo {
+    width: 9.875rem;
+  }
+}
+
+//responsive
+@media screen and (min-width: 481px) {
+  .task-login {
+    #logo {
+      width: 11.875rem;
+    }
   }
 }
