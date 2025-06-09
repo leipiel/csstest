@@ -1,6 +1,13 @@
 #layout-sidebar {
-  .header {
-    .header-title {
+  #folderlist-content {
+    background-color: rgba(203, 213, 225, 0.55);
+  }
+
+  .folderlist {
+    li {
+      &::before {
+        background-color: var(--color-gray-90);
+      }
     }
   }
 }
