@@ -27,15 +27,3 @@
   border-radius: 0.5rem;
   padding: 1rem 0.75rem;
 }
-
-.input-group .icon {
-  &::before {
-    content: '';
-    width: 1.5rem;
-    height: 1.5rem;
-    display: inline-block;
-    mask-repeat: no-repeat;
-    mask-position: center left;
-    mask-size: contain;
-  }
-}

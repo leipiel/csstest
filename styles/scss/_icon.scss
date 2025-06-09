@@ -1,0 +1,42 @@
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-position: center left;
+  mask-size: contain;
+
+  &::before {
+    content: '';
+    background-color: var(--color-white);
+  }
+
+  &.user {
+    &::before {
+      mask-image: url('https://api.iconify.design/solar:letter-outline.svg');
+    }
+  }
+
+  &.pass {
+    &::before {
+      mask-image: url('https://api.iconify.design/solar:key-minimalistic-outline.svg');
+    }
+  }
+}
+//GNB
+.menu {
+  a {
+    &::before {
+      content: '';
+      display: block;
+      mask-repeat: no-repeat;
+      mask-position: center left;
+      mask-size: contain;
+    }
+    &.compose {
+      &::before {
+        mask-image: url('https://api.iconify.design/solar:pen-new-square-outline.svg');
+      }
+    }
+  }
+}

@@ -8045,10 +8045,9 @@ html.dark-mode .pgpkeyimport li.uid::before {
   padding: 1rem 0.75rem;
 }
 
-.input-group .icon::before {
-  content: "";
-  width: 1.5rem;
-  height: 1.5rem;
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
   display: inline-block;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
@@ -8056,6 +8055,33 @@ html.dark-mode .pgpkeyimport li.uid::before {
           mask-position: center left;
   -webkit-mask-size: contain;
           mask-size: contain;
+}
+.icon::before {
+  content: "";
+  background-color: var(--color-white);
+}
+.icon.user::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+}
+.icon.pass::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:key-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:key-minimalistic-outline.svg");
+}
+
+.menu a::before {
+  content: "";
+  display: block;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.menu a.compose::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:pen-new-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:pen-new-square-outline.svg");
 }
 
 #layout > div > .header {
@@ -8066,6 +8092,29 @@ html.dark-mode .pgpkeyimport li.uid::before {
 
 #layout-menu {
   background-color: var(--color-primary-50);
+}
+#layout-menu #taskmenu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 0.375rem;
+  height: 5rem;
+  color: var(--color-white);
+}
+#layout-menu #taskmenu a::before {
+  background-color: var(--color-white);
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .task-login #layout {
@@ -8138,16 +8187,22 @@ html.dark-mode .pgpkeyimport li.uid::before {
           box-shadow: none;
   font-size: 1rem;
 }
-.task-login .input-group .icon.user::before {
+.task-login .input-group .icon::before {
   content: "";
-  -webkit-mask-image: url("https://api.iconify.design/solar:letter-linear.svg");
-          mask-image: url("https://api.iconify.design/solar:letter-linear.svg");
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.task-login .input-group .icon.user::before {
   background-color: var(--color-gray-50);
 }
 .task-login .input-group .icon.pass::before {
-  content: "";
-  -webkit-mask-image: url("https://api.iconify.design/solar:key-minimalistic-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:key-minimalistic-outline.svg");
   background-color: var(--color-gray-50);
 }
 
