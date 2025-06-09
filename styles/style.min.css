@@ -8164,6 +8164,55 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:user-id-outline.svg");
           mask-image: url("https://api.iconify.design/solar:user-id-outline.svg");
 }
+#layout-sidebar #mailboxlist li.preferences a::before,
+#layout-sidebar #directorylist li.preferences a::before,
+#layout-sidebar #settings-menu li.preferences a::before,
+#layout-sidebar .treelist li.preferences a::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:tuning-2-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:tuning-2-outline.svg");
+}
+#layout-sidebar #mailboxlist li.folders a::before,
+#layout-sidebar #directorylist li.folders a::before,
+#layout-sidebar #settings-menu li.folders a::before,
+#layout-sidebar .treelist li.folders a::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
+}
+#layout-sidebar #mailboxlist li.identities a::before,
+#layout-sidebar #directorylist li.identities a::before,
+#layout-sidebar #settings-menu li.identities a::before,
+#layout-sidebar .treelist li.identities a::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:user-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:user-circle-outline.svg");
+}
+#layout-sidebar #mailboxlist li.responses a::before,
+#layout-sidebar #directorylist li.responses a::before,
+#layout-sidebar #settings-menu li.responses a::before,
+#layout-sidebar .treelist li.responses a::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:chat-round-line-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:chat-round-line-outline.svg");
+}
+#layout-sidebar #mailboxlist li.filter a::before,
+#layout-sidebar #directorylist li.filter a::before,
+#layout-sidebar #settings-menu li.filter a::before,
+#layout-sidebar .treelist li.filter a::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
+}
+#layout-sidebar #mailboxlist li.keys a::before,
+#layout-sidebar #directorylist li.keys a::before,
+#layout-sidebar #settings-menu li.keys a::before,
+#layout-sidebar .treelist li.keys a::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:key-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:key-minimalistic-outline.svg");
+}
+#layout-sidebar #mailboxlist li.cd_preferences a::before,
+#layout-sidebar #directorylist li.cd_preferences a::before,
+#layout-sidebar #settings-menu li.cd_preferences a::before,
+#layout-sidebar .treelist li.cd_preferences a::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:user-id-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:user-id-outline.svg");
+}
 #layout-sidebar .quota-widget::before {
   content: "";
   display: block;

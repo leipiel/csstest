@@ -133,6 +133,48 @@
           mask-image: url('https://api.iconify.design/solar:user-id-outline.svg');
         }
       }
+
+      &.preferences {
+        a::before {
+          mask-image: url('https://api.iconify.design/solar:tuning-2-outline.svg');
+        }
+      }
+
+      &.folders {
+        a::before {
+          mask-image: url('https://api.iconify.design/solar:folder-outline.svg');
+        }
+      }
+
+      &.identities {
+        a::before {
+          mask-image: url('https://api.iconify.design/solar:user-circle-outline.svg');
+        }
+      }
+
+      &.responses {
+        a::before {
+          mask-image: url('https://api.iconify.design/solar:chat-round-line-outline.svg');
+        }
+      }
+
+      &.filter {
+        a::before {
+          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+        }
+      }
+
+      &.keys {
+        a::before {
+          mask-image: url('https://api.iconify.design/solar:key-minimalistic-outline.svg');
+        }
+      }
+
+      &.cd_preferences {
+        a::before {
+          mask-image: url('https://api.iconify.design/solar:user-id-outline.svg');
+        }
+      }
     }
   }
 
