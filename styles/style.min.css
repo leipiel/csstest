@@ -8344,6 +8344,36 @@ html.dark-mode .pgpkeyimport li.uid::before {
     height: 1.25rem;
   }
 }
+#layout-sidebar .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: relative;
+}
+#layout-sidebar .header .header-title {
+  margin: 0 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+#layout-sidebar .header a.button {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 #layout-sidebar #folderlist-content {
   background-color: #e3ecff;
 }
@@ -8355,10 +8385,10 @@ html.dark-mode .pgpkeyimport li.uid::before {
 }
 #layout-sidebar ul.folderlist.treelist li {
   border-bottom: none;
-  padding: 1.25rem;
+  padding: 0;
 }
 #layout-sidebar ul.folderlist.treelist li a {
-  padding: 0;
+  padding: 0.625rem 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
