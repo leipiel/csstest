@@ -60,5 +60,11 @@
         mask-image: url('https://api.iconify.design/solar:settings-outline.svg');
       }
     }
+
+    &.logout {
+      &::before {
+        mask-image: url('https://api.iconify.design/solar:logout-outline.svg');
+      }
+    }
   }
 }
