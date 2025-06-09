@@ -3,8 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
     position: relative;
 
     .header-title {
@@ -13,6 +11,8 @@
       text-overflow: ellipsis;
       flex: 1;
       text-align: center;
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
 
     a.button {
@@ -30,10 +30,13 @@
   ul.folderlist {
     li {
       a {
+        font-size: 0.9375rem;
+        font-weight: 500;
         color: var(--color-gray-90);
 
         &::before {
           background-color: var(--color-gray-90);
+          margin-right: 0.625rem;
         }
       }
     }
@@ -47,6 +50,12 @@
           padding: 0.625rem 1.25rem;
           display: flex;
           align-items: center;
+        }
+
+        &.selected {
+          > a {
+            background-color: #cbd5e18c;
+          }
         }
       }
     }

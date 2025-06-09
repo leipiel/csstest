@@ -8354,8 +8354,6 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
   position: relative;
 }
 #layout-sidebar .header .header-title {
@@ -8366,6 +8364,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 #layout-sidebar .header a.button {
   position: absolute;
@@ -8378,10 +8378,13 @@ html.dark-mode .pgpkeyimport li.uid::before {
   background-color: #e3ecff;
 }
 #layout-sidebar ul.folderlist li a {
+  font-size: 0.9375rem;
+  font-weight: 500;
   color: var(--color-gray-90);
 }
 #layout-sidebar ul.folderlist li a::before {
   background-color: var(--color-gray-90);
+  margin-right: 0.625rem;
 }
 #layout-sidebar ul.folderlist.treelist li {
   border-bottom: none;
@@ -8395,4 +8398,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+#layout-sidebar ul.folderlist.treelist li.selected > a {
+  background-color: rgba(203, 213, 225, 0.5490196078);
 }
