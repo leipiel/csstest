@@ -5,8 +5,12 @@
 
   .folderlist {
     li {
-      &::before {
-        background-color: var(--color-gray-90);
+      a {
+        color: var(--color-gray-90);
+
+        &::before {
+          background-color: var(--color-gray-90);
+        }
       }
     }
   }
