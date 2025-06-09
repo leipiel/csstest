@@ -33,6 +33,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        &::before {
+          margin-right: 0;
+        }
       }
     }
   }

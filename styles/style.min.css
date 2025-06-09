@@ -8403,6 +8403,9 @@ html.dark-mode .pgpkeyimport li.uid::before {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.header .menu.toolbar li a::before {
+  margin-right: 0;
+}
 
 #layout-menu {
   background-color: var(--color-primary-50);
