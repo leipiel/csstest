@@ -60,8 +60,8 @@
   }
 
   .popover-header {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
 
     #logo {
       width: 3.25rem;
@@ -91,6 +91,8 @@
     }
 
     .popover-header {
+      padding: 0 !important;
+
       #logo {
         width: 2.25rem;
       }

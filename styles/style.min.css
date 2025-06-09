@@ -8435,8 +8435,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
   background-color: transparent;
 }
 #layout-menu .popover-header {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
 }
 #layout-menu .popover-header #logo {
   width: 3.25rem;
@@ -8453,6 +8453,9 @@ html.dark-mode .pgpkeyimport li.uid::before {
   #layout-menu #taskmenu a::before {
     width: 1.25rem;
     height: 1.25rem;
+  }
+  #layout-menu .popover-header {
+    padding: 0 !important;
   }
   #layout-menu .popover-header #logo {
     width: 2.25rem;
