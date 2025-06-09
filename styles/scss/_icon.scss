@@ -80,6 +80,9 @@
     }
   }
 
+  #mailboxlist,
+  #directorylist,
+  #settings-menu,
   .treelist {
     li {
       a {
@@ -122,6 +125,12 @@
       &.trash {
         a::before {
           mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
+        }
+      }
+
+      &.addressbook {
+        a::before {
+          mask-image: url('https://api.iconify.design/solar:user-id-outline.svg');
         }
       }
     }

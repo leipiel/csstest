@@ -28,6 +28,9 @@
     background-color: #e3ecff;
   }
 
+  #mailboxlist,
+  #directorylist,
+  #settings-menu,
   .treelist {
     li {
       border-bottom: none;
@@ -40,6 +43,7 @@
         font-size: 0.9375rem;
         font-weight: 500;
         color: var(--color-gray-90);
+        cursor: pointer;
 
         &::before {
           background-color: var(--color-gray-90);

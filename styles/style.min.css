@@ -8104,6 +8104,9 @@ html.dark-mode .pgpkeyimport li.uid::before {
           transform: rotate(90deg);
   background-color: var(--color-bluegray-50);
 }
+#layout-sidebar #mailboxlist li a::before,
+#layout-sidebar #directorylist li a::before,
+#layout-sidebar #settings-menu li a::before,
 #layout-sidebar .treelist li a::before {
   content: "";
   display: block;
@@ -8119,25 +8122,47 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-size: contain;
           mask-size: contain;
 }
+#layout-sidebar #mailboxlist li.inbox a::before,
+#layout-sidebar #directorylist li.inbox a::before,
+#layout-sidebar #settings-menu li.inbox a::before,
 #layout-sidebar .treelist li.inbox a::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:inbox-unread-outline.svg");
           mask-image: url("https://api.iconify.design/solar:inbox-unread-outline.svg");
 }
+#layout-sidebar #mailboxlist li.drafts a::before,
+#layout-sidebar #directorylist li.drafts a::before,
+#layout-sidebar #settings-menu li.drafts a::before,
 #layout-sidebar .treelist li.drafts a::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:file-outline.svg");
           mask-image: url("https://api.iconify.design/solar:file-outline.svg");
 }
+#layout-sidebar #mailboxlist li.sent a::before,
+#layout-sidebar #directorylist li.sent a::before,
+#layout-sidebar #settings-menu li.sent a::before,
 #layout-sidebar .treelist li.sent a::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
           mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
 }
+#layout-sidebar #mailboxlist li.junk a::before,
+#layout-sidebar #directorylist li.junk a::before,
+#layout-sidebar #settings-menu li.junk a::before,
 #layout-sidebar .treelist li.junk a::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:forbidden-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:forbidden-circle-outline.svg");
 }
+#layout-sidebar #mailboxlist li.trash a::before,
+#layout-sidebar #directorylist li.trash a::before,
+#layout-sidebar #settings-menu li.trash a::before,
 #layout-sidebar .treelist li.trash a::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
           mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+}
+#layout-sidebar #mailboxlist li.addressbook a::before,
+#layout-sidebar #directorylist li.addressbook a::before,
+#layout-sidebar #settings-menu li.addressbook a::before,
+#layout-sidebar .treelist li.addressbook a::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:user-id-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:user-id-outline.svg");
 }
 #layout-sidebar .quota-widget::before {
   content: "";
@@ -8401,10 +8426,12 @@ html.dark-mode .pgpkeyimport li.uid::before {
 #layout-sidebar .scroller {
   background-color: #e3ecff;
 }
+#layout-sidebar .listing li,
 #layout-sidebar .treelist li {
   border-bottom: none;
   padding: 0;
 }
+#layout-sidebar .listing li a,
 #layout-sidebar .treelist li a {
   padding: 0.625rem 1.25rem;
   display: -webkit-box;
@@ -8416,14 +8443,18 @@ html.dark-mode .pgpkeyimport li.uid::before {
   font-size: 0.9375rem;
   font-weight: 500;
   color: var(--color-gray-90);
+  cursor: pointer;
 }
+#layout-sidebar .listing li a::before,
 #layout-sidebar .treelist li a::before {
   background-color: var(--color-gray-90);
   margin-right: 0.625rem;
 }
+#layout-sidebar .listing li.selected > a,
 #layout-sidebar .treelist li.selected > a {
   background-color: rgba(203, 213, 225, 0.5490196078);
 }
+#layout-sidebar .listing li.mailbox .unreadcount,
 #layout-sidebar .treelist li.mailbox .unreadcount {
   margin: 0;
   position: static;
