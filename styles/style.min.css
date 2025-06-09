@@ -2243,13 +2243,6 @@ html.touch .popover .listing li a:before {
   text-align: center;
 }
 
-.menu.toolbar a:before {
-  height: 1.75rem !important;
-  float: none !important;
-  width: auto !important;
-  margin: 0 !important;
-}
-
 .menu.toolbar a.selected {
   color: #41b849;
 }
@@ -8114,6 +8107,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   height: 5rem;
   color: var(--color-white);
   padding: 0;
+  margin: 0;
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
 }
@@ -8135,6 +8129,9 @@ html.dark-mode .pgpkeyimport li.uid::before {
 }
 #layout-menu #taskmenu a.selected {
   background-color: rgba(0, 0, 0, 0.25);
+}
+#layout-menu #taskmenu a:hover {
+  background-color: transparent;
 }
 #layout-menu #taskmenu a:hover::before {
   background-color: var(--color-yellow);
