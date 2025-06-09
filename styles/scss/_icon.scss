@@ -126,4 +126,19 @@
       }
     }
   }
+
+  .quota-widget {
+    &::before {
+      content: '';
+      display: block;
+      width: 1.125rem;
+      height: 1.125rem;
+      flex: none;
+      mask-repeat: no-repeat;
+      mask-position: center left;
+      mask-size: contain;
+      mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
+      background-color: var(--color-gray-60);
+    }
+  }
 }

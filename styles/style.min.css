@@ -8016,6 +8016,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   --color-primary-50: #256ef4;
   --color-primary-60: #1f54e7;
   --color-gray-90: #171717;
+  --color-gray-60: #525252;
   --color-gray-50: #737373;
   --color-gray-30: #d4d4d4;
   --color-bluegray-10: #f1f5f9;
@@ -8137,6 +8138,24 @@ html.dark-mode .pgpkeyimport li.uid::before {
 #layout-sidebar .folderlist li.trash a::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
           mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+}
+#layout-sidebar .quota-widget::before {
+  content: "";
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+  background-color: var(--color-gray-60);
 }
 
 .task-login #layout {
@@ -8263,6 +8282,9 @@ html.dark-mode .pgpkeyimport li.uid::before {
     margin-top: 0.75rem;
   }
 }
+#layout {
+  letter-spacing: -0.02em;
+}
 #layout > div > .header {
   height: 3.75rem;
   background-color: var(--color-bluegray-10);
@@ -8364,12 +8386,12 @@ html.dark-mode .pgpkeyimport li.uid::before {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 3.125rem !important;
+  padding-right: 3.125rem !important;
 }
 #layout-sidebar .header a.button {
   position: absolute;
-  right: 0.75rem;
+  right: 0.625rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -8385,6 +8407,27 @@ html.dark-mode .pgpkeyimport li.uid::before {
 #layout-sidebar ul.folderlist li a::before {
   background-color: var(--color-gray-90);
   margin-right: 0.625rem;
+}
+#layout-sidebar ul.folderlist li.mailbox .unreadcount {
+  margin: 0;
+  position: static;
+  margin-left: auto;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-white);
+  padding: 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--color-primary-50);
+  border-radius: 2.125rem;
+  height: 1.375rem;
 }
 #layout-sidebar ul.folderlist.treelist li {
   border-bottom: none;
