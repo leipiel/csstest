@@ -20,12 +20,37 @@
       row-gap: 0.375rem;
       height: 5rem;
       color: var(--color-white);
+      padding: 0;
+      transition: background-color 0.15s ease-in-out;
 
       &::before {
+        content: '';
+        display: block;
         flex: none;
         background-color: var(--color-white);
         width: 1.75rem;
         height: 1.75rem;
+      }
+
+      span.inner {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        line-height: 1;
+        color: var(--color-white);
+      }
+
+      &.selected {
+        background-color: rgb(0 0 0 / 0.25);
+      }
+
+      &:hover {
+        &::before {
+          background-color: var(--color-yellow);
+        }
+
+        span.inner {
+          color: var(--color-yellow);
+        }
       }
     }
   }
