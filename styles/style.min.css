@@ -8205,6 +8205,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
           flex: none;
   margin-left: 1rem;
   margin-right: 1rem;
+  padding: 0;
+  min-width: initial;
 }
 .input-group .input-group-text.icon::before {
   content: "";
