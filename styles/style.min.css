@@ -8187,7 +8187,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
           box-shadow: none;
   font-size: 1rem;
 }
-.task-login .input-group .icon::before {
+
+.input-group .icon::before {
   content: "";
   width: 1.5rem;
   height: 1.5rem;
@@ -8199,10 +8200,12 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-size: contain;
           mask-size: contain;
 }
-.task-login .input-group .icon.user::before {
+
+.input-group .icon.user::before {
   background-color: var(--color-gray-50);
 }
-.task-login .input-group .icon.pass::before {
+
+.input-group .icon.pass::before {
   background-color: var(--color-gray-50);
 }
 

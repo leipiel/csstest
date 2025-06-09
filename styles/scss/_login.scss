@@ -68,33 +68,33 @@
       }
     }
   }
+}
 
-  .input-group .icon {
-    &::before {
-      content: '';
-      width: 1.5rem;
-      height: 1.5rem;
-      display: inline-block;
-      mask-repeat: no-repeat;
-      mask-position: center left;
-      mask-size: contain;
-    }
+.input-group .icon {
+  &::before {
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    mask-repeat: no-repeat;
+    mask-position: center left;
+    mask-size: contain;
   }
+}
 
-  .input-group .icon.user {
-    &::before {
-      // content: '';
-      // mask-image: url('https://api.iconify.design/solar:letter-linear.svg');
-      background-color: var(--color-gray-50);
-    }
+.input-group .icon.user {
+  &::before {
+    // content: '';
+    // mask-image: url('https://api.iconify.design/solar:letter-linear.svg');
+    background-color: var(--color-gray-50);
   }
+}
 
-  .input-group .icon.pass {
-    &::before {
-      // content: '';
-      // mask-image: url('https://api.iconify.design/solar:key-minimalistic-outline.svg');
-      background-color: var(--color-gray-50);
-    }
+.input-group .icon.pass {
+  &::before {
+    // content: '';
+    // mask-image: url('https://api.iconify.design/solar:key-minimalistic-outline.svg');
+    background-color: var(--color-gray-50);
   }
 }
 
