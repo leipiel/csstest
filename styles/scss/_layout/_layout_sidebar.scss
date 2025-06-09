@@ -1,15 +1,28 @@
 #layout-sidebar {
   #folderlist-content {
-    background-color: rgba(203, 213, 225, 0.55);
+    background-color: #e3ecff;
   }
 
-  .folderlist {
+  ul.folderlist {
     li {
       a {
         color: var(--color-gray-90);
 
         &::before {
           background-color: var(--color-gray-90);
+        }
+      }
+    }
+
+    &.treelist {
+      li {
+        border-bottom: none;
+        padding: 1.25rem;
+
+        a {
+          padding: 0;
+          display: flex;
+          align-items: center;
         }
       }
     }

@@ -73,7 +73,7 @@
           mask-position: center left;
           mask-size: contain;
           mask-image: url('https://api.iconify.design/solar:menu-dots-bold.svg');
-          transform: rotate(180deg);
+          transform: rotate(90deg);
           background-color: var(--color-bluegray-50);
         }
       }
@@ -86,6 +86,7 @@
         &::before {
           content: '';
           display: block;
+          flex: none;
           width: 1.25rem;
           height: 1.25rem;
           mask-repeat: no-repeat;
