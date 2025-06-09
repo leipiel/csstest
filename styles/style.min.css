@@ -8128,8 +8128,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
           mask-image: url("https://api.iconify.design/solar:file-outline.svg");
 }
 #layout-sidebar .folderlist li.sent a::before {
-  -webkit-mask-image: url("https://api.iconify.design/solar:plan2-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:plan2-outline.svg");
+  -webkit-mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
 }
 #layout-sidebar .folderlist li.junk a::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:forbidden-circle-outline.svg");
