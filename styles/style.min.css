@@ -8426,12 +8426,16 @@ html.dark-mode .pgpkeyimport li.uid::before {
 #layout-sidebar .scroller {
   background-color: #e3ecff;
 }
-#layout-sidebar .listing li,
+#layout-sidebar #mailboxlist li,
+#layout-sidebar #directorylist li,
+#layout-sidebar #settings-menu li,
 #layout-sidebar .treelist li {
   border-bottom: none;
   padding: 0;
 }
-#layout-sidebar .listing li a,
+#layout-sidebar #mailboxlist li a,
+#layout-sidebar #directorylist li a,
+#layout-sidebar #settings-menu li a,
 #layout-sidebar .treelist li a {
   padding: 0.625rem 1.25rem;
   display: -webkit-box;
@@ -8445,16 +8449,22 @@ html.dark-mode .pgpkeyimport li.uid::before {
   color: var(--color-gray-90);
   cursor: pointer;
 }
-#layout-sidebar .listing li a::before,
+#layout-sidebar #mailboxlist li a::before,
+#layout-sidebar #directorylist li a::before,
+#layout-sidebar #settings-menu li a::before,
 #layout-sidebar .treelist li a::before {
   background-color: var(--color-gray-90);
   margin-right: 0.625rem;
 }
-#layout-sidebar .listing li.selected > a,
+#layout-sidebar #mailboxlist li.selected > a,
+#layout-sidebar #directorylist li.selected > a,
+#layout-sidebar #settings-menu li.selected > a,
 #layout-sidebar .treelist li.selected > a {
   background-color: rgba(203, 213, 225, 0.5490196078);
 }
-#layout-sidebar .listing li.mailbox .unreadcount,
+#layout-sidebar #mailboxlist li.mailbox .unreadcount,
+#layout-sidebar #directorylist li.mailbox .unreadcount,
+#layout-sidebar #settings-menu li.mailbox .unreadcount,
 #layout-sidebar .treelist li.mailbox .unreadcount {
   margin: 0;
   position: static;
