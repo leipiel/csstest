@@ -8397,19 +8397,20 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-#layout-sidebar #folderlist-content {
+#layout-sidebar #folderlist-content,
+#layout-sidebar .scroller {
   background-color: #e3ecff;
 }
-#layout-sidebar ul.folderlist li a {
+#layout-sidebar ul.folderlist li a, #layout-sidebar.treelist li a {
   font-size: 0.9375rem;
   font-weight: 500;
   color: var(--color-gray-90);
 }
-#layout-sidebar ul.folderlist li a::before {
+#layout-sidebar ul.folderlist li a::before, #layout-sidebar.treelist li a::before {
   background-color: var(--color-gray-90);
   margin-right: 0.625rem;
 }
-#layout-sidebar ul.folderlist li.mailbox .unreadcount {
+#layout-sidebar ul.folderlist li.mailbox .unreadcount, #layout-sidebar.treelist li.mailbox .unreadcount {
   margin: 0;
   position: static;
   top: auto;
@@ -8417,6 +8418,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   margin-left: auto;
   font-size: 0.8125rem;
   font-weight: 700;
+  line-height: 1;
   color: var(--color-white);
   padding: 0 0.5rem;
   display: -webkit-box;
@@ -8432,11 +8434,11 @@ html.dark-mode .pgpkeyimport li.uid::before {
   border-radius: 2.125rem;
   height: 1.375rem;
 }
-#layout-sidebar ul.folderlist.treelist li {
+#layout-sidebar ul.folderlist.treelist li, #layout-sidebar.treelist.treelist li {
   border-bottom: none;
   padding: 0;
 }
-#layout-sidebar ul.folderlist.treelist li a {
+#layout-sidebar ul.folderlist.treelist li a, #layout-sidebar.treelist.treelist li a {
   padding: 0.625rem 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8445,7 +8447,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
       -ms-flex-align: center;
           align-items: center;
 }
-#layout-sidebar ul.folderlist.treelist li.selected > a {
+#layout-sidebar ul.folderlist.treelist li.selected > a, #layout-sidebar.treelist.treelist li.selected > a {
   background-color: rgba(203, 213, 225, 0.5490196078);
 }
 

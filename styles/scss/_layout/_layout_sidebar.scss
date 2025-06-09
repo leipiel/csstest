@@ -23,11 +23,13 @@
     }
   }
 
-  #folderlist-content {
+  #folderlist-content,
+  .scroller {
     background-color: #e3ecff;
   }
 
-  ul.folderlist {
+  ul.folderlist,
+  &.treelist {
     li {
       a {
         font-size: 0.9375rem;
@@ -49,6 +51,7 @@
           margin-left: auto;
           font-size: 0.8125rem;
           font-weight: 700;
+          line-height: 1;
           color: var(--color-white);
           padding: 0 0.5rem;
           display: flex;
