@@ -8079,6 +8079,18 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:pen-new-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:pen-new-square-outline.svg");
 }
+.menu a.mail::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+}
+.menu a.contacts::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
+}
+.menu a.settings::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:settings-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:settings-outline.svg");
+}
 
 #layout > div > .header {
   height: 3.75rem;
@@ -8120,6 +8132,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   background-color: var(--color-white);
   width: 1.75rem;
   height: 1.75rem;
+  margin: 0;
 }
 #layout-menu #taskmenu a span.inner {
   font-size: 0.8125rem;
@@ -8131,7 +8144,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   background-color: rgba(0, 0, 0, 0.25);
 }
 #layout-menu #taskmenu a:hover {
-  background-color: transparent;
+  background-color: inherit;
 }
 #layout-menu #taskmenu a:hover::before {
   background-color: var(--color-yellow);

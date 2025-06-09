@@ -36,9 +36,28 @@
       mask-position: center left;
       mask-size: contain;
     }
+
     &.compose {
       &::before {
         mask-image: url('https://api.iconify.design/solar:pen-new-square-outline.svg');
+      }
+    }
+
+    &.mail {
+      &::before {
+        mask-image: url('https://api.iconify.design/solar:letter-outline.svg');
+      }
+    }
+
+    &.contacts {
+      &::before {
+        mask-image: url('https://api.iconify.design/solar:users-group-rounded-outline.svg');
+      }
+    }
+
+    &.settings {
+      &::before {
+        mask-image: url('https://api.iconify.design/solar:settings-outline.svg');
       }
     }
   }
