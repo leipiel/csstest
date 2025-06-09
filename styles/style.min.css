@@ -8163,7 +8163,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   background-color: transparent;
 }
 
-@media screen and (max-width: 480.99px) {
+@media screen and (max-width: 1024.99px) {
   #layout-menu #taskmenu a {
     height: 42px;
   }
