@@ -44,6 +44,8 @@
         .unreadcount {
           margin: 0;
           position: static;
+          top: auto;
+          right: auto;
           margin-left: auto;
           font-size: 0.8125rem;
           font-weight: 700;
@@ -77,6 +79,18 @@
         }
       }
     }
+  }
+}
+
+.quota-widget {
+  .bar {
+    margin: 0 0.75rem;
+    border: 1px solid var(--color-gray-30);
+  }
+
+  .value {
+    transition: width 0.15s ease-in-out;
+    background-color: var(--color-primary-50);
   }
 }
 
