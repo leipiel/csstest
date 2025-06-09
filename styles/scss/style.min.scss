@@ -1,5 +1,7 @@
 @use '_legacy.scss';
 @use '_variables.scss';
 @use '_icon.scss';
-@use '_layout.scss';
 @use '_login.scss';
+@use '_layout/_layout';
+@use '_layout/_layout_menu';
+@use '_layout/layout_sidebar';

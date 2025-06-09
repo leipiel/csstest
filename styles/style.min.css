@@ -8096,78 +8096,6 @@ html.dark-mode .pgpkeyimport li.uid::before {
           mask-image: url("https://api.iconify.design/solar:logout-outline.svg");
 }
 
-#layout > div > .header {
-  height: 3.75rem;
-  background-color: var(--color-bluegray-10);
-  border-bottom: 1px solid var(--color-bluegray-30);
-}
-
-#layout-menu {
-  background-color: var(--color-primary-50);
-}
-#layout-menu #taskmenu a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  row-gap: 0.375rem;
-  height: 5rem;
-  color: var(--color-white);
-  padding: 0;
-  margin: 0;
-  -webkit-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
-}
-#layout-menu #taskmenu a::before {
-  content: "";
-  display: block;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  background-color: var(--color-white);
-  width: 1.75rem;
-  height: 1.75rem;
-  margin: 0;
-}
-#layout-menu #taskmenu a span.inner {
-  font-size: 0.8125rem;
-  font-weight: 600;
-  line-height: 1;
-  color: var(--color-white);
-}
-#layout-menu #taskmenu a.selected {
-  background-color: rgba(0, 0, 0, 0.25);
-}
-#layout-menu #taskmenu a.selected:hover {
-  background-color: rgba(0, 0, 0, 0.25);
-}
-#layout-menu #taskmenu a:hover {
-  background-color: inherit;
-}
-#layout-menu #taskmenu a:hover::before {
-  background-color: var(--color-yellow);
-}
-#layout-menu #taskmenu a:hover span.inner {
-  color: var(--color-yellow);
-}
-#layout-menu #taskmenu .spetial-buttons {
-  background-color: transparent;
-}
-
-@media screen and (max-width: 1024.99px) {
-  #layout-menu #taskmenu a {
-    height: 42px;
-  }
-}
 .task-login #layout {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -8290,5 +8218,81 @@ html.dark-mode .pgpkeyimport li.uid::before {
   .task-login #logo-text {
     font-size: 1.25rem;
     margin-top: 0.75rem;
+  }
+}
+#layout > div > .header {
+  height: 3.75rem;
+  background-color: var(--color-bluegray-10);
+  border-bottom: 1px solid var(--color-bluegray-30);
+}
+
+#layout-menu {
+  background-color: var(--color-primary-50);
+}
+#layout-menu #taskmenu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 0.375rem;
+  height: 5rem;
+  color: var(--color-white);
+  padding: 0;
+  margin: 0;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+#layout-menu #taskmenu a::before {
+  content: "";
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  background-color: var(--color-white);
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: 0;
+}
+#layout-menu #taskmenu a span.inner {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-white);
+}
+#layout-menu #taskmenu a.selected {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+#layout-menu #taskmenu a.selected:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+#layout-menu #taskmenu a:hover {
+  background-color: inherit;
+}
+#layout-menu #taskmenu a:hover::before {
+  background-color: var(--color-yellow);
+}
+#layout-menu #taskmenu a:hover span.inner {
+  color: var(--color-yellow);
+}
+#layout-menu #taskmenu .special-buttons {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1024.99px) {
+  #layout-menu #taskmenu a {
+    height: 42px;
+  }
+  #layout-menu #taskmenu a::before {
+    width: 1.25rem;
+    height: 1.25rem;
   }
 }

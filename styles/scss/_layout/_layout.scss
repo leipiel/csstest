@@ -1,0 +1,17 @@
+#layout {
+  > div {
+    > .header {
+      height: 3.75rem;
+      background-color: var(--color-bluegray-10);
+      border-bottom: 1px solid var(--color-bluegray-30);
+    }
+  }
+}
+
+//responsive
+
+@media screen and (max-width: 480.99px) {
+}
+
+@media screen and (max-width: 1024.99px) {
+}
