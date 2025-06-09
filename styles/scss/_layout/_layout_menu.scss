@@ -2,6 +2,8 @@
   background-color: var(--color-primary-50);
 
   #taskmenu {
+    margin-top: 5.25rem;
+
     a {
       display: flex;
       flex-direction: column;
@@ -56,6 +58,16 @@
       background-color: transparent;
     }
   }
+
+  .popover-header {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    #logo {
+      width: 3.25rem;
+      height: auto;
+    }
+  }
 }
 
 //responsive
@@ -66,6 +78,8 @@
 @media screen and (max-width: 1024.99px) {
   #layout-menu {
     #taskmenu {
+      margin-top: 0;
+
       a {
         height: 42px;
 
@@ -73,6 +87,12 @@
           width: 1.25rem;
           height: 1.25rem;
         }
+      }
+    }
+
+    .popover-header {
+      #logo {
+        width: 2.25rem;
       }
     }
   }

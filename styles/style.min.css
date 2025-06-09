@@ -8374,6 +8374,9 @@ html.dark-mode .pgpkeyimport li.uid::before {
 #layout-menu {
   background-color: var(--color-primary-50);
 }
+#layout-menu #taskmenu {
+  margin-top: 5.25rem;
+}
 #layout-menu #taskmenu a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8431,14 +8434,28 @@ html.dark-mode .pgpkeyimport li.uid::before {
 #layout-menu #taskmenu .special-buttons {
   background-color: transparent;
 }
+#layout-menu .popover-header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+#layout-menu .popover-header #logo {
+  width: 3.25rem;
+  height: auto;
+}
 
 @media screen and (max-width: 1024.99px) {
+  #layout-menu #taskmenu {
+    margin-top: 0;
+  }
   #layout-menu #taskmenu a {
     height: 42px;
   }
   #layout-menu #taskmenu a::before {
     width: 1.25rem;
     height: 1.25rem;
+  }
+  #layout-menu .popover-header #logo {
+    width: 2.25rem;
   }
 }
 #layout-sidebar .header {
