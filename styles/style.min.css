@@ -8401,11 +8401,11 @@ html.dark-mode .pgpkeyimport li.uid::before {
 #layout-sidebar .scroller {
   background-color: #e3ecff;
 }
-#layout-sidebar.treelist li {
+#layout-sidebar .treelist li {
   border-bottom: none;
   padding: 0;
 }
-#layout-sidebar.treelist li a {
+#layout-sidebar .treelist li a {
   padding: 0.625rem 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8417,14 +8417,14 @@ html.dark-mode .pgpkeyimport li.uid::before {
   font-weight: 500;
   color: var(--color-gray-90);
 }
-#layout-sidebar.treelist li a::before {
+#layout-sidebar .treelist li a::before {
   background-color: var(--color-gray-90);
   margin-right: 0.625rem;
 }
-#layout-sidebar.treelist li.selected > a {
+#layout-sidebar .treelist li.selected > a {
   background-color: rgba(203, 213, 225, 0.5490196078);
 }
-#layout-sidebar.treelist li.mailbox .unreadcount {
+#layout-sidebar .treelist li.mailbox .unreadcount {
   margin: 0;
   position: static;
   top: auto;
