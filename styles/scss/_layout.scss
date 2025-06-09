@@ -22,6 +22,7 @@
       color: var(--color-white);
 
       &::before {
+        flex: none;
         background-color: var(--color-white);
         width: 1.75rem;
         height: 1.75rem;

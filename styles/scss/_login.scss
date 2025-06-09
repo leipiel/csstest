@@ -70,15 +70,25 @@
   }
 }
 
-.input-group .icon {
-  &::before {
-    content: '';
-    width: 1.5rem;
-    height: 1.5rem;
-    display: inline-block;
-    mask-repeat: no-repeat;
-    mask-position: center left;
-    mask-size: contain;
+.input-group {
+  .input-group-prepend {
+    align-items: center;
+    justify-content: center;
+  }
+  .input-group-text.icon {
+    flex: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    &::before {
+      content: '';
+      width: 1.5rem;
+      height: 1.5rem;
+      display: block;
+      mask-repeat: no-repeat;
+      mask-position: center left;
+      mask-size: contain;
+    }
   }
 }
 

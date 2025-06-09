@@ -8112,6 +8112,9 @@ html.dark-mode .pgpkeyimport li.uid::before {
   color: var(--color-white);
 }
 #layout-menu #taskmenu a::before {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   background-color: var(--color-white);
   width: 1.75rem;
   height: 1.75rem;
@@ -8188,11 +8191,26 @@ html.dark-mode .pgpkeyimport li.uid::before {
   font-size: 1rem;
 }
 
-.input-group .icon::before {
+.input-group .input-group-prepend {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.input-group .input-group-text.icon {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.input-group .input-group-text.icon::before {
   content: "";
   width: 1.5rem;
   height: 1.5rem;
-  display: inline-block;
+  display: block;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center left;
