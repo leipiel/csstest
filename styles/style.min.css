@@ -8404,6 +8404,38 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .header .menu.toolbar li a::before {
   margin-right: 0;
 }
+.header .menu.toolbar .toolbar-button {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 4.25rem;
+  height: 100%;
+}
+.header .menu.toolbar .toolbar-button a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header .menu.toolbar .toolbar-button a::before {
+  margin-right: 0;
+}
+.header .menu.toolbar .dropbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 #layout-menu {
   background-color: var(--color-primary-50);
