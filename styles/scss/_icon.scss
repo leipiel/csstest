@@ -356,6 +356,30 @@
         &.selection::before {
           mask-image: url('https://api.iconify.design/solar:check-square-outline.svg');
         }
+
+        &.all::before {
+          mask-image: url('https://api.iconify.design/solar:check-read-outline.svg');
+        }
+
+        &.page::before {
+          mask-image: url('https://api.iconify.design/solar:hamburger-menu-outline.svg');
+        }
+
+        &.unread::before {
+          mask-image: url('https://api.iconify.design/solar:letter-outline.svg');
+        }
+
+        &.flagged::before {
+          mask-image: url('https://api.iconify.design/solar:flag-outline.svg');
+        }
+
+        &.invert::before {
+          mask-image: url('https://api.iconify.design/solar:check-square-bold.svg');
+        }
+
+        &.none::before {
+          mask-image: url('https://api.iconify.design/solar:close-square-outline.svg');
+        }
       }
     }
   }

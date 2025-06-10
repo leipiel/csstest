@@ -8019,6 +8019,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   --color-gray-60: #525252;
   --color-gray-50: #737373;
   --color-gray-30: #d4d4d4;
+  --color-gray-20: #e5e5e5;
   --color-bluegray-10: #f1f5f9;
   --color-bluegray-30: #cbd5e1;
   --color-bluegray-50: #64748b;
@@ -8395,6 +8396,30 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
 }
+.popupmenu .menu.listing li a.all::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:check-read-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:check-read-outline.svg");
+}
+.popupmenu .menu.listing li a.page::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:hamburger-menu-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:hamburger-menu-outline.svg");
+}
+.popupmenu .menu.listing li a.unread::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+}
+.popupmenu .menu.listing li a.flagged::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:flag-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:flag-outline.svg");
+}
+.popupmenu .menu.listing li a.invert::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:check-square-bold.svg");
+          mask-image: url("https://api.iconify.design/solar:check-square-bold.svg");
+}
+.popupmenu .menu.listing li a.none::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:close-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:close-square-outline.svg");
+}
 
 .task-login #layout {
   -webkit-box-align: center;
@@ -8642,10 +8667,17 @@ html.dark-mode .pgpkeyimport li.uid::before {
   min-width: 12.5rem;
 }
 .popover .popupmenu .menu.listing li {
-  border-bottom-color: var(--color-bluegray-30);
+  border-bottom-color: var(--color-gray-20);
 }
 .popover .popupmenu .menu.listing li a {
   color: var(--color-gray-90);
+  border-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .popover .popupmenu .menu.listing li a::before {
   background-color: var(--color-gray-90);
