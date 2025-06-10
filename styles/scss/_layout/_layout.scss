@@ -1,6 +1,7 @@
 #layout {
   letter-spacing: -0.02em;
 
+  //컬럼 헤더 공통
   > div {
     > .header {
       height: 3.75rem;
@@ -16,8 +17,8 @@
   }
 }
 
+//상단 툴바 스타일
 .header {
-  //상단 툴바
   .menu.toolbar {
     display: flex;
     align-items: center;
@@ -35,6 +36,8 @@
         align-items: center;
         justify-content: center;
         padding: 0;
+        background-color: transparent;
+        transition: background-color 0.15s ease-in-out;
 
         &::before {
           margin-right: 0;
@@ -47,6 +50,10 @@
           font-size: 0.75rem;
           font-weight: 400;
           color: var(--color-gray-90);
+        }
+
+        &:not(.disabled):hover {
+          background-color: #cbd5e18c;
         }
       }
     }
@@ -85,6 +92,29 @@
     &::before {
       margin-right: 0;
       background-color: var(--color-gray-90);
+    }
+  }
+}
+
+//팝오버
+.popover {
+  border-color: var(--color-bluegray-30);
+
+  .popmenu {
+    min-width: 12.5rem;
+
+    .listing {
+      li {
+        border-bottom-color: var(--color-bluegray-30);
+
+        a {
+          color: var(--color-gray-90);
+
+          &::before {
+            background-color: var(--color-gray-90);
+          }
+        }
+      }
     }
   }
 }

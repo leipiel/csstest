@@ -57,6 +57,7 @@
   }
 }
 
+//메일박스, 디렉토리
 #layout-sidebar {
   .header {
     .icon {
@@ -333,6 +334,29 @@
 
     &.selection::before {
       mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
+    }
+  }
+}
+
+//popover
+.popmenu {
+  .listing {
+    li {
+      a {
+        &::before {
+          content: '' !important;
+          width: 1.125rem;
+          height: 1.125rem;
+          display: block;
+          mask-repeat: no-repeat;
+          mask-position: center left;
+          mask-size: contain;
+        }
+
+        &.selection::before {
+          mask-image: url('https://api.iconify.design/solar:check-square-outline.svg');
+        }
+      }
     }
   }
 }

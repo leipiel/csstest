@@ -8379,6 +8379,23 @@ html.dark-mode .pgpkeyimport li.uid::before {
           mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
 }
 
+.popmenu .listing li a::before {
+  content: "" !important;
+  width: 1.125rem;
+  height: 1.125rem;
+  display: block;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.popmenu .listing li a.selection::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
+}
+
 .task-login #layout {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -8547,6 +8564,9 @@ html.dark-mode .pgpkeyimport li.uid::before {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
+  background-color: transparent;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
 }
 .header .menu.toolbar li a::before {
   margin-right: 0;
@@ -8558,6 +8578,9 @@ html.dark-mode .pgpkeyimport li.uid::before {
   font-size: 0.75rem;
   font-weight: 400;
   color: var(--color-gray-90);
+}
+.header .menu.toolbar li a:not(.disabled):hover {
+  background-color: rgba(203, 213, 225, 0.5490196078);
 }
 .header .menu.toolbar .dropbutton {
   display: -webkit-box;
@@ -8601,6 +8624,22 @@ html.dark-mode .pgpkeyimport li.uid::before {
 }
 .header .toolbar-button::before {
   margin-right: 0;
+  background-color: var(--color-gray-90);
+}
+
+.popover {
+  border-color: var(--color-bluegray-30);
+}
+.popover .popmenu {
+  min-width: 12.5rem;
+}
+.popover .popmenu .listing li {
+  border-bottom-color: var(--color-bluegray-30);
+}
+.popover .popmenu .listing li a {
+  color: var(--color-gray-90);
+}
+.popover .popmenu .listing li a::before {
   background-color: var(--color-gray-90);
 }
 
