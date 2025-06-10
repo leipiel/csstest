@@ -8233,6 +8233,81 @@ html.dark-mode .pgpkeyimport li.uid::before {
   margin: 0;
 }
 
+.header .menu.toolbar li a::before {
+  content: "";
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.header .menu.toolbar li a.select::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
+}
+.header .menu.toolbar li a.threads::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:dialog-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:dialog-outline.svg");
+}
+.header .menu.toolbar li a.options::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:tuning-2-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:tuning-2-outline.svg");
+}
+.header .menu.toolbar li a.reply::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:reply-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:reply-outline.svg");
+}
+.header .menu.toolbar li a.reply-all::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:multiple-forward-left-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:multiple-forward-left-outline.svg");
+}
+.header .menu.toolbar li a.forward::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:forward-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:forward-outline.svg");
+}
+.header .menu.toolbar li a.delete::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+}
+.header .menu.toolbar li a.junk::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:forbidden-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:forbidden-circle-outline.svg");
+}
+.header .menu.toolbar li a.markmessage::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:tag-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:tag-outline.svg");
+}
+.header .menu.toolbar li a.more::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
+          mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
+}
+.header .menu.toolbar a.toolbar-button::before {
+  content: "";
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.header .menu.toolbar a.toolbar-button.refresh::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:refresh-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:refresh-square-outline.svg");
+}
+
 .task-login #layout {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -8404,15 +8479,16 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .header .menu.toolbar li a::before {
   margin-right: 0;
 }
-.header .menu.toolbar .toolbar-button {
+.header .menu.toolbar .dropbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .menu.toolbar a.toolbar-button {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
   width: 4.25rem;
-  height: 100%;
-}
-.header .menu.toolbar .toolbar-button a {
-  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8428,13 +8504,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.header .menu.toolbar .toolbar-button a::before {
+.header .menu.toolbar a.toolbar-button::before {
   margin-right: 0;
-}
-.header .menu.toolbar .dropbutton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #layout-menu {

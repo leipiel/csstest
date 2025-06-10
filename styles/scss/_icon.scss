@@ -194,3 +194,82 @@
     }
   }
 }
+
+//header toolbar icon
+.header {
+  .menu.toolbar {
+    li {
+      a {
+        &::before {
+          content: '';
+          display: block;
+          flex: none;
+          width: 1.5rem;
+          height: 1.5rem;
+          mask-repeat: no-repeat;
+          mask-position: center left;
+          mask-size: contain;
+        }
+
+        &.select::before {
+          mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
+        }
+
+        &.threads::before {
+          mask-image: url('https://api.iconify.design/solar:dialog-outline.svg');
+        }
+
+        &.options::before {
+          mask-image: url('https://api.iconify.design/solar:tuning-2-outline.svg');
+        }
+
+        &.reply::before {
+          mask-image: url('https://api.iconify.design/solar:reply-outline.svg');
+        }
+
+        &.reply-all::before {
+          mask-image: url('https://api.iconify.design/solar:multiple-forward-left-outline.svg');
+        }
+
+        &.forward::before {
+          mask-image: url('https://api.iconify.design/solar:forward-outline.svg');
+        }
+
+        &.delete::before {
+          mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
+        }
+
+        &.junk::before {
+          mask-image: url('https://api.iconify.design/solar:forbidden-circle-outline.svg');
+        }
+
+        &.markmessage::before {
+          mask-image: url('https://api.iconify.design/solar:tag-outline.svg');
+        }
+
+        &.more::before {
+          mask-image: url('https://api.iconify.design/solar:menu-dots-bold.svg');
+        }
+      }
+    }
+
+    a.toolbar-button {
+      &::before {
+        content: '';
+        display: block;
+        flex: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        mask-repeat: no-repeat;
+        mask-position: center left;
+        mask-size: contain;
+      }
+
+      &.refresh::before {
+        mask-image: url('https://api.iconify.design/solar:refresh-square-outline.svg');
+      }
+    }
+  }
+}
+
+//mask-image: url('https://api.iconify.design/solar:-outline.svg');
