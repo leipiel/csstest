@@ -8381,8 +8381,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
 
 .popupmenu .menu.listing li a::before {
   content: "" !important;
-  width: 1.125rem;
-  height: 1.125rem;
+  width: 1.125rem !important;
+  height: 1.125rem !important;
   display: block;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
@@ -8618,7 +8618,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
 }
-.header .toolbar-button:not(.disabled):hover {
+.header .toolbar-button.icon:not(.disabled):hover {
   background-color: rgba(203, 213, 225, 0.5490196078);
 }
 .header .toolbar-button .inner {
@@ -8635,6 +8635,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
 
 .popover {
   border-color: var(--color-bluegray-30);
+  -webkit-box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.15);
 }
 .popover .popupmenu {
   min-width: 12.5rem;

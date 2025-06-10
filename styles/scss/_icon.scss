@@ -345,8 +345,8 @@
       a {
         &::before {
           content: '' !important;
-          width: 1.125rem;
-          height: 1.125rem;
+          width: 1.125rem !important;
+          height: 1.125rem !important;
           display: block;
           mask-repeat: no-repeat;
           mask-position: center left;
