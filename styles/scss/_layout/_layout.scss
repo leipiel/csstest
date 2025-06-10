@@ -25,11 +25,11 @@
 
     li {
       flex: none;
-      width: 4.25rem;
       height: 100%;
 
       a {
-        width: 100%;
+        //width: 100%;
+        width: 4.25rem;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -66,6 +66,10 @@
       .dropdown {
         width: 0.75rem;
         padding: 0;
+
+        &:not(.disabled):hover {
+          background-color: transparent;
+        }
       }
     }
   }
@@ -120,8 +124,9 @@
           border-left: 0;
           display: flex;
           align-items: center;
-          padding: 0.75rem 0.875rem;
+          padding: 0.8125rem 0.875rem;
           line-height: 1;
+          transition: background-color 0.17s ease-in-out;
 
           &::before {
             background-color: var(--color-gray-90);
