@@ -252,22 +252,22 @@
         }
       }
     }
+  }
 
-    a.toolbar-button {
-      &::before {
-        content: '';
-        display: block;
-        flex: none;
-        width: 1.5rem;
-        height: 1.5rem;
-        mask-repeat: no-repeat;
-        mask-position: center left;
-        mask-size: contain;
-      }
+  .toolbar-button {
+    &::before {
+      content: '';
+      display: block;
+      flex: none;
+      width: 1.5rem;
+      height: 1.5rem;
+      mask-repeat: no-repeat;
+      mask-position: center left;
+      mask-size: contain;
+    }
 
-      &.refresh::before {
-        mask-image: url('https://api.iconify.design/solar:refresh-square-outline.svg');
-      }
+    &.refresh::before {
+      mask-image: url('https://api.iconify.design/solar:refresh-square-outline.svg');
     }
   }
 }
