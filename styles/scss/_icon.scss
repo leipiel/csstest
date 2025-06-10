@@ -254,13 +254,38 @@
     }
   }
 
+  .dropbutton {
+    .dropdown {
+      width: 0.75rem;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 0.75rem;
+        height: 0.75rem;
+        mask-repeat: no-repeat;
+        mask-position: center left;
+        mask-size: contain;
+        mask-image: url('https://api.iconify.design/solar:alt-arrow-down.svg');
+        background-color: var(--color-gray-90);
+      }
+    }
+  }
+
   .toolbar-button {
     &::before {
       content: '';
-      display: block;
-      flex: none;
-      width: 1.5rem;
-      height: 1.5rem;
+      display: block !important;
+      flex: none !important;
+      width: 1.5rem !important;
+      height: 1.5rem !important;
       mask-repeat: no-repeat;
       mask-position: center left;
       mask-size: contain;

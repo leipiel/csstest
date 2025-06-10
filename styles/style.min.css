@@ -8288,14 +8288,45 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
           mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
 }
-.header .toolbar-button::before {
+.header .dropbutton .dropdown {
+  width: 0.75rem;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header .dropbutton .dropdown::before {
   content: "";
   display: block;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-down.svg");
+  background-color: var(--color-gray-90);
+}
+.header .toolbar-button::before {
+  content: "";
+  display: block !important;
+  -webkit-box-flex: 0 !important;
+      -ms-flex: none !important;
+          flex: none !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center left;
@@ -8492,6 +8523,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  position: relative;
 }
 .header .menu.toolbar .dropbutton .dropdown {
   width: 0.75rem;

@@ -53,6 +53,8 @@
 
     .dropbutton {
       display: flex;
+      height: 100%;
+      position: relative;
 
       .dropdown {
         width: 0.75rem;
