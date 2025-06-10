@@ -8288,6 +8288,42 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
           mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
 }
+.header .menu.toolbar li a.create::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
+}
+.header .menu.toolbar li a.print::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:printer-2-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:printer-2-outline.svg");
+}
+.header .menu.toolbar li a.search::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
+}
+.header .menu.toolbar li a.import::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:upload-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:upload-outline.svg");
+}
+.header .menu.toolbar li a.export::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:download-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:download-outline.svg");
+}
+.header .menu.toolbar li a.carddav_AccAdd::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:user-plus-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:user-plus-outline.svg");
+}
+.header .menu.toolbar li a.carddav_AccRm::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:user-minus-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:user-minus-outline.svg");
+}
+.header .menu.toolbar li a.carddav_AccRedisc::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:settings-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:settings-outline.svg");
+}
+.header .menu.toolbar li a.carddav_AbSync::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:restart-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:restart-outline.svg");
+}
 .header .menu.toolbar .dropbutton .dropdown {
   width: 0.75rem;
   height: 100%;
@@ -8320,7 +8356,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   background-color: var(--color-gray-90);
 }
 .header .toolbar-button::before {
-  content: "";
+  content: "" !important;
   display: block !important;
   -webkit-box-flex: 0 !important;
       -ms-flex: none !important;
@@ -8337,6 +8373,10 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .header .toolbar-button.refresh::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:refresh-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:refresh-square-outline.svg");
+}
+.header .toolbar-button.selection::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
 }
 
 .task-login #layout {

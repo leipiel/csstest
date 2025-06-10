@@ -250,6 +250,42 @@
         &.more::before {
           mask-image: url('https://api.iconify.design/solar:menu-dots-bold.svg');
         }
+
+        &.create::before {
+          mask-image: url('https://api.iconify.design/solar:add-square-outline.svg');
+        }
+
+        &.print::before {
+          mask-image: url('https://api.iconify.design/solar:printer-2-outline.svg');
+        }
+
+        &.search::before {
+          mask-image: url('https://api.iconify.design/solar:minimalistic-magnifer-outline.svg');
+        }
+
+        &.import::before {
+          mask-image: url('https://api.iconify.design/solar:upload-outline.svg');
+        }
+
+        &.export::before {
+          mask-image: url('https://api.iconify.design/solar:download-outline.svg');
+        }
+
+        &.carddav_AccAdd::before {
+          mask-image: url('https://api.iconify.design/solar:user-plus-outline.svg');
+        }
+
+        &.carddav_AccRm::before {
+          mask-image: url('https://api.iconify.design/solar:user-minus-outline.svg');
+        }
+
+        &.carddav_AccRedisc::before {
+          mask-image: url('https://api.iconify.design/solar:settings-outline.svg');
+        }
+
+        &.carddav_AbSync::before {
+          mask-image: url('https://api.iconify.design/solar:restart-outline.svg');
+        }
       }
     }
 
@@ -281,7 +317,7 @@
 
   .toolbar-button {
     &::before {
-      content: '';
+      content: '' !important;
       display: block !important;
       flex: none !important;
       width: 1.5rem !important;
@@ -293,6 +329,10 @@
 
     &.refresh::before {
       mask-image: url('https://api.iconify.design/solar:refresh-square-outline.svg');
+    }
+
+    &.selection::before {
+      mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
     }
   }
 }
