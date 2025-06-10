@@ -8379,7 +8379,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
           mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
 }
 
-.popmenu .listing li a::before {
+.popmenu .menu.listing li a::before {
   content: "" !important;
   width: 1.125rem;
   height: 1.125rem;
@@ -8391,7 +8391,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-size: contain;
           mask-size: contain;
 }
-.popmenu .listing li a.selection::before {
+.popmenu .menu.listing li a.selection::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
 }
@@ -8614,6 +8614,12 @@ html.dark-mode .pgpkeyimport li.uid::before {
           justify-content: center;
   line-height: 1;
   padding: 0;
+  background-color: transparent;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+.header .toolbar-button:not(.disabled):hover {
+  background-color: rgba(203, 213, 225, 0.5490196078);
 }
 .header .toolbar-button .inner {
   line-height: 1.3;
@@ -8633,13 +8639,13 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .popover .popmenu {
   min-width: 12.5rem;
 }
-.popover .popmenu .listing li {
+.popover .popmenu .menu.listing li {
   border-bottom-color: var(--color-bluegray-30);
 }
-.popover .popmenu .listing li a {
+.popover .popmenu .menu.listing li a {
   color: var(--color-gray-90);
 }
-.popover .popmenu .listing li a::before {
+.popover .popmenu .menu.listing li a::before {
   background-color: var(--color-gray-90);
 }
 
