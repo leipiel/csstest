@@ -8379,7 +8379,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
           mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
 }
 
-.popmenu .menu.listing li a::before {
+.popupmenu .menu.listing li a::before {
   content: "" !important;
   width: 1.125rem;
   height: 1.125rem;
@@ -8391,7 +8391,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-size: contain;
           mask-size: contain;
 }
-.popmenu .menu.listing li a.selection::before {
+.popupmenu .menu.listing li a.selection::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
 }
@@ -8636,16 +8636,16 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .popover {
   border-color: var(--color-bluegray-30);
 }
-.popover .popmenu {
+.popover .popupmenu {
   min-width: 12.5rem;
 }
-.popover .popmenu .menu.listing li {
+.popover .popupmenu .menu.listing li {
   border-bottom-color: var(--color-bluegray-30);
 }
-.popover .popmenu .menu.listing li a {
+.popover .popupmenu .menu.listing li a {
   color: var(--color-gray-90);
 }
-.popover .popmenu .menu.listing li a::before {
+.popover .popupmenu .menu.listing li a::before {
   background-color: var(--color-gray-90);
 }
 
