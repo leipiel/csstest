@@ -8315,8 +8315,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
           mask-position: center left;
   -webkit-mask-size: contain;
           mask-size: contain;
-  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down.svg");
-          mask-image: url("https://api.iconify.design/solar:alt-arrow-down.svg");
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down-bold.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-down-bold.svg");
   background-color: var(--color-gray-90);
 }
 .header .toolbar-button::before {
