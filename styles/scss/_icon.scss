@@ -287,6 +287,10 @@
         &.carddav_AbSync::before {
           mask-image: url('https://api.iconify.design/solar:restart-outline.svg');
         }
+
+        &.carddav_AbSync::before {
+          mask-image: url('https://api.iconify.design/solar:restart-outline.svg');
+        }
       }
     }
 
@@ -379,6 +383,26 @@
 
         &.none::before {
           mask-image: url('https://api.iconify.design/solar:close-square-outline.svg');
+        }
+
+        &.reply::before {
+          //회신 목록
+          mask-image: url('https://api.iconify.design/solar:list-check-outline.svg');
+        }
+
+        &.forward::before {
+          //본문내용으로 전달
+          mask-image: url('https://api.iconify.design/solar:document-text-outline.svg');
+        }
+
+        &.reply::before {
+          //첨부파일로 전달
+          mask-image: url('https://api.iconify.design/solar:paperclip-outline.svg');
+        }
+
+        &.reply::before {
+          //재전송
+          mask-image: url('https://api.iconify.design/solar:refresh-circle-outline.svg');
         }
       }
     }

@@ -8325,6 +8325,10 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:restart-outline.svg");
           mask-image: url("https://api.iconify.design/solar:restart-outline.svg");
 }
+.header .menu.toolbar li a.carddav_AbSync::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:restart-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:restart-outline.svg");
+}
 .header .menu.toolbar .dropbutton .dropdown {
   width: 0.75rem;
   height: 100%;
@@ -8419,6 +8423,22 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .popupmenu .menu.listing li a.none::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:close-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:close-square-outline.svg");
+}
+.popupmenu .menu.listing li a.reply::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:list-check-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:list-check-outline.svg");
+}
+.popupmenu .menu.listing li a.forward::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:document-text-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:document-text-outline.svg");
+}
+.popupmenu .menu.listing li a.reply::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
+}
+.popupmenu .menu.listing li a.reply::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:refresh-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:refresh-circle-outline.svg");
 }
 
 .task-login #layout {
@@ -8680,6 +8700,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.75rem 0.875rem;
+  line-height: 1;
 }
 .popover .popupmenu .menu.listing li a::before {
   background-color: var(--color-gray-90);
@@ -8808,6 +8829,9 @@ html.dark-mode .pgpkeyimport li.uid::before {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+#layout-sidebar .header a.button:hover {
+  background-color: transparent;
 }
 #layout-sidebar #folderlist-content,
 #layout-sidebar .scroller {
