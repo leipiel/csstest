@@ -8668,6 +8668,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
 }
 .popover .popupmenu .menu.listing li {
   border-bottom-color: var(--color-gray-20);
+  line-height: 1;
 }
 .popover .popupmenu .menu.listing li a {
   color: var(--color-gray-90);
@@ -8678,9 +8679,14 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0.75rem 0.875rem;
 }
 .popover .popupmenu .menu.listing li a::before {
   background-color: var(--color-gray-90);
+  margin-right: 0.5rem;
+}
+.popover .popupmenu .menu.listing li a:not(.disabled):hover {
+  background-color: rgba(203, 213, 225, 0.5490196078);
 }
 
 #layout-menu {
@@ -8813,6 +8819,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
 #layout-sidebar .treelist li {
   border-bottom: none;
   padding: 0;
+  line-height: 1;
 }
 #layout-sidebar #mailboxlist li a,
 #layout-sidebar #directorylist li a,
@@ -8829,6 +8836,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   font-weight: 500;
   color: var(--color-gray-90);
   cursor: pointer;
+  height: 2.875rem;
 }
 #layout-sidebar #mailboxlist li a::before,
 #layout-sidebar #directorylist li a::before,
