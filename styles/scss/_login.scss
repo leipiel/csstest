@@ -92,23 +92,17 @@
       mask-repeat: no-repeat;
       mask-position: center left;
       mask-size: contain;
+      background-color: var(--color-gray-50);
+      transition: background-color 0.15s ease-in-out;
     }
   }
-}
 
-.input-group .icon.user {
-  &::before {
-    // content: '';
-    // mask-image: url('https://api.iconify.design/solar:letter-linear.svg');
-    background-color: var(--color-gray-50);
-  }
-}
-
-.input-group .icon.pass {
-  &::before {
-    // content: '';
-    // mask-image: url('https://api.iconify.design/solar:key-minimalistic-outline.svg');
-    background-color: var(--color-gray-50);
+  &:has(.form-control:focus) {
+    .input-group-text.icon {
+      &::before {
+        background-color: var(--color-primary-50);
+      }
+    }
   }
 }
 

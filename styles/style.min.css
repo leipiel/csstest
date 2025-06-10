@@ -8334,14 +8334,12 @@ html.dark-mode .pgpkeyimport li.uid::before {
           mask-position: center left;
   -webkit-mask-size: contain;
           mask-size: contain;
-}
-
-.input-group .icon.user::before {
   background-color: var(--color-gray-50);
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
 }
-
-.input-group .icon.pass::before {
-  background-color: var(--color-gray-50);
+.input-group:has(.form-control:focus) .input-group-text.icon::before {
+  background-color: var(--color-primary-50);
 }
 
 @media screen and (min-width: 481px) {
