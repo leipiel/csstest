@@ -8288,7 +8288,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
           mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
 }
-.header .dropbutton .dropdown {
+.header .menu.toolbar .dropbutton .dropdown {
   width: 0.75rem;
   height: 100%;
   position: absolute;
@@ -8304,7 +8304,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.header .dropbutton .dropdown::before {
+.header .menu.toolbar .dropbutton .dropdown::before {
   content: "";
   display: block;
   width: 0.75rem;
@@ -8528,6 +8528,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
 }
 .header .menu.toolbar .dropbutton .dropdown {
   width: 0.75rem;
+  padding: 0;
 }
 .header .toolbar-button {
   -webkit-box-flex: 0;
