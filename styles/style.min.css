@@ -8424,19 +8424,19 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:close-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:close-square-outline.svg");
 }
-.popupmenu .menu.listing li a.reply::before {
+.popupmenu .menu.listing li a.list::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:list-check-outline.svg");
           mask-image: url("https://api.iconify.design/solar:list-check-outline.svg");
 }
-.popupmenu .menu.listing li a.forward::before {
+.popupmenu .menu.listing li a.inline::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:document-text-outline.svg");
           mask-image: url("https://api.iconify.design/solar:document-text-outline.svg");
 }
-.popupmenu .menu.listing li a.reply::before {
+.popupmenu .menu.listing li a.attachment::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
           mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
 }
-.popupmenu .menu.listing li a.reply::before {
+.popupmenu .menu.listing li a.bounce::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:refresh-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:refresh-circle-outline.svg");
 }
