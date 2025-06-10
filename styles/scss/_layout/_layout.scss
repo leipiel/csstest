@@ -37,6 +37,7 @@
 
         &::before {
           margin-right: 0;
+          background-color: var(--color-gray-90);
         }
       }
     }
@@ -56,6 +57,7 @@
 
       &::before {
         margin-right: 0;
+        background-color: var(--color-gray-90);
       }
     }
   }

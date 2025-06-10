@@ -8478,6 +8478,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
 }
 .header .menu.toolbar li a::before {
   margin-right: 0;
+  background-color: var(--color-gray-90);
 }
 .header .menu.toolbar .dropbutton {
   display: -webkit-box;
@@ -8506,6 +8507,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
 }
 .header .menu.toolbar a.toolbar-button::before {
   margin-right: 0;
+  background-color: var(--color-gray-90);
 }
 
 #layout-menu {
