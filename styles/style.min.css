@@ -8632,12 +8632,12 @@ html.dark-mode .pgpkeyimport li.uid::before {
   height: 100%;
   position: relative;
 }
+.header .menu.toolbar .dropbutton:not(.disabled):hover {
+  background-color: transparent;
+}
 .header .menu.toolbar .dropbutton .dropdown {
   width: 0.75rem;
   padding: 0;
-}
-.header .menu.toolbar .dropbutton .dropdown:not(.disabled):hover {
-  background-color: transparent;
 }
 .header .toolbar-button {
   -webkit-box-flex: 0;
