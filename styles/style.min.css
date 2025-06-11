@@ -8573,8 +8573,8 @@ ul.contactlist a.contactgroup::before {
 }
 .popupmenu .menu li a.search.delete::before,
 .popupmenu .listing li a.search.delete::before {
-  -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+  -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-2-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-2-outline.svg");
 }
 .popupmenu .menu li a.export.select::before,
 .popupmenu .listing li a.export.select::before {
@@ -8596,10 +8596,10 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:folder-error-outline.svg");
           mask-image: url("https://api.iconify.design/solar:folder-error-outline.svg");
 }
-.popupmenu .selectable li a::before {
+.popupmenu .selectable.listing li a::before {
   background-color: transparent;
 }
-.popupmenu .selectable li a.selected::before {
+.popupmenu .selectable.listing li a.selected::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
           mask-image: url("https://api.iconify.design/solar:unread-outline.svg");

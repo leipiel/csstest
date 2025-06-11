@@ -549,7 +549,7 @@ ul.contactlist {
 
         &.search.delete::before {
           //검색 삭제 //일단 위 상속 체크
-          mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
+          mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-2-outline.svg');
         }
 
         &.export.select::before {
@@ -576,7 +576,7 @@ ul.contactlist {
   }
 
   //셀렉션 목록
-  .selectable {
+  .selectable.listing {
     li {
       a {
         &::before {
