@@ -609,7 +609,7 @@ ul.contactlist {
       content: '';
       mask-repeat: no-repeat;
       mask-position: center left;
-      mask-size: contain;
+      mask-size: cover;
     }
 
     &.reset::before {

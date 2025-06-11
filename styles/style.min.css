@@ -8620,8 +8620,8 @@ ul.contactlist a.contactgroup::before {
           mask-repeat: no-repeat;
   -webkit-mask-position: center left;
           mask-position: center left;
-  -webkit-mask-size: contain;
-          mask-size: contain;
+  -webkit-mask-size: cover;
+          mask-size: cover;
 }
 .searchbar a.reset::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:restart-circle-outline.svg");
@@ -9150,6 +9150,9 @@ ul.contactlist a.contactgroup::before {
   display: flex;
   background-color: var(--color-gray-10);
   padding: 0 0.875rem;
+  -webkit-column-gap: 0.625rem;
+     -moz-column-gap: 0.625rem;
+          column-gap: 0.625rem;
 }
 .searchbar form {
   height: 100%;
@@ -9169,4 +9172,17 @@ ul.contactlist a.contactgroup::before {
   height: 1.25rem;
   margin: 0;
   margin-right: 0.625rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.searchbar a {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 1.25rem;
+}
+.searchbar a::before {
+  width: 100%;
+  background-color: var(--color-gray-90);
 }
