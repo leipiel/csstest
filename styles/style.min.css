@@ -8083,6 +8083,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
   width: 1.0313rem;
   height: 1.0313rem;
   border-radius: 50%;
+  border: none;
+  position: absolute;
   left: 0.0769rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
