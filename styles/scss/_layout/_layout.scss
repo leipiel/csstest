@@ -131,11 +131,17 @@
           &::before {
             background-color: var(--color-gray-90);
             margin-right: 0.5rem;
+            flex: none;
           }
 
-          &::after {
+          span {
+            flex: 1;
+          }
+
+          &[aria-haspopup]::after {
             background-color: var(--color-gray-40);
             margin-left: 0.5rem;
+            flex: none;
           }
 
           &:not(.disabled):hover {

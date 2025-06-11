@@ -357,7 +357,7 @@
           mask-size: contain;
         }
 
-        &::after {
+        &[aria-haspopup]::after {
           content: '';
           width: 1.125rem;
           height: 1.125rem;

@@ -8396,7 +8396,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-size: contain;
           mask-size: contain;
 }
-.popupmenu .menu.listing li a::after {
+.popupmenu .menu.listing li a[aria-haspopup]::after {
   content: "";
   width: 1.125rem;
   height: 1.125rem;
@@ -8775,10 +8775,21 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .popover .popupmenu .menu.listing li a::before {
   background-color: var(--color-gray-90);
   margin-right: 0.5rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
-.popover .popupmenu .menu.listing li a::after {
+.popover .popupmenu .menu.listing li a span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.popover .popupmenu .menu.listing li a[aria-haspopup]::after {
   background-color: var(--color-gray-40);
   margin-left: 0.5rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 .popover .popupmenu .menu.listing li a:not(.disabled):hover {
   background-color: rgba(203, 213, 225, 0.5490196078);
