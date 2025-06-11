@@ -598,7 +598,7 @@ ul.contactlist {
     &::before {
       content: '';
       mask-repeat: no-repeat;
-      mask-position: center left;
+      mask-position: center;
       mask-size: contain;
       mask-image: url('https://api.iconify.design/solar:minimalistic-magnifer-outline.svg');
     }
@@ -608,8 +608,8 @@ ul.contactlist {
     &::before {
       content: '';
       mask-repeat: no-repeat;
-      mask-position: center left;
-      mask-size: cover;
+      mask-position: center;
+      mask-size: contain;
     }
 
     &.reset::before {

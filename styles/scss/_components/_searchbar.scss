@@ -27,7 +27,8 @@
     width: 1.25rem;
 
     &::before {
-      width: 100%;
+      width: 1.25rem;
+      height: 1.25rem;
       background-color: var(--color-gray-90);
     }
   }
