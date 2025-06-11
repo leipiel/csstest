@@ -326,6 +326,16 @@ ul.contactlist {
           //맞춤법
           mask-image: url('https://api.iconify.design/solar:sort-by-alphabet-outline.svg');
         }
+
+        &.purge::before {
+          //비우기
+          mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-2-outline.svg');
+        }
+
+        &.actions::before {
+          //액션
+          mask-image: url('https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg');
+        }
       }
     }
 

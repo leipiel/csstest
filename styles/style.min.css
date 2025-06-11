@@ -8340,6 +8340,14 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:sort-by-alphabet-outline.svg");
           mask-image: url("https://api.iconify.design/solar:sort-by-alphabet-outline.svg");
 }
+.header .menu.toolbar li a.purge::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-2-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-2-outline.svg");
+}
+.header .menu.toolbar li a.actions::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg");
+}
 .header .menu.toolbar .dropbutton .dropdown {
   width: 0.75rem;
   height: 100%;
