@@ -603,6 +603,27 @@ ul.contactlist {
       mask-image: url('https://api.iconify.design/solar:minimalistic-magnifer-outline.svg');
     }
   }
+
+  a {
+    &::before {
+      content: '';
+      mask-repeat: no-repeat;
+      mask-position: center left;
+      mask-size: contain;
+    }
+
+    &.reset::before {
+      mask-image: url('https://api.iconify.design/solar:restart-circle-outline.svg');
+    }
+
+    &.unread::before {
+      mask-image: url('https://api.iconify.design/solar:letter-outline.svg');
+    }
+
+    &.options::before {
+      mask-image: url('https://api.iconify.design/solar:alt-arrow-down-outline.svg');
+    }
+  }
 }
 // mask-repeat: no-repeat;
 // mask-position: center left;

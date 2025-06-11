@@ -8614,6 +8614,27 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
           mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
 }
+.searchbar a::before {
+  content: "";
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.searchbar a.reset::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:restart-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:restart-circle-outline.svg");
+}
+.searchbar a.unread::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+}
+.searchbar a.options::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+}
 
 .task-login #layout {
   -webkit-box-align: center;
@@ -9132,10 +9153,20 @@ ul.contactlist a.contactgroup::before {
 }
 .searchbar form {
   height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .searchbar form::before {
   background-color: var(--color-gray-90);
   width: 1.25rem;
   height: 1.25rem;
   margin: 0;
+  margin-right: 0.625rem;
 }
