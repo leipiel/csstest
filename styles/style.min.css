@@ -8043,6 +8043,24 @@ html.dark-mode .pgpkeyimport li.uid::before {
   padding: 1rem 0.75rem;
 }
 
+.custom-switch {
+  position: relative;
+}
+.custom-switch .custom-control-input {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+  top: 0;
+  left: 0;
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+  border-color: var(--color-primary-50);
+  background-color: var(--color-primary-50);
+}
+.custom-switch .custom-control-label {
+  padding-left: 2.375rem;
+}
+
 .icon.user::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
@@ -9188,8 +9206,11 @@ ul.contactlist a.contactgroup::before {
           flex: none;
   width: 1.25rem;
 }
-.searchbar a:hover {
+.searchbar a:focus, .searchbar a:hover {
   background-color: transparent;
+}
+.searchbar a:focus::before, .searchbar a:hover::before {
+  background-color: var(--color-gray-60);
 }
 .searchbar a::before {
   width: 1.25rem;

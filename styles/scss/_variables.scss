@@ -20,6 +20,7 @@
   --color-yellow: #fffc51;
 }
 
+//버튼
 .btn-primary {
   background-color: var(--color-primary-50);
   border-color: var(--color-primary-50);
@@ -33,4 +34,28 @@
 .btn-lg {
   border-radius: 0.5rem;
   padding: 1rem 0.75rem;
+}
+
+//스위치
+.custom-switch {
+  position: relative;
+
+  .custom-control-input {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    top: 0;
+    left: 0;
+
+    &:checked ~ .custom-control-label {
+      &::before {
+        border-color: var(--color-primary-50);
+        background-color: var(--color-primary-50);
+      }
+    }
+  }
+
+  .custom-control-label {
+    padding-left: 2.375rem;
+  }
 }

@@ -33,8 +33,13 @@
     flex: none;
     width: 1.25rem;
 
+    &:focus,
     &:hover {
       background-color: transparent;
+
+      &::before {
+        background-color: var(--color-gray-60);
+      }
     }
 
     &::before {
