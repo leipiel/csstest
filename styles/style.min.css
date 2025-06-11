@@ -8878,12 +8878,11 @@ ul.contactlist a.contactgroup::before {
       -ms-flex: none;
           flex: none;
 }
-.popover .popupmenu .menu li a:not(.disabled):hover,
+.popover .popupmenu .menu li a:focus, .popover .popupmenu .menu li a:not(.disabled):hover,
+.popover .popupmenu .listing li a:focus,
 .popover .popupmenu .listing li a:not(.disabled):hover {
+  border-left: 0;
   background-color: rgba(203, 213, 225, 0.5490196078);
-}
-.popover .popupmenu .menu li a:not(.disabled):hover span,
-.popover .popupmenu .listing li a:not(.disabled):hover span {
   color: var(--color-gray-90);
 }
 

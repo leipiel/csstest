@@ -145,12 +145,11 @@
             flex: none;
           }
 
+          &:focus,
           &:not(.disabled):hover {
+            border-left: 0;
             background-color: #cbd5e18c;
-
-            span {
-              color: var(--color-gray-90);
-            }
+            color: var(--color-gray-90);
           }
         }
       }
