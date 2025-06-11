@@ -357,6 +357,17 @@
           mask-size: contain;
         }
 
+        &::after {
+          content: '';
+          width: 1.125rem;
+          height: 1.125rem;
+          display: block;
+          mask-repeat: no-repeat;
+          mask-position: center left;
+          mask-size: contain;
+          mask-image: url('https://api.iconify.design/solar:alt-arrow-right-outline.svg');
+        }
+
         &.selection::before {
           mask-image: url('https://api.iconify.design/solar:check-square-outline.svg');
         }
@@ -423,6 +434,51 @@
         &.folders::before {
           //폴더 관리
           mask-image: url('https://api.iconify.design/solar:folder-outline.svg');
+        }
+
+        &.print::before {
+          //메시지 인쇄
+          mask-image: url('https://api.iconify.design/solar:print-2-outline.svg');
+        }
+
+        &.import::before {
+          //가져오기
+          mask-image: url('https://api.iconify.design/solar:upload-outline.svg');
+        }
+
+        &.download::before {
+          //다운로드
+          mask-image: url('https://api.iconify.design/solar:download-outline.svg');
+        }
+
+        &.edit::before {
+          //새 메시지로 편집
+          mask-image: url('https://api.iconify.design/solar:pen-outline.svg');
+        }
+
+        &.source::before {
+          //소스 표시
+          mask-image: url('https://api.iconify.design/solar:code-square-outline.svg');
+        }
+
+        &.move::before {
+          //다음 위치로 이동
+          mask-image: url('https://api.iconify.design/solar:move-to-folder-outline.svg');
+        }
+
+        &.copy::before {
+          //다음 위치로 복사
+          mask-image: url('https://api.iconify.design/solar:copy-outline.svg');
+        }
+
+        &.extwin::before {
+          //새 창에서 열기
+          mask-image: url('https://api.iconify.design/solar:square-top-down-outline.svg');
+        }
+
+        &.filterlink::before {
+          //필터 생성
+          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
         }
       }
     }
