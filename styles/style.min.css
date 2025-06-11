@@ -8603,6 +8603,18 @@ ul.contactlist a.contactgroup::before {
           mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
 }
 
+.searchbar form::before {
+  content: "";
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
+}
+
 .task-login #layout {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -9116,4 +9128,14 @@ ul.contactlist a.contactgroup::before {
   display: -ms-flexbox;
   display: flex;
   background-color: var(--color-gray-10);
+  padding: 0 0.875rem;
+}
+.searchbar form {
+  height: 100%;
+}
+.searchbar form::before {
+  background-color: var(--color-gray-90);
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0;
 }

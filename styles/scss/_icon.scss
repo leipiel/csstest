@@ -592,4 +592,19 @@ ul.contactlist {
   }
 }
 
+//searchbar
+.searchbar {
+  form {
+    &::before {
+      content: '';
+      mask-repeat: no-repeat;
+      mask-position: center left;
+      mask-size: contain;
+      mask-image: url('https://api.iconify.design/solar:minimalistic-magnifer-outline.svg');
+    }
+  }
+}
+// mask-repeat: no-repeat;
+// mask-position: center left;
+// mask-size: contain;
 //mask-image: url('https://api.iconify.design/solar:-outline.svg');

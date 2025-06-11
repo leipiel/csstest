@@ -3,4 +3,16 @@
   border-bottom: 1px solid var(--color-gray-20);
   display: flex;
   background-color: var(--color-gray-10);
+  padding: 0 0.875rem;
+
+  form {
+    height: 100%;
+
+    &::before {
+      background-color: var(--color-gray-90);
+      width: 1.25rem;
+      height: 1.25rem;
+      margin: 0;
+    }
+  }
 }
