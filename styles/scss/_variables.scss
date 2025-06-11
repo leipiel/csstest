@@ -49,15 +49,11 @@
 
     &:checked ~ .custom-control-label {
       &::before {
-        border-color: var(--color-primary-50);
+        //border-color: var(--color-primary-50);
         background-color: var(--color-primary-50);
-        width: 2rem;
-        height: 1.25rem;
-        border-width: 0.0781rem;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+      }
+
+      &::after {
       }
     }
   }
@@ -68,5 +64,27 @@
     line-height: 1 !important;
     display: flex;
     align-items: center;
+
+    &::before {
+      width: 2rem;
+      height: 1.25rem;
+      border: none;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      border-radius: 3rem;
+    }
+
+    &::after {
+      width: 1.0313rem;
+      height: 1.0313rem;
+      border-radius: 50%;
+      left: 0.0769rem;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+    }
   }
 }
