@@ -8439,6 +8439,22 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:refresh-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:refresh-circle-outline.svg");
 }
+.popupmenu .menu.listing li a.expunge::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:minimize-square-2-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:minimize-square-2-outline.svg");
+}
+.popupmenu .menu.listing li a.purge::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+}
+.popupmenu .menu.listing li a.read::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:letter-opened-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:letter-opened-outline.svg");
+}
+.popupmenu .menu.listing li a.folders::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
+}
 
 .task-login #layout {
   -webkit-box-align: center;

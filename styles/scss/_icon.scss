@@ -404,6 +404,26 @@
           //재전송
           mask-image: url('https://api.iconify.design/solar:refresh-circle-outline.svg');
         }
+
+        &.expunge::before {
+          //압축
+          mask-image: url('https://api.iconify.design/solar:minimize-square-2-outline.svg');
+        }
+
+        &.purge::before {
+          //비우기
+          mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
+        }
+
+        &.read::before {
+          //모두 읽은 상태로 표시
+          mask-image: url('https://api.iconify.design/solar:letter-opened-outline.svg');
+        }
+
+        &.folders::before {
+          //폴더 관리
+          mask-image: url('https://api.iconify.design/solar:folder-outline.svg');
+        }
       }
     }
   }
