@@ -117,12 +117,6 @@
       }
     }
 
-    &.addressbook {
-      a::before {
-        mask-image: url('https://api.iconify.design/solar:user-id-outline.svg');
-      }
-    }
-
     &.preferences {
       a::before {
         mask-image: url('https://api.iconify.design/solar:tuning-2-outline.svg');
@@ -167,6 +161,7 @@
   }
 }
 
+//편지함 폴더 아이콘
 ul.folderlist {
   li {
     &.inbox {
@@ -198,6 +193,20 @@ ul.folderlist {
         mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
       }
     }
+  }
+}
+
+//주소록 목록
+#directorylist,
+ul.contactlist {
+  li.addressbook a::before,
+  a.addressbook::before {
+    mask-image: url('https://api.iconify.design/solar:user-id-outline.svg');
+  }
+
+  li.contactgroup a::before,
+  a.contactgroup::before {
+    mask-image: url('https://api.iconify.design/solar:users-group-rounded-outline.svg');
   }
 }
 
@@ -483,6 +492,51 @@ ul.folderlist {
 
         &.filterlink::before {
           //필터 생성
+          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+        }
+
+        &.create::before {
+          //그룹추가
+          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+        }
+
+        &.rename::before {
+          //그룹명 바꾸기
+          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+        }
+
+        &.delete::before {
+          //그룹 삭제
+          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+        }
+
+        &.search::before {
+          //검색 저장
+          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+        }
+
+        &.search.delete::before {
+          //검색 삭제 //일단 위 상속 체크
+          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+        }
+
+        &.export::before {
+          //선택한 항목 내보내기
+          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+        }
+
+        &.qrcode::before {
+          //QR코드
+          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+        }
+
+        &.assigngroup::before {
+          //그룹지정
+          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+        }
+
+        &.removegroup::before {
+          //그룹에서 제거
           mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
         }
       }
