@@ -302,8 +302,29 @@ ul.contactlist {
           mask-image: url('https://api.iconify.design/solar:restart-outline.svg');
         }
 
-        &.carddav_AbSync::before {
-          mask-image: url('https://api.iconify.design/solar:restart-outline.svg');
+        &.save::before {
+          //저장
+          mask-image: url('https://api.iconify.design/solar:diskette-outline.svg');
+        }
+
+        &.attach::before {
+          //첨부
+          mask-image: url('https://api.iconify.design/solar:paperclip-outline.svg');
+        }
+
+        &.signature::before {
+          //서명
+          mask-image: url('https://api.iconify.design/solar:corkscrew-outline.svg');
+        }
+
+        &.responses::before {
+          //응답
+          mask-image: url('https://api.iconify.design/solar:chat-round-line-outline.svg');
+        }
+
+        &.spellcheck::before {
+          //맞춤법
+          mask-image: url('https://api.iconify.design/solar:sort-by-alphabet-outline.svg');
         }
       }
     }
@@ -358,7 +379,7 @@ ul.contactlist {
 
 //popover
 .popupmenu {
-  .menu.listing {
+  .listing {
     li {
       a {
         &::before {
@@ -497,7 +518,7 @@ ul.contactlist {
 
         &.create::before {
           //그룹추가
-          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+          mask-image: url('https://api.iconify.design/solar:add-square-outline.svg');
         }
 
         &.rename::before {
@@ -507,7 +528,7 @@ ul.contactlist {
 
         &.delete::before {
           //그룹 삭제
-          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+          mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
         }
 
         &.search::before {
@@ -520,9 +541,9 @@ ul.contactlist {
           mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
         }
 
-        &.export::before {
+        &.export.select::before {
           //선택한 항목 내보내기
-          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+          mask-image: url('https://api.iconify.design/solar:check-square-outline.svg');
         }
 
         &.qrcode::before {

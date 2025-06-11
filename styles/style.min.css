@@ -8320,9 +8320,25 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:restart-outline.svg");
           mask-image: url("https://api.iconify.design/solar:restart-outline.svg");
 }
-.header .menu.toolbar li a.carddav_AbSync::before {
-  -webkit-mask-image: url("https://api.iconify.design/solar:restart-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:restart-outline.svg");
+.header .menu.toolbar li a.save::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:diskette-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:diskette-outline.svg");
+}
+.header .menu.toolbar li a.attach::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
+}
+.header .menu.toolbar li a.signature::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:corkscrew-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:corkscrew-outline.svg");
+}
+.header .menu.toolbar li a.responses::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:chat-round-line-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:chat-round-line-outline.svg");
+}
+.header .menu.toolbar li a.spellcheck::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:sort-by-alphabet-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:sort-by-alphabet-outline.svg");
 }
 .header .menu.toolbar .dropbutton .dropdown {
   width: 0.75rem;
@@ -8379,7 +8395,7 @@ ul.contactlist a.contactgroup::before {
           mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
 }
 
-.popupmenu .menu.listing li a::before {
+.popupmenu .listing li a::before {
   content: "" !important;
   width: 1.125rem !important;
   height: 1.125rem !important;
@@ -8391,7 +8407,7 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-size: contain;
           mask-size: contain;
 }
-.popupmenu .menu.listing li a[aria-haspopup]::after {
+.popupmenu .listing li a[aria-haspopup]::after {
   content: "";
   width: 1.125rem;
   height: 1.125rem;
@@ -8405,135 +8421,135 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-right-outline.svg");
           mask-image: url("https://api.iconify.design/solar:alt-arrow-right-outline.svg");
 }
-.popupmenu .menu.listing li a.selection::before {
+.popupmenu .listing li a.selection::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
 }
-.popupmenu .menu.listing li a.all::before {
+.popupmenu .listing li a.all::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:check-read-outline.svg");
           mask-image: url("https://api.iconify.design/solar:check-read-outline.svg");
 }
-.popupmenu .menu.listing li a.page::before {
+.popupmenu .listing li a.page::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:hamburger-menu-outline.svg");
           mask-image: url("https://api.iconify.design/solar:hamburger-menu-outline.svg");
 }
-.popupmenu .menu.listing li a.unread::before {
+.popupmenu .listing li a.unread::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
 }
-.popupmenu .menu.listing li a.flagged::before {
+.popupmenu .listing li a.flagged::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:flag-outline.svg");
           mask-image: url("https://api.iconify.design/solar:flag-outline.svg");
 }
-.popupmenu .menu.listing li a.invert::before {
+.popupmenu .listing li a.invert::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:check-square-bold.svg");
           mask-image: url("https://api.iconify.design/solar:check-square-bold.svg");
 }
-.popupmenu .menu.listing li a.none::before {
+.popupmenu .listing li a.none::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:close-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:close-square-outline.svg");
 }
-.popupmenu .menu.listing li a.list::before {
+.popupmenu .listing li a.list::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:list-check-outline.svg");
           mask-image: url("https://api.iconify.design/solar:list-check-outline.svg");
 }
-.popupmenu .menu.listing li a.inline::before {
+.popupmenu .listing li a.inline::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:document-text-outline.svg");
           mask-image: url("https://api.iconify.design/solar:document-text-outline.svg");
 }
-.popupmenu .menu.listing li a.attachment::before {
+.popupmenu .listing li a.attachment::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
           mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
 }
-.popupmenu .menu.listing li a.bounce::before {
+.popupmenu .listing li a.bounce::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:refresh-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:refresh-circle-outline.svg");
 }
-.popupmenu .menu.listing li a.expunge::before {
+.popupmenu .listing li a.expunge::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:minimize-square-2-outline.svg");
           mask-image: url("https://api.iconify.design/solar:minimize-square-2-outline.svg");
 }
-.popupmenu .menu.listing li a.purge::before {
+.popupmenu .listing li a.purge::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
           mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
 }
-.popupmenu .menu.listing li a.read::before {
+.popupmenu .listing li a.read::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-opened-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-opened-outline.svg");
 }
-.popupmenu .menu.listing li a.folders::before {
+.popupmenu .listing li a.folders::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
           mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
 }
-.popupmenu .menu.listing li a.print::before {
+.popupmenu .listing li a.print::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:printer-2-outline.svg");
           mask-image: url("https://api.iconify.design/solar:printer-2-outline.svg");
 }
-.popupmenu .menu.listing li a.import::before {
+.popupmenu .listing li a.import::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:upload-outline.svg");
           mask-image: url("https://api.iconify.design/solar:upload-outline.svg");
 }
-.popupmenu .menu.listing li a.download::before {
+.popupmenu .listing li a.download::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:download-outline.svg");
           mask-image: url("https://api.iconify.design/solar:download-outline.svg");
 }
-.popupmenu .menu.listing li a.edit::before {
+.popupmenu .listing li a.edit::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:pen-outline.svg");
           mask-image: url("https://api.iconify.design/solar:pen-outline.svg");
 }
-.popupmenu .menu.listing li a.source::before {
+.popupmenu .listing li a.source::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:code-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:code-square-outline.svg");
 }
-.popupmenu .menu.listing li a.move::before {
+.popupmenu .listing li a.move::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:move-to-folder-outline.svg");
           mask-image: url("https://api.iconify.design/solar:move-to-folder-outline.svg");
 }
-.popupmenu .menu.listing li a.copy::before {
+.popupmenu .listing li a.copy::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:copy-outline.svg");
           mask-image: url("https://api.iconify.design/solar:copy-outline.svg");
 }
-.popupmenu .menu.listing li a.extwin::before {
+.popupmenu .listing li a.extwin::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:square-top-down-outline.svg");
           mask-image: url("https://api.iconify.design/solar:square-top-down-outline.svg");
 }
-.popupmenu .menu.listing li a.filterlink::before {
+.popupmenu .listing li a.filterlink::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
 }
-.popupmenu .menu.listing li a.create::before {
+.popupmenu .listing li a.create::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
+}
+.popupmenu .listing li a.rename::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
 }
-.popupmenu .menu.listing li a.rename::before {
+.popupmenu .listing li a.delete::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+}
+.popupmenu .listing li a.search::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
 }
-.popupmenu .menu.listing li a.delete::before {
+.popupmenu .listing li a.search.delete::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
 }
-.popupmenu .menu.listing li a.search::before {
+.popupmenu .listing li a.export.select::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
+}
+.popupmenu .listing li a.qrcode::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
 }
-.popupmenu .menu.listing li a.search.delete::before {
+.popupmenu .listing li a.assigngroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
 }
-.popupmenu .menu.listing li a.export::before {
-  -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
-}
-.popupmenu .menu.listing li a.qrcode::before {
-  -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
-}
-.popupmenu .menu.listing li a.assigngroup::before {
-  -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
-}
-.popupmenu .menu.listing li a.removegroup::before {
+.popupmenu .listing li a.removegroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
 }
@@ -8785,11 +8801,11 @@ ul.contactlist a.contactgroup::before {
 .popover .popupmenu {
   min-width: 12.5rem;
 }
-.popover .popupmenu .menu.listing li {
+.popover .popupmenu .listing li {
   border-bottom-color: var(--color-gray-20);
   line-height: 1;
 }
-.popover .popupmenu .menu.listing li a {
+.popover .popupmenu .listing li a {
   color: var(--color-gray-90);
   border-left: 0;
   display: -webkit-box;
@@ -8803,26 +8819,26 @@ ul.contactlist a.contactgroup::before {
   -webkit-transition: background-color 0.17s ease-in-out;
   transition: background-color 0.17s ease-in-out;
 }
-.popover .popupmenu .menu.listing li a::before {
+.popover .popupmenu .listing li a::before {
   background-color: var(--color-gray-90);
   margin-right: 0.5rem;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
 }
-.popover .popupmenu .menu.listing li a span {
+.popover .popupmenu .listing li a span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-.popover .popupmenu .menu.listing li a[aria-haspopup]::after {
+.popover .popupmenu .listing li a[aria-haspopup]::after {
   background-color: var(--color-gray-40);
   margin-left: 0.5rem;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
 }
-.popover .popupmenu .menu.listing li a:not(.disabled):hover {
+.popover .popupmenu .listing li a:not(.disabled):hover {
   background-color: rgba(203, 213, 225, 0.5490196078);
 }
 
