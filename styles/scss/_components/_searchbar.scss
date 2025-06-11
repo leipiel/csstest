@@ -5,6 +5,7 @@
   background-color: var(--color-gray-10);
   padding: 0 0.875rem;
   column-gap: 0.625rem;
+  line-height: 1;
 
   form {
     height: 100%;
@@ -20,11 +21,21 @@
       margin-right: 0.625rem;
       flex: none;
     }
+
+    input {
+      font-size: 0.9375rem;
+      font-weight: 400;
+      color: var(--color-gray-90);
+    }
   }
 
   a {
     flex: none;
     width: 1.25rem;
+
+    &:hover {
+      background-color: transparent;
+    }
 
     &::before {
       width: 1.25rem;

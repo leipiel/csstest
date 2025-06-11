@@ -8624,8 +8624,8 @@ ul.contactlist a.contactgroup::before {
           mask-size: contain;
 }
 .searchbar a.reset::before {
-  -webkit-mask-image: url("https://api.iconify.design/solar:restart-circle-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:restart-circle-outline.svg");
+  -webkit-mask-image: url("https://api.iconify.design/solar:close-square-bold.svg");
+          mask-image: url("https://api.iconify.design/solar:close-square-bold.svg");
 }
 .searchbar a.unread::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
@@ -9153,6 +9153,7 @@ ul.contactlist a.contactgroup::before {
   -webkit-column-gap: 0.625rem;
      -moz-column-gap: 0.625rem;
           column-gap: 0.625rem;
+  line-height: 1;
 }
 .searchbar form {
   height: 100%;
@@ -9176,11 +9177,19 @@ ul.contactlist a.contactgroup::before {
       -ms-flex: none;
           flex: none;
 }
+.searchbar form input {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--color-gray-90);
+}
 .searchbar a {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
   width: 1.25rem;
+}
+.searchbar a:hover {
+  background-color: transparent;
 }
 .searchbar a::before {
   width: 1.25rem;
