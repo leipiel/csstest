@@ -524,7 +524,7 @@ ul.contactlist {
 
         &.rename::before {
           //그룹명 바꾸기
-          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+          mask-image: url('https://api.iconify.design/solar:pen-2-outline.svg');
         }
 
         &.delete::before {
@@ -534,12 +534,12 @@ ul.contactlist {
 
         &.search::before {
           //검색 저장
-          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+          mask-image: url('https://api.iconify.design/solar:diskette-outline.svg');
         }
 
         &.search.delete::before {
           //검색 삭제 //일단 위 상속 체크
-          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+          mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
         }
 
         &.export.select::before {
@@ -549,27 +549,28 @@ ul.contactlist {
 
         &.qrcode::before {
           //QR코드
-          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+          mask-image: url('https://api.iconify.design/solar:qr-code-outline.svg');
         }
 
         &.assigngroup::before {
           //그룹지정
-          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+          mask-image: url('https://api.iconify.design/solar:folder-2-outline.svg');
         }
 
         &.removegroup::before {
           //그룹에서 제거
-          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+          mask-image: url('https://api.iconify.design/solar:folder-error-outline.svg');
         }
       }
     }
   }
 
+  //셀렉션 목록
   .selectable {
     li {
       a {
         &::before {
-          content: none;
+          background-color: transparent;
         }
 
         &.selected {
