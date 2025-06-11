@@ -57,8 +57,8 @@
   }
 }
 
-//메일박스, 디렉토리
 #layout-sidebar {
+  //사이드바 모어
   .header {
     .icon {
       &.sidebar-menu {
@@ -80,105 +80,7 @@
       }
     }
   }
-
-  #mailboxlist,
-  #directorylist,
-  #settings-menu,
-  .treelist {
-    li {
-      a {
-        &::before {
-          content: '';
-          display: block;
-          flex: none;
-          width: 1.25rem;
-          height: 1.25rem;
-          mask-repeat: no-repeat;
-          mask-position: center left;
-          mask-size: contain;
-        }
-      }
-
-      &.inbox {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:inbox-unread-outline.svg');
-        }
-      }
-
-      &.drafts {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:file-outline.svg');
-        }
-      }
-
-      &.sent {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:plain-2-outline.svg');
-        }
-      }
-
-      &.junk {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:forbidden-circle-outline.svg');
-        }
-      }
-
-      &.trash {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
-        }
-      }
-
-      &.addressbook {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:user-id-outline.svg');
-        }
-      }
-
-      &.preferences {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:tuning-2-outline.svg');
-        }
-      }
-
-      &.folders {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:folder-outline.svg');
-        }
-      }
-
-      &.identities {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:user-circle-outline.svg');
-        }
-      }
-
-      &.responses {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:chat-round-line-outline.svg');
-        }
-      }
-
-      &.filter {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
-        }
-      }
-
-      &.keys {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:key-minimalistic-outline.svg');
-        }
-      }
-
-      &.cd_preferences {
-        a::before {
-          mask-image: url('https://api.iconify.design/solar:user-id-outline.svg');
-        }
-      }
-    }
-  }
-
+  //사이드바 디스크 아이콘
   .quota-widget {
     &::before {
       content: '';
@@ -192,6 +94,109 @@
       mask-image: url('https://api.iconify.design/solar:ssd-square-outline.svg');
       background-color: var(--color-gray-60);
       margin: 0;
+    }
+  }
+}
+
+//메일박스, 디렉토리
+#mailboxlist,
+#directorylist,
+#settings-menu,
+.treelist {
+  li {
+    a {
+      &::before {
+        content: '';
+        display: block;
+        flex: none;
+        width: 1.25rem;
+        height: 1.25rem;
+        mask-repeat: no-repeat;
+        mask-position: center left;
+        mask-size: contain;
+      }
+    }
+
+    &.addressbook {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:user-id-outline.svg');
+      }
+    }
+
+    &.preferences {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:tuning-2-outline.svg');
+      }
+    }
+
+    &.folders {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:folder-outline.svg');
+      }
+    }
+
+    &.identities {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:user-circle-outline.svg');
+      }
+    }
+
+    &.responses {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:chat-round-line-outline.svg');
+      }
+    }
+
+    &.filter {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+      }
+    }
+
+    &.keys {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:key-minimalistic-outline.svg');
+      }
+    }
+
+    &.cd_preferences {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:user-id-outline.svg');
+      }
+    }
+  }
+}
+
+ul.folderlist {
+  li {
+    &.inbox {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:inbox-unread-outline.svg');
+      }
+    }
+
+    &.drafts {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:file-outline.svg');
+      }
+    }
+
+    &.sent {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:plain-2-outline.svg');
+      }
+    }
+
+    &.junk {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:forbidden-circle-outline.svg');
+      }
+    }
+
+    &.trash {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
+      }
     }
   }
 }
@@ -438,7 +443,7 @@
 
         &.print::before {
           //메시지 인쇄
-          mask-image: url('https://api.iconify.design/solar:print-2-outline.svg');
+          mask-image: url('https://api.iconify.design/solar:printer-2-outline.svg');
         }
 
         &.import::before {
