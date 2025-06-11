@@ -580,10 +580,6 @@ ul.contactlist {
     .selectable.listing {
       li {
         a {
-          &::before {
-            background-color: transparent;
-          }
-
           &.selected {
             &::before {
               content: '';

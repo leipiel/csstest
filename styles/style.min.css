@@ -8596,9 +8596,6 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:folder-error-outline.svg");
           mask-image: url("https://api.iconify.design/solar:folder-error-outline.svg");
 }
-.popover .popupmenu .selectable.listing li a::before {
-  background-color: transparent;
-}
 .popover .popupmenu .selectable.listing li a.selected::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
@@ -8900,6 +8897,12 @@ ul.contactlist a.contactgroup::before {
   border-left: 0;
   background-color: rgba(203, 213, 225, 0.5490196078);
   color: var(--color-gray-90);
+}
+.popover .popupmenu .selectable.listing li a::before {
+  background-color: transparent;
+}
+.popover .popupmenu .selectable.listing li a.selected::before {
+  background-color: var(--color-gray-90);
 }
 
 #layout-menu {
