@@ -564,6 +564,23 @@ ul.contactlist {
       }
     }
   }
+
+  .selectable {
+    li {
+      a {
+        &::before {
+          content: none;
+        }
+
+        &.selected {
+          &::before {
+            content: '';
+            mask-image: url('https://api.iconify.design/solar:unread-outline.svg');
+          }
+        }
+      }
+    }
+  }
 }
 
 //mask-image: url('https://api.iconify.design/solar:-outline.svg');

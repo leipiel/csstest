@@ -8588,6 +8588,14 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
 }
+.popupmenu .selectable li a::before {
+  content: none;
+}
+.popupmenu .selectable li a.selected::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
+}
 
 .task-login #layout {
   -webkit-box-align: center;
