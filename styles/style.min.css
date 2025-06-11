@@ -8056,9 +8056,25 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
   border-color: var(--color-primary-50);
   background-color: var(--color-primary-50);
+  width: 2rem;
+  height: 1.25rem;
+  border-width: 0.0781rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .custom-switch .custom-control-label {
   padding-left: 2.375rem;
+  position: relative;
+  line-height: 1 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .icon.user::before {
