@@ -58,7 +58,18 @@
   .proplist {
     li {
       margin: 0;
-      line-height: 42px;
+      height: 2.625rem;
+
+      &.with-sublist {
+        > a.dropdown {
+          width: 1.25rem;
+          height: 1.25rem;
+
+          &::before {
+            background-color: var(--color-gray-90);
+          }
+        }
+      }
     }
   }
 }

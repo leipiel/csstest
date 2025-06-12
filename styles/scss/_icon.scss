@@ -645,6 +645,25 @@ ul.contactlist {
     }
   }
 }
+
+.searchoptions {
+  .proplist {
+    li {
+      &.with-sublist {
+        > a.dropdown {
+          &::before {
+            content: '';
+            mask-repeat: no-repeat;
+            mask-position: center;
+            mask-size: contain;
+            mask-image: url('https://api.iconify.design/solar:alt-arrow-down-outline.svg');
+          }
+        }
+      }
+    }
+  }
+}
+
 // mask-repeat: no-repeat;
 // mask-position: center left;
 // mask-size: contain;
