@@ -1,2 +1,24 @@
 #layout-list {
 }
+
+//res
+@media screen and (max-width: 1200px) {
+  #layout-list {
+    .header {
+      .menu.toolbar {
+        display: none;
+        visibility: hidden;
+
+        .header-title {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024.99px) {
+}
+
+@media screen and (max-width: 480.99px) {
+}

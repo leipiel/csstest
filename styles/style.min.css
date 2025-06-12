@@ -9365,6 +9365,15 @@ ul.contactlist a.contactgroup::before {
   background-color: var(--color-primary-50);
 }
 
+@media screen and (max-width: 1200px) {
+  #layout-list .header .menu.toolbar {
+    display: none;
+    visibility: hidden;
+  }
+  #layout-list .header .menu.toolbar .header-title {
+    margin: 0 !important;
+  }
+}
 .searchbar {
   height: 2.875rem;
   border-bottom: 1px solid var(--color-gray-20);
