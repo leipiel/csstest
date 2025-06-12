@@ -8056,6 +8056,10 @@ html.dark-mode .pgpkeyimport li.uid::before {
 .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
   background-color: var(--color-primary-50);
 }
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  -webkit-transform: translate(14px, -50%);
+          transform: translate(14px, -50%);
+}
 .custom-switch .custom-control-label {
   padding-left: 2.375rem;
   position: relative;
@@ -8079,6 +8083,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
   margin: 0;
   border-radius: 3rem;
   background-color: var(--color-gray-30);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .custom-switch .custom-control-label::after {
   width: 1rem;
@@ -8091,6 +8097,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   margin: 0;
+  background-color: var(--color-white);
 }
 
 .icon.user::before {
