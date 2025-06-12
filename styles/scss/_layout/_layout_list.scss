@@ -75,7 +75,8 @@
         }
 
         &.flags {
-          padding-right: 0.875rem;
+          flex: none;
+          padding-right: 0.75rem;
           padding-left: 0.625rem;
 
           .flag {
@@ -111,6 +112,29 @@
                 &::before {
                   background-color: var(--color-gray-70);
                 }
+              }
+            }
+          }
+
+          .attachment {
+            display: block;
+            width: 1.125rem;
+            height: 1.125rem;
+
+            .report {
+              display: block;
+              width: 100%;
+              height: 100%;
+
+              &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                mask-repeat: no-repeat;
+                mask-position: center;
+                mask-size: contain;
+                mask-image: url('https://api.iconify.design/solar:file-text-outline.svg');
               }
             }
           }
