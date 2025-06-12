@@ -9424,6 +9424,10 @@ ul.contactlist a.contactgroup::before {
   margin: 0;
   min-height: 2.625rem;
 }
+.searchoptions .proplist li .custom-control {
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+}
 .searchoptions .proplist li.with-sublist {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -9472,7 +9476,11 @@ ul.contactlist a.contactgroup::before {
       -ms-flex: none;
           flex: none;
   width: 100%;
+  margin: 0;
   background-color: var(--color-gray-10);
+}
+.searchoptions .proplist li.with-sublist > .proplist > li {
+  padding-left: 1.25rem;
 }
 .searchoptions .formbuttons {
   padding: 1rem 0.75rem;
