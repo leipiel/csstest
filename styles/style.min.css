@@ -9422,14 +9422,20 @@ ul.contactlist a.contactgroup::before {
 }
 .searchoptions .proplist li {
   margin: 0;
-  height: 2.625rem;
+  min-height: 2.625rem;
 }
 .searchoptions .proplist li.with-sublist {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+> .searchoptions .proplist li.with-sublist:first-child {
+  margin: 0;
+}
 .searchoptions .proplist li.with-sublist > a.dropdown {
+  position: static;
+  top: auto;
+  right: auto;
   width: 1.5rem;
   height: 1.5rem;
   display: -webkit-box;
@@ -9443,6 +9449,7 @@ ul.contactlist a.contactgroup::before {
           justify-content: center;
 }
 .searchoptions .proplist li.with-sublist > a.dropdown::before {
+  margin: 0;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
