@@ -9363,12 +9363,18 @@ ul.contactlist a.contactgroup::before {
   background-color: var(--color-primary-50);
 }
 
-#layout-list table.listing tr td.subject {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
+#layout-list table.listing tr {
+  border-left: 2px solid transparent;
 }
 #layout-list table.listing tr:hover {
   background-color: rgba(203, 213, 225, 0.3019607843);
+}
+#layout-list table.listing tr.selected {
+  border-left-color: var(--color-primary-50);
+}
+#layout-list table.listing tr td.subject {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 @media screen and (max-width: 1200px) {
