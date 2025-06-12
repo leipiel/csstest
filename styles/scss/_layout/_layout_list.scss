@@ -1,6 +1,8 @@
 #layout-list {
   table.listing {
     tr {
+      transition: background-color 0.15s ease-in-out;
+
       &:hover {
         background-color: #cbd5e14d;
       }
@@ -9,6 +11,26 @@
         &.subject {
           padding-top: 0.625rem;
           padding-bottom: 0.625rem;
+
+          .fromto {
+            line-height: 1.3;
+            font-size: 0.75rem;
+          }
+
+          .date {
+            line-height: 1.3;
+            font-size: 0.75rem;
+          }
+
+          .size {
+            line-height: 1.3;
+            font-size: 0.75rem;
+          }
+
+          span.subject {
+            line-height: 1.3;
+            font-size: 0.9375rem;
+          }
         }
       }
     }
