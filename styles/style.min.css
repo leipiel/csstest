@@ -8151,11 +8151,23 @@ button.btn.btn-lg::after {
   background-color: var(--color-white);
 }
 
+.input-group {
+  font-size: 0.9375rem;
+  color: var(--color-gray-90);
+}
 .input-group .input-group-prepend .input-group-text {
+  border-color: var(--color-gray-30);
+  background-color: var(--color-gray-10);
   height: 2.625rem;
 }
 .input-group select.custom-select {
   height: 2.625rem;
+  border-color: var(--color-gray-30);
+}
+.input-group select.custom-select:focus, .input-group select.custom-select:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
 }
 
 .icon.user::before {

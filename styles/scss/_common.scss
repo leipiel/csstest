@@ -117,13 +117,25 @@ button.btn {
 }
 
 .input-group {
+  font-size: 0.9375rem;
+  color: var(--color-gray-90);
+
   .input-group-prepend {
     .input-group-text {
+      border-color: var(--color-gray-30);
+      background-color: var(--color-gray-10);
       height: 2.625rem;
     }
   }
 
   select.custom-select {
     height: 2.625rem;
+    border-color: var(--color-gray-30);
+
+    &:focus,
+    &:active {
+      box-shadow: none;
+      outline: none;
+    }
   }
 }
