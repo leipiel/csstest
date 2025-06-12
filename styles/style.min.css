@@ -9446,6 +9446,7 @@ ul.contactlist a.contactgroup::before {
   display: block;
   width: 1.125rem;
   height: 1.125rem;
+  margin-bottom: 3px;
 }
 #layout-list table.messagelist tr td.flags .flag > span {
   width: 100%;
