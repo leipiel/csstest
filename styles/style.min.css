@@ -9374,6 +9374,7 @@ ul.contactlist a.contactgroup::before {
 #layout-list table.messagelist tr td.subject {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+  padding-left: 1.25rem;
 }
 #layout-list table.messagelist tr td.subject span {
   line-height: 1.3;
@@ -9413,6 +9414,7 @@ ul.contactlist a.contactgroup::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 0.125rem;
 }
 #layout-list table.messagelist tr td.subject span.subject .status::before {
   content: "";
@@ -9425,7 +9427,7 @@ ul.contactlist a.contactgroup::before {
   border-radius: 50%;
   background-color: var(--color-gray-70);
 }
-#layout-list table.messagelist tr td.subject span.subject .status.unread {
+#layout-list table.messagelist tr td.subject span.subject .status.unread::before {
   background-color: var(--color-primary-50);
 }
 #layout-list table.messagelist tr td.subject span.subject > a {
