@@ -3513,7 +3513,6 @@ a.toolbar-button {
 .listing li.selected,
 .listing tr.selected td {
   color: #2c363a;
-  background-color: rgba(203, 213, 225, 0.3019607843);
 }
 
 .listing td.selection {
@@ -3588,7 +3587,6 @@ html:not(.touch) .listing:not(.withselection) tbody tr > td.selection + td {
 html:not(.touch) .listing li > a:focus,
 html:not(.touch) .listing.focus tbody tr.focused > td:first-child,
 html:not(.touch) .listing.focus:not(.withselection) tbody tr.focused > td.selection + td {
-  border-left: 2px solid var(--color-primary-50);
   outline: 0;
 }
 
@@ -9368,6 +9366,9 @@ ul.contactlist a.contactgroup::before {
 #layout-list table.listing tr td.subject {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+#layout-list table.listing tr:hover {
+  background-color: rgba(203, 213, 225, 0.3019607843);
 }
 
 @media screen and (max-width: 1200px) {

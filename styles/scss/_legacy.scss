@@ -2832,7 +2832,6 @@ a.toolbar-button {
 .listing tr.selected td {
   color: #2c363a;
   //background-color: #ebf9ff;
-  background-color: #CBD5E14D;
 }
 .listing td.selection {
   padding: 0 0 0 0.5em;
@@ -2893,7 +2892,7 @@ html:not(.touch) .listing li > a:focus,
 html:not(.touch) .listing.focus tbody tr.focused > td:first-child,
 html:not(.touch) .listing.focus:not(.withselection) tbody tr.focused > td.selection + td {
   //border-left: 2px solid #9ddfff;
-  border-left: 2px solid var(--color-primary-50);
+  //border-left: 2px solid var(--color-primary-50);
   outline: 0;
 }
 table.listing {
