@@ -8029,18 +8029,37 @@ html.dark-mode .pgpkeyimport li.uid::before {
   --color-yellow: #fffc51;
 }
 
-.btn-primary {
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  padding: 0.25rem 0.75rem;
+  -webkit-column-gap: 0.375rem;
+     -moz-column-gap: 0.375rem;
+          column-gap: 0.375rem;
+}
+.btn.btn-primary {
   background-color: var(--color-primary-50);
   border-color: var(--color-primary-50);
 }
-.btn-primary:hover {
+.btn.btn-primary:active, .btn.btn-primary:focus, .btn.btn-primary:hover {
   background-color: var(--color-primary-60);
   border-color: var(--color-primary-60);
+  outline: none;
 }
-
-.btn-lg {
+.btn.btn-lg {
   border-radius: 0.5rem;
-  padding: 1rem 0.75rem;
+  height: 3.5rem;
+  padding: inherit;
 }
 
 .custom-switch {
