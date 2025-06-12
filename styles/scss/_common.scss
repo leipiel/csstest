@@ -24,6 +24,7 @@ button.btn {
   }
 
   &:active,
+  &:active:focus,
   &:focus,
   &:hover {
     box-shadow: none;
@@ -134,7 +135,8 @@ html.touch .custom-switch,
     border-color: var(--color-gray-30);
 
     &:focus,
-    &:active {
+    &:active,
+    &:active:focus {
       box-shadow: none;
       outline: none;
     }

@@ -8061,8 +8061,9 @@ button.btn::after {
   width: 1.125rem;
   height: 1.125rem;
 }
-a.btn:active, a.btn:focus, a.btn:hover,
+a.btn:active, a.btn:active:focus, a.btn:focus, a.btn:hover,
 button.btn:active,
+button.btn:active:focus,
 button.btn:focus,
 button.btn:hover {
   -webkit-box-shadow: none;
@@ -8171,7 +8172,7 @@ html.touch .custom-switch .custom-control-label::after,
   height: 2.625rem;
   border-color: var(--color-gray-30);
 }
-.input-group select.custom-select:focus, .input-group select.custom-select:active {
+.input-group select.custom-select:focus, .input-group select.custom-select:active, .input-group select.custom-select:active:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
@@ -9047,6 +9048,7 @@ ul.contactlist a.contactgroup::before {
           align-items: center;
   padding: 0.8125rem 0.875rem;
   line-height: 1;
+  font-size: 0.9375rem;
   -webkit-transition: background-color 0.17s ease-in-out;
   transition: background-color 0.17s ease-in-out;
 }
@@ -9085,8 +9087,29 @@ ul.contactlist a.contactgroup::before {
 .popover .popupmenu .selectable.listing li a.selected::before {
   background-color: var(--color-gray-90);
 }
+.popover.select-menu .selectable.listing li {
+  line-height: 1;
+}
+.popover.select-menu .selectable.listing li a {
+  color: var(--color-gray-90);
+  border-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8125rem 0.875rem;
+  line-height: 1;
+  font-size: 0.9375rem;
+  -webkit-transition: background-color 0.17s ease-in-out;
+  transition: background-color 0.17s ease-in-out;
+}
 .popover.select-menu .selectable.listing li a::before {
   background-color: transparent;
+}
+.popover.select-menu .selectable.listing li a.selected {
+  border-left: 0;
 }
 .popover.select-menu .selectable.listing li a.selected::before {
   background-color: var(--color-gray-90);

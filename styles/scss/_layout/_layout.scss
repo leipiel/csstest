@@ -127,6 +127,7 @@
           align-items: center;
           padding: 0.8125rem 0.875rem;
           line-height: 1;
+          font-size: 0.9375rem;
           transition: background-color 0.17s ease-in-out;
 
           &::before {
@@ -175,12 +176,25 @@
   &.select-menu {
     .selectable.listing {
       li {
+        line-height: 1;
+
         a {
+          color: var(--color-gray-90);
+          border-left: 0;
+          display: flex;
+          align-items: center;
+          padding: 0.8125rem 0.875rem;
+          line-height: 1;
+          font-size: 0.9375rem;
+          transition: background-color 0.17s ease-in-out;
+
           &::before {
             background-color: transparent;
           }
 
           &.selected {
+            border-left: 0;
+
             &::before {
               background-color: var(--color-gray-90);
             }
