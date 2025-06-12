@@ -9366,18 +9366,15 @@ ul.contactlist a.contactgroup::before {
 #layout-list table.listing tr:hover {
   background-color: rgba(203, 213, 225, 0.3019607843);
 }
-#layout-list table.listing tr.selected {
-  border-left-color: var(--color-primary-50);
-}
-#layout-list table.listing tr.selected > td:first-child {
-  border-left-color: var(--color-primary-50);
-}
-#layout-list table.listing tr td:first-child {
-  border-left: 2px solid transparent;
-}
 #layout-list table.listing tr td.subject {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+#layout-list:not(.withselection) tr td.subject {
+  border-left: 2px solid transparent;
+}
+#layout-list:not(.withselection) tr.selected td.subject {
+  border-left-color: var(--color-primary-50);
 }
 
 @media screen and (max-width: 1200px) {
