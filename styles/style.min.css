@@ -8057,8 +8057,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
   background-color: var(--color-primary-50);
 }
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  -webkit-transform: translate(14px, -50%);
-          transform: translate(14px, -50%);
+  -webkit-transform: translate(0.75rem, -50%);
+          transform: translate(0.75rem, -50%);
 }
 .custom-switch .custom-control-label {
   padding-left: 2.375rem;
@@ -9239,18 +9239,24 @@ ul.contactlist a.contactgroup::before {
   font-weight: 400;
   color: var(--color-gray-90);
 }
+.searchbar.menu a:not(.disabled),
 .searchbar a {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
   width: 1.25rem;
 }
-.searchbar a:focus, .searchbar a:hover {
+.searchbar.menu a:not(.disabled):focus, .searchbar.menu a:not(.disabled):hover,
+.searchbar a:focus,
+.searchbar a:hover {
   background-color: transparent;
 }
-.searchbar a:focus::before, .searchbar a:hover::before {
+.searchbar.menu a:not(.disabled):focus::before, .searchbar.menu a:not(.disabled):hover::before,
+.searchbar a:focus::before,
+.searchbar a:hover::before {
   background-color: var(--color-gray-60);
 }
+.searchbar.menu a:not(.disabled)::before,
 .searchbar a::before {
   width: 1.25rem;
   height: 1.25rem;
