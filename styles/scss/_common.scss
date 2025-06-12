@@ -54,6 +54,17 @@ button.btn {
     &::after {
       width: 1.5rem;
       height: 1.5rem;
+      background-color: var(--color-white);
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+    }
+  }
+
+  &.search {
+    &::before {
+      content: '';
+      mask-image: url('https://api.iconify.design/solar:minimalistic-magnifer-outline.svg');
     }
   }
 }

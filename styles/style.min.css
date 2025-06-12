@@ -8093,6 +8093,19 @@ button.btn.btn-lg::before,
 button.btn.btn-lg::after {
   width: 1.5rem;
   height: 1.5rem;
+  background-color: var(--color-white);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+a.btn.search::before,
+button.btn.search::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
 }
 
 html.touch .custom-switch,
