@@ -9418,7 +9418,7 @@ ul.contactlist a.contactgroup::before {
 }
 
 .searchoptions .formcontent {
-  padding: 0 0.5rem;
+  padding: 0 0.75rem;
 }
 .searchoptions .proplist li {
   margin: 0;
@@ -9450,4 +9450,7 @@ ul.contactlist a.contactgroup::before {
   width: 1.25rem;
   height: 1.25rem;
   background-color: var(--color-gray-90);
+}
+.searchoptions .formbuttons {
+  padding: 1rem 0.75rem;
 }

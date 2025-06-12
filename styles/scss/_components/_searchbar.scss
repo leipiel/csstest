@@ -52,7 +52,7 @@
 
 .searchoptions {
   .formcontent {
-    padding: 0 0.5rem;
+    padding: 0 0.75rem;
   }
 
   .proplist {
@@ -80,5 +80,9 @@
         }
       }
     }
+  }
+
+  .formbuttons {
+    padding: 1rem 0.75rem;
   }
 }
