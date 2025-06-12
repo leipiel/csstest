@@ -8033,6 +8033,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset;
           box-shadow: 0 0 0px 1000px white inset; /* 배경색 덮기 */
+  -webkit-text-size-adjust: none;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s; /* 배경 깜빡임 방지 */
 }
