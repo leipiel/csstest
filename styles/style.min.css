@@ -8960,11 +8960,6 @@ ul.contactlist a.contactgroup::before {
   color: var(--color-primary-60);
 }
 
-.task-mail .header .header-title {
-  display: none;
-  visibility: hidden;
-}
-
 .header .menu.toolbar {
   display: -webkit-box;
   display: -ms-flexbox;
