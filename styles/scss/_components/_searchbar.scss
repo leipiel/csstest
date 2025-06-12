@@ -61,11 +61,20 @@
       height: 2.625rem;
 
       &.with-sublist {
+        align-items: center;
+
         > a.dropdown {
-          width: 1.25rem;
-          height: 1.25rem;
+          width: 1.5rem;
+          height: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
           &::before {
+            flex: none;
+            display: block;
+            width: 1.25rem;
+            height: 1.25rem;
             background-color: var(--color-gray-90);
           }
         }
