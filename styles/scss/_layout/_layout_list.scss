@@ -54,7 +54,11 @@
                 width: 0.5rem;
                 height: 0.5rem;
                 border-radius: 50%;
-                background-color: var(--color-gray-90);
+                background-color: var(--color-gray-70);
+              }
+
+              &.unread {
+                background-color: var(--color-primary-50);
               }
             }
 
