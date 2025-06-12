@@ -583,6 +583,7 @@ ul.contactlist {
           &.selected {
             &::before {
               content: '';
+              flex: none;
               mask-image: url('https://api.iconify.design/solar:unread-outline.svg');
             }
           }
@@ -598,6 +599,10 @@ ul.contactlist {
           &.selected {
             &::before {
               content: '';
+              flex: none;
+              mask-repeat: no-repeat;
+              mask-position: center left;
+              mask-size: contain;
               mask-image: url('https://api.iconify.design/solar:unread-outline.svg');
             }
           }

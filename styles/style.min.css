@@ -8734,11 +8734,23 @@ ul.contactlist a.contactgroup::before {
 }
 .popover .popupmenu .selectable.listing li a.selected::before {
   content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   -webkit-mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
           mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
 }
 .popover.select-menu .selectable li a.selected::before {
   content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
   -webkit-mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
           mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
 }
@@ -9046,7 +9058,7 @@ ul.contactlist a.contactgroup::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.8125rem 0.875rem;
+  padding: 0.75rem 0.875rem;
   line-height: 1;
   font-size: 0.9375rem;
   -webkit-transition: background-color 0.17s ease-in-out;
@@ -9099,7 +9111,7 @@ ul.contactlist a.contactgroup::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.8125rem 0.875rem;
+  padding: 0.75rem 0.875rem;
   line-height: 1;
   font-size: 0.9375rem;
   -webkit-transition: background-color 0.17s ease-in-out;
@@ -9107,6 +9119,10 @@ ul.contactlist a.contactgroup::before {
 }
 .popover.select-menu .selectable.listing li a::before {
   background-color: transparent;
+  content: "";
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
 }
 .popover.select-menu .selectable.listing li a.selected {
   border-left: 0;
