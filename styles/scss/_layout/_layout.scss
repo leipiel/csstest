@@ -219,4 +219,12 @@
 }
 
 @media screen and (max-width: 1024.99px) {
+  #layout {
+    > div {
+      .header .header-title {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
 }

@@ -9134,6 +9134,12 @@ ul.contactlist a.contactgroup::before {
   background-color: var(--color-gray-90);
 }
 
+@media screen and (max-width: 1024.99px) {
+  #layout > div .header .header-title {
+    display: none;
+    visibility: hidden;
+  }
+}
 #layout-menu {
   background-color: var(--color-primary-50);
 }
@@ -9384,13 +9390,11 @@ ul.contactlist a.contactgroup::before {
           flex: none;
   width: 1.25rem;
 }
-.searchbar.menu a:not(.disabled):focus, .searchbar.menu a:not(.disabled):hover,
-.searchbar a:focus,
+.searchbar.menu a:not(.disabled):hover,
 .searchbar a:hover {
   background-color: transparent;
 }
-.searchbar.menu a:not(.disabled):focus::before, .searchbar.menu a:not(.disabled):hover::before,
-.searchbar a:focus::before,
+.searchbar.menu a:not(.disabled):hover::before,
 .searchbar a:hover::before {
   background-color: var(--color-gray-60);
 }
