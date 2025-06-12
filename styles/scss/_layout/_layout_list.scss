@@ -73,6 +73,46 @@
             }
           }
         }
+
+        &.flags {
+          padding-right: 0.875rem;
+          padding-left: 0.625rem;
+
+          .flag {
+            display: block;
+            width: 1.125rem;
+            height: 1.125rem;
+
+            > span {
+              width: 100%;
+              height: 100%;
+              display: block;
+
+              &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                mask-repeat: no-repeat;
+                mask-position: center;
+                mask-size: contain;
+                mask-image: url('https://api.iconify.design/solar:flag-outline.svg');
+              }
+
+              &.flagged {
+                &::before {
+                  background-color: var(--color-primary-50);
+                }
+              }
+
+              &.unflagged {
+                &::before {
+                  background-color: var(--color-gray-70);
+                }
+              }
+            }
+          }
+        }
       }
     }
 

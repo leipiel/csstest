@@ -9435,6 +9435,40 @@ ul.contactlist a.contactgroup::before {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+#layout-list table.messagelist tr td.flags {
+  padding-right: 0.875rem;
+  padding-left: 0.625rem;
+}
+#layout-list table.messagelist tr td.flags .flag {
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+#layout-list table.messagelist tr td.flags .flag > span {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#layout-list table.messagelist tr td.flags .flag > span::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:flag-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:flag-outline.svg");
+}
+#layout-list table.messagelist tr td.flags .flag > span.flagged::before {
+  background-color: var(--color-primary-50);
+}
+#layout-list table.messagelist tr td.flags .flag > span.unflagged::before {
+  background-color: var(--color-gray-70);
+}
 #layout-list table.messagelist:not(.withselection) tr td.subject {
   border-left: 2px solid transparent;
 }
