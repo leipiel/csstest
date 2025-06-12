@@ -8060,6 +8060,13 @@ button.btn::after {
   display: block;
   width: 1.125rem;
   height: 1.125rem;
+  background-color: var(--color-white);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
 }
 a.btn:active, a.btn:active:focus, a.btn:focus, a.btn:hover,
 button.btn:active,
@@ -8096,13 +8103,6 @@ button.btn.btn-lg::before,
 button.btn.btn-lg::after {
   width: 1.5rem;
   height: 1.5rem;
-  background-color: var(--color-white);
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
-  -webkit-mask-size: contain;
-          mask-size: contain;
 }
 a.btn.search::before,
 button.btn.search::before {
@@ -8960,6 +8960,11 @@ ul.contactlist a.contactgroup::before {
   color: var(--color-primary-60);
 }
 
+.task-mail .header .header-title {
+  display: none;
+  visibility: hidden;
+}
+
 .header .menu.toolbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9162,12 +9167,6 @@ ul.contactlist a.contactgroup::before {
   background-color: var(--color-gray-90);
 }
 
-@media screen and (max-width: 1024.99px) {
-  #layout > div .header .header-title {
-    display: none;
-    visibility: hidden;
-  }
-}
 #layout-menu {
   background-color: var(--color-primary-50);
 }

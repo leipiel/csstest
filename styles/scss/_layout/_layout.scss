@@ -17,6 +17,16 @@
   }
 }
 
+//메일함 헤더 타이틀 히든
+.task-mail {
+  .header {
+    .header-title {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}
+
 //상단 툴바 스타일
 .header {
   .menu.toolbar {
@@ -219,12 +229,4 @@
 }
 
 @media screen and (max-width: 1024.99px) {
-  #layout {
-    > div {
-      .header .header-title {
-        display: none;
-        visibility: hidden;
-      }
-    }
-  }
 }
