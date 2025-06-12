@@ -8151,6 +8151,13 @@ button.btn.btn-lg::after {
   background-color: var(--color-white);
 }
 
+.input-group .input-group-prepend .input-group-text {
+  height: 2.625rem;
+}
+.input-group select.custom-select {
+  height: 2.625rem;
+}
+
 .icon.user::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-outline.svg");

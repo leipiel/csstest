@@ -115,3 +115,15 @@ button.btn {
     }
   }
 }
+
+.input-group {
+  .input-group-prepend {
+    .input-group-text {
+      height: 2.625rem;
+    }
+  }
+
+  select.custom-select {
+    height: 2.625rem;
+  }
+}
