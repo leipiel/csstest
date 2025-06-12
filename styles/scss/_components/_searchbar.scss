@@ -62,13 +62,17 @@
 
       &.with-sublist {
         align-items: center;
+        flex-wrap: wrap;
 
-        > &:first-child {
+        > :first-child {
+          width: auto;
+          flex: 1;
           margin: 0;
         }
 
         > a.dropdown {
           position: static;
+          flex: none;
           top: auto;
           right: auto;
           width: 1.5rem;
@@ -85,6 +89,12 @@
             height: 1.25rem;
             background-color: var(--color-gray-90);
           }
+        }
+
+        > .proplist {
+          flex: none;
+          width: 100%;
+          background-color: var(--color-gray-10);
         }
       }
     }
