@@ -9466,7 +9466,18 @@ ul.contactlist a.contactgroup::before {
 #layout-list table.messagelist tr td.flags .flag > span.flagged::before {
   background-color: var(--color-primary-50);
 }
+#layout-list table.messagelist tr td.flags .flag > span.unflagged {
+  display: none;
+  visibility: hidden;
+}
 #layout-list table.messagelist tr td.flags .flag > span.unflagged::before {
+  background-color: var(--color-gray-70);
+}
+#layout-list table.messagelist tr:hover tr.flags .flag > span.unflagged {
+  display: block;
+  visibility: visible;
+}
+#layout-list table.messagelist tr:hover tr.flags .flag > span.unflagged::before {
   background-color: var(--color-gray-70);
 }
 #layout-list table.messagelist:not(.withselection) tr td.subject {

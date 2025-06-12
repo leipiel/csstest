@@ -106,8 +106,29 @@
               }
 
               &.unflagged {
+                display: none;
+                visibility: hidden;
                 &::before {
                   background-color: var(--color-gray-70);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &:hover {
+        tr {
+          &.flags {
+            .flag {
+              > span {
+                &.unflagged {
+                  display: block;
+                  visibility: visible;
+
+                  &::before {
+                    background-color: var(--color-gray-70);
+                  }
                 }
               }
             }
