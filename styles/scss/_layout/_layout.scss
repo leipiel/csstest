@@ -188,6 +188,11 @@
           font-size: 0.9375rem;
           transition: background-color 0.17s ease-in-out;
 
+          &:focus,
+          &:not(.disabled):hover {
+            background-color: #cbd5e18c;
+          }
+
           &::before {
             background-color: transparent;
             content: '';
