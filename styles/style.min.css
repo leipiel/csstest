@@ -9440,7 +9440,8 @@ ul.contactlist a.contactgroup::before {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 .searchoptions .proplist li.with-sublist > a.dropdown {
   position: static;
@@ -9475,8 +9476,10 @@ ul.contactlist a.contactgroup::before {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  width: 100%;
+  display: block;
   margin: 0;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
   background-color: var(--color-gray-10);
 }
 .searchoptions .proplist li.with-sublist > .proplist > li {
