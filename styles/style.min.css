@@ -8074,21 +8074,22 @@ html.dark-mode .pgpkeyimport li.uid::before {
   position: absolute;
   left: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   margin: 0;
   border-radius: 3rem;
+  background-color: var(--color-gray-30);
 }
 .custom-switch .custom-control-label::after {
-  width: 1.0313rem;
-  height: 1.0313rem;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   border: none;
   position: absolute;
-  left: 0.0769rem;
+  left: 0.125rem;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   margin: 0;
 }
 
