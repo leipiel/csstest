@@ -590,6 +590,21 @@ ul.contactlist {
       }
     }
   }
+
+  &.select-menu {
+    .selectable {
+      li {
+        a {
+          &.selected {
+            &::before {
+              content: '';
+              mask-image: url('https://api.iconify.design/solar:unread-outline.svg');
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //searchbar

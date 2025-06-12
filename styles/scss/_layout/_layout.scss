@@ -171,6 +171,24 @@
       }
     }
   }
+
+  &.select-menu {
+    .selectable.listing {
+      li {
+        a {
+          &::before {
+            background-color: transparent;
+          }
+
+          &.selected {
+            &::before {
+              background-color: var(--color-gray-90);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //responsive

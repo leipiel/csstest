@@ -8094,9 +8094,11 @@ button.btn.btn-lg::after {
   height: 1.5rem;
 }
 
+html.touch .custom-switch,
 .custom-switch {
   position: relative;
 }
+html.touch .custom-switch .custom-control-input,
 .custom-switch .custom-control-input {
   position: absolute;
   visibility: hidden;
@@ -8104,13 +8106,16 @@ button.btn.btn-lg::after {
   top: 0;
   left: 0;
 }
+html.touch .custom-switch .custom-control-input:checked ~ .custom-control-label::before,
 .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
   background-color: var(--color-primary-50);
 }
+html.touch .custom-switch .custom-control-input:checked ~ .custom-control-label::after,
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
   -webkit-transform: translate(0.75rem, -50%);
           transform: translate(0.75rem, -50%);
 }
+html.touch .custom-switch .custom-control-label,
 .custom-switch .custom-control-label {
   padding-left: 2.375rem;
   position: relative;
@@ -8122,6 +8127,7 @@ button.btn.btn-lg::after {
       -ms-flex-align: center;
           align-items: center;
 }
+html.touch .custom-switch .custom-control-label::before,
 .custom-switch .custom-control-label::before {
   width: 2rem;
   height: 1.25rem;
@@ -8137,6 +8143,7 @@ button.btn.btn-lg::after {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
+html.touch .custom-switch .custom-control-label::after,
 .custom-switch .custom-control-label::after {
   width: 1rem;
   height: 1rem;
@@ -8729,6 +8736,11 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
           mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
 }
+.popover.select-menu .selectable li a.selected::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
+}
 
 .searchbar form::before {
   content: "";
@@ -9071,6 +9083,12 @@ ul.contactlist a.contactgroup::before {
   background-color: transparent;
 }
 .popover .popupmenu .selectable.listing li a.selected::before {
+  background-color: var(--color-gray-90);
+}
+.popover.select-menu .selectable.listing li a::before {
+  background-color: transparent;
+}
+.popover.select-menu .selectable.listing li a.selected::before {
   background-color: var(--color-gray-90);
 }
 
