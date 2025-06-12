@@ -1,11 +1,3 @@
-input:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px white inset; /* 배경색 덮기 */
-  //-webkit-text-fill-color: #000; /* 텍스트 색상 */
-  -webkit-text-size-adjust: none;
-  transition: background-color 5000s ease-in-out 0s; /* 배경 깜빡임 방지 */
-  font-size: inherit !important;
-}
-
 //버튼
 a.btn,
 button.btn {

@@ -8030,15 +8030,6 @@ html.dark-mode .pgpkeyimport li.uid::before {
   --color-yellow: #fffc51;
 }
 
-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
-          box-shadow: 0 0 0px 1000px white inset; /* 배경색 덮기 */
-  -webkit-text-size-adjust: none;
-  -webkit-transition: background-color 5000s ease-in-out 0s;
-  transition: background-color 5000s ease-in-out 0s; /* 배경 깜빡임 방지 */
-  font-size: inherit !important;
-}
-
 a.btn,
 button.btn {
   display: -webkit-box;
@@ -8822,6 +8813,14 @@ ul.contactlist a.contactgroup::before {
   -webkit-box-shadow: none;
           box-shadow: none;
   font-size: 1rem;
+}
+.task-login #login-form .input-group .form-control:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+          box-shadow: 0 0 0px 1000px white inset; /* 배경색 덮기 */
+  -webkit-text-size-adjust: none;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s; /* 배경 깜빡임 방지 */
+  font-size: 1rem !important;
 }
 
 .input-group .input-group-prepend {
