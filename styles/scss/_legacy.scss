@@ -1121,10 +1121,10 @@ button.btn.extwin:before {
 }
 a.btn:before,
 button.btn:before {
-  display: inline !important;
-  float: none !important;
+  display: inline;
+  float: none ;
   vertical-align: middle;
-  margin-right: 0.4rem !important;
+  margin-right: 0.4rem ;
 }
 a.btn.oauth.google:before,
 a.btn.oauth.outlook:before,

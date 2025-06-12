@@ -1352,10 +1352,10 @@ button.btn.extwin:before {
 
 a.btn:before,
 button.btn:before {
-  display: inline !important;
-  float: none !important;
+  display: inline;
+  float: none;
   vertical-align: middle;
-  margin-right: 0.4rem !important;
+  margin-right: 0.4rem;
 }
 
 a.btn.oauth.google:before,
@@ -8012,6 +8012,7 @@ html.dark-mode .pgpkeyimport li.uid::before {
 }
 
 :root {
+  --color-primary-20: #b1cefb;
   --color-primary-50: #256ef4;
   --color-primary-60: #1f54e7;
   --color-gray-90: #171717;
@@ -8029,7 +8030,8 @@ html.dark-mode .pgpkeyimport li.uid::before {
   --color-yellow: #fffc51;
 }
 
-.btn {
+a.btn,
+button.btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8047,19 +8049,49 @@ html.dark-mode .pgpkeyimport li.uid::before {
      -moz-column-gap: 0.375rem;
           column-gap: 0.375rem;
 }
-.btn.btn-primary {
+a.btn.disabled,
+button.btn.disabled {
+  background-color: var(--color-primary-20);
+}
+a.btn::before, a.btn::after,
+button.btn::before,
+button.btn::after {
+  margin: 0;
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+a.btn:active, a.btn:focus, a.btn:hover,
+button.btn:active,
+button.btn:focus,
+button.btn:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+a.btn.btn-primary,
+button.btn.btn-primary {
   background-color: var(--color-primary-50);
   border-color: var(--color-primary-50);
 }
-.btn.btn-primary:active, .btn.btn-primary:focus, .btn.btn-primary:hover {
+a.btn.btn-primary:not(.disabled):active, a.btn.btn-primary:not(.disabled):focus, a.btn.btn-primary:not(.disabled):hover,
+button.btn.btn-primary:not(.disabled):active,
+button.btn.btn-primary:not(.disabled):focus,
+button.btn.btn-primary:not(.disabled):hover {
   background-color: var(--color-primary-60);
   border-color: var(--color-primary-60);
-  outline: none;
 }
-.btn.btn-lg {
+a.btn.btn-lg,
+button.btn.btn-lg {
   border-radius: 0.5rem;
   height: 3.5rem;
   padding: inherit;
+}
+a.btn.btn-lg::before, a.btn.btn-lg::after,
+button.btn.btn-lg::before,
+button.btn.btn-lg::after {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .custom-switch {
