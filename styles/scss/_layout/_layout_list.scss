@@ -118,17 +118,15 @@
       }
 
       &:hover {
-        tr {
-          &.flags {
-            .flag {
-              > span {
-                &.unflagged {
-                  display: block;
-                  visibility: visible;
+        td.flags {
+          .flag {
+            > span {
+              &.unflagged {
+                display: block;
+                visibility: visible;
 
-                  &::before {
-                    background-color: var(--color-gray-70);
-                  }
+                &::before {
+                  background-color: var(--color-gray-70);
                 }
               }
             }
