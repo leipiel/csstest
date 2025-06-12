@@ -1,4 +1,14 @@
 #layout-list {
+  table.listing {
+    tr {
+      td {
+        &.subject {
+          padding-top: 0.625rem;
+          padding-bottom: 0.625rem;
+        }
+      }
+    }
+  }
 }
 
 //res

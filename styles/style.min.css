@@ -1,4 +1,23 @@
 @charset "UTF-8";
+:root {
+  --color-primary-20: #b1cefb;
+  --color-primary-50: #256ef4;
+  --color-primary-60: #1f54e7;
+  --color-gray-90: #171717;
+  --color-gray-60: #525252;
+  --color-gray-50: #737373;
+  --color-gray-40: #a3a3a3;
+  --color-gray-30: #d4d4d4;
+  --color-gray-20: #e5e5e5;
+  --color-gray-10: #f5f5f5;
+  --color-bluegray-10: #f1f5f9;
+  --color-bluegray-30: #cbd5e1;
+  --color-bluegray-50: #64748b;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-yellow: #fffc51;
+}
+
 #filtersetslist td.name:before,
 #filterslist td.name:before,
 #identities-table td.mail:before,
@@ -3494,7 +3513,7 @@ a.toolbar-button {
 .listing li.selected,
 .listing tr.selected td {
   color: #2c363a;
-  background-color: #ebf9ff;
+  background-color: rgba(203, 213, 225, 0.3019607843);
 }
 
 .listing td.selection {
@@ -3569,7 +3588,7 @@ html:not(.touch) .listing:not(.withselection) tbody tr > td.selection + td {
 html:not(.touch) .listing li > a:focus,
 html:not(.touch) .listing.focus tbody tr.focused > td:first-child,
 html:not(.touch) .listing.focus:not(.withselection) tbody tr.focused > td.selection + td {
-  border-left: 2px solid #9ddfff;
+  border-left: 2px solid var(--color-primary-50);
   outline: 0;
 }
 
@@ -8011,25 +8030,6 @@ html.dark-mode .pgpkeyimport li.uid::before {
   opacity: 1;
 }
 
-:root {
-  --color-primary-20: #b1cefb;
-  --color-primary-50: #256ef4;
-  --color-primary-60: #1f54e7;
-  --color-gray-90: #171717;
-  --color-gray-60: #525252;
-  --color-gray-50: #737373;
-  --color-gray-40: #a3a3a3;
-  --color-gray-30: #d4d4d4;
-  --color-gray-20: #e5e5e5;
-  --color-gray-10: #f5f5f5;
-  --color-bluegray-10: #f1f5f9;
-  --color-bluegray-30: #cbd5e1;
-  --color-bluegray-50: #64748b;
-  --color-white: #fff;
-  --color-black: #000;
-  --color-yellow: #fffc51;
-}
-
 a.btn,
 button.btn {
   display: -webkit-box;
@@ -9363,6 +9363,11 @@ ul.contactlist a.contactgroup::before {
   -webkit-transition: width 0.15s ease-in-out;
   transition: width 0.15s ease-in-out;
   background-color: var(--color-primary-50);
+}
+
+#layout-list table.listing tr td.subject {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 @media screen and (max-width: 1200px) {
