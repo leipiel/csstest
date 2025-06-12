@@ -37,6 +37,7 @@
             font-size: 0.9375rem;
             display: flex;
             align-items: center;
+            margin-top: 6px;
 
             .status {
               flex: none;
@@ -48,6 +49,7 @@
 
               &::before {
                 content: '';
+                flex: none;
                 display: block;
                 width: 0.5rem;
                 height: 0.5rem;
@@ -57,7 +59,9 @@
             }
 
             > a {
-              flex: 1;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
             }
           }
         }

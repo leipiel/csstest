@@ -9395,6 +9395,7 @@ ul.contactlist a.contactgroup::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 6px;
 }
 #layout-list table.messagelist tr td.subject span.subject .status {
   -webkit-box-flex: 0;
@@ -9414,6 +9415,9 @@ ul.contactlist a.contactgroup::before {
 }
 #layout-list table.messagelist tr td.subject span.subject .status::before {
   content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   display: block;
   width: 0.5rem;
   height: 0.5rem;
@@ -9421,9 +9425,9 @@ ul.contactlist a.contactgroup::before {
   background-color: var(--color-gray-90);
 }
 #layout-list table.messagelist tr td.subject span.subject > a {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #layout-list table.messagelist:not(.withselection) tr td.subject {
   border-left: 2px solid transparent;
