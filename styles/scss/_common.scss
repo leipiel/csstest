@@ -37,10 +37,12 @@ button.btn {
 
     &:not(.disabled) {
       &:active,
+      &:active:focus,
       &:focus,
       &:hover {
         background-color: var(--color-primary-60);
         border-color: var(--color-primary-60);
+        box-shadow: none;
       }
     }
   }

@@ -8075,12 +8075,15 @@ button.btn.btn-primary {
   background-color: var(--color-primary-50);
   border-color: var(--color-primary-50);
 }
-a.btn.btn-primary:not(.disabled):active, a.btn.btn-primary:not(.disabled):focus, a.btn.btn-primary:not(.disabled):hover,
+a.btn.btn-primary:not(.disabled):active, a.btn.btn-primary:not(.disabled):active:focus, a.btn.btn-primary:not(.disabled):focus, a.btn.btn-primary:not(.disabled):hover,
 button.btn.btn-primary:not(.disabled):active,
+button.btn.btn-primary:not(.disabled):active:focus,
 button.btn.btn-primary:not(.disabled):focus,
 button.btn.btn-primary:not(.disabled):hover {
   background-color: var(--color-primary-60);
   border-color: var(--color-primary-60);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 a.btn.btn-lg,
 button.btn.btn-lg {
