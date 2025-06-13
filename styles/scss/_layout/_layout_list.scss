@@ -196,6 +196,7 @@
     }
 
     &.flagged {
+      td,
       td a,
       td span {
         color: var(--color-primary-50);

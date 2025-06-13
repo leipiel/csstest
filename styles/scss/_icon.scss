@@ -365,24 +365,44 @@ ul.contactlist {
     }
   }
 
-  .toolbar-button {
-    &::before {
-      content: '' !important;
-      display: block !important;
-      flex: none !important;
-      width: 1.5rem !important;
-      height: 1.5rem !important;
-      mask-repeat: no-repeat;
-      mask-position: center left;
-      mask-size: contain;
-    }
+  //헤더 독립용
+  // .toolbar-button {
+  //   &::before {
+  //     content: '' !important;
+  //     mask-repeat: no-repeat;
+  //     mask-position: center left;
+  //     mask-size: contain;
+  //   }
 
-    &.refresh::before {
-      mask-image: url('https://api.iconify.design/solar:refresh-square-outline.svg');
-    }
+  //   &.refresh::before {
+  //     mask-image: url('https://api.iconify.design/solar:refresh-square-outline.svg');
+  //   }
 
-    &.selection::before {
-      mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
+  //   &.selection::before {
+  //     mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
+  //   }
+  // }
+
+  &#messagelist-header {
+    .button.icon {
+      &::before {
+        content: '' !important;
+        mask-repeat: no-repeat;
+        mask-position: center left;
+        mask-size: contain;
+      }
+
+      &.refresh::before {
+        mask-image: url('https://api.iconify.design/solar:refresh-square-outline.svg');
+      }
+
+      &.selection::before {
+        mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
+      }
+
+      &.folders::before {
+        mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
+      }
     }
   }
 }

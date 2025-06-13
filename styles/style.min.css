@@ -8530,14 +8530,8 @@ ul.contactlist a.contactgroup::before {
           mask-image: url("https://api.iconify.design/solar:alt-arrow-down-bold.svg");
   background-color: var(--color-gray-90);
 }
-.header .toolbar-button::before {
+.header#messagelist-header .button.icon::before {
   content: "" !important;
-  display: block !important;
-  -webkit-box-flex: 0 !important;
-      -ms-flex: none !important;
-          flex: none !important;
-  width: 1.5rem !important;
-  height: 1.5rem !important;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center left;
@@ -8545,11 +8539,15 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-size: contain;
           mask-size: contain;
 }
-.header .toolbar-button.refresh::before {
+.header#messagelist-header .button.icon.refresh::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:refresh-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:refresh-square-outline.svg");
 }
-.header .toolbar-button.selection::before {
+.header#messagelist-header .button.icon.selection::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
+}
+.header#messagelist-header .button.icon.folders::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
           mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
 }
@@ -9022,7 +9020,7 @@ ul.contactlist a.contactgroup::before {
   width: 0.75rem;
   padding: 0;
 }
-.header .toolbar-button {
+.header#messagelist-header .button.icon {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -9047,19 +9045,25 @@ ul.contactlist a.contactgroup::before {
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
 }
-.header .toolbar-button.icon:not(.disabled):hover {
+.header#messagelist-header .button.icon.icon:not(.disabled):hover {
   background-color: rgba(203, 213, 225, 0.5490196078);
 }
-.header .toolbar-button .inner {
+.header#messagelist-header .button.icon .inner {
   line-height: 1;
   margin-top: 0.3125rem;
   font-size: 0.75rem;
   font-weight: 400;
   color: var(--color-gray-90);
 }
-.header .toolbar-button::before {
+.header#messagelist-header .button.icon::before {
   margin-right: 0;
   background-color: var(--color-gray-90);
+  display: block !important;
+  -webkit-box-flex: 0 !important;
+      -ms-flex: none !important;
+          flex: none !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
 }
 
 .popover {
@@ -9263,7 +9267,7 @@ ul.contactlist a.contactgroup::before {
           justify-content: center;
   position: relative;
 }
-#layout-sidebar .header .header-title {
+#layout-sidebar .header .header-title.username {
   margin: 0 !important;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -9538,6 +9542,7 @@ ul.contactlist a.contactgroup::before {
 #layout-list table.messagelist:not(.withselection) tr.selected td.subject {
   border-left-color: var(--color-primary-50);
 }
+#layout-list table.messagelist.flagged td,
 #layout-list table.messagelist.flagged td a,
 #layout-list table.messagelist.flagged td span {
   color: var(--color-primary-50);
