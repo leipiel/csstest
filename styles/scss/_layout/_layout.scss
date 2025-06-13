@@ -255,8 +255,8 @@
       &.toolbar-list-button,
       &.back-list-button {
         display: block;
-        width: 2rem;
-        height: 2rem;
+        width: 2rem !important;
+        height: 2rem !important;
         padding: 0;
         margin: 0;
 
@@ -265,9 +265,9 @@
         }
 
         &::before {
-          mask-repeat: no-repeat;
-          mask-position: center left;
-          mask-size: contain;
+          mask-repeat: no-repeat !important;
+          mask-position: center !important;
+          mask-size: contain !important;
           background-color: var(--color-bluegray-50);
         }
       }

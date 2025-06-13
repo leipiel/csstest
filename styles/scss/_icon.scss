@@ -399,16 +399,16 @@ ul.contactlist {
       mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
     }
 
-    &.back-sidebar-button {
-      mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
+    &.back-sidebar-button::before {
+      mask-image: url('https://api.iconify.design/solar:alt-arrow-left-outline.svg');
     }
 
-    &.toolbar-menu-button {
+    &.toolbar-menu-button::before {
       mask-image: url('https://api.iconify.design/solar:menu-dots-bold.svg');
       transform: rotate(90deg);
     }
 
-    &.folders::before {
+    &.back-sidebar-button.folders::before {
       mask-image: url('https://api.iconify.design/solar:folder-outline.svg');
     }
   }

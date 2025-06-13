@@ -8540,17 +8540,17 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
           mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
 }
-.header .button.icon.back-sidebar-button {
-  -webkit-mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
+.header .button.icon.back-sidebar-button::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
 }
-.header .button.icon.toolbar-menu-button {
+.header .button.icon.toolbar-menu-button::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
           mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-.header .button.icon.folders::before {
+.header .button.icon.back-sidebar-button.folders::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
           mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
 }
@@ -9185,8 +9185,8 @@ ul.contactlist a.contactgroup::before {
 @media screen and (max-width: 1200px) {
   #layout-list .header .button.icon.task-menu-button, #layout-list .header .button.icon.back-sidebar-button, #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.toolbar-list-button, #layout-list .header .button.icon.back-list-button {
     display: block;
-    width: 2rem;
-    height: 2rem;
+    width: 2rem !important;
+    height: 2rem !important;
     padding: 0;
     margin: 0;
   }
@@ -9194,12 +9194,12 @@ ul.contactlist a.contactgroup::before {
     display: none;
   }
   #layout-list .header .button.icon.task-menu-button::before, #layout-list .header .button.icon.back-sidebar-button::before, #layout-list .header .button.icon.toolbar-menu-button::before, #layout-list .header .button.icon.toolbar-list-button::before, #layout-list .header .button.icon.back-list-button::before {
-    -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-    -webkit-mask-position: center left;
-            mask-position: center left;
-    -webkit-mask-size: contain;
-            mask-size: contain;
+    -webkit-mask-repeat: no-repeat !important;
+            mask-repeat: no-repeat !important;
+    -webkit-mask-position: center !important;
+            mask-position: center !important;
+    -webkit-mask-size: contain !important;
+            mask-size: contain !important;
     background-color: var(--color-bluegray-50);
   }
 }
