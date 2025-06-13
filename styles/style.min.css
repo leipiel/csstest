@@ -9731,6 +9731,12 @@ body {
   border-left: 0;
   padding-left: 0.875rem;
   padding-right: 0.75rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+#layout-list table.messagelist.withselection tr td.selection > input[type=checkbox] {
+  display: block;
 }
 #layout-list table.messagelist.withselection tr td.subject {
   padding-left: 0;
