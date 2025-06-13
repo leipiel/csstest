@@ -383,26 +383,24 @@ ul.contactlist {
   //   }
   // }
 
-  &#messagelist-header {
-    .button.icon {
-      &::before {
-        content: '' !important;
-        mask-repeat: no-repeat;
-        mask-position: center left;
-        mask-size: contain;
-      }
+  .button.icon {
+    &::before {
+      content: '' !important;
+      mask-repeat: no-repeat;
+      mask-position: center left;
+      mask-size: contain;
+    }
 
-      &.refresh::before {
-        mask-image: url('https://api.iconify.design/solar:refresh-square-outline.svg');
-      }
+    &.refresh::before {
+      mask-image: url('https://api.iconify.design/solar:refresh-square-outline.svg');
+    }
 
-      &.selection::before {
-        mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
-      }
+    &.selection::before {
+      mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
+    }
 
-      &.folders::before {
-        mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
-      }
+    &.folders::before {
+      mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
     }
   }
 }
