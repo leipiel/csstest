@@ -88,7 +88,7 @@
     flex: none;
     width: 4.25rem;
     height: 100%;
-    //display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -230,6 +230,10 @@
 
 //responsive
 @media screen and (max-width: 1024.99px) {
+  .header {
+    .button.icon {
+    }
+  }
 }
 
 @media screen and (max-width: 480.99px) {

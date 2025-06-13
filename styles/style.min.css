@@ -4120,13 +4120,6 @@ table.fixedcopy {
   cursor: pointer;
 }
 
-.messagelist tr.flagged td,
-.messagelist tr.flagged td.subject span.date,
-.messagelist tr.flagged td.subject span.fromto,
-.messagelist tr.flagged td.subject span.subject a {
-  color: #ff5552;
-}
-
 .messagelist tr.deleted td,
 .messagelist tr.deleted td.subject span.date,
 .messagelist tr.deleted td.subject span.fromto,
@@ -9026,6 +9019,9 @@ ul.contactlist a.contactgroup::before {
           flex: none;
   width: 4.25rem;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
