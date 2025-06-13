@@ -393,6 +393,14 @@ body {
     .button.icon {
     }
   }
+
+  #layout-content .header {
+    .button.icon {
+      &.toolbar-menu-button {
+        display: block;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480.99px) {

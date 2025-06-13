@@ -9350,6 +9350,9 @@ body {
   #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.task-menu-button {
     display: block;
   }
+  #layout-content .header .button.icon.toolbar-menu-button {
+    display: block;
+  }
 }
 #layout-menu {
   background-color: var(--color-primary-50);
