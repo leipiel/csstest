@@ -259,6 +259,13 @@
         height: 2rem;
         padding: 0;
         margin: 0;
+
+        &::before {
+          mask-repeat: no-repeat;
+          mask-position: center left;
+          mask-size: contain;
+          background-color: var(--color-bluegray-50);
+        }
       }
     }
   }

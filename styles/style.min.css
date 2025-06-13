@@ -9190,6 +9190,15 @@ ul.contactlist a.contactgroup::before {
     padding: 0;
     margin: 0;
   }
+  #layout-list .header .button.icon.task-menu-button::before, #layout-list .header .button.icon.back-sidebar-button::before, #layout-list .header .button.icon.toolbar-menu-button::before, #layout-list .header .button.icon.toolbar-list-button::before, #layout-list .header .button.icon.back-list-button::before {
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-position: center left;
+            mask-position: center left;
+    -webkit-mask-size: contain;
+            mask-size: contain;
+    background-color: var(--color-bluegray-50);
+  }
 }
 #layout-menu {
   background-color: var(--color-primary-50);
