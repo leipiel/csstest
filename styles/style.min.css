@@ -9028,6 +9028,127 @@ body {
   padding-left: 1.5rem;
 }
 
+.header .menu.toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.header .menu.toolbar li {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 100%;
+}
+.header .menu.toolbar li a {
+  width: 4.25rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+.header .menu.toolbar li a::before {
+  margin-right: 0;
+  background-color: var(--color-gray-90);
+}
+.header .menu.toolbar li a .inner {
+  line-height: 1.3;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-gray-90);
+}
+.header .menu.toolbar li a:not(.disabled):hover {
+  background-color: rgba(203, 213, 225, 0.5490196078);
+}
+.header .menu.toolbar .dropbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+.header .menu.toolbar .dropbutton:not(.disabled):hover {
+  background-color: transparent;
+}
+.header .menu.toolbar .dropbutton .dropdown {
+  width: 0.75rem;
+  padding: 0;
+}
+.header .button.icon {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 4.25rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
+  padding: 0;
+  background-color: transparent;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+.header .button.icon.icon:not(.disabled):hover {
+  background-color: rgba(203, 213, 225, 0.5490196078);
+}
+.header .button.icon .inner {
+  line-height: 1;
+  margin-top: 0.3125rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-gray-90);
+}
+.header .button.icon::before {
+  margin-right: 0;
+  background-color: var(--color-gray-90);
+  display: block !important;
+  -webkit-box-flex: 0 !important;
+      -ms-flex: none !important;
+          flex: none !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+.header .button.icon.task-menu-button, .header .button.icon.back-sidebar-button, .header .button.icon.toolbar-menu-button, .header .button.icon.toolbar-list-button, .header .button.icon.back-list-button {
+  display: none;
+}
+.header .button.icon.task-menu-button::before, .header .button.icon.back-sidebar-button::before, .header .button.icon.toolbar-menu-button::before, .header .button.icon.toolbar-list-button::before, .header .button.icon.back-list-button::before {
+  display: block !important;
+  width: 2rem;
+  height: 2rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
 @media screen and (max-width: 1200px) {
   #layout-list .header .button.icon:hover {
     background-color: transparent;
