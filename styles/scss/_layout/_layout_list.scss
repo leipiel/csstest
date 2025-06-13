@@ -209,7 +209,7 @@
           &.selection {
             border-left: 0;
             padding-left: 0.875rem;
-            padding-right: 0.75rem;
+            padding-right: 0.875rem;
             flex: none;
 
             > input[type='checkbox'] {
@@ -221,6 +221,42 @@
             padding-left: 0;
           }
         }
+      }
+    }
+  }
+
+  .pagenav {
+    border-top: 1px solid var(--color-bluegray-30);
+
+    a {
+      width: 1.125rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 1.125rem;
+        height: 1.125rem;
+        mask-repeat: no-repeat;
+        mask-position: center left;
+        mask-size: contain;
+        background-color: var(--color-gray-40);
+      }
+
+      &.firstpage {
+        mask-image: url('https://api.iconify.design/solar:double-alt-arrow-left-outline.svg');
+      }
+      &.prevpage {
+        mask-image: url('https://api.iconify.design/solar:alt-arrow-left-outline.svg');
+      }
+      &.nextpage {
+        mask-image: url('https://api.iconify.design/solar:alt-arrow-right-outline.svg');
+      }
+      &.lastpage {
+        mask-image: url('https://api.iconify.design/solar:double-alt-arrow-right-outline.svg');
       }
     }
   }
