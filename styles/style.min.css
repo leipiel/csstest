@@ -9076,8 +9076,8 @@ ul.contactlist a.contactgroup::before {
 }
 .header .button.icon.task-menu-button::before, .header .button.icon.back-sidebar-button::before, .header .button.icon.toolbar-menu-button::before, .header .button.icon.toolbar-list-button::before, .header .button.icon.back-list-button::before {
   display: block !important;
-  width: 100% !important;
-  height: 100% !important;
+  width: 2rem;
+  height: 2rem;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -9189,6 +9189,9 @@ ul.contactlist a.contactgroup::before {
     height: 2rem;
     padding: 0;
     margin: 0;
+  }
+  #layout-list .header .button.icon.task-menu-button > .innder, #layout-list .header .button.icon.back-sidebar-button > .innder, #layout-list .header .button.icon.toolbar-menu-button > .innder, #layout-list .header .button.icon.toolbar-list-button > .innder, #layout-list .header .button.icon.back-list-button > .innder {
+    display: none;
   }
   #layout-list .header .button.icon.task-menu-button::before, #layout-list .header .button.icon.back-sidebar-button::before, #layout-list .header .button.icon.toolbar-menu-button::before, #layout-list .header .button.icon.toolbar-list-button::before, #layout-list .header .button.icon.back-list-button::before {
     -webkit-mask-repeat: no-repeat;
