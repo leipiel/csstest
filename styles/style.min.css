@@ -9069,6 +9069,7 @@ ul.contactlist a.contactgroup::before {
   height: 1.5rem !important;
 }
 .header .button.icon.task-menu-button, .header .button.icon.back-sidebar-button, .header .button.icon.toolbar-menu-button, .header .button.icon.back-list-button {
+  display: none;
   width: 1.75rem;
   height: 1.75rem;
 }
