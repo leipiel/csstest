@@ -8540,9 +8540,19 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
           mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
 }
-.header .button.icon.folders::before {
+.header .button.icon.back-sidebar-button {
   -webkit-mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
           mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
+}
+.header .button.icon.toolbar-menu-button {
+  -webkit-mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
+          mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.header .button.icon.folders::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
 }
 
 .popover .popupmenu .menu li a::before,
@@ -9538,7 +9548,7 @@ ul.contactlist a.contactgroup::before {
 #layout-list table.messagelist.flagged td,
 #layout-list table.messagelist.flagged td a,
 #layout-list table.messagelist.flagged td span {
-  color: var(--color-primary-50);
+  color: var(--color-primary-50) !important;
 }
 
 @media screen and (max-width: 1200px) {

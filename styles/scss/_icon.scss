@@ -399,8 +399,17 @@ ul.contactlist {
       mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
     }
 
-    &.folders::before {
+    &.back-sidebar-button {
       mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
+    }
+
+    &.toolbar-menu-button {
+      mask-image: url('https://api.iconify.design/solar:menu-dots-bold.svg');
+      transform: rotate(90deg);
+    }
+
+    &.folders::before {
+      mask-image: url('https://api.iconify.design/solar:folder-outline.svg');
     }
   }
 }
