@@ -9136,6 +9136,9 @@ body {
   width: 1.5rem !important;
   height: 1.5rem !important;
 }
+.header .button.icon.task-menu-button, .header .button.icon.back-sidebar-button, .header .button.icon.toolbar-menu-button, .header .button.icon.toolbar-list-button, .header .button.icon.back-list-button {
+  display: none;
+}
 .header .button.icon.task-menu-button::before, .header .button.icon.back-sidebar-button::before, .header .button.icon.toolbar-menu-button::before, .header .button.icon.toolbar-list-button::before, .header .button.icon.back-list-button::before {
   width: 2rem;
   height: 2rem;
