@@ -420,6 +420,10 @@ ul.contactlist {
     &.back-sidebar-button.folders::before {
       mask-image: url('https://api.iconify.design/solar:folder-outline.svg');
     }
+
+    &.back-list-button::before {
+      mask-image: url('https://api.iconify.design/solar:alt-arrow-left-outline.svg');
+    }
   }
 }
 

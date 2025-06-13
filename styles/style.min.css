@@ -8564,6 +8564,10 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
           mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
 }
+.header .button.icon.back-list-button::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
+}
 
 .popover .popupmenu .menu li a::before,
 .popover .popupmenu .listing li a::before {
@@ -9199,6 +9203,9 @@ ul.contactlist a.contactgroup::before {
 }
 
 @media screen and (max-width: 1200px) {
+  #layout-list .header .button.icon:hover {
+    background-color: transparent;
+  }
   #layout-list .header .button.icon.task-menu-button, #layout-list .header .button.icon.back-sidebar-button, #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.toolbar-list-button, #layout-list .header .button.icon.toolbar-button, #layout-list .header .button.icon.back-list-button {
     display: block;
     width: 1.75rem !important;
@@ -9222,6 +9229,30 @@ ul.contactlist a.contactgroup::before {
   }
   #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.task-menu-button {
     display: none;
+  }
+  #layout-sidebar .header .button.icon:hover {
+    background-color: transparent;
+  }
+  #layout-sidebar .header .button.icon.back-list-button {
+    display: block;
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+    padding: 0;
+    margin: 0;
+  }
+  #layout-sidebar .header .button.icon.back-list-button > .innder {
+    display: none;
+  }
+  #layout-sidebar .header .button.icon.back-list-button::before {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+    -webkit-mask-repeat: no-repeat !important;
+            mask-repeat: no-repeat !important;
+    -webkit-mask-position: center !important;
+            mask-position: center !important;
+    -webkit-mask-size: contain !important;
+            mask-size: contain !important;
+    background-color: var(--color-bluegray-50);
   }
 }
 #layout-menu {

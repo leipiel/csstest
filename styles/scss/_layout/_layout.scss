@@ -244,6 +244,10 @@
   //메일목록
   #layout-list .header {
     .button.icon {
+      &:hover {
+        background-color: transparent;
+      }
+
       &.task-menu-button,
       &.back-sidebar-button,
       &.toolbar-menu-button,
@@ -280,6 +284,30 @@
   //편지함 폴더
   #layout-sidebar .header {
     .button.icon {
+      &:hover {
+        background-color: transparent;
+      }
+
+      &.back-list-button {
+        display: block;
+        width: 1.75rem !important;
+        height: 1.75rem !important;
+        padding: 0;
+        margin: 0;
+
+        > .innder {
+          display: none;
+        }
+
+        &::before {
+          width: 1.75rem !important;
+          height: 1.75rem !important;
+          mask-repeat: no-repeat !important;
+          mask-position: center !important;
+          mask-size: contain !important;
+          background-color: var(--color-bluegray-50);
+        }
+      }
     }
   }
 }
