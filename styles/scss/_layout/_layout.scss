@@ -276,9 +276,12 @@
         }
       }
 
-      &.task-menu-button,
       &.toolbar-menu-button {
         display: none;
+      }
+
+      &.task-menu-button {
+        visibility: hidden;
       }
     }
   }

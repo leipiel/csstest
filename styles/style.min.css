@@ -9215,8 +9215,11 @@ ul.contactlist a.contactgroup::before {
             mask-size: contain !important;
     background-color: var(--color-bluegray-50);
   }
-  #layout-list .header .button.icon.task-menu-button, #layout-list .header .button.icon.toolbar-menu-button {
+  #layout-list .header .button.icon.toolbar-menu-button {
     display: none;
+  }
+  #layout-list .header .button.icon.task-menu-button {
+    visibility: hidden;
   }
 }
 #layout-menu {
@@ -9329,19 +9332,10 @@ ul.contactlist a.contactgroup::before {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  padding-left: 3.125rem !important;
-  padding-right: 3.125rem !important;
   color: var(--color-primary-60);
-}
-#layout-sidebar .header a.button {
-  position: absolute;
-  right: 0.625rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-#layout-sidebar .header a.button:hover {
-  background-color: transparent;
+  -webkit-column-gap: 0.5rem;
+     -moz-column-gap: 0.5rem;
+          column-gap: 0.5rem;
 }
 #layout-sidebar #folderlist-content,
 #layout-sidebar .scroller {

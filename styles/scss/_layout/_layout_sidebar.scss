@@ -11,21 +11,22 @@
       text-overflow: ellipsis;
       flex: 1;
       text-align: center;
-      padding-left: calc(1.75rem + 0.625rem + 0.75rem) !important;
-      padding-right: calc(1.75rem + 0.625rem + 0.75rem) !important;
+      // padding-left: calc(1.75rem + 0.625rem + 0.75rem) !important;
+      // padding-right: calc(1.75rem + 0.625rem + 0.75rem) !important;
       color: var(--color-primary-60);
+      column-gap: 0.5rem;
     }
 
-    a.button {
-      position: absolute;
-      right: 0.625rem;
-      top: 50%;
-      transform: translateY(-50%);
+    // a.button {
+    //   position: absolute;
+    //   right: 0.625rem;
+    //   top: 50%;
+    //   transform: translateY(-50%);
 
-      &:hover {
-        background-color: transparent;
-      }
-    }
+    //   &:hover {
+    //     background-color: transparent;
+    //   }
+    //}
   }
 
   #folderlist-content,
