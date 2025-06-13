@@ -9108,16 +9108,16 @@ ul.contactlist a.contactgroup::before {
   -webkit-box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.15);
 }
-.popover .popupmenu {
+.popover .popover-body {
   min-width: 12.5rem;
 }
-.popover .popupmenu .menu li,
-.popover .popupmenu .listing li {
+.popover .popover-body .menu li,
+.popover .popover-body .listing li {
   border-bottom-color: var(--color-gray-20);
   line-height: 1;
 }
-.popover .popupmenu .menu li a,
-.popover .popupmenu .listing li a {
+.popover .popover-body .menu li a,
+.popover .popover-body .listing li a {
   color: var(--color-gray-90);
   border-left: 0;
   display: -webkit-box;
@@ -9132,39 +9132,39 @@ ul.contactlist a.contactgroup::before {
   -webkit-transition: background-color 0.17s ease-in-out;
   transition: background-color 0.17s ease-in-out;
 }
-.popover .popupmenu .menu li a::before,
-.popover .popupmenu .listing li a::before {
+.popover .popover-body .menu li a::before,
+.popover .popover-body .listing li a::before {
   background-color: var(--color-gray-90);
   margin-right: 0.5rem;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
 }
-.popover .popupmenu .menu li a span,
-.popover .popupmenu .listing li a span {
+.popover .popover-body .menu li a span,
+.popover .popover-body .listing li a span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-.popover .popupmenu .menu li a[aria-haspopup]::after,
-.popover .popupmenu .listing li a[aria-haspopup]::after {
+.popover .popover-body .menu li a[aria-haspopup]::after,
+.popover .popover-body .listing li a[aria-haspopup]::after {
   background-color: var(--color-gray-40);
   margin-left: 0.5rem;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
 }
-.popover .popupmenu .menu li a:focus, .popover .popupmenu .menu li a:not(.disabled):hover,
-.popover .popupmenu .listing li a:focus,
-.popover .popupmenu .listing li a:not(.disabled):hover {
+.popover .popover-body .menu li a:focus, .popover .popover-body .menu li a:not(.disabled):hover,
+.popover .popover-body .listing li a:focus,
+.popover .popover-body .listing li a:not(.disabled):hover {
   border-left: 0;
   background-color: rgba(203, 213, 225, 0.5490196078);
   color: var(--color-gray-90);
 }
-.popover .popupmenu .selectable.listing li a::before {
+.popover .popover-body .selectable.listing li a::before {
   background-color: transparent;
 }
-.popover .popupmenu .selectable.listing li a.selected::before {
+.popover .popover-body .selectable.listing li a.selected::before {
   background-color: var(--color-gray-90);
 }
 .popover.select-menu .selectable.listing li {
