@@ -7,6 +7,7 @@
       height: 3.75rem;
       background-color: var(--color-bluegray-10);
       border-bottom: 1px solid var(--color-bluegray-30);
+      align-items: center;
 
       .header-title {
         font-size: 1rem;
@@ -125,8 +126,8 @@
     &.toolbar-list-button,
     &.back-list-button {
       display: none;
-      width: 1.75rem;
-      height: 1.75rem;
+      padding: 0;
+      margin: 0;
 
       &::before {
         display: block !important;
@@ -256,6 +257,8 @@
       &.toolbar-list-button,
       &.back-list-button {
         display: block;
+        width: 2rem;
+        height: 2rem;
       }
     }
   }
