@@ -67,9 +67,9 @@
 
         &::before {
           content: '';
-          display: block;
-          width: 100%;
-          height: 100%;
+          display: block !important;
+          width: 100% !important;
+          height: 100% !important;
           mask-repeat: no-repeat;
           mask-position: center left;
           mask-size: contain;

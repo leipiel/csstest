@@ -8234,9 +8234,9 @@ html.touch .custom-switch .custom-control-label::after,
 }
 #layout-sidebar .header .icon.sidebar-menu::before {
   content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center left;
