@@ -9026,9 +9026,6 @@ ul.contactlist a.contactgroup::before {
           flex: none;
   width: 4.25rem;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -9058,6 +9055,7 @@ ul.contactlist a.contactgroup::before {
 .header .button.icon::before {
   margin-right: 0;
   background-color: var(--color-gray-90);
+  display: block !important;
   -webkit-box-flex: 0 !important;
       -ms-flex: none !important;
           flex: none !important;

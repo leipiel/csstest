@@ -88,7 +88,7 @@
     flex: none;
     width: 4.25rem;
     height: 100%;
-    display: flex;
+    //display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -112,7 +112,7 @@
     &::before {
       margin-right: 0;
       background-color: var(--color-gray-90);
-      //display: block !important;
+      display: block !important;
       flex: none !important;
       width: 1.5rem !important;
       height: 1.5rem !important;
