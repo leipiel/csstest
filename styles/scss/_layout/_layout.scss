@@ -126,8 +126,6 @@
     &.toolbar-list-button,
     &.back-list-button {
       display: none;
-      padding: 0;
-      margin: 0;
 
       &::before {
         display: block !important;
@@ -249,7 +247,7 @@
 
 //responsive
 @media screen and (max-width: 1200px) {
-  .header {
+  #layout-list .header {
     .button.icon {
       &.task-menu-button,
       &.back-sidebar-button,
@@ -259,6 +257,8 @@
         display: block;
         width: 2rem;
         height: 2rem;
+        padding: 0;
+        margin: 0;
       }
     }
   }

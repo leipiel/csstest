@@ -9073,8 +9073,6 @@ ul.contactlist a.contactgroup::before {
 }
 .header .button.icon.task-menu-button, .header .button.icon.back-sidebar-button, .header .button.icon.toolbar-menu-button, .header .button.icon.toolbar-list-button, .header .button.icon.back-list-button {
   display: none;
-  padding: 0;
-  margin: 0;
 }
 .header .button.icon.task-menu-button::before, .header .button.icon.back-sidebar-button::before, .header .button.icon.toolbar-menu-button::before, .header .button.icon.toolbar-list-button::before, .header .button.icon.back-list-button::before {
   display: block !important;
@@ -9185,10 +9183,12 @@ ul.contactlist a.contactgroup::before {
 }
 
 @media screen and (max-width: 1200px) {
-  .header .button.icon.task-menu-button, .header .button.icon.back-sidebar-button, .header .button.icon.toolbar-menu-button, .header .button.icon.toolbar-list-button, .header .button.icon.back-list-button {
+  #layout-list .header .button.icon.task-menu-button, #layout-list .header .button.icon.back-sidebar-button, #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.toolbar-list-button, #layout-list .header .button.icon.back-list-button {
     display: block;
     width: 2rem;
     height: 2rem;
+    padding: 0;
+    margin: 0;
   }
 }
 #layout-menu {
