@@ -9117,6 +9117,25 @@ body {
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
 }
+.header .button.icon.icon:not(.disabled):hover {
+  background-color: rgba(203, 213, 225, 0.5490196078);
+}
+.header .button.icon .inner {
+  line-height: 1;
+  margin-top: 0.3125rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-gray-90);
+}
+.header .button.icon::before {
+  margin-right: 0;
+  background-color: var(--color-gray-90);
+  -webkit-box-flex: 0 !important;
+      -ms-flex: none !important;
+          flex: none !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
 
 .popover {
   border-color: var(--color-bluegray-30);
