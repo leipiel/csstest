@@ -247,6 +247,16 @@
 }
 
 //responsive
+@media screen and (max-width: 1200px) {
+  &.task-menu-button,
+  &.back-sidebar-button,
+  &.toolbar-menu-button,
+  &.toolbar-list-button,
+  &.back-list-button {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 1024.99px) {
   .header {
     .button.icon {
