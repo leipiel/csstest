@@ -8956,7 +8956,7 @@ ul.contactlist a.contactgroup::before {
 #layout > div > .header .header-title {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--color-primary-60);
+  color: var(--color-gray-90);
 }
 
 .header .menu.toolbar {
@@ -9273,6 +9273,7 @@ ul.contactlist a.contactgroup::before {
   text-align: center;
   padding-left: 3.125rem !important;
   padding-right: 3.125rem !important;
+  color: var(--color-primary-60);
 }
 #layout-sidebar .header a.button {
   position: absolute;
@@ -9536,6 +9537,10 @@ ul.contactlist a.contactgroup::before {
 }
 #layout-list table.messagelist:not(.withselection) tr.selected td.subject {
   border-left-color: var(--color-primary-50);
+}
+#layout-list table.messagelist.flagged td a,
+#layout-list table.messagelist.flagged td span {
+  color: var(--color-primary-50);
 }
 
 @media screen and (max-width: 1200px) {
