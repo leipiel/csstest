@@ -119,12 +119,21 @@
     }
 
     //데탑 숨김 버튼
-    // &.task-menu-button,
-    // &.back-sidebar-button,
-    // &.toolbar-menu-button,
-    // &.back-list-button {
-    //   display: none;
-    // }
+    &.task-menu-button,
+    &.back-sidebar-button,
+    &.toolbar-menu-button,
+    &.back-list-button {
+      //display: none;
+      width: 1.75rem;
+      height: 1.75rem;
+
+      &::before {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        flex: none;
+      }
+    }
   }
 }
 

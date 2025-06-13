@@ -9068,6 +9068,18 @@ ul.contactlist a.contactgroup::before {
   width: 1.5rem !important;
   height: 1.5rem !important;
 }
+.header .button.icon.task-menu-button, .header .button.icon.back-sidebar-button, .header .button.icon.toolbar-menu-button, .header .button.icon.back-list-button {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.header .button.icon.task-menu-button::before, .header .button.icon.back-sidebar-button::before, .header .button.icon.toolbar-menu-button::before, .header .button.icon.back-list-button::before {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
 
 .popover {
   border-color: var(--color-bluegray-30);
