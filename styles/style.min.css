@@ -9020,6 +9020,10 @@ ul.contactlist a.contactgroup::before {
   color: var(--color-gray-90);
 }
 
+#layout-sidebar .header .header-title {
+  padding-left: 1.5rem;
+}
+
 .header .menu.toolbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9311,6 +9315,9 @@ ul.contactlist a.contactgroup::before {
   }
   #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.task-menu-button {
     display: none;
+  }
+  #layout-sidebar .header .header-title {
+    padding-left: 0;
   }
   #layout-sidebar .header .button.icon:hover {
     background-color: transparent;

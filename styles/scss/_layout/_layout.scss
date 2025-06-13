@@ -21,6 +21,14 @@
   }
 }
 
+#layout-sidebar {
+  .header {
+    .header-title {
+      padding-left: 1.5rem;
+    }
+  }
+}
+
 //상단 툴바 스타일
 .header {
   .menu.toolbar {
@@ -325,6 +333,10 @@
 
   //편지함 폴더
   #layout-sidebar .header {
+    .header-title {
+      padding-left: 0;
+    }
+
     .button.icon {
       &:hover {
         background-color: transparent;
