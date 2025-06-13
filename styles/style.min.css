@@ -8966,6 +8966,9 @@ ul.contactlist a.contactgroup::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 0.5rem;
+     -moz-column-gap: 0.5rem;
+          column-gap: 0.5rem;
 }
 #layout > div > .header .header-title {
   font-size: 1rem;
@@ -9215,11 +9218,11 @@ ul.contactlist a.contactgroup::before {
             mask-size: contain !important;
     background-color: var(--color-bluegray-50);
   }
-  #layout-list .header .button.icon.toolbar-menu-button {
+  #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.task-menu-button {
     display: none;
   }
-  #layout-list .header .button.icon.task-menu-button {
-    visibility: hidden;
+  #layout-list .header .header-title {
+    padding-left: 1.75rem;
   }
 }
 #layout-menu {
@@ -9333,9 +9336,6 @@ ul.contactlist a.contactgroup::before {
           flex: 1;
   text-align: center;
   color: var(--color-primary-60);
-  -webkit-column-gap: 0.5rem;
-     -moz-column-gap: 0.5rem;
-          column-gap: 0.5rem;
 }
 #layout-sidebar #folderlist-content,
 #layout-sidebar .scroller {
