@@ -650,6 +650,45 @@ ul.contactlist {
       }
     }
   }
+
+  ui.popupmenu.iconized {
+    li {
+      a {
+        &::before {
+          content: '' !important;
+          width: 1.125rem !important;
+          height: 1.125rem !important;
+          display: block;
+          mask-repeat: no-repeat;
+          mask-position: center left;
+          mask-size: contain;
+        }
+
+        &[aria-haspopup]::after {
+          content: '';
+          width: 1.125rem;
+          height: 1.125rem;
+          display: block;
+          mask-repeat: no-repeat;
+          mask-position: center left;
+          mask-size: contain;
+          mask-image: url('https://api.iconify.design/solar:alt-arrow-right-outline.svg');
+        }
+
+        &.select::before {
+          mask-image: url('https://api.iconify.design/solar:cursor-outline.svg');
+        }
+
+        &.threads::before {
+          mask-image: url('https://api.iconify.design/solar:dialog-outline.svg');
+        }
+
+        &.options::before {
+          mask-image: url('https://api.iconify.design/solar:tuning-2-outline.svg');
+        }
+      }
+    }
+  }
 }
 
 //searchbar

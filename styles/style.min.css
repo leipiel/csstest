@@ -8784,6 +8784,44 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
           mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
 }
+.popover ui.popupmenu.iconized li a::before {
+  content: "" !important;
+  width: 1.125rem !important;
+  height: 1.125rem !important;
+  display: block;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.popover ui.popupmenu.iconized li a[aria-haspopup]::after {
+  content: "";
+  width: 1.125rem;
+  height: 1.125rem;
+  display: block;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-right-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-right-outline.svg");
+}
+.popover ui.popupmenu.iconized li a.select::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
+}
+.popover ui.popupmenu.iconized li a.threads::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:dialog-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:dialog-outline.svg");
+}
+.popover ui.popupmenu.iconized li a.options::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:tuning-2-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:tuning-2-outline.svg");
+}
 
 .searchbar form::before {
   content: "";
@@ -9108,16 +9146,16 @@ ul.contactlist a.contactgroup::before {
   -webkit-box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.15);
 }
-.popover .popover-body {
+.popover .popupmenu {
   min-width: 12.5rem;
 }
-.popover .popover-body .menu li,
-.popover .popover-body .listing li {
+.popover .popupmenu .menu li,
+.popover .popupmenu .listing li {
   border-bottom-color: var(--color-gray-20);
   line-height: 1;
 }
-.popover .popover-body .menu li a,
-.popover .popover-body .listing li a {
+.popover .popupmenu .menu li a,
+.popover .popupmenu .listing li a {
   color: var(--color-gray-90);
   border-left: 0;
   display: -webkit-box;
@@ -9132,39 +9170,39 @@ ul.contactlist a.contactgroup::before {
   -webkit-transition: background-color 0.17s ease-in-out;
   transition: background-color 0.17s ease-in-out;
 }
-.popover .popover-body .menu li a::before,
-.popover .popover-body .listing li a::before {
+.popover .popupmenu .menu li a::before,
+.popover .popupmenu .listing li a::before {
   background-color: var(--color-gray-90);
   margin-right: 0.5rem;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
 }
-.popover .popover-body .menu li a span,
-.popover .popover-body .listing li a span {
+.popover .popupmenu .menu li a span,
+.popover .popupmenu .listing li a span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-.popover .popover-body .menu li a[aria-haspopup]::after,
-.popover .popover-body .listing li a[aria-haspopup]::after {
+.popover .popupmenu .menu li a[aria-haspopup]::after,
+.popover .popupmenu .listing li a[aria-haspopup]::after {
   background-color: var(--color-gray-40);
   margin-left: 0.5rem;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
 }
-.popover .popover-body .menu li a:focus, .popover .popover-body .menu li a:not(.disabled):hover,
-.popover .popover-body .listing li a:focus,
-.popover .popover-body .listing li a:not(.disabled):hover {
+.popover .popupmenu .menu li a:focus, .popover .popupmenu .menu li a:not(.disabled):hover,
+.popover .popupmenu .listing li a:focus,
+.popover .popupmenu .listing li a:not(.disabled):hover {
   border-left: 0;
   background-color: rgba(203, 213, 225, 0.5490196078);
   color: var(--color-gray-90);
 }
-.popover .popover-body .selectable.listing li a::before {
+.popover .popupmenu .selectable.listing li a::before {
   background-color: transparent;
 }
-.popover .popover-body .selectable.listing li a.selected::before {
+.popover .popupmenu .selectable.listing li a.selected::before {
   background-color: var(--color-gray-90);
 }
 .popover.select-menu .selectable.listing li {
@@ -9197,9 +9235,53 @@ ul.contactlist a.contactgroup::before {
 }
 .popover.select-menu .selectable.listing li a.selected {
   border-left: 0;
+  background-color: transparent;
 }
 .popover.select-menu .selectable.listing li a.selected::before {
   background-color: var(--color-gray-90);
+}
+.popover ui.popupmenu.iconized li {
+  border-bottom-color: var(--color-gray-20);
+  line-height: 1;
+}
+.popover ui.popupmenu.iconized li a {
+  color: var(--color-gray-90);
+  border-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.75rem 0.875rem;
+  line-height: 1;
+  font-size: 0.9375rem;
+  -webkit-transition: background-color 0.17s ease-in-out;
+  transition: background-color 0.17s ease-in-out;
+}
+.popover ui.popupmenu.iconized li a::before {
+  background-color: var(--color-gray-90);
+  margin-right: 0.5rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.popover ui.popupmenu.iconized li a span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.popover ui.popupmenu.iconized li a[aria-haspopup]::after {
+  background-color: var(--color-gray-40);
+  margin-left: 0.5rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.popover ui.popupmenu.iconized li a:focus, .popover ui.popupmenu.iconized li a:not(.disabled):hover {
+  border-left: 0;
+  background-color: rgba(203, 213, 225, 0.5490196078);
+  color: var(--color-gray-90);
 }
 
 @media screen and (max-width: 1200px) {
