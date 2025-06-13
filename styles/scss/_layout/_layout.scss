@@ -30,61 +30,61 @@
 
 //상단 툴바 스타일
 .header {
-  .menu.toolbar {
-    display: flex;
-    align-items: center;
-    height: 100%;
+  // .menu.toolbar {
+  //   display: flex;
+  //   align-items: center;
+  //   height: 100%;
 
-    li {
-      flex: none;
-      height: 100%;
+  //   li {
+  //     flex: none;
+  //     height: 100%;
 
-      a {
-        //width: 100%;
-        width: 4.25rem;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        background-color: transparent;
-        transition: background-color 0.15s ease-in-out;
+  //     a {
+  //       //width: 100%;
+  //       width: 4.25rem;
+  //       height: 100%;
+  //       display: flex;
+  //       flex-direction: column;
+  //       align-items: center;
+  //       justify-content: center;
+  //       padding: 0;
+  //       background-color: transparent;
+  //       transition: background-color 0.15s ease-in-out;
 
-        &::before {
-          margin-right: 0;
-          background-color: var(--color-gray-90);
-        }
+  //       &::before {
+  //         margin-right: 0;
+  //         background-color: var(--color-gray-90);
+  //       }
 
-        .inner {
-          line-height: 1.3;
-          margin-top: 0.25rem;
-          font-size: 0.75rem;
-          font-weight: 400;
-          color: var(--color-gray-90);
-        }
+  //       .inner {
+  //         line-height: 1.3;
+  //         margin-top: 0.25rem;
+  //         font-size: 0.75rem;
+  //         font-weight: 400;
+  //         color: var(--color-gray-90);
+  //       }
 
-        &:not(.disabled):hover {
-          background-color: #cbd5e18c;
-        }
-      }
-    }
+  //       &:not(.disabled):hover {
+  //         background-color: #cbd5e18c;
+  //       }
+  //     }
+  //   }
 
-    .dropbutton {
-      display: flex;
-      height: 100%;
-      position: relative;
+  //   .dropbutton {
+  //     display: flex;
+  //     height: 100%;
+  //     position: relative;
 
-      &:not(.disabled):hover {
-        background-color: transparent;
-      }
+  //     &:not(.disabled):hover {
+  //       background-color: transparent;
+  //     }
 
-      .dropdown {
-        width: 0.75rem;
-        padding: 0;
-      }
-    }
-  }
+  //     .dropdown {
+  //       width: 0.75rem;
+  //       padding: 0;
+  //     }
+  //   }
+  // }
 
   .button.icon {
     flex: none;
