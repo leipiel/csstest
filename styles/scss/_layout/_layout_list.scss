@@ -202,6 +202,22 @@
         color: var(--color-primary-50) !important;
       }
     }
+
+    &.withselection {
+      tr {
+        td {
+          &.selection {
+            border-left: 0;
+            padding-left: 0.875rem;
+            padding-right: 0.75rem;
+          }
+
+          &.subject {
+            padding-left: 0;
+          }
+        }
+      }
+    }
   }
 }
 

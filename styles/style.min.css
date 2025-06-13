@@ -9727,6 +9727,14 @@ body {
 #layout-list table.messagelist.flagged td span {
   color: var(--color-primary-50) !important;
 }
+#layout-list table.messagelist.withselection tr td.selection {
+  border-left: 0;
+  padding-left: 0.875rem;
+  padding-right: 0.75rem;
+}
+#layout-list table.messagelist.withselection tr td.subject {
+  padding-left: 0;
+}
 
 @media screen and (max-width: 1200px) {
   #layout-list .header .menu.toolbar {
