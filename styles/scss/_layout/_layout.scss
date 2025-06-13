@@ -1,3 +1,7 @@
+body {
+  background-color: var(--color-white);
+}
+
 #layout {
   letter-spacing: -0.02em;
 
@@ -367,13 +371,28 @@
 }
 
 @media screen and (max-width: 1024.99px) {
-  .header {
-    .button.icon {
-    }
-  }
 }
 
 @media screen and (max-width: 768px) {
+  //메일목록
+  #layout-list .header {
+    .button.icon {
+      &.toolbar-list-button {
+        display: none;
+      }
+
+      &.toolbar-menu-button,
+      &.task-menu-button {
+        display: block;
+      }
+    }
+  }
+
+  //편지함 폴더
+  #layout-sidebar .header {
+    .button.icon {
+    }
+  }
 }
 
 @media screen and (max-width: 480.99px) {

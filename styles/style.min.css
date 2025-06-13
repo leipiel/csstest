@@ -8998,6 +8998,10 @@ ul.contactlist a.contactgroup::before {
     margin-top: 0.75rem;
   }
 }
+body {
+  background-color: var(--color-white);
+}
+
 #layout {
   letter-spacing: -0.02em;
 }
@@ -9342,6 +9346,14 @@ ul.contactlist a.contactgroup::before {
     -webkit-mask-size: contain !important;
             mask-size: contain !important;
     background-color: var(--color-bluegray-50);
+  }
+}
+@media screen and (max-width: 768px) {
+  #layout-list .header .button.icon.toolbar-list-button {
+    display: none;
+  }
+  #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.task-menu-button {
+    display: block;
   }
 }
 #layout-menu {
