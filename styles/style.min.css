@@ -8550,6 +8550,16 @@ ul.contactlist a.contactgroup::before {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
+.header .button.icon.toolbar-list-button::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
+          mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.header .button.icon.task-menu-button::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:hamburger-menu-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:hamburger-menu-outline.svg");
+}
 .header .button.icon.back-sidebar-button.folders::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
           mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
@@ -9183,17 +9193,19 @@ ul.contactlist a.contactgroup::before {
 }
 
 @media screen and (max-width: 1200px) {
-  #layout-list .header .button.icon.task-menu-button, #layout-list .header .button.icon.back-sidebar-button, #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.toolbar-list-button, #layout-list .header .button.icon.back-list-button {
+  #layout-list .header .button.icon.task-menu-button, #layout-list .header .button.icon.back-sidebar-button, #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.toolbar-list-button, #layout-list .header .button.icon.toolbar-button, #layout-list .header .button.icon.back-list-button {
     display: block;
     width: 2rem !important;
     height: 2rem !important;
     padding: 0;
     margin: 0;
   }
-  #layout-list .header .button.icon.task-menu-button > .innder, #layout-list .header .button.icon.back-sidebar-button > .innder, #layout-list .header .button.icon.toolbar-menu-button > .innder, #layout-list .header .button.icon.toolbar-list-button > .innder, #layout-list .header .button.icon.back-list-button > .innder {
+  #layout-list .header .button.icon.task-menu-button > .innder, #layout-list .header .button.icon.back-sidebar-button > .innder, #layout-list .header .button.icon.toolbar-menu-button > .innder, #layout-list .header .button.icon.toolbar-list-button > .innder, #layout-list .header .button.icon.toolbar-button > .innder, #layout-list .header .button.icon.back-list-button > .innder {
     display: none;
   }
-  #layout-list .header .button.icon.task-menu-button::before, #layout-list .header .button.icon.back-sidebar-button::before, #layout-list .header .button.icon.toolbar-menu-button::before, #layout-list .header .button.icon.toolbar-list-button::before, #layout-list .header .button.icon.back-list-button::before {
+  #layout-list .header .button.icon.task-menu-button::before, #layout-list .header .button.icon.back-sidebar-button::before, #layout-list .header .button.icon.toolbar-menu-button::before, #layout-list .header .button.icon.toolbar-list-button::before, #layout-list .header .button.icon.toolbar-button::before, #layout-list .header .button.icon.back-list-button::before {
+    width: 2rem !important;
+    height: 2rem !important;
     -webkit-mask-repeat: no-repeat !important;
             mask-repeat: no-repeat !important;
     -webkit-mask-position: center !important;

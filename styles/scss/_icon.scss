@@ -408,6 +408,15 @@ ul.contactlist {
       transform: rotate(90deg);
     }
 
+    &.toolbar-list-button::before {
+      mask-image: url('https://api.iconify.design/solar:menu-dots-bold.svg');
+      transform: rotate(90deg);
+    }
+
+    &.task-menu-button::before {
+      mask-image: url('https://api.iconify.design/solar:hamburger-menu-outline.svg');
+    }
+
     &.back-sidebar-button.folders::before {
       mask-image: url('https://api.iconify.design/solar:folder-outline.svg');
     }
