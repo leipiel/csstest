@@ -9446,7 +9446,8 @@ ul.contactlist a.contactgroup::before {
   display: block;
   width: 1.125rem;
   height: 1.125rem;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+  position: relative;
 }
 #layout-list table.messagelist tr td.flags .flag > span {
   width: 100%;
@@ -9481,6 +9482,7 @@ ul.contactlist a.contactgroup::before {
   display: block;
   width: 1.125rem;
   height: 1.125rem;
+  margin-bottom: 1px;
 }
 #layout-list table.messagelist tr td.flags > .attachment > .report {
   display: block;
