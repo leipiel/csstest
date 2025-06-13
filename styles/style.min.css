@@ -9088,6 +9088,108 @@ ul.contactlist a.contactgroup::before {
     width: 2.25rem;
   }
 }
+#layout-sidebar .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+#layout-sidebar .header .header-title.username {
+  margin: 0 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  color: var(--color-primary-60);
+}
+#layout-sidebar #folderlist-content,
+#layout-sidebar .scroller {
+  background-color: #e3ecff;
+}
+#layout-sidebar #mailboxlist li,
+#layout-sidebar #directorylist li,
+#layout-sidebar #settings-menu li,
+#layout-sidebar .treelist li {
+  border-bottom: none;
+  padding: 0;
+  line-height: 1;
+}
+#layout-sidebar #mailboxlist li a,
+#layout-sidebar #directorylist li a,
+#layout-sidebar #settings-menu li a,
+#layout-sidebar .treelist li a {
+  padding: 0.625rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-gray-90);
+  cursor: pointer;
+  height: 2.875rem;
+}
+#layout-sidebar #mailboxlist li a::before,
+#layout-sidebar #directorylist li a::before,
+#layout-sidebar #settings-menu li a::before,
+#layout-sidebar .treelist li a::before {
+  background-color: var(--color-gray-90);
+  margin-right: 0.625rem;
+}
+#layout-sidebar #mailboxlist li.selected > a,
+#layout-sidebar #directorylist li.selected > a,
+#layout-sidebar #settings-menu li.selected > a,
+#layout-sidebar .treelist li.selected > a {
+  background-color: rgba(203, 213, 225, 0.5490196078);
+}
+#layout-sidebar #mailboxlist li.mailbox .unreadcount,
+#layout-sidebar #directorylist li.mailbox .unreadcount,
+#layout-sidebar #settings-menu li.mailbox .unreadcount,
+#layout-sidebar .treelist li.mailbox .unreadcount {
+  margin: 0;
+  position: static;
+  top: auto;
+  right: auto;
+  margin-left: auto;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-white);
+  padding: 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--color-primary-50);
+  border-radius: 2.125rem;
+  height: 1.375rem;
+}
+
+.quota-widget .bar {
+  margin: 0 0.75rem;
+  border: 1px solid var(--color-gray-30);
+}
+.quota-widget .value {
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+  background-color: var(--color-primary-50);
+}
+
 #layout-list table.listing tr {
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
