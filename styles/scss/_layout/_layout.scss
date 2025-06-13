@@ -248,12 +248,16 @@
 
 //responsive
 @media screen and (max-width: 1200px) {
-  &.task-menu-button,
-  &.back-sidebar-button,
-  &.toolbar-menu-button,
-  &.toolbar-list-button,
-  &.back-list-button {
-    display: block;
+  .header {
+    .button.icon {
+      &.task-menu-button,
+      &.back-sidebar-button,
+      &.toolbar-menu-button,
+      &.toolbar-list-button,
+      &.back-list-button {
+        display: block;
+      }
+    }
   }
 }
 

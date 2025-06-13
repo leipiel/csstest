@@ -9181,6 +9181,11 @@ ul.contactlist a.contactgroup::before {
   background-color: var(--color-gray-90);
 }
 
+@media screen and (max-width: 1200px) {
+  .header .button.icon.task-menu-button, .header .button.icon.back-sidebar-button, .header .button.icon.toolbar-menu-button, .header .button.icon.toolbar-list-button, .header .button.icon.back-list-button {
+    display: block;
+  }
+}
 #layout-menu {
   background-color: var(--color-primary-50);
 }
