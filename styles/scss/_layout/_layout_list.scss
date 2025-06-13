@@ -246,16 +246,16 @@
         background-color: var(--color-gray-40);
       }
 
-      &.firstpage {
+      &.firstpage::before {
         mask-image: url('https://api.iconify.design/solar:double-alt-arrow-left-outline.svg');
       }
-      &.prevpage {
+      &.prevpage::before {
         mask-image: url('https://api.iconify.design/solar:alt-arrow-left-outline.svg');
       }
-      &.nextpage {
+      &.nextpage::before {
         mask-image: url('https://api.iconify.design/solar:alt-arrow-right-outline.svg');
       }
-      &.lastpage {
+      &.lastpage::before {
         mask-image: url('https://api.iconify.design/solar:double-alt-arrow-right-outline.svg');
       }
     }

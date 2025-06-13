@@ -9770,19 +9770,19 @@ body {
           mask-size: contain;
   background-color: var(--color-gray-40);
 }
-#layout-list .pagenav a.firstpage {
+#layout-list .pagenav a.firstpage::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:double-alt-arrow-left-outline.svg");
           mask-image: url("https://api.iconify.design/solar:double-alt-arrow-left-outline.svg");
 }
-#layout-list .pagenav a.prevpage {
+#layout-list .pagenav a.prevpage::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
           mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
 }
-#layout-list .pagenav a.nextpage {
+#layout-list .pagenav a.nextpage::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-right-outline.svg");
           mask-image: url("https://api.iconify.design/solar:alt-arrow-right-outline.svg");
 }
-#layout-list .pagenav a.lastpage {
+#layout-list .pagenav a.lastpage::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:double-alt-arrow-right-outline.svg");
           mask-image: url("https://api.iconify.design/solar:double-alt-arrow-right-outline.svg");
 }
