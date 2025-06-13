@@ -9791,6 +9791,9 @@ body {
   font-weight: 500;
   font-size: 0.6875rem;
 }
+#layout-list .pagenav .form-control {
+  display: none;
+}
 
 @media screen and (max-width: 1200px) {
   #layout-list .header .menu.toolbar {
