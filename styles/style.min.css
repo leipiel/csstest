@@ -9196,8 +9196,8 @@ ul.contactlist a.contactgroup::before {
 @media screen and (max-width: 1200px) {
   #layout-list .header .button.icon.task-menu-button, #layout-list .header .button.icon.back-sidebar-button, #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.toolbar-list-button, #layout-list .header .button.icon.toolbar-button, #layout-list .header .button.icon.back-list-button {
     display: block;
-    width: 2rem !important;
-    height: 2rem !important;
+    width: 1.75rem !important;
+    height: 1.75rem !important;
     padding: 0;
     margin: 0;
   }
@@ -9205,8 +9205,8 @@ ul.contactlist a.contactgroup::before {
     display: none;
   }
   #layout-list .header .button.icon.task-menu-button::before, #layout-list .header .button.icon.back-sidebar-button::before, #layout-list .header .button.icon.toolbar-menu-button::before, #layout-list .header .button.icon.toolbar-list-button::before, #layout-list .header .button.icon.toolbar-button::before, #layout-list .header .button.icon.back-list-button::before {
-    width: 2rem !important;
-    height: 2rem !important;
+    width: 1.75rem !important;
+    height: 1.75rem !important;
     -webkit-mask-repeat: no-repeat !important;
             mask-repeat: no-repeat !important;
     -webkit-mask-position: center !important;
@@ -9214,6 +9214,9 @@ ul.contactlist a.contactgroup::before {
     -webkit-mask-size: contain !important;
             mask-size: contain !important;
     background-color: var(--color-bluegray-50);
+  }
+  #layout-list .header .button.icon.task-menu-button, #layout-list .header .button.icon.toolbar-menu-button {
+    display: none;
   }
 }
 #layout-menu {
