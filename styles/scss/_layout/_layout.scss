@@ -125,21 +125,21 @@ body {
       height: 1.5rem !important;
     }
 
-    // //데탑 숨김 버튼
-    // &.task-menu-button,
-    // &.back-sidebar-button,
-    // &.toolbar-menu-button,
-    // &.toolbar-list-button,
-    // &.back-list-button {
-    //   display: none;
+    //데탑 숨김 버튼
+    &.task-menu-button,
+    &.back-sidebar-button,
+    &.toolbar-menu-button,
+    &.toolbar-list-button,
+    &.back-list-button {
+      display: none;
 
-    //   &::before {
-    //     display: block !important;
-    //     width: 2rem;
-    //     height: 2rem;
-    //     flex: none;
-    //   }
-    // }
+      &::before {
+        //display: block !important;
+        width: 2rem;
+        height: 2rem;
+        flex: none;
+      }
+    }
   }
 }
 
