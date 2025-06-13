@@ -651,8 +651,8 @@ ul.contactlist {
     }
   }
 
-  ui.menu.popupmenu.iconized {
-    li {
+  .menu.listing.iconized.popupmenu {
+    > li {
       a {
         &::before {
           content: '' !important;

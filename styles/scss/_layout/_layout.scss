@@ -247,8 +247,8 @@
     }
   }
 
-  ui.menu.popupmenu.iconized {
-    li {
+  .menu.listing.iconized.popupmenu {
+    > li {
       border-bottom-color: var(--color-gray-20);
       line-height: 1;
 

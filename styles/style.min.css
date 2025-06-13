@@ -8784,7 +8784,7 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
           mask-image: url("https://api.iconify.design/solar:unread-outline.svg");
 }
-.popover ui.menu.popupmenu.iconized li a::before {
+.popover .menu.listing.iconized.popupmenu > li a::before {
   content: "" !important;
   width: 1.125rem !important;
   height: 1.125rem !important;
@@ -8796,7 +8796,7 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-size: contain;
           mask-size: contain;
 }
-.popover ui.menu.popupmenu.iconized li a[aria-haspopup]::after {
+.popover .menu.listing.iconized.popupmenu > li a[aria-haspopup]::after {
   content: "";
   width: 1.125rem;
   height: 1.125rem;
@@ -8810,15 +8810,15 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-right-outline.svg");
           mask-image: url("https://api.iconify.design/solar:alt-arrow-right-outline.svg");
 }
-.popover ui.menu.popupmenu.iconized li a.select::before {
+.popover .menu.listing.iconized.popupmenu > li a.select::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
           mask-image: url("https://api.iconify.design/solar:cursor-outline.svg");
 }
-.popover ui.menu.popupmenu.iconized li a.threads::before {
+.popover .menu.listing.iconized.popupmenu > li a.threads::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:dialog-outline.svg");
           mask-image: url("https://api.iconify.design/solar:dialog-outline.svg");
 }
-.popover ui.menu.popupmenu.iconized li a.options::before {
+.popover .menu.listing.iconized.popupmenu > li a.options::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:tuning-2-outline.svg");
           mask-image: url("https://api.iconify.design/solar:tuning-2-outline.svg");
 }
@@ -9244,11 +9244,11 @@ ul.contactlist a.contactgroup::before {
 .popover.select-menu .selectable.listing li a.selected::before {
   background-color: var(--color-gray-90);
 }
-.popover ui.menu.popupmenu.iconized li {
+.popover .menu.listing.iconized.popupmenu > li {
   border-bottom-color: var(--color-gray-20);
   line-height: 1;
 }
-.popover ui.menu.popupmenu.iconized li a {
+.popover .menu.listing.iconized.popupmenu > li a {
   color: var(--color-gray-90);
   border-left: 0;
   display: -webkit-box;
@@ -9263,26 +9263,26 @@ ul.contactlist a.contactgroup::before {
   -webkit-transition: background-color 0.17s ease-in-out;
   transition: background-color 0.17s ease-in-out;
 }
-.popover ui.menu.popupmenu.iconized li a::before {
+.popover .menu.listing.iconized.popupmenu > li a::before {
   background-color: var(--color-gray-90);
   margin-right: 0.5rem;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
 }
-.popover ui.menu.popupmenu.iconized li a span {
+.popover .menu.listing.iconized.popupmenu > li a span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-.popover ui.menu.popupmenu.iconized li a[aria-haspopup]::after {
+.popover .menu.listing.iconized.popupmenu > li a[aria-haspopup]::after {
   background-color: var(--color-gray-40);
   margin-left: 0.5rem;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
 }
-.popover ui.menu.popupmenu.iconized li a:focus, .popover ui.menu.popupmenu.iconized li a:not(.disabled):hover {
+.popover .menu.listing.iconized.popupmenu > li a:focus, .popover .menu.listing.iconized.popupmenu > li a:not(.disabled):hover {
   border-left: 0;
   background-color: rgba(203, 213, 225, 0.5490196078);
   color: var(--color-gray-90);
