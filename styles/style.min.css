@@ -9786,6 +9786,11 @@ body {
   -webkit-mask-image: url("https://api.iconify.design/solar:double-alt-arrow-right-outline.svg");
           mask-image: url("https://api.iconify.design/solar:double-alt-arrow-right-outline.svg");
 }
+#layout-list .pagenav .pagenav-text {
+  color: var(--color-gray-60);
+  font-weight: 500;
+  font-size: 0.6875rem;
+}
 
 @media screen and (max-width: 1200px) {
   #layout-list .header .menu.toolbar {
