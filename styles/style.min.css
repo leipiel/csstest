@@ -9743,9 +9743,10 @@ body {
 }
 #layout-list .pagenav {
   border-top: 1px solid var(--color-bluegray-30);
+  padding: 0 0.625rem;
 }
 #layout-list .pagenav a {
-  width: 1.125rem;
+  width: 1.5rem;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9756,6 +9757,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 #layout-list .pagenav a::before {
   content: "";
