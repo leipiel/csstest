@@ -9734,7 +9734,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  width: 1.875rem;
+  width: 2.75rem;
 }
 #layout-list table.messagelist.withselection tr td.selection > input[type=checkbox] {
   display: block;

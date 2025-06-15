@@ -211,7 +211,7 @@
             padding-left: 0.875rem;
             padding-right: 0.875rem;
             flex: none;
-            width: 1.875rem;
+            width: calc(1rem + (0.875rem * 2));
 
             > input[type='checkbox'] {
               display: block;
