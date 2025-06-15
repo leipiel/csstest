@@ -211,9 +211,12 @@
             padding-left: 0.875rem;
             padding-right: 0.875rem;
             flex: none;
+            width: 1.875rem;
 
             > input[type='checkbox'] {
               display: block;
+              width: 0.875rem;
+              height: 0.875rem;
             }
           }
 
@@ -236,6 +239,7 @@
       align-items: center;
       justify-content: center;
       flex: none;
+      min-width: 0 !important;
 
       &::before {
         content: '';

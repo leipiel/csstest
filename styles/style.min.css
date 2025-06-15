@@ -9734,9 +9734,12 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+  width: 1.875rem;
 }
 #layout-list table.messagelist.withselection tr td.selection > input[type=checkbox] {
   display: block;
+  width: 0.875rem;
+  height: 0.875rem;
 }
 #layout-list table.messagelist.withselection tr td.subject {
   padding-left: 0;
@@ -9760,6 +9763,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+  min-width: 0 !important;
 }
 #layout-list .pagenav a::before {
   content: "";
