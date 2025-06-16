@@ -21,3 +21,16 @@
 
   --color-yellow: #fffc51;
 }
+
+/* 기본 스타일 (라이트 모드) */
+body {
+  background-color: white;
+}
+
+/* 다크 모드일 경우 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: white;
+    //color: white;
+  }
+}
