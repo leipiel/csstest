@@ -10114,11 +10114,12 @@ body {
   height: inherit;
 }
 #layout-list ul.folderlist li div.treetoggle {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
   display: block;
   position: absolute;
-  top: 6px;
+  top: 8px;
+  left: auto;
   right: 3.5rem;
 }
 #layout-list ul.folderlist li div.treetoggle::before {
@@ -10126,6 +10127,7 @@ body {
   width: 1.25rem;
   height: 1.25rem;
   display: block;
+  margin: 0;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center left;
@@ -10137,6 +10139,18 @@ body {
   background-color: var(--color-gray-90);
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
+}
+#layout-list ul.folderlist li ul.group {
+  border-top: none;
+  background-color: rgba(245, 245, 245, 0.6);
+}
+#layout-list ul.folderlist li ul.group > li a {
+  padding-left: 1.5rem;
+}
+#layout-list ul.folderlist li ul.group > li a::before {
+  background-color: var(--color-gray-90);
+  -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
 }
 
 @media screen and (max-width: 1200px) {

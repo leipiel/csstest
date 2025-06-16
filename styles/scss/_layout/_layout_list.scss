@@ -362,11 +362,12 @@
       }
 
       div.treetoggle {
-        width: 1.25rem;
-        height: 1.25rem;
+        width: 1.5rem;
+        height: 1.5rem;
         display: block;
         position: absolute;
-        top: 6px;
+        top: 8px;
+        left: auto;
         right: calc(1rem + 2.5rem);
 
         &::before {
@@ -374,12 +375,29 @@
           width: 1.25rem;
           height: 1.25rem;
           display: block;
+          margin: 0;
           mask-repeat: no-repeat;
           mask-position: center left;
           mask-size: contain;
           mask-image: url('https://api.iconify.design/solar:alt-arrow-down-outline.svg');
           background-color: var(--color-gray-90);
           transition: all 0.15s ease-in-out;
+        }
+      }
+
+      ul.group {
+        border-top: none;
+        background-color: rgb(245 245 245 / 0.6);
+
+        > li {
+          a {
+            padding-left: 1.5rem;
+
+            &::before {
+              background-color: var(--color-gray-90);
+              mask-image: url('https://api.iconify.design/solar:letter-outline.svg');
+            }
+          }
         }
       }
     }
