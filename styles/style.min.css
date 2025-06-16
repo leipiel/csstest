@@ -8111,6 +8111,21 @@ html.touch .custom-switch .custom-control-input,
   top: 0;
   left: 0;
 }
+html.touch .custom-switch .custom-control-input:disabled ~ .custom-control-label::before, html.touch .custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before,
+.custom-control.custom-switch .custom-control-input:disabled ~ .custom-control-label::before,
+.custom-control.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before,
+.custom-switch .custom-control-input:disabled ~ .custom-control-label::before,
+.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: var(--color-gray-30);
+  opacity: 0.6;
+}
+html.touch .custom-switch .custom-control-input:disabled ~ .custom-control-label::after, html.touch .custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::after,
+.custom-control.custom-switch .custom-control-input:disabled ~ .custom-control-label::after,
+.custom-control.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::after,
+.custom-switch .custom-control-input:disabled ~ .custom-control-label::after,
+.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::after {
+  opacity: 0.6;
+}
 html.touch .custom-switch .custom-control-input:checked ~ .custom-control-label::before,
 .custom-control.custom-switch .custom-control-input:checked ~ .custom-control-label::before,
 .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
@@ -8136,7 +8151,6 @@ html.touch .custom-switch .custom-control-label,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 1.25rem;
 }
 html.touch .custom-switch .custom-control-label::before,
 .custom-control.custom-switch .custom-control-label::before,
@@ -10098,7 +10112,7 @@ body {
       -ms-flex: none;
           flex: none;
   position: absolute;
-  top: 12px;
+  top: 4px;
   right: 1rem;
   height: inherit;
 }

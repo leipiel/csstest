@@ -77,6 +77,18 @@ html.touch .custom-switch,
     top: 0;
     left: 0;
 
+    &:disabled ~ .custom-control-label,
+    &:disabled:checked ~ .custom-control-label {
+      &::before {
+        background-color: var(--color-gray-30);
+        opacity: 0.6;
+      }
+
+      &::after {
+        opacity: 0.6;
+      }
+    }
+
     &:checked ~ .custom-control-label {
       &::before {
         //border-color: var(--color-primary-50);
@@ -97,7 +109,6 @@ html.touch .custom-switch,
     line-height: 1 !important;
     display: flex;
     align-items: center;
-    min-height: 1.25rem;
 
     &::before {
       width: 2rem;
