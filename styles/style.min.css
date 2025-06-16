@@ -9650,6 +9650,49 @@ body {
 #layout-sidebar .scroller {
   background-color: #e3ecff;
 }
+#layout-sidebar #mailboxlist div.treetoggle {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  top: 12px;
+  left: auto;
+  right: auto;
+  left: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#layout-sidebar #mailboxlist div.treetoggle::before {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  margin: 0;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+  background-color: var(--color-gray-90);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+#layout-sidebar #mailboxlist div.treetoggle.expanded::before {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
 #layout-sidebar #mailboxlist li,
 #layout-sidebar #directorylist li,
 #layout-sidebar #settings-menu li,
@@ -10117,7 +10160,7 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   position: absolute;
-  top: 8px;
+  top: 10px;
   left: auto;
   right: 3.5rem;
   display: -webkit-box;
