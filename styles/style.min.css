@@ -9693,6 +9693,17 @@ body {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
+#layout-sidebar #mailboxlist > li ul[role=group] {
+  border-top: none;
+}
+#layout-sidebar #mailboxlist > li ul[role=group] > li a {
+  padding-left: 1.5rem;
+}
+#layout-sidebar #mailboxlist > li ul[role=group] > li a::before {
+  background-color: var(--color-gray-90);
+  -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+}
 #layout-sidebar #mailboxlist li,
 #layout-sidebar #directorylist li,
 #layout-sidebar #settings-menu li,

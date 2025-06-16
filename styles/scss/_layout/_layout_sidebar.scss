@@ -62,6 +62,23 @@
         }
       }
     }
+
+    > li {
+      ul[role='group'] {
+        border-top: none;
+
+        > li {
+          a {
+            padding-left: 1.5rem;
+
+            &::before {
+              background-color: var(--color-gray-90);
+              mask-image: url('https://api.iconify.design/solar:letter-outline.svg');
+            }
+          }
+        }
+      }
+    }
   }
 
   #mailboxlist,
