@@ -231,7 +231,7 @@
   table.contactlist,
   table.settings-default-icon {
     tr {
-      td {
+      td:not(.selection) {
         height: 2.875rem;
         border-bottom: 0;
         display: flex;
