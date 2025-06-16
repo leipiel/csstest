@@ -164,6 +164,10 @@
 //편지함 폴더 아이콘
 ul.folderlist {
   li {
+    a::before {
+      mask-image: url('https://api.iconify.design/solar:letter-outline.svg');
+    }
+
     &.inbox {
       a::before {
         content: '';

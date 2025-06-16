@@ -8456,6 +8456,10 @@ html.touch .custom-switch .custom-control-label::after,
           mask-image: url("https://api.iconify.design/solar:user-id-outline.svg");
 }
 
+ul.folderlist li a::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+}
 ul.folderlist li.inbox a::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:inbox-unread-outline.svg");
