@@ -9555,6 +9555,8 @@ body {
   right: 0.625rem;
   left: auto;
   top: 0.75rem;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 #layout-sidebar #directorylist.treelist li div.treetoggle::before {
   content: "";
@@ -9573,6 +9575,17 @@ body {
   -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
           mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
   background-color: var(--color-gray-90);
+}
+#layout-sidebar #directorylist.treelist li[aria-expanded=true] div.treetoggle {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+#layout-sidebar #directorylist.treelist li ul.group {
+  border-top: 0;
+}
+#layout-sidebar #directorylist.treelist li ul.group > li a {
+  padding-left: 2rem;
+  padding-right: 1.25rem;
 }
 
 .quota-widget .bar {

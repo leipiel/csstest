@@ -101,6 +101,7 @@
         right: 0.625rem;
         left: auto;
         top: 0.75rem;
+        transition: all 0.15s ease-in-out;
 
         &::before {
           content: '';
@@ -113,6 +114,23 @@
           mask-size: contain;
           mask-image: url('https://api.iconify.design/solar:alt-arrow-down-outline.svg');
           background-color: var(--color-gray-90);
+        }
+      }
+
+      &[aria-expanded='true'] {
+        div.treetoggle {
+          transform: rotate(90deg);
+        }
+      }
+
+      ul.group {
+        border-top: 0;
+
+        > li {
+          a {
+            padding-left: 2rem;
+            padding-right: 1.25rem;
+          }
         }
       }
     }
