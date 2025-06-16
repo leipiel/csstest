@@ -234,6 +234,33 @@
       td {
         height: 2.875rem;
         border-bottom: 0;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          display: block;
+          flex: none;
+          width: 1.25rem;
+          height: 1.25rem;
+          mask-repeat: no-repeat;
+          mask-position: center left;
+          mask-size: contain;
+          background-color: var(--color-gray-90);
+          mask-image: url('https://api.iconify.design/solar:user-circle-oultline.svg');
+        }
+
+        &.name {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+
+    .withselction {
+      tr {
+        > td.name {
+          padding-left: 0;
+        }
       }
     }
   }
