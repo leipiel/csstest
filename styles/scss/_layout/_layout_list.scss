@@ -334,12 +334,31 @@
       height: 2.875rem;
       border-bottom: none;
 
+      &.selected > a {
+        background-color: rgba(203, 213, 225, 0.45);
+      }
+
       > a {
         border-left: none;
         padding-left: 1rem;
         padding-right: 1rem;
         display: flex;
         align-items: center;
+
+        &:hover {
+          background-color: rgba(203, 213, 225, 0.27);
+        }
+
+        &::before {
+          background-color: var(--color-gray-90);
+        }
+
+        .custom-switch {
+          position: static;
+          top: auto;
+          right: auto;
+          height: inherit;
+        }
       }
     }
   }
