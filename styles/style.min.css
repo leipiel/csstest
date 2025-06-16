@@ -8231,6 +8231,19 @@ html.touch .custom-switch .custom-control-label::after,
   overflow: hidden;
   height: 0;
 }
+.formcontainer.task-settings .formcontent .form-control-plaintext {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .formcontainer.task-settings .propform tr.form-group {
   margin-bottom: 0.375rem;
   font-size: 0.9375rem;

@@ -210,6 +210,16 @@ html.touch .custom-switch,
           height: 0;
         }
       }
+
+      .form-control-plaintext {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
 
     .propform {
