@@ -235,6 +235,11 @@
         background-color: rgba(203, 213, 225, 0.45);
       }
 
+      td.section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
       td:not(.selection) {
         height: 2.875rem;
         border-bottom: 0;
@@ -320,6 +325,22 @@
 
     .form-control {
       display: none;
+    }
+  }
+
+  //폴더목록
+  ul.folderlist {
+    li {
+      height: 2.875rem;
+      border-bottom: none;
+
+      > a {
+        border-left: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        align-items: center;
+      }
     }
   }
 }

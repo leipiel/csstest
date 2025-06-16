@@ -9939,6 +9939,11 @@ body {
 #layout-list table.settings-default-icon tr.selected {
   background-color: rgba(203, 213, 225, 0.45);
 }
+#layout-list table.contactlist tr td.section,
+#layout-list table.settings-default-icon tr td.section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 #layout-list table.contactlist tr td:not(.selection),
 #layout-list table.settings-default-icon tr td:not(.selection) {
   height: 2.875rem;
@@ -10040,6 +10045,21 @@ body {
 }
 #layout-list .pagenav .form-control {
   display: none;
+}
+#layout-list ul.folderlist li {
+  height: 2.875rem;
+  border-bottom: none;
+}
+#layout-list ul.folderlist li > a {
+  border-left: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 1200px) {
