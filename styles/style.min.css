@@ -9862,6 +9862,9 @@ body {
   content: "";
   padding-left: 1rem;
   padding-right: 1rem;
+}
+#layout-list table.contactlist tr td:not(.selection).name::before,
+#layout-list table.settings-default-icon tr td:not(.selection).name::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:user-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:user-circle-outline.svg");
 }

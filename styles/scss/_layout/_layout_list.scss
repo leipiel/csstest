@@ -258,7 +258,10 @@
           content: '';
           padding-left: 1rem;
           padding-right: 1rem;
-          mask-image: url('https://api.iconify.design/solar:user-circle-outline.svg');
+
+          &::before {
+            mask-image: url('https://api.iconify.design/solar:user-circle-outline.svg');
+          }
         }
       }
     }
