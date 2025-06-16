@@ -170,8 +170,10 @@ html.touch .custom-switch,
         font-weight: 700;
         margin-bottom: 1rem;
         color: var(--color-gray-90);
-        padding-top: 1px;
-        padding-bottom: 0;
+      }
+
+      fieldset:not(.tab-pane):nth-of-type(n + 2) {
+        margin-top: 2.5rem;
       }
     }
 
@@ -192,7 +194,12 @@ html.touch .custom-switch,
           min-height: 2.75rem;
 
           &.title {
-            font-weight: 500;
+            .col-form-label {
+              line-height: 1;
+              padding-top: 1px;
+              padding-bottom: 0;
+              font-weight: 500;
+            }
           }
 
           .custom-select {

@@ -8195,8 +8195,9 @@ html.touch .custom-switch .custom-control-label::after,
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--color-gray-90);
-  padding-top: 1px;
-  padding-bottom: 0;
+}
+.formcontainer.task-settings .formcontent fieldset:not(.tab-pane):nth-of-type(n + 2) {
+  margin-top: 2.5rem;
 }
 .formcontainer.task-settings .propform tr.form-group {
   margin-bottom: 0.375rem;
@@ -8210,7 +8211,10 @@ html.touch .custom-switch .custom-control-label::after,
   vertical-align: middle;
   min-height: 2.75rem;
 }
-.formcontainer.task-settings .propform tr td.title {
+.formcontainer.task-settings .propform tr td.title .col-form-label {
+  line-height: 1;
+  padding-top: 1px;
+  padding-bottom: 0;
   font-weight: 500;
 }
 .formcontainer.task-settings .propform tr td .custom-select {
