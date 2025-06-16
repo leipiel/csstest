@@ -11,6 +11,7 @@
   --color-gray-30: #d4d4d4;
   --color-gray-20: #e5e5e5;
   --color-gray-10: #f5f5f5;
+  --color-bluegray-5: #f8fafc;
   --color-bluegray-10: #f1f5f9;
   --color-bluegray-30: #cbd5e1;
   --color-bluegray-50: #64748b;
@@ -8106,6 +8107,14 @@ html.touch .custom-switch .custom-control-label::after,
 }
 .formcontainer.task-settings .propform tr td .custom-switch {
   margin-top: 0.3125rem;
+}
+
+.ui-widget-content {
+  border-radius: 0.375rem;
+}
+.ui-widget-content .ui-dialog-titlebar {
+  border-radius: 6px 6px 0 0;
+  background-color: var(--color-bluegray-5);
 }
 
 .icon.user::before {
