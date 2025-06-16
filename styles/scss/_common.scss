@@ -196,8 +196,11 @@ html.touch .custom-switch,
           &.title {
             .col-form-label {
               line-height: 1;
-              padding-top: 1px;
+              padding-top: 0;
               padding-bottom: 0;
+              display: flex;
+              align-items: center;
+              height: 100%;
               font-weight: 500;
             }
           }

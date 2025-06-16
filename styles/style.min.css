@@ -8213,8 +8213,15 @@ html.touch .custom-switch .custom-control-label::after,
 }
 .formcontainer.task-settings .propform tr td.title .col-form-label {
   line-height: 1;
-  padding-top: 1px;
+  padding-top: 0;
   padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
   font-weight: 500;
 }
 .formcontainer.task-settings .propform tr td .custom-select {
