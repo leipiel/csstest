@@ -8204,6 +8204,8 @@ html.touch .custom-switch .custom-control-label::after,
 }
 .formcontainer.task-settings .formcontent fieldset.advanced > legend::after {
   content: "";
+  position: relative;
+  top: 2px;
   width: 1.25rem;
   height: 1.25rem;
   display: inline-block;
@@ -8218,10 +8220,14 @@ html.touch .custom-switch .custom-control-label::after,
   background-color: var(--color-gray-90);
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
+  margin-left: 0.25rem;
 }
-.formcontainer.task-settings .formcontent fieldset.advanced > legend.close::before {
+.formcontainer.task-settings .formcontent fieldset.advanced > legend.closed::before {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
+}
+.formcontainer.task-settings .formcontent fieldset .collapse:not(.show) {
+  visibility: hidden;
 }
 .formcontainer.task-settings .propform tr.form-group {
   margin-bottom: 0.375rem;
