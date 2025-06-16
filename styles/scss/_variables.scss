@@ -34,3 +34,10 @@ body {
     //color: white;
   }
 }
+
+html.dark-mode {
+  body {
+    background-color: white;
+    color: var(--color-gray-90);
+  }
+}
