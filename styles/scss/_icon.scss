@@ -746,34 +746,42 @@ ul.contactlist {
 table.settings-default-icon {
   tr {
     &.general td::before {
+      content: '';
       mask-image: url('https://api.iconify.design/solar:monitor-outline.svg');
     }
 
     &.mailbox td::before {
+      content: '';
       mask-image: url('https://api.iconify.design/solar:letter-outline.svg');
     }
 
     &.maiview td::before {
+      content: '';
       mask-image: url('https://api.iconify.design/solar:inbox-unread-outline.svg');
     }
 
     &.compose td::before {
+      content: '';
       mask-image: url('https://api.iconify.design/solar:plain-2-outline.svg');
     }
 
     &.addressbook td::before {
+      content: '';
       mask-image: url('https://api.iconify.design/solar:users-group-rounded-outline.svg');
     }
 
     &.folders td::before {
+      content: '';
       mask-image: url('https://api.iconify.design/solar:folder-outline.svg');
     }
 
     &.server td::before {
+      content: '';
       mask-image: url('https://api.iconify.design/solar:server-minimalistic-outline.svg');
     }
 
     &.encryption td::before {
+      content: '';
       mask-image: url('https://api.iconify.design/solar:lock-keyhole-minimalistic-outline.svg');
     }
   }
