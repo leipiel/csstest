@@ -19,22 +19,6 @@
   --color-yellow: #fffc51;
 }
 
-/* 기본 스타일 (라이트 모드) */
-body {
-  background-color: white;
-}
-
-/* 다크 모드일 경우 */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: white;
-  }
-}
-html.dark-mode body {
-  background-color: white;
-  color: var(--color-gray-90);
-}
-
 #filtersetslist td.name:before,
 #filterslist td.name:before,
 #identities-table td.mail:before,
@@ -8036,6 +8020,22 @@ html.dark-mode .pgpkeyimport div.key.revoked {
 
 html.dark-mode .pgpkeyimport li.uid::before {
   opacity: 1;
+}
+
+/* 기본 스타일 (라이트 모드) */
+body {
+  background-color: white;
+}
+
+/* 다크 모드일 경우 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: white;
+  }
+}
+html.dark-mode body {
+  background-color: white;
+  color: var(--color-gray-90);
 }
 
 a.btn,
