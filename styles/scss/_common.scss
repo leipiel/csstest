@@ -62,13 +62,6 @@ button.btn {
       height: 1.5rem;
     }
   }
-
-  &.search {
-    &::before {
-      content: '';
-      mask-image: url('https://api.iconify.design/solar:minimalistic-magnifer-outline.svg');
-    }
-  }
 }
 
 //스위치

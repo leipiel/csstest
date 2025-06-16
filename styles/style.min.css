@@ -8096,12 +8096,6 @@ button.btn.btn-lg::after {
   width: 1.5rem;
   height: 1.5rem;
 }
-a.btn.search::before,
-button.btn.search::before {
-  content: "";
-  -webkit-mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
-}
 
 html.touch .custom-switch,
 .custom-switch {
@@ -8961,6 +8955,17 @@ table.settings-default-icon tr.encryption td::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:lock-keyhole-minimalistic-outline.svg");
           mask-image: url("https://api.iconify.design/solar:lock-keyhole-minimalistic-outline.svg");
+}
+
+button.btn.search::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
+}
+button.btn.submit::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
 }
 
 .task-login #layout {

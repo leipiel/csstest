@@ -787,6 +787,23 @@ table.settings-default-icon {
   }
 }
 
+//버튼 아이콘
+button.btn {
+  &.search {
+    &::before {
+      content: '';
+      mask-image: url('https://api.iconify.design/solar:minimalistic-magnifer-outline.svg');
+    }
+  }
+
+  &.submit {
+    &::before {
+      content: '';
+      mask-image: url('https://api.iconify.design/solar:alt-arrow-down-outline.svg');
+    }
+  }
+}
+
 // mask-repeat: no-repeat;
 // mask-position: center left;
 // mask-size: contain;
