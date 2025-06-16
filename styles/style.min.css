@@ -9850,7 +9850,7 @@ body {
 }
 #layout-list table.contactlist tr td:not(.selection)::before,
 #layout-list table.settings-default-icon tr td:not(.selection)::before {
-  content: none;
+  content: inherit;
   display: block;
   -webkit-box-flex: 0;
       -ms-flex: none;
