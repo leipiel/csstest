@@ -8418,22 +8418,27 @@ html.touch .custom-switch .custom-control-label::after,
 }
 
 ul.folderlist li.inbox a::before {
+  content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:inbox-unread-outline.svg");
           mask-image: url("https://api.iconify.design/solar:inbox-unread-outline.svg");
 }
 ul.folderlist li.drafts a::before {
+  content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:file-outline.svg");
           mask-image: url("https://api.iconify.design/solar:file-outline.svg");
 }
 ul.folderlist li.sent a::before {
+  content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
           mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
 }
 ul.folderlist li.junk a::before {
+  content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:forbidden-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:forbidden-circle-outline.svg");
 }
 ul.folderlist li.trash a::before {
+  content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
           mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
 }
@@ -10177,4 +10182,7 @@ body {
 }
 .searchoptions .formbuttons {
   padding: 1rem 0.75rem;
+}
+.searchoptions#foldersearchoptions > div.formcontent {
+  margin-top: 1rem;
 }

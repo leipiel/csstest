@@ -166,30 +166,35 @@ ul.folderlist {
   li {
     &.inbox {
       a::before {
+        content: '';
         mask-image: url('https://api.iconify.design/solar:inbox-unread-outline.svg');
       }
     }
 
     &.drafts {
       a::before {
+        content: '';
         mask-image: url('https://api.iconify.design/solar:file-outline.svg');
       }
     }
 
     &.sent {
       a::before {
+        content: '';
         mask-image: url('https://api.iconify.design/solar:plain-2-outline.svg');
       }
     }
 
     &.junk {
       a::before {
+        content: '';
         mask-image: url('https://api.iconify.design/solar:forbidden-circle-outline.svg');
       }
     }
 
     &.trash {
       a::before {
+        content: '';
         mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
       }
     }
