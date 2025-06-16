@@ -9577,13 +9577,13 @@ body {
   background-color: var(--color-gray-90);
 }
 #layout-sidebar #directorylist.treelist li[aria-expanded=true] div.treetoggle {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
-#layout-sidebar #directorylist.treelist li ul.group {
+#layout-sidebar #directorylist.treelist li ul.groups {
   border-top: 0;
 }
-#layout-sidebar #directorylist.treelist li ul.group > li a {
+#layout-sidebar #directorylist.treelist li ul.groups > li a {
   padding-left: 2rem;
   padding-right: 1.25rem;
 }

@@ -119,11 +119,11 @@
 
       &[aria-expanded='true'] {
         div.treetoggle {
-          transform: rotate(90deg);
+          transform: rotate(180deg);
         }
       }
 
-      ul.group {
+      ul.groups {
         border-top: 0;
 
         > li {
