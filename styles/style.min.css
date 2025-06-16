@@ -8021,12 +8021,12 @@ html.touch .custom-switch .custom-control-label::after,
 .formcontainer.task-settings .formcontent fieldset:not(.tab-pane):nth-of-type(n + 2) {
   margin-top: 2.5rem;
 }
-.formcontainer.task-settings .formcontent #mailtoprotohandler {
+.formcontainer.task-settings .formcontent a {
   font-size: 0.9375rem;
   font-weight: 500;
   color: var(--color-primary-50);
 }
-.formcontainer.task-settings .formcontent #mailtoprotohandler:hover {
+.formcontainer.task-settings .formcontent a:hover {
   color: var(--color-primary-50);
   text-decoration: underline;
 }
@@ -9513,7 +9513,7 @@ body {
   border-top: none;
 }
 #layout-sidebar #mailboxlist > li ul[role=group] > li a {
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 #layout-sidebar #mailboxlist > li ul[role=group] > li a::before {
   background-color: var(--color-gray-90);
@@ -9632,7 +9632,7 @@ body {
   border-top: none;
 }
 #layout-sidebar #directorylist.treelist > li ul[role=group] > li a {
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 #layout-sidebar #directorylist.treelist > li ul[role=group] > li a::before {
   background-color: var(--color-gray-90);
