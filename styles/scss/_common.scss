@@ -81,10 +81,12 @@ html.touch .custom-switch,
       &::before {
         //border-color: var(--color-primary-50);
         background-color: var(--color-primary-50);
+        margin: 0;
       }
 
       &::after {
         transform: translate(0.75rem, -50%);
+        margin: 0;
       }
     }
   }
@@ -95,6 +97,7 @@ html.touch .custom-switch,
     line-height: 1 !important;
     display: flex;
     align-items: center;
+    min-height: 1.25rem;
 
     &::before {
       width: 2rem;
