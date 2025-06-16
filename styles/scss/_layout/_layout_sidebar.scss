@@ -137,52 +137,103 @@
 
   //주소록 > 그룹목록
   #directorylist.treelist {
-    li {
-      &:not(.readonly) {
-        > a {
-          padding-right: 2rem;
-        }
-      }
+    // li {
+    //   &:not(.readonly) {
+    //     > a {
+    //       padding-right: 2rem;
+    //     }
+    //   }
 
-      div.treetoggle {
-        width: 1.5rem;
-        height: 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        right: 0.625rem;
-        left: auto;
-        top: 0.75rem;
+    //   div.treetoggle {
+    //     width: 1.5rem;
+    //     height: 1.5rem;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     position: absolute;
+    //     right: 0.625rem;
+    //     left: auto;
+    //     top: 0.75rem;
+    //     transition: all 0.15s ease-in-out;
+
+    //     &::before {
+    //       content: '';
+    //       flex: none;
+    //       display: block;
+    //       width: 1.25rem;
+    //       height: 1.25rem;
+    //       mask-repeat: no-repeat;
+    //       mask-position: center left;
+    //       mask-size: contain;
+    //       mask-image: url('https://api.iconify.design/solar:alt-arrow-down-outline.svg');
+    //       background-color: var(--color-gray-90);
+    //     }
+    //   }
+
+    //   &[aria-expanded='true'] {
+    //     div.treetoggle {
+    //       transform: rotate(-180deg);
+    //     }
+    //   }
+
+    //   ul.groups {
+    //     border-top: 0;
+
+    //     > li {
+    //       a {
+    //         padding-left: 2rem;
+    //         padding-right: 1.25rem;
+    //       }
+    //     }
+    //   }
+    // }
+
+    div.treetoggle {
+      width: 1.25rem;
+      height: 1.25rem;
+      position: absolute;
+      top: 12px;
+      left: auto;
+      right: auto;
+      left: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        content: '';
+        flex: none;
+        width: 0.875rem;
+        height: 0.875rem;
+        display: block;
+        margin: 0;
+        mask-repeat: no-repeat;
+        mask-position: center left;
+        mask-size: contain;
+        mask-image: url('https://api.iconify.design/solar:alt-arrow-down-outline.svg');
+        background-color: var(--color-gray-90);
         transition: all 0.15s ease-in-out;
-
-        &::before {
-          content: '';
-          flex: none;
-          display: block;
-          width: 1.25rem;
-          height: 1.25rem;
-          mask-repeat: no-repeat;
-          mask-position: center left;
-          mask-size: contain;
-          mask-image: url('https://api.iconify.design/solar:alt-arrow-down-outline.svg');
-          background-color: var(--color-gray-90);
-        }
       }
 
-      &[aria-expanded='true'] {
-        div.treetoggle {
+      &.expanded {
+        &::before {
           transform: rotate(-180deg);
         }
       }
+    }
 
-      ul.groups {
-        border-top: 0;
+    > li {
+      ul[role='group'] {
+        border-top: none;
 
         > li {
           a {
-            padding-left: 2rem;
-            padding-right: 1.25rem;
+            padding-left: 1.5rem;
+
+            &::before {
+              background-color: var(--color-gray-90);
+              mask-image: url('https://api.iconify.design/solar:letter-outline.svg');
+            }
           }
         }
       }
