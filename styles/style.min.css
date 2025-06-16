@@ -9673,8 +9673,8 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 0.875rem;
+  height: 0.875rem;
   display: block;
   margin: 0;
   -webkit-mask-repeat: no-repeat;
