@@ -10113,7 +10113,15 @@ body {
   right: 0.75rem;
   height: inherit;
 }
-#layout-list ul.folderlist li .treetoggle::before {
+#layout-list ul.folderlist li div.treetoggle {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 3.5rem;
+}
+#layout-list ul.folderlist li div.treetoggle::before {
   content: "";
   width: 1.25rem;
   height: 1.25rem;
@@ -10129,9 +10137,6 @@ body {
   background-color: var(--color-gray-90);
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
-  position: absolute;
-  top: 6px;
-  right: 3.5rem;
 }
 
 @media screen and (max-width: 1200px) {
