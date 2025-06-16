@@ -175,6 +175,17 @@ html.touch .custom-switch,
       fieldset:not(.tab-pane):nth-of-type(n + 2) {
         margin-top: 2.5rem;
       }
+
+      #mailtoprotohandler {
+        font-size: 0.9375rem;
+        font-weight: 500;
+        color: var(--color-primary-50);
+
+        &:hover {
+          color: var(--color-primary-50);
+          text-decoration: underline;
+        }
+      }
     }
 
     .propform {
@@ -207,6 +218,10 @@ html.touch .custom-switch,
 
           .custom-select {
             height: 2.625rem;
+          }
+
+          .custom-switch {
+            margin-top: 0.1875rem;
           }
         }
       }
