@@ -150,8 +150,7 @@ html.touch .custom-switch,
   }
 }
 
-//
-
+//폼그룹 공통
 .formcontainer {
   &.task-settings {
     .formcontent {
@@ -177,6 +176,29 @@ html.touch .custom-switch,
         &:hover {
           color: var(--color-primary-50);
           text-decoration: underline;
+        }
+      }
+
+      fieldset {
+        &.advanced {
+          > legend {
+            &::after {
+              content: '';
+              width: 1.25rem;
+              height: 1.25rem;
+              display: inline-block;
+              mask-repeat: no-repeat;
+              mask-position: center left;
+              mask-size: contain;
+              mask-image: url('https://api.iconify.design/solar:alt-arrow-down-outline.svg');
+              background-color: var(--color-gray-90);
+              transition: all 0.15s ease-in-out;
+            }
+
+            &.close::before {
+              transform: rotate(-180deg);
+            }
+          }
         }
       }
     }
@@ -211,10 +233,15 @@ html.touch .custom-switch,
 
           .custom-select {
             height: 2.625rem;
+
+            &:focus {
+              box-shadow: 0 0 1px 0 var(--color-primary-50);
+              border-color: var(--color-primary-50);
+            }
           }
 
           .custom-switch {
-            margin-top: 0.1875rem;
+            margin-top: 0.3125rem;
           }
         }
       }

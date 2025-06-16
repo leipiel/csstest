@@ -8202,6 +8202,27 @@ html.touch .custom-switch .custom-control-label::after,
   color: var(--color-primary-50);
   text-decoration: underline;
 }
+.formcontainer.task-settings .formcontent fieldset.advanced > legend::after {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+  background-color: var(--color-gray-90);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.formcontainer.task-settings .formcontent fieldset.advanced > legend.close::before {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
 .formcontainer.task-settings .propform tr.form-group {
   margin-bottom: 0.375rem;
   font-size: 0.9375rem;
@@ -8230,8 +8251,13 @@ html.touch .custom-switch .custom-control-label::after,
 .formcontainer.task-settings .propform tr td .custom-select {
   height: 2.625rem;
 }
+.formcontainer.task-settings .propform tr td .custom-select:focus {
+  -webkit-box-shadow: 0 0 1px 0 var(--color-primary-50);
+          box-shadow: 0 0 1px 0 var(--color-primary-50);
+  border-color: var(--color-primary-50);
+}
 .formcontainer.task-settings .propform tr td .custom-switch {
-  margin-top: 0.1875rem;
+  margin-top: 0.3125rem;
 }
 
 .icon.user::before {
@@ -8964,8 +8990,8 @@ button.btn.search::before {
 }
 button.btn.submit::before {
   content: "";
-  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+  -webkit-mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
 }
 
 .task-login #layout {
