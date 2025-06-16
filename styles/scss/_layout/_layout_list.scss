@@ -331,7 +331,6 @@
   //폴더목록
   ul.folderlist {
     li {
-      height: 2.875rem;
       border-bottom: none;
 
       &.selected > a {
@@ -344,6 +343,7 @@
         padding-right: 1rem;
         display: flex;
         align-items: center;
+        height: 2.875rem;
 
         &:hover {
           background-color: rgba(203, 213, 225, 0.27);
