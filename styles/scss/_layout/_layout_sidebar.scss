@@ -16,16 +16,11 @@
       color: var(--color-primary-60);
     }
 
-    // a.button {
-    //   position: absolute;
-    //   right: 0.625rem;
-    //   top: 50%;
-    //   transform: translateY(-50%);
-
-    //   &:hover {
-    //     background-color: transparent;
-    //   }
-    //}
+    .button.icon {
+      &.icon:not(.disabled):hover {
+        background-color: #cbd5e18c;
+      }
+    }
   }
 
   #folderlist-content,

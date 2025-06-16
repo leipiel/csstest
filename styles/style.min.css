@@ -9022,6 +9022,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   color: var(--color-gray-90);
+  margin: 0;
 }
 
 #layout-sidebar .header .header-title {
@@ -9468,6 +9469,9 @@ body {
           flex: 1;
   text-align: center;
   color: var(--color-primary-60);
+}
+#layout-sidebar .header .button.icon.icon:not(.disabled):hover {
+  background-color: rgba(203, 213, 225, 0.5490196078);
 }
 #layout-sidebar #folderlist-content,
 #layout-sidebar .scroller {
