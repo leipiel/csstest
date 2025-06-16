@@ -9113,9 +9113,6 @@ body {
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
 }
-.header .button.icon.icon:not(.disabled):hover {
-  background-color: rgba(203, 213, 225, 0.5490196078);
-}
 .header .button.icon .inner {
   line-height: 1;
   margin-top: 0.3125rem;
@@ -9605,6 +9602,23 @@ body {
 #layout-list table.listing tr:hover {
   background-color: rgba(203, 213, 225, 0.3019607843);
 }
+#layout-list table.listing.withselection tr td.selection {
+  border-left: 0;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 2.75rem;
+}
+#layout-list table.listing.withselection tr td.selection > input[type=checkbox] {
+  display: block;
+  width: 0.875rem;
+  height: 0.875rem;
+}
+#layout-list table.listing.withselection tr td.subject {
+  padding-left: 0;
+}
 #layout-list table.messagelist tr td.subject {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -9776,22 +9790,10 @@ body {
 #layout-list table.messagelist.flagged td span {
   color: var(--color-primary-50) !important;
 }
-#layout-list table.messagelist.withselection tr td.selection {
-  border-left: 0;
-  padding-left: 0.875rem;
-  padding-right: 0.875rem;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  width: 2.75rem;
-}
-#layout-list table.messagelist.withselection tr td.selection > input[type=checkbox] {
-  display: block;
-  width: 0.875rem;
-  height: 0.875rem;
-}
-#layout-list table.messagelist.withselection tr td.subject {
-  padding-left: 0;
+#layout-list table.contactlist tr td,
+#layout-list table.settings-default-icon tr td {
+  height: 2.875rem;
+  border-bottom: 0;
 }
 #layout-list .pagenav {
   border-top: 1px solid var(--color-bluegray-30);

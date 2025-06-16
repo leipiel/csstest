@@ -7,6 +7,30 @@
         background-color: #cbd5e14d;
       }
     }
+
+    &.withselection {
+      tr {
+        td {
+          &.selection {
+            border-left: 0;
+            padding-left: 0.875rem;
+            padding-right: 0.875rem;
+            flex: none;
+            width: calc(1rem + (0.875rem * 2));
+
+            > input[type='checkbox'] {
+              display: block;
+              width: 0.875rem;
+              height: 0.875rem;
+            }
+          }
+
+          &.subject {
+            padding-left: 0;
+          }
+        }
+      }
+    }
   }
 
   table.messagelist {
@@ -202,28 +226,14 @@
         color: var(--color-primary-50) !important;
       }
     }
+  }
 
-    &.withselection {
-      tr {
-        td {
-          &.selection {
-            border-left: 0;
-            padding-left: 0.875rem;
-            padding-right: 0.875rem;
-            flex: none;
-            width: calc(1rem + (0.875rem * 2));
-
-            > input[type='checkbox'] {
-              display: block;
-              width: 0.875rem;
-              height: 0.875rem;
-            }
-          }
-
-          &.subject {
-            padding-left: 0;
-          }
-        }
+  table.contactlist,
+  table.settings-default-icon {
+    tr {
+      td {
+        height: 2.875rem;
+        border-bottom: 0;
       }
     }
   }
