@@ -231,6 +231,10 @@
   table.contactlist,
   table.settings-default-icon {
     tr {
+      &.selected {
+        background-color: #cbd5e14d;
+      }
+
       td:not(.selection) {
         height: 2.875rem;
         border-bottom: 0;
@@ -239,6 +243,7 @@
         align-items: center;
 
         &::before {
+          content: none;
           display: block;
           flex: none;
           width: 1.25rem;
@@ -247,17 +252,18 @@
           mask-position: center left;
           mask-size: contain;
           background-color: var(--color-gray-90);
-          mask-image: url('https://api.iconify.design/solar:user-circle-outline.svg');
         }
 
         &.name {
+          content: '';
           padding-left: 1rem;
           padding-right: 1rem;
+          mask-image: url('https://api.iconify.design/solar:user-circle-outline.svg');
         }
       }
     }
 
-    .withselction {
+    &.withselction {
       tr {
         > td.name {
           padding-left: 0;

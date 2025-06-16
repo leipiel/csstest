@@ -8868,6 +8868,39 @@ ul.contactlist a.contactgroup::before {
           mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
 }
 
+table.settings-default-icon tr.general td::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:monitor-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:monitor-outline.svg");
+}
+table.settings-default-icon tr.mailbox td::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+}
+table.settings-default-icon tr.maiview td::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:inbox-unread-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:inbox-unread-outline.svg");
+}
+table.settings-default-icon tr.compose td::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
+}
+table.settings-default-icon tr.addressbook td::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
+}
+table.settings-default-icon tr.folders td::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:folder-outline.svg");
+}
+table.settings-default-icon tr.server td::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:server-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:server-minimalistic-outline.svg");
+}
+table.settings-default-icon tr.encryption td::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:lock-keyhole-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:lock-keyhole-minimalistic-outline.svg");
+}
+
 .task-login #layout {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -9790,6 +9823,10 @@ body {
 #layout-list table.messagelist.flagged td span {
   color: var(--color-primary-50) !important;
 }
+#layout-list table.contactlist tr.selected,
+#layout-list table.settings-default-icon tr.selected {
+  background-color: rgba(203, 213, 225, 0.3019607843);
+}
 #layout-list table.contactlist tr td:not(.selection),
 #layout-list table.settings-default-icon tr td:not(.selection) {
   height: 2.875rem;
@@ -9805,6 +9842,7 @@ body {
 }
 #layout-list table.contactlist tr td:not(.selection)::before,
 #layout-list table.settings-default-icon tr td:not(.selection)::before {
+  content: none;
   display: block;
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -9818,16 +9856,17 @@ body {
   -webkit-mask-size: contain;
           mask-size: contain;
   background-color: var(--color-gray-90);
-  -webkit-mask-image: url("https://api.iconify.design/solar:user-circle-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:user-circle-outline.svg");
 }
 #layout-list table.contactlist tr td:not(.selection).name,
 #layout-list table.settings-default-icon tr td:not(.selection).name {
+  content: "";
   padding-left: 1rem;
   padding-right: 1rem;
+  -webkit-mask-image: url("https://api.iconify.design/solar:user-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:user-circle-outline.svg");
 }
-#layout-list table.contactlist .withselction tr > td.name,
-#layout-list table.settings-default-icon .withselction tr > td.name {
+#layout-list table.contactlist.withselction tr > td.name,
+#layout-list table.settings-default-icon.withselction tr > td.name {
   padding-left: 0;
 }
 #layout-list .pagenav {
