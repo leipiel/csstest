@@ -9536,6 +9536,9 @@ body {
   border-radius: 2.125rem;
   height: 1.375rem;
 }
+#layout-sidebar #directorylist.treelist li:not(.readonly) {
+  padding-right: 2rem;
+}
 #layout-sidebar #directorylist.treelist li div.treetoggle {
   width: 1.5rem;
   height: 1.5rem;
@@ -9548,6 +9551,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 0.625rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 #layout-sidebar #directorylist.treelist li div.treetoggle::before {
   content: "";
@@ -9565,6 +9573,7 @@ body {
           mask-size: contain;
   -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
           mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+  background-color: var(--color-gray-90);
 }
 
 .quota-widget .bar {

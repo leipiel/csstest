@@ -85,12 +85,20 @@
   //주소록 > 그룹목록
   #directorylist.treelist {
     li {
+      &:not(.readonly) {
+        padding-right: 2rem;
+      }
+
       div.treetoggle {
         width: 1.5rem;
         height: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        top: 50%;
+        right: 0.625rem;
+        transform: translate(0, -50%);
 
         &::before {
           content: '';
@@ -102,6 +110,7 @@
           mask-position: center left;
           mask-size: contain;
           mask-image: url('https://api.iconify.design/solar:alt-arrow-down-outline.svg');
+          background-color: var(--color-gray-90);
         }
       }
     }
