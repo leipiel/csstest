@@ -86,7 +86,9 @@
   #directorylist.treelist {
     li {
       &:not(.readonly) {
-        padding-right: 2rem;
+        > a {
+          padding-right: 2rem;
+        }
       }
 
       div.treetoggle {

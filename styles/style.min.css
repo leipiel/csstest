@@ -9536,7 +9536,7 @@ body {
   border-radius: 2.125rem;
   height: 1.375rem;
 }
-#layout-sidebar #directorylist.treelist li:not(.readonly) {
+#layout-sidebar #directorylist.treelist li:not(.readonly) > a {
   padding-right: 2rem;
 }
 #layout-sidebar #directorylist.treelist li div.treetoggle {
