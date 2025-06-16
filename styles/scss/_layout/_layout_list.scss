@@ -232,7 +232,7 @@
   table.settings-default-icon {
     tr {
       &.selected {
-        background-color: #cbd5e14d;
+        background-color: rgba(203, 213, 225, 0.45);
       }
 
       td:not(.selection) {

@@ -293,6 +293,13 @@ body {
   }
 }
 
+//비어있을 때 리스트 안내
+.listing-info {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-gray-50);
+}
+
 //responsive
 @media screen and (max-width: 1200px) {
   //메일목록

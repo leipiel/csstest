@@ -8878,7 +8878,7 @@ table.settings-default-icon tr.mailbox td::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
 }
-table.settings-default-icon tr.maiview td::before {
+table.settings-default-icon tr.mailview td::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:inbox-unread-outline.svg");
           mask-image: url("https://api.iconify.design/solar:inbox-unread-outline.svg");
@@ -9322,6 +9322,12 @@ body {
   border-left: 0;
   background-color: rgba(203, 213, 225, 0.5490196078);
   color: var(--color-gray-90);
+}
+
+.listing-info {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-gray-50);
 }
 
 @media screen and (max-width: 1200px) {
@@ -9833,7 +9839,7 @@ body {
 }
 #layout-list table.contactlist tr.selected,
 #layout-list table.settings-default-icon tr.selected {
-  background-color: rgba(203, 213, 225, 0.3019607843);
+  background-color: rgba(203, 213, 225, 0.45);
 }
 #layout-list table.contactlist tr td:not(.selection),
 #layout-list table.settings-default-icon tr td:not(.selection) {
