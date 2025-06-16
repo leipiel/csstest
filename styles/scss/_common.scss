@@ -170,6 +170,8 @@ html.touch .custom-switch,
         font-weight: 700;
         margin-bottom: 1rem;
         color: var(--color-gray-90);
+        padding-top: 1px;
+        padding-bottom: 0;
       }
     }
 
@@ -187,9 +189,14 @@ html.touch .custom-switch,
         td {
           line-height: 1;
           vertical-align: middle;
+          min-height: 2.75rem;
 
           &.title {
             font-weight: 500;
+          }
+
+          .custom-select {
+            height: 2.625rem;
           }
         }
       }
