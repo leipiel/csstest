@@ -98,9 +98,9 @@
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 50%;
         right: 0.625rem;
-        transform: translate(0, -50%);
+        left: auto;
+        top: 0.75rem;
 
         &::before {
           content: '';

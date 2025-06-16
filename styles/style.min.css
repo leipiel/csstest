@@ -9552,10 +9552,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  top: 50%;
   right: 0.625rem;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  left: auto;
+  top: 0.75rem;
 }
 #layout-sidebar #directorylist.treelist li div.treetoggle::before {
   content: "";
