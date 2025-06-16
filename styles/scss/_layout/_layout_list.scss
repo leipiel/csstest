@@ -235,6 +235,7 @@
         height: 2.875rem;
         border-bottom: 0;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
 
         &::before {
@@ -246,7 +247,7 @@
           mask-position: center left;
           mask-size: contain;
           background-color: var(--color-gray-90);
-          mask-image: url('https://api.iconify.design/solar:user-circle-oultline.svg');
+          mask-image: url('https://api.iconify.design/solar:user-circle-outline.svg');
         }
 
         &.name {

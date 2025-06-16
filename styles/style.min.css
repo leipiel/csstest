@@ -9797,6 +9797,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -9816,8 +9818,8 @@ body {
   -webkit-mask-size: contain;
           mask-size: contain;
   background-color: var(--color-gray-90);
-  -webkit-mask-image: url("https://api.iconify.design/solar:user-circle-oultline.svg");
-          mask-image: url("https://api.iconify.design/solar:user-circle-oultline.svg");
+  -webkit-mask-image: url("https://api.iconify.design/solar:user-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:user-circle-outline.svg");
 }
 #layout-list table.contactlist tr td.name,
 #layout-list table.settings-default-icon tr td.name {
