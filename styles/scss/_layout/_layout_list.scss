@@ -352,13 +352,14 @@
         &::before {
           background-color: var(--color-gray-90);
         }
+      }
 
-        .custom-switch {
-          position: static;
-          top: auto;
-          right: auto;
-          height: inherit;
-        }
+      .custom-switch {
+        flex: none;
+        position: absolute;
+        top: 12px;
+        right: 1rem;
+        height: inherit;
       }
     }
   }

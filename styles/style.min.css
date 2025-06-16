@@ -8098,10 +8098,12 @@ button.btn.btn-lg::after {
 }
 
 html.touch .custom-switch,
+.custom-control.custom-switch,
 .custom-switch {
   position: relative;
 }
 html.touch .custom-switch .custom-control-input,
+.custom-control.custom-switch .custom-control-input,
 .custom-switch .custom-control-input {
   position: absolute;
   visibility: hidden;
@@ -8110,15 +8112,18 @@ html.touch .custom-switch .custom-control-input,
   left: 0;
 }
 html.touch .custom-switch .custom-control-input:checked ~ .custom-control-label::before,
+.custom-control.custom-switch .custom-control-input:checked ~ .custom-control-label::before,
 .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
   background-color: var(--color-primary-50);
 }
 html.touch .custom-switch .custom-control-input:checked ~ .custom-control-label::after,
+.custom-control.custom-switch .custom-control-input:checked ~ .custom-control-label::after,
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
   -webkit-transform: translate(0.75rem, -50%);
           transform: translate(0.75rem, -50%);
 }
 html.touch .custom-switch .custom-control-label,
+.custom-control.custom-switch .custom-control-label,
 .custom-switch .custom-control-label {
   padding-left: 2.375rem;
   position: relative;
@@ -8131,6 +8136,7 @@ html.touch .custom-switch .custom-control-label,
           align-items: center;
 }
 html.touch .custom-switch .custom-control-label::before,
+.custom-control.custom-switch .custom-control-label::before,
 .custom-switch .custom-control-label::before {
   width: 2rem;
   height: 1.25rem;
@@ -8147,6 +8153,7 @@ html.touch .custom-switch .custom-control-label::before,
   transition: all 0.15s ease-in-out;
 }
 html.touch .custom-switch .custom-control-label::after,
+.custom-control.custom-switch .custom-control-label::after,
 .custom-switch .custom-control-label::after {
   width: 1rem;
   height: 1rem;
@@ -10083,10 +10090,13 @@ body {
 #layout-list ul.folderlist li > a::before {
   background-color: var(--color-gray-90);
 }
-#layout-list ul.folderlist li > a .custom-switch {
-  position: static;
-  top: auto;
-  right: auto;
+#layout-list ul.folderlist li .custom-switch {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  position: absolute;
+  top: 12px;
+  right: 1rem;
   height: inherit;
 }
 
@@ -10233,6 +10243,6 @@ body {
 .searchoptions .formbuttons {
   padding: 1rem 0.75rem;
 }
-.searchoptions#foldersearchoptions > div.formcontent {
+.searchoptions#foldersearchmenu > div.formcontent {
   margin-top: 1rem;
 }
