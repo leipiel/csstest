@@ -9456,7 +9456,6 @@ body {
   position: relative;
 }
 #layout-sidebar .header .header-title.username {
-  margin: 0 !important;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-flex: 1;
@@ -9536,6 +9535,36 @@ body {
   background-color: var(--color-primary-50);
   border-radius: 2.125rem;
   height: 1.375rem;
+}
+#layout-sidebar #directorylist.treelist li div.treetoggle {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#layout-sidebar #directorylist.treelist li div.treetoggle::before {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
 }
 
 .quota-widget .bar {
