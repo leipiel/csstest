@@ -206,6 +206,8 @@ html.touch .custom-switch,
 
         .collapse:not(.show) {
           visibility: hidden;
+          overflow: hidden;
+          height: 0;
         }
       }
     }
