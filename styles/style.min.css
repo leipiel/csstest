@@ -8191,7 +8191,8 @@ html.touch .custom-switch .custom-control-label::after,
           transform: rotate(90deg);
   background-color: var(--color-bluegray-50);
 }
-#layout-sidebar .quota-widget::before {
+
+.quota-widget::before {
   content: "";
   display: block;
   width: 1.125rem;
