@@ -7990,20 +7990,26 @@ html.touch .custom-switch .custom-control-label::after,
   background-color: var(--color-white);
 }
 
+.form-group,
 .input-group {
   font-size: 0.9375rem;
   color: var(--color-gray-90);
 }
+.form-group .input-group-prepend .input-group-text,
 .input-group .input-group-prepend .input-group-text {
   border-color: var(--color-gray-30);
   background-color: var(--color-gray-10);
   height: 2.625rem;
 }
+.form-group select.custom-select,
 .input-group select.custom-select {
   height: 2.625rem;
   border-color: var(--color-gray-30);
 }
-.input-group select.custom-select:focus, .input-group select.custom-select:active, .input-group select.custom-select:active:focus {
+.form-group select.custom-select:focus, .form-group select.custom-select:active, .form-group select.custom-select:active:focus,
+.input-group select.custom-select:focus,
+.input-group select.custom-select:active,
+.input-group select.custom-select:active:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
@@ -8146,6 +8152,7 @@ html.touch .custom-switch .custom-control-label::after,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: var(--color-gray-90);
 }
 .formcontainer.task-settings .compact-table tr td.rowbuttons > a::before {
   content: "";
@@ -8217,6 +8224,39 @@ html.touch .custom-switch .custom-control-label::after,
 .ui-widget-content .ui-dialog-titlebar {
   border-radius: 6px 6px 0 0;
   background-color: var(--color-bluegray-5);
+}
+.ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background-color: var(--color-gray-90);
+  -webkit-mask-image: url("https://api.iconify.design/material-symbols:close-rounded.svg");
+          mask-image: url("https://api.iconify.design/material-symbols:close-rounded.svg");
+}
+.ui-widget-content .ui-dialog-title {
+  font-size: 1.375rem;
+  font-weight: 700;
 }
 
 .icon.user::before {
@@ -10340,6 +10380,10 @@ body {
     margin: 0 !important;
   }
 }
+#layout-content #rules {
+  margin-bottom: 2.5rem;
+}
+
 .searchbar {
   height: 2.875rem;
   border-bottom: 1px solid var(--color-gray-20);
