@@ -8128,6 +8128,32 @@ html.touch .custom-switch .custom-control-label::after,
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+.formcontainer.task-settings .compact-table tr td.rowbuttons > a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.5rem;
+  height: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.formcontainer.task-settings .compact-table tr td.rowbuttons > a::before {
+  content: "";
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background-color: var(--color-gray-90);
+}
 
 .ui-widget-content {
   border-radius: 0.375rem;
@@ -8894,17 +8920,17 @@ table.settings-default-icon tr.encryption td::before {
           mask-image: url("https://api.iconify.design/solar:file-outline.svg");
 }
 
-#filtersetslist tr td.name::before {
+#filterslist tr td.name::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
 }
 
 .keylist li::before {
+  content: "";
   display: inline-block;
   width: 1.25rem;
   height: 1.25rem;
-  content: "";
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -8913,6 +8939,20 @@ table.settings-default-icon tr.encryption td::before {
           mask-size: contain;
   -webkit-mask-image: url("https://api.iconify.design/solar:key-minimalistic-outline.svg");
           mask-image: url("https://api.iconify.design/solar:key-minimalistic-outline.svg");
+  background-color: var(--color-gray-90);
+}
+
+.compact-table tr td.rowbuttons > a.advanced::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:settings-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:settings-outline.svg");
+}
+.compact-table tr td.rowbuttons > a.create::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:add-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:add-circle-outline.svg");
+}
+.compact-table tr td.rowbuttons > a.delete::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
 }
 
 button.btn.search::before {
@@ -10140,7 +10180,7 @@ body {
 #layout-list #identities-table tr td,
 #layout-list #responses-table tr td,
 #layout-list #filtersetslistbox tr td,
-#layout-list #filtersetslist tr td,
+#layout-list #filterslist tr td,
 #layout-list #keys-table tr td {
   height: 2.875rem;
   border-left: 0;
@@ -10151,7 +10191,7 @@ body {
 #layout-list #identities-table tr td::before,
 #layout-list #responses-table tr td::before,
 #layout-list #filtersetslistbox tr td::before,
-#layout-list #filtersetslist tr td::before,
+#layout-list #filterslist tr td::before,
 #layout-list #keys-table tr td::before {
   display: inline-block;
   -webkit-box-flex: 0;

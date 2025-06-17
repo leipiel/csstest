@@ -325,6 +325,33 @@ html.touch .custom-switch,
     div.tox.focused {
       box-shadow: none;
     }
+
+    .compact-table {
+      tr {
+        td {
+          &.rowbuttons {
+            > a {
+              display: inline-flex;
+              width: 1.5rem;
+              height: 2rem;
+              align-items: center;
+              justify-content: center;
+
+              &::before {
+                content: '';
+                display: block;
+                width: 1.25rem;
+                height: 1.25rem;
+                mask-repeat: no-repeat;
+                mask-position: center;
+                mask-size: contain;
+                background-color: var(--color-gray-90);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

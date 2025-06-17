@@ -831,7 +831,7 @@ table.settings-default-icon {
   }
 }
 
-#filtersetslist {
+#filterslist {
   tr {
     td {
       &.name::before {
@@ -846,14 +846,38 @@ table.settings-default-icon {
 .keylist {
   li {
     &::before {
+      content: '';
       display: inline-block;
       width: 1.25rem;
       height: 1.25rem;
-      content: '';
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: contain;
       mask-image: url('https://api.iconify.design/solar:key-minimalistic-outline.svg');
+      background-color: var(--color-gray-90);
+    }
+  }
+}
+
+// 설정>필터 > 규칙/동작
+.compact-table {
+  tr {
+    td {
+      &.rowbuttons {
+        > a {
+          &.advanced::before {
+            mask-image: url('https://api.iconify.design/solar:settings-outline.svg');
+          }
+
+          &.create::before {
+            mask-image: url('https://api.iconify.design/solar:add-circle-outline.svg');
+          }
+
+          &.delete::before {
+            mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
+          }
+        }
+      }
     }
   }
 }
