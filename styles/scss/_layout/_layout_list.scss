@@ -421,7 +421,8 @@
 
   //신원, 응답
   #identities-table,
-  #responses-table {
+  #responses-table,
+  #keys-table {
     tr {
       td {
         height: 2.875rem;
@@ -431,7 +432,6 @@
         padding-right: 1rem;
 
         &::before {
-          content: '';
           display: inline-block;
           flex: none;
           width: 1.25rem;

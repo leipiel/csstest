@@ -802,10 +802,12 @@ table.settings-default-icon {
   tr {
     td {
       &.mail::before {
+        content: '';
         mask-image: url('https://api.iconify.design/solar:user-circle-outline.svg');
       }
 
       &.name::before {
+        content: '';
         mask-image: url('https://api.iconify.design/solar:chat-round-line-outline.svg');
       }
     }
