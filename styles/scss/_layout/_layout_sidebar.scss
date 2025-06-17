@@ -256,7 +256,9 @@
 //메일쓰기 > 파일 첨부
 #layout-sidebar {
   &.sidebar-right {
-    background-color: var(--color-white);
+    > .scroller {
+      background-color: var(--color-white);
+    }
   }
 }
 

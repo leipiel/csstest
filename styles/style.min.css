@@ -9930,7 +9930,7 @@ body {
   background-color: var(--color-primary-50);
 }
 
-#layout-sidebar.sidebar-right {
+#layout-sidebar.sidebar-right > .scroller {
   background-color: var(--color-white);
 }
 
