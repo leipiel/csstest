@@ -313,6 +313,11 @@ html.touch .custom-switch,
     .formbuttons {
       padding: 0.5rem 1.75rem;
     }
+
+    //에디터 포커스 해제
+    div.tox.focused {
+      box-shadow: none;
+    }
   }
 }
 

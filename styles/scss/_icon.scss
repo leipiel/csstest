@@ -842,6 +842,22 @@ table.settings-default-icon {
   }
 }
 
+//키 아이콘
+.keylist {
+  li {
+    &::before {
+      display: inline-block;
+      width: 1.25rem;
+      height: 1.25rem;
+      content: '';
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+      mask-image: url('https://api.iconify.design/solar:key-minimalistic-outline.svg');
+    }
+  }
+}
+
 //버튼 아이콘
 button.btn {
   &.search {
