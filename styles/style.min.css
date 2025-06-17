@@ -10122,7 +10122,60 @@ body {
           mask-size: contain;
   background-color: var(--color-gray-90);
   position: relative;
-  top: 2px;
+  top: 6px;
+}
+#layout-list .pagenav-list.menu {
+  height: 2.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+  border-bottom: 1px solid var(--color-gray-10);
+}
+#layout-list .pagenav-list.menu .collapse {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#layout-list .pagenav-list.menu .collapse::before {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 0.875rem;
+  height: 0.875rem;
+  display: block;
+  margin: 0;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+  background-color: var(--color-gray-90);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+#layout-list .pagenav-list.menu .inner {
+  font-size: 0.9375rem;
+  color: var(--color-gray-90);
 }
 
 @media screen and (max-width: 1200px) {
