@@ -8169,17 +8169,16 @@ html.touch .custom-switch .custom-control-label::after,
   border-color: var(--color-primary-50);
 }
 .formcontainer .multi-input .content .input-group .input-group-append {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: var(--color-gray-10);
+}
+.formcontainer .multi-input .content .input-group .input-group-append a {
   border-color: var(--color-gray-30);
+  border: 1px solid;
+  margin: 0;
+  min-width: 2.4rem;
+}
+.formcontainer .multi-input .content .input-group input {
+  height: 2.5rem;
 }
 
 .ui-widget-content {

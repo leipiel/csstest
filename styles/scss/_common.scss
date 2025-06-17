@@ -369,11 +369,18 @@ html.touch .custom-switch,
 
       .input-group {
         .input-group-append {
-          display: flex;
-          justify-content: center;
-          align-items: center;
           background-color: var(--color-gray-10);
-          border-color: var(--color-gray-30);
+
+          a {
+            border-color: var(--color-gray-30);
+            border: 1px solid;
+            margin: 0;
+            min-width: 2.4rem;
+          }
+        }
+
+        input {
+          height: 2.5rem;
         }
       }
     }
