@@ -432,13 +432,13 @@ html.touch .custom-switch,
       display: flex;
       align-items: center;
       justify-content: center;
+      margin: 6px;
 
       &::before {
         content: '';
         display: block;
         width: 1.5rem;
         height: 1.5rem;
-        margin: 0;
         mask-repeat: no-repeat;
         mask-position: center;
         mask-size: contain;
@@ -451,5 +451,20 @@ html.touch .custom-switch,
   .ui-dialog-title {
     font-size: 1.375rem;
     font-weight: 700;
+  }
+
+  .form-group {
+    align-items: center;
+
+    .col-form-label {
+      line-height: 1;
+      height: auto;
+    }
+  }
+
+  &.ui-dialog {
+    .ui-dialog-content {
+      height: fit-content !important;
+    }
   }
 }

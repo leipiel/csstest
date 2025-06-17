@@ -897,6 +897,20 @@ button.btn {
       mask-image: url('https://api.iconify.design/solar:check-circle-outline.svg');
     }
   }
+
+  &.mainaction {
+    &::before {
+      content: '';
+      mask-image: url('https://api.iconify.design/solar:check-circle-outline.svg');
+    }
+  }
+
+  &.cancel {
+    &::before {
+      content: '';
+      mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
+    }
+  }
 }
 
 //html 에디터

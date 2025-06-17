@@ -8237,13 +8237,13 @@ html.touch .custom-switch .custom-control-label::after,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 6px;
 }
 .ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close::before {
   content: "";
   display: block;
   width: 1.5rem;
   height: 1.5rem;
-  margin: 0;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -8257,6 +8257,20 @@ html.touch .custom-switch .custom-control-label::after,
 .ui-widget-content .ui-dialog-title {
   font-size: 1.375rem;
   font-weight: 700;
+}
+.ui-widget-content .form-group {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ui-widget-content .form-group .col-form-label {
+  line-height: 1;
+  height: auto;
+}
+.ui-widget-content.ui-dialog .ui-dialog-content {
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }
 
 .icon.user::before {
@@ -9060,6 +9074,16 @@ button.btn.submit::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
+}
+button.btn.mainaction::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
+}
+button.btn.cancel::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
 }
 
 .html-editor .editor-toolbar .mce-i-html {
