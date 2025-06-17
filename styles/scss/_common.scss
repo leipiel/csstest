@@ -299,6 +299,8 @@ html.touch .custom-switch,
           }
 
           input.form-control {
+            height: 2.625rem;
+
             &:focus {
               box-shadow: 0 0 1px 0 var(--color-primary-50);
               border-color: var(--color-primary-50);

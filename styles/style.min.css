@@ -8108,6 +8108,9 @@ html.touch .custom-switch .custom-control-label::after,
 .formcontainer.task-settings .propform tr td .custom-switch {
   margin-top: 0.3125rem;
 }
+.formcontainer.task-settings .propform tr td input.form-control {
+  height: 2.625rem;
+}
 .formcontainer.task-settings .propform tr td input.form-control:focus {
   -webkit-box-shadow: 0 0 1px 0 var(--color-primary-50);
           box-shadow: 0 0 1px 0 var(--color-primary-50);
@@ -10070,6 +10073,12 @@ body {
   border-bottom: 0;
   padding-left: 1rem;
   padding-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #layout-list #identities-table tr td::before,
 #layout-list #responses-table tr td::before {
