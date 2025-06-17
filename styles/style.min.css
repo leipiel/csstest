@@ -8882,6 +8882,22 @@ button.btn.submit::before {
           mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
 }
 
+.html-editor .editor-toolbar .mce-i-html::before {
+  content: "";
+  display: inline-block;
+  width: 2.125rem;
+  height: 2.125rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:code-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:code-square-outline.svg");
+  background-color: var(--color-gray-90);
+}
+
 .task-login #layout {
   -webkit-box-align: center;
       -ms-flex-align: center;

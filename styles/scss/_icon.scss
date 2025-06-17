@@ -829,6 +829,23 @@ button.btn {
   }
 }
 
+//html 에디터
+.html-editor .editor-toolbar {
+  .mce-i-html {
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 2.125rem;
+      height: 2.125rem;
+      mask-repeat: no-repeat;
+      mask-position: center left;
+      mask-size: contain;
+      mask-image: url('https://api.iconify.design/solar:code-square-outline.svg');
+      background-color: var(--color-gray-90);
+    }
+  }
+}
+
 // mask-repeat: no-repeat;
 // mask-position: center left;
 // mask-size: contain;
