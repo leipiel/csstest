@@ -456,7 +456,8 @@
     border: 0;
     border-bottom: 1px solid var(--color-gray-10);
 
-    .collapse {
+    a.collapse,
+    a.expand {
       flex: none;
       width: 1.25rem;
       height: 1.25rem;
@@ -480,7 +481,11 @@
       }
     }
 
-    .inner {
+    a.collapse {
+      transform: rotate(-180deg);
+    }
+
+    .pagenav-text {
       font-size: 0.9375rem;
       color: var(--color-gray-90);
     }
