@@ -13,6 +13,11 @@
     margin-bottom: 0.75rem;
 
     a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0.375rem;
+
       &.extwin {
         &::before {
           content: '';
@@ -35,19 +40,41 @@
       visibility: hidden;
     }
   }
+
+  .header-content {
+    min-height: 0;
+  }
+
+  .header-summary {
+    margin-top: 0;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: var(--color-gray-60);
+
+    a {
+      color: var(--color-primary-50);
+      transition: all 0.15s ease-in-out;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 //플래그 헤더
 body.status-flagged #message-header > .subject:before {
   content: '';
   display: inline-block;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
   mask-repeat: no-repeat;
   mask-position: center left;
   mask-size: contain;
   background-color: var(--color-primary-50);
   mask-image: url('https://api.iconify.design/solar:flag-bold.svg');
+  position: relative;
+  top: 2px;
 }
 
 #rules {
