@@ -10583,6 +10583,13 @@ body.status-flagged #message-header > .subject:before {
   background-color: var(--color-gray-40);
 }
 
+#contactpic {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--color-gray-40);
+}
+
 .searchbar {
   height: 2.875rem;
   border-bottom: 1px solid var(--color-gray-20);
