@@ -898,7 +898,7 @@ button.btn {
     }
   }
 
-  &.mainaction {
+  &.save {
     &::before {
       content: '';
       mask-image: url('https://api.iconify.design/solar:check-circle-outline.svg');
@@ -909,6 +909,13 @@ button.btn {
     &::before {
       content: '';
       mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
+    }
+  }
+
+  &.delete {
+    &::before {
+      content: '';
+      mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
     }
   }
 }

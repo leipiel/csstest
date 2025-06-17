@@ -9075,7 +9075,7 @@ button.btn.submit::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
 }
-button.btn.mainaction::before {
+button.btn.save::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
@@ -9084,6 +9084,11 @@ button.btn.cancel::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
+}
+button.btn.delete::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
 }
 
 .html-editor .editor-toolbar .mce-i-html {
