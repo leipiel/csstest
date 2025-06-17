@@ -622,6 +622,11 @@ ul.contactlist {
             //그룹에서 제거
             mask-image: url('https://api.iconify.design/solar:folder-error-outline.svg');
           }
+
+          &.status::before {
+            //필터세트 활성화/비활성화
+            mask-image: url('https://api.iconify.design/solar:power-outline.svg');
+          }
         }
       }
     }

@@ -8714,6 +8714,11 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:folder-error-outline.svg");
           mask-image: url("https://api.iconify.design/solar:folder-error-outline.svg");
 }
+.popover .popupmenu .menu li a.status::before,
+.popover .popupmenu .listing li a.status::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:power-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:power-outline.svg");
+}
 .popover .popupmenu .selectable.listing li a.selected::before {
   content: "";
   -webkit-box-flex: 0;
