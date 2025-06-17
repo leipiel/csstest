@@ -10,6 +10,7 @@
   --color-gray-40: #a3a3a3;
   --color-gray-30: #d4d4d4;
   --color-gray-20: #e5e5e5;
+  --color-gray-15: #f0f0f0;
   --color-gray-10: #f5f5f5;
   --color-bluegray-5: #f8fafc;
   --color-bluegray-10: #f1f5f9;
@@ -8010,13 +8011,26 @@ html.touch .custom-switch .custom-control-label::after,
 
 .formcontainer.task-settings input.form-control {
   height: 2.625rem;
+  border-color: var(--color-gray-30);
 }
 .formcontainer.task-settings input.form-control:focus {
   -webkit-box-shadow: 0 0 1px 0 var(--color-primary-50);
           box-shadow: 0 0 1px 0 var(--color-primary-50);
   border-color: var(--color-primary-50);
 }
+.formcontainer.task-settings .form-control {
+  border-color: var(--color-gray-30);
+}
 .formcontainer.task-settings .form-control:focus {
+  -webkit-box-shadow: 0 0 1px 0 var(--color-primary-50);
+          box-shadow: 0 0 1px 0 var(--color-primary-50);
+  border-color: var(--color-primary-50);
+}
+.formcontainer.task-settings .custom-select {
+  height: 2.625rem;
+  border-color: var(--color-gray-30);
+}
+.formcontainer.task-settings .custom-select:focus {
   -webkit-box-shadow: 0 0 1px 0 var(--color-primary-50);
           box-shadow: 0 0 1px 0 var(--color-primary-50);
   border-color: var(--color-primary-50);
@@ -8110,14 +8124,6 @@ html.touch .custom-switch .custom-control-label::after,
   height: 100%;
   font-weight: 500;
 }
-.formcontainer.task-settings .propform tr td .custom-select {
-  height: 2.625rem;
-}
-.formcontainer.task-settings .propform tr td .custom-select:focus {
-  -webkit-box-shadow: 0 0 1px 0 var(--color-primary-50);
-          box-shadow: 0 0 1px 0 var(--color-primary-50);
-  border-color: var(--color-primary-50);
-}
 .formcontainer.task-settings .propform tr td .custom-switch {
   margin-top: 0.3125rem;
 }
@@ -8154,6 +8160,28 @@ html.touch .custom-switch .custom-control-label::after,
           mask-size: contain;
   background-color: var(--color-gray-90);
 }
+.formcontainer .multi-input .content {
+  border-color: var(--color-gray-30);
+}
+.formcontainer .multi-input .content.focused {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: var(--color-primary-50);
+}
+.formcontainer .multi-input .content .input-group .input-group-append {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-gray-10);
+  border-color: var(--color-gray-30);
+}
+
 .ui-widget-content {
   border-radius: 0.375rem;
 }

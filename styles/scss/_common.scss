@@ -190,6 +190,7 @@ html.touch .custom-switch,
   &.task-settings {
     input.form-control {
       height: 2.625rem;
+      border-color: var(--color-gray-30);
 
       &:focus {
         box-shadow: 0 0 1px 0 var(--color-primary-50);
@@ -198,6 +199,18 @@ html.touch .custom-switch,
     }
 
     .form-control {
+      border-color: var(--color-gray-30);
+
+      &:focus {
+        box-shadow: 0 0 1px 0 var(--color-primary-50);
+        border-color: var(--color-primary-50);
+      }
+    }
+
+    .custom-select {
+      height: 2.625rem;
+      border-color: var(--color-gray-30);
+
       &:focus {
         box-shadow: 0 0 1px 0 var(--color-primary-50);
         border-color: var(--color-primary-50);
@@ -301,15 +314,6 @@ html.touch .custom-switch,
             }
           }
 
-          .custom-select {
-            height: 2.625rem;
-
-            &:focus {
-              box-shadow: 0 0 1px 0 var(--color-primary-50);
-              border-color: var(--color-primary-50);
-            }
-          }
-
           .custom-switch {
             margin-top: 0.3125rem;
           }
@@ -355,6 +359,24 @@ html.touch .custom-switch,
   }
 
   .multi-input {
+    .content {
+      border-color: var(--color-gray-30);
+
+      &.focused {
+        box-shadow: none;
+        border-color: var(--color-primary-50);
+      }
+
+      .input-group {
+        .input-group-append {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--color-gray-10);
+          border-color: var(--color-gray-30);
+        }
+      }
+    }
   }
 }
 
