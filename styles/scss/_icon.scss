@@ -796,6 +796,22 @@ table.settings-default-icon {
   }
 }
 
+//설정 > 신원 아이콘
+#identities-table,
+#responses-table {
+  tr {
+    td {
+      &.mail::before {
+        mask-image: url('https://api.iconify.design/solar:user-circle-outline.svg');
+      }
+
+      &.name::before {
+        mask-image: url('https://api.iconify.design/solar:chat-round-line-outline.svg');
+      }
+    }
+  }
+}
+
 //버튼 아이콘
 button.btn {
   &.search {
