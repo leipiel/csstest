@@ -10421,7 +10421,11 @@ body {
     margin: 0 !important;
   }
 }
-#layout-content #rules {
+#layout-content .content {
+  padding: 1.5rem;
+}
+
+#rules {
   margin-bottom: 2.5rem;
 }
 
