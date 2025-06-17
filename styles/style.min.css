@@ -9930,6 +9930,10 @@ body {
   background-color: var(--color-primary-50);
 }
 
+#layout-sidebar.sidebar-right {
+  background-color: var(--color-white);
+}
+
 #layout-list table.listing tr {
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;

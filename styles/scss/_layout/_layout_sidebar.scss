@@ -253,6 +253,13 @@
   }
 }
 
+//메일쓰기 > 파일 첨부
+#layout-sidebar {
+  &.sidebar-right {
+    background-color: var(--color-white);
+  }
+}
+
 //responsive
 @media screen and (max-width: 480.99px) {
 }
