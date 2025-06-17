@@ -188,6 +188,22 @@ html.touch .custom-switch,
 //폼그룹 공통
 .formcontainer {
   &.task-settings {
+    input.form-control {
+      height: 2.625rem;
+
+      &:focus {
+        box-shadow: 0 0 1px 0 var(--color-primary-50);
+        border-color: var(--color-primary-50);
+      }
+    }
+
+    .form-control {
+      &:focus {
+        box-shadow: 0 0 1px 0 var(--color-primary-50);
+        border-color: var(--color-primary-50);
+      }
+    }
+
     .formcontent {
       padding: 1.75rem;
 
@@ -297,22 +313,6 @@ html.touch .custom-switch,
           .custom-switch {
             margin-top: 0.3125rem;
           }
-
-          input.form-control {
-            height: 2.625rem;
-
-            &:focus {
-              box-shadow: 0 0 1px 0 var(--color-primary-50);
-              border-color: var(--color-primary-50);
-            }
-          }
-
-          .form-control {
-            &:focus {
-              box-shadow: 0 0 1px 0 var(--color-primary-50);
-              border-color: var(--color-primary-50);
-            }
-          }
         }
       }
     }
@@ -352,6 +352,9 @@ html.touch .custom-switch,
         }
       }
     }
+  }
+
+  .multi-input {
   }
 }
 
