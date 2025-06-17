@@ -373,6 +373,10 @@ html.touch .custom-switch,
         border-color: var(--color-primary-50);
 
         .input-group {
+          .form-control {
+            height: 2.5rem;
+          }
+
           .input-group-append {
             background-color: var(--color-gray-10);
           }

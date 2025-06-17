@@ -132,18 +132,25 @@ body.status-flagged #message-header > .subject:before {
 }
 
 //주소록 작성
-.task-addressbook {
-  .image-upload {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    background-color: var(--color-gray-40);
-  }
-}
+// .task-addressbook {
+//   .image-upload {
+//     width: 5.25rem;
+//     height: 5.25rem;
+//     border-radius: 50%;
+//     background-color: var(--color-gray-20);
+//   }
+// }
 
 #contactpic {
-  width: 5rem;
-  height: 5rem;
+  width: 5.25rem;
+  height: 5.25rem;
   border-radius: 50%;
-  background-color: var(--color-gray-40);
+  background-color: var(--color-gray-20);
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 }
