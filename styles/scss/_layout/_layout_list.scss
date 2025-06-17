@@ -133,6 +133,7 @@
               &.flagged {
                 &::before {
                   background-color: var(--color-primary-50);
+                  mask-image: url('https://api.iconify.design/solar:flag-bold.svg');
                 }
               }
 

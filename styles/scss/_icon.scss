@@ -627,6 +627,16 @@ ul.contactlist {
             //필터세트 활성화/비활성화
             mask-image: url('https://api.iconify.design/solar:power-outline.svg');
           }
+
+          &.flag::before {
+            //플래그 추가
+            mask-image: url('https://api.iconify.design/solar:check-circle-outline.svg');
+          }
+
+          &.unflag::before {
+            //플래그 제거
+            mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
+          }
         }
       }
     }

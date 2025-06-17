@@ -8237,7 +8237,7 @@ html.touch .custom-switch .custom-control-label::after,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 6px;
+  margin: 0.625rem 0.5rem;
 }
 .ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close::before {
   content: "";
@@ -8863,6 +8863,16 @@ ul.contactlist a.contactgroup::before {
 .popover .popupmenu .listing li a.status::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:power-outline.svg");
           mask-image: url("https://api.iconify.design/solar:power-outline.svg");
+}
+.popover .popupmenu .menu li a.flag::before,
+.popover .popupmenu .listing li a.flag::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
+}
+.popover .popupmenu .menu li a.unflag::before,
+.popover .popupmenu .listing li a.unflag::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
 }
 .popover .popupmenu .selectable.listing li a.selected::before {
   content: "";
@@ -10032,6 +10042,8 @@ body {
 }
 #layout-list table.messagelist tr td.flags .flag > span.flagged::before {
   background-color: var(--color-primary-50);
+  -webkit-mask-image: url("https://api.iconify.design/solar:flag-bold.svg");
+          mask-image: url("https://api.iconify.design/solar:flag-bold.svg");
 }
 #layout-list table.messagelist tr td.flags .flag > span.unflagged {
   display: none;
