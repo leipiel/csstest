@@ -8181,6 +8181,9 @@ html.touch .custom-switch .custom-control-label::after,
 .formcontainer .multi-input .content.focused .input-group .input-group-append {
   background-color: var(--color-gray-10);
 }
+.formcontainer .input-group .form-control {
+  height: 100%;
+}
 .formcontainer .input-group .input-group-append {
   background-color: var(--color-gray-10);
 }
