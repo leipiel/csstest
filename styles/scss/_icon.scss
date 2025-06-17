@@ -159,18 +159,6 @@
         mask-image: url('https://api.iconify.design/solar:user-id-outline.svg');
       }
     }
-
-    &.prev {
-      a::before {
-        mask-image: url('https://api.iconify.design/solar:alt-arrow-left-outline.svg');
-      }
-    }
-
-    &.next {
-      a::before {
-        mask-image: url('https://api.iconify.design/solar:alt-arrow-right-outline.svg');
-      }
-    }
   }
 }
 
@@ -357,6 +345,14 @@ ul.contactlist {
         &.actions::before {
           //액션
           mask-image: url('https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg');
+        }
+
+        &.prev::before {
+          mask-image: url('https://api.iconify.design/solar:alt-arrow-left-outline.svg');
+        }
+
+        &.next::before {
+          mask-image: url('https://api.iconify.design/solar:alt-arrow-right-outline.svg');
         }
       }
     }
