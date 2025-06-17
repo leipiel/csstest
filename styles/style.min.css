@@ -8160,6 +8160,9 @@ html.touch .custom-switch .custom-control-label::after,
           mask-size: contain;
   background-color: var(--color-gray-90);
 }
+.formcontainer.task-settings .compact-table tr td.rowbuttons > a.disabled {
+  background-color: transparent;
+}
 .formcontainer .multi-input .content {
   border-color: var(--color-gray-30);
 }
@@ -8168,16 +8171,41 @@ html.touch .custom-switch .custom-control-label::after,
           box-shadow: none;
   border-color: var(--color-primary-50);
 }
+.formcontainer .multi-input .content.focused .input-group .input-group-append {
+  background-color: var(--color-gray-10);
+}
 .formcontainer .multi-input .content .input-group .input-group-append {
   background-color: var(--color-gray-10);
 }
 .formcontainer .multi-input .content .input-group .input-group-append a {
-  border-color: var(--color-gray-30);
-  border-left: 1px solid;
+  border-left: 1px solid var(--color-gray-30);
   margin: 0;
   min-width: 2.4rem;
   height: 100%;
   color: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.formcontainer .multi-input .content .input-group .input-group-append a::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background-color: var(--color-gray-70);
+}
+.formcontainer .multi-input .content .input-group .input-group-append a.reset::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
 }
 .formcontainer .multi-input .content .input-group input {
   height: 2.5rem;
