@@ -8108,6 +8108,11 @@ html.touch .custom-switch .custom-control-label::after,
 .formcontainer.task-settings .propform tr td .custom-switch {
   margin-top: 0.3125rem;
 }
+.formcontainer.task-settings .propform tr td input.form-control:focus {
+  -webkit-box-shadow: 0 0 1px 0 var(--color-primary-50);
+          box-shadow: 0 0 1px 0 var(--color-primary-50);
+  border-color: var(--color-primary-50);
+}
 
 .ui-widget-content {
   border-radius: 0.375rem;
@@ -9655,6 +9660,9 @@ body {
 #layout-list table.listing tr:hover {
   background-color: rgba(203, 213, 225, 0.27);
 }
+#layout-list table.listing tr td {
+  border: 0;
+}
 #layout-list table.listing.withselection tr td.selection {
   border-left: 0;
   padding-left: 0.875rem;
@@ -9976,6 +9984,8 @@ body {
   background-color: rgba(203, 213, 225, 0.27);
 }
 #layout-list ul.folderlist li > a::before {
+  width: 1.25rem;
+  height: 1.25rem;
   background-color: var(--color-gray-90);
 }
 #layout-list ul.folderlist li .custom-switch {
@@ -10038,6 +10048,14 @@ body {
   background-color: var(--color-gray-90);
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+}
+#layout-list #identities-table tr td,
+#layout-list #responses-table tr td {
+  height: 2.875rem;
+  border-left: 0;
+  border-bottom: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media screen and (max-width: 1200px) {

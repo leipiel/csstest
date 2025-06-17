@@ -6,6 +6,10 @@
       &:hover {
         background-color: rgba(203, 213, 225, 0.27);
       }
+
+      td {
+        border: 0;
+      }
     }
 
     &.withselection {
@@ -350,6 +354,8 @@
         }
 
         &::before {
+          width: 1.25rem;
+          height: 1.25rem;
           background-color: var(--color-gray-90);
         }
       }
@@ -409,6 +415,20 @@
             }
           }
         }
+      }
+    }
+  }
+
+  //신원, 응답
+  #identities-table,
+  #responses-table {
+    tr {
+      td {
+        height: 2.875rem;
+        border-left: 0;
+        border-bottom: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
       }
     }
   }
