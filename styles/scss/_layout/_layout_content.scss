@@ -80,6 +80,11 @@
     flex: none;
     padding: 0;
     font-size: 13px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding: 0.1875rem;
+    background-color: var(--color-gray-20);
 
     &::before {
       content: '' !important;
@@ -88,7 +93,7 @@
       mask-repeat: no-repeat;
       mask-position: center left;
       mask-size: contain;
-      background-color: var(--color-primary-50);
+      background-color: var(--color-gray-70);
       mask-image: url('https://api.iconify.design/solar:file-outline.svg');
     }
 
@@ -102,7 +107,7 @@
         mask-repeat: no-repeat;
         mask-position: center left;
         mask-size: contain;
-        background-color: var(--color-primary-50);
+        background-color: var(--color-gray-70);
         mask-image: url('https://api.iconify.design/solar:alt-arrow-down-outline.svg');
       }
     }
