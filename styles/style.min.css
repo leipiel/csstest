@@ -10095,6 +10095,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #layout-list #identities-table tr td::before,
 #layout-list #responses-table tr td::before {
