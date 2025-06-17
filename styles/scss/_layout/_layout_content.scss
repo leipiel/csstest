@@ -130,3 +130,13 @@ body.status-flagged #message-header > .subject:before {
 #rules {
   margin-bottom: 2.5rem;
 }
+
+//주소록 작성
+.task-addressbook {
+  .image-upload {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--color-gray-40);
+  }
+}

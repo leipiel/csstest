@@ -410,6 +410,7 @@ html.touch .custom-switch,
           background-color: var(--color-gray-70);
         }
 
+        &.delete::before,
         &.reset::before {
           mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
         }

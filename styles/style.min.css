@@ -8213,7 +8213,7 @@ html.touch .custom-switch .custom-control-label::after,
           mask-size: contain;
   background-color: var(--color-gray-70);
 }
-.formcontainer .input-group .input-group-append a.reset::before {
+.formcontainer .input-group .input-group-append a.delete::before, .formcontainer .input-group .input-group-append a.reset::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
           mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
 }
@@ -10574,6 +10574,13 @@ body.status-flagged #message-header > .subject:before {
 
 #rules {
   margin-bottom: 2.5rem;
+}
+
+.task-addressbook .image-upload {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--color-gray-40);
 }
 
 .searchbar {
