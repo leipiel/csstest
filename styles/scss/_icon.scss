@@ -832,11 +832,15 @@ button.btn {
 //html 에디터
 .html-editor .editor-toolbar {
   .mce-i-html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &::before {
       content: '';
       display: inline-block;
-      width: 2.125rem;
-      height: 2.125rem;
+      width: 1.25rem;
+      height: 1.25rem;
       mask-repeat: no-repeat;
       mask-position: center left;
       mask-size: contain;
