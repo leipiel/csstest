@@ -378,42 +378,42 @@ html.touch .custom-switch,
           }
         }
       }
+    }
+  }
 
-      .input-group {
-        .input-group-append {
-          background-color: var(--color-gray-10);
+  .input-group {
+    .input-group-append {
+      background-color: var(--color-gray-10);
 
-          a {
-            //border-color: var(--color-gray-30);
-            border-left: 1px solid var(--color-gray-30);
-            margin: 0;
-            min-width: 2.4rem;
-            height: 100%;
-            color: transparent;
-            align-items: center;
-            justify-content: center;
+      a {
+        //border-color: var(--color-gray-30);
+        border-left: 1px solid var(--color-gray-30);
+        margin: 0;
+        min-width: 2.4rem;
+        height: 100%;
+        color: transparent;
+        align-items: center;
+        justify-content: center;
 
-            &::before {
-              content: '';
-              display: block;
-              width: 1.5rem;
-              height: 1.5rem;
-              mask-repeat: no-repeat;
-              mask-position: center;
-              mask-size: contain;
-              background-color: var(--color-gray-70);
-            }
-
-            &.reset::before {
-              mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
-            }
-          }
+        &::before {
+          content: '';
+          display: block;
+          width: 1.5rem;
+          height: 1.5rem;
+          mask-repeat: no-repeat;
+          mask-position: center;
+          mask-size: contain;
+          background-color: var(--color-gray-70);
         }
 
-        input {
-          height: 2.5rem;
+        &.reset::before {
+          mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
         }
       }
+    }
+
+    input {
+      height: 2.5rem;
     }
   }
 }
