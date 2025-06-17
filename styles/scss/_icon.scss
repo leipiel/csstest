@@ -159,6 +159,18 @@
         mask-image: url('https://api.iconify.design/solar:user-id-outline.svg');
       }
     }
+
+    &.prev {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:alt-arrow-left-outline.svg');
+      }
+    }
+
+    &.next {
+      a::before {
+        mask-image: url('https://api.iconify.design/solar:alt-arrow-right-outline.svg');
+      }
+    }
   }
 }
 
