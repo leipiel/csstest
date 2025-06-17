@@ -8182,7 +8182,7 @@ html.touch .custom-switch .custom-control-label::after,
   background-color: var(--color-gray-10);
 }
 .formcontainer .input-group .form-control {
-  height: 100%;
+  height: 2.625rem;
 }
 .formcontainer .input-group .input-group-append {
   background-color: var(--color-gray-10);
