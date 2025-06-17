@@ -8173,9 +8173,11 @@ html.touch .custom-switch .custom-control-label::after,
 }
 .formcontainer .multi-input .content .input-group .input-group-append a {
   border-color: var(--color-gray-30);
-  border: 1px solid;
+  border-left: 1px solid;
   margin: 0;
   min-width: 2.4rem;
+  height: 100%;
+  color: transparent;
 }
 .formcontainer .multi-input .content .input-group input {
   height: 2.5rem;

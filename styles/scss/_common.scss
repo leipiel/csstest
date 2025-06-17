@@ -373,9 +373,11 @@ html.touch .custom-switch,
 
           a {
             border-color: var(--color-gray-30);
-            border: 1px solid;
+            border-left: 1px solid;
             margin: 0;
             min-width: 2.4rem;
+            height: 100%;
+            color: transparent;
           }
         }
 
