@@ -442,6 +442,7 @@
           background-color: var(--color-gray-90);
           position: relative;
           top: 6px;
+          margin-right: 0.5rem;
         }
       }
     }
@@ -451,7 +452,7 @@
   .pagenav-list.menu {
     height: 2.875rem;
     display: flex;
-    padding: 0 1rem;
+    padding: 0 1rem !important;
     align-items: center;
     border: 0;
     border-bottom: 1px solid var(--color-gray-10);
