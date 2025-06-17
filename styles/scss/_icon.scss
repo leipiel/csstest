@@ -820,6 +820,28 @@ table.settings-default-icon {
   }
 }
 
+#filtersetslistbox {
+  tr {
+    td {
+      &.name::before {
+        content: '';
+        mask-image: url('https://api.iconify.design/solar:file-outline.svg');
+      }
+    }
+  }
+}
+
+#filtersetslist {
+  tr {
+    td {
+      &.name::before {
+        content: '';
+        mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+      }
+    }
+  }
+}
+
 //버튼 아이콘
 button.btn {
   &.search {

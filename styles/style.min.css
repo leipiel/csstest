@@ -8879,6 +8879,18 @@ table.settings-default-icon tr.encryption td::before {
           mask-image: url("https://api.iconify.design/solar:chat-round-line-outline.svg");
 }
 
+#filtersetslistbox tr td.name::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:file-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:file-outline.svg");
+}
+
+#filtersetslist tr td.name::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:filter-outline.svg");
+}
+
 button.btn.search::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
@@ -10103,6 +10115,8 @@ body {
 }
 #layout-list #identities-table tr td,
 #layout-list #responses-table tr td,
+#layout-list #filtersetslistbox tr td,
+#layout-list #filtersetslist tr td,
 #layout-list #keys-table tr td {
   height: 2.875rem;
   border-left: 0;
@@ -10112,6 +10126,8 @@ body {
 }
 #layout-list #identities-table tr td::before,
 #layout-list #responses-table tr td::before,
+#layout-list #filtersetslistbox tr td::before,
+#layout-list #filtersetslist tr td::before,
 #layout-list #keys-table tr td::before {
   display: inline-block;
   -webkit-box-flex: 0;
@@ -10141,6 +10157,7 @@ body {
           align-items: center;
   border: 0;
   border-bottom: 1px solid var(--color-gray-10);
+  background-color: var(--color-white);
 }
 #layout-list .pagenav-list.menu a.collapse,
 #layout-list .pagenav-list.menu a.expand {
@@ -10188,6 +10205,10 @@ body {
 #layout-list .pagenav-list.menu .pagenav-text {
   font-size: 0.9375rem;
   color: var(--color-gray-90);
+}
+#layout-list #filtersetslistbox {
+  border: none;
+  background-color: var(--color-gray-10);
 }
 
 @media screen and (max-width: 1200px) {

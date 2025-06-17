@@ -422,6 +422,8 @@
   //신원, 응답
   #identities-table,
   #responses-table,
+  #filtersetslistbox,
+  #filtersetslist,
   #keys-table {
     tr {
       td {
@@ -456,6 +458,7 @@
     align-items: center;
     border: 0;
     border-bottom: 1px solid var(--color-gray-10);
+    background-color: var(--color-white);
 
     a.collapse,
     a.expand {
@@ -490,6 +493,11 @@
       font-size: 0.9375rem;
       color: var(--color-gray-90);
     }
+  }
+
+  #filtersetslistbox {
+    border: none;
+    background-color: var(--color-gray-10);
   }
 }
 
