@@ -8116,6 +8116,11 @@ html.touch .custom-switch .custom-control-label::after,
           box-shadow: 0 0 1px 0 var(--color-primary-50);
   border-color: var(--color-primary-50);
 }
+.formcontainer.task-settings .propform tr td .form-control:focus {
+  -webkit-box-shadow: 0 0 1px 0 var(--color-primary-50);
+          box-shadow: 0 0 1px 0 var(--color-primary-50);
+  border-color: var(--color-primary-50);
+}
 .formcontainer.task-settings .formbuttons {
   padding: 0.5rem 1.75rem;
 }
