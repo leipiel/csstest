@@ -10100,22 +10100,11 @@ body {
   border-bottom: 0;
   padding-left: 1rem;
   padding-right: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 #layout-list #identities-table tr td::before,
 #layout-list #responses-table tr td::before {
   content: "";
-  display: block;
+  display: inline-block;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -10128,6 +10117,8 @@ body {
   -webkit-mask-size: contain;
           mask-size: contain;
   background-color: var(--color-gray-90);
+  position: relative;
+  top: 2px;
 }
 
 @media screen and (max-width: 1200px) {
