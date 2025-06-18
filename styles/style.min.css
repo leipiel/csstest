@@ -10554,6 +10554,15 @@ body {
 .attachmentslist li a.dropdown {
   width: 1.25rem;
   height: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .attachmentslist li a.dropdown::before {
   width: 1rem;
@@ -10620,6 +10629,8 @@ body.status-flagged #message-header > .subject:before {
   position: absolute;
   bottom: 0;
   right: 0;
+  top: initial;
+  left: initial;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10633,6 +10644,8 @@ body.status-flagged #message-header > .subject:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
+  margin: 0;
 }
 .contact-header .image-upload.changed a.button.delete::before {
   content: "";
@@ -10640,6 +10653,7 @@ body.status-flagged #message-header > .subject:before {
       -ms-flex: none;
           flex: none;
   display: block;
+  margin: 0;
   width: 1.25rem;
   height: 1.25rem;
   -webkit-mask-repeat: no-repeat;
