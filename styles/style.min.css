@@ -11239,7 +11239,7 @@ html.layout-phone #layout-menu.popover .popover-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 3.25rem;
+  height: 5.25rem;
   padding: 1rem !important;
 }
 html.layout-phone #layout-menu.popover .popover-header #logo {
@@ -11277,6 +11277,9 @@ html.layout-phone #layout-menu.popover .popover-header a.button.icon.cancel::bef
           mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
   background-color: var(--color-white);
 }
+html.layout-phone #layout-menu.popover #taskmenu {
+  margin-top: 1.5rem;
+}
 html.layout-phone #layout-menu.popover #taskmenu a {
   border-bottom: none !important;
   height: 3.75rem;
@@ -11287,4 +11290,13 @@ html.layout-phone #layout-menu.popover #taskmenu a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+html.layout-phone #layout-menu.popover #taskmenu a::before {
+  width: 1.75rem;
+  height: 1.75rem;
 }

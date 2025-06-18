@@ -6,7 +6,7 @@ html.layout-phone {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 3.25rem;
+      height: 5.25rem;
       padding: 1rem !important;
 
       #logo {
@@ -37,11 +37,20 @@ html.layout-phone {
     }
 
     #taskmenu {
+      margin-top: 1.5rem;
       a {
         border-bottom: none !important;
         height: 3.75rem;
         flex-direction: row;
         align-items: center;
+        justify-content: flex-start;
+        font-size: 0.9375rem;
+        font-weight: 500;
+
+        &::before {
+          width: 1.75rem;
+          height: 1.75rem;
+        }
       }
     }
   }
