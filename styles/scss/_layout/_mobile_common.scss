@@ -107,7 +107,7 @@ html.layout-small {
     }
 
     .popover-body {
-      .popupmenu.menu {
+      .menu {
         li {
           border-bottom: none;
 
@@ -120,6 +120,10 @@ html.layout-small {
               width: 1.5rem !important;
               height: 1.5rem !important;
               margin-right: 0.75rem;
+            }
+
+            .inner {
+              font-size: 0.9375rem;
             }
           }
         }
