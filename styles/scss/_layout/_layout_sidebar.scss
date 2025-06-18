@@ -283,7 +283,7 @@
 
 .file-upload {
   &.droptarget {
-    padding: 1.5rem;
+    padding: 1.5rem 1rem;
     border: 2px dashed var(--color-bluegray-35);
 
     &::after {
@@ -322,8 +322,8 @@
       margin: 0;
       width: 100%;
       padding-left: 0.25rem;
-      background-color: var(--color-bluegray-5);
-      border-radius: 0.125rem;
+      background-color: var(--color-bluegray-10);
+      border-radius: 0.25rem;
 
       &::before {
         margin-right: 0.125rem;
