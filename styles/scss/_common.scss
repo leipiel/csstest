@@ -485,7 +485,10 @@ html.touch .custom-switch,
 
   &.ui-dialog {
     .ui-dialog-content {
-      height: fit-content !important;
+      //height: fit-content !important;
+
+      .popupmenu {
+      }
     }
   }
 }

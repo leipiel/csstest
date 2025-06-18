@@ -287,6 +287,9 @@ body.status-flagged #message-header > .subject:before {
     flex-wrap: wrap;
 
     .float-right {
+      flex: none;
+      margin-left: auto;
+
       a.extwin {
         color: var(--color-primary-50);
 

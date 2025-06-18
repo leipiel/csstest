@@ -653,7 +653,12 @@ ul.contactlist {
 
           &.recipient::before {
             //참조
-            mask-image: url('https://api.iconify.design/solar:forward-outline.svg');
+            mask-image: url('https://api.iconify.design/solar:user-plus-outline.svg');
+          }
+
+          &.insertresponse::before {
+            //응답삽입
+            mask-image: url('https://api.iconify.design/solar:add-square-outline.svg');
           }
         }
       }
@@ -940,7 +945,8 @@ button.btn {
     }
   }
 
-  &.delete {
+  &.delete,
+  &.discard {
     &::before {
       content: '';
       mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');

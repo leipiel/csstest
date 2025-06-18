@@ -8284,12 +8284,6 @@ html.touch .custom-switch .custom-control-label::after,
   line-height: 1;
   height: auto;
 }
-.ui-widget-content.ui-dialog .ui-dialog-content {
-  height: -webkit-fit-content !important;
-  height: -moz-fit-content !important;
-  height: fit-content !important;
-}
-
 .icon.user::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
@@ -8906,8 +8900,13 @@ ul.contactlist a.contactgroup::before {
 }
 .popover .popupmenu .menu li a.recipient::before,
 .popover .popupmenu .listing li a.recipient::before {
-  -webkit-mask-image: url("https://api.iconify.design/solar:forward-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:forward-outline.svg");
+  -webkit-mask-image: url("https://api.iconify.design/solar:user-plus-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:user-plus-outline.svg");
+}
+.popover .popupmenu .menu li a.insertresponse::before,
+.popover .popupmenu .listing li a.insertresponse::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
 }
 .popover .popupmenu .selectable.listing li a.selected::before {
   content: "";
@@ -9130,7 +9129,7 @@ button.btn.cancel::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
 }
-button.btn.delete::before {
+button.btn.delete::before, button.btn.discard::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
           mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
@@ -10759,6 +10758,12 @@ body.status-flagged #message-header > .subject:before {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+#compose-content .formbuttons .float-right {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  margin-left: auto;
 }
 #compose-content .formbuttons .float-right a.extwin {
   color: var(--color-primary-50);
