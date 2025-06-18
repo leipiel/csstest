@@ -10596,6 +10596,7 @@ body.status-flagged #message-header > .subject:before {
   height: 5.25rem;
   border-radius: 50%;
   background-color: var(--color-gray-20);
+  position: relative;
 }
 #contactpic img {
   width: 100%;
@@ -10603,6 +10604,53 @@ body.status-flagged #message-header > .subject:before {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.contact-header {
+  margin-bottom: 2.5rem;
+}
+.contact-header .contact-photo {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  min-width: 0;
+  margin-right: 1.25rem;
+}
+.contact-header .image-upload.changed a.button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--color-primary-50);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-header .image-upload.changed a.button.delete::before {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+  background-color: var(--color-white);
 }
 
 .searchbar {
