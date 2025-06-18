@@ -11231,3 +11231,7 @@ body.status-flagged #message-header > .subject:before {
 .searchoptions#foldersearchmenu > div.formcontent {
   margin-top: 1rem;
 }
+
+html.layout-phone .popover .popover-header {
+  height: 3.25rem;
+}
