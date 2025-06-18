@@ -8298,6 +8298,7 @@ html.touch .custom-switch .custom-control-label::after,
 #contacts-table tr td.contactgroup,
 #contacts-table tr td.contact {
   font-size: 0.9375rem;
+  color: var(--color-gray-70);
 }
 #contacts-table tr td.contactgroup::before,
 #contacts-table tr td.contact::before {
@@ -8311,6 +8312,84 @@ html.touch .custom-switch .custom-control-label::after,
           mask-position: center left;
   -webkit-mask-size: contain;
           mask-size: contain;
+  background-color: var(--color-gray-70);
+}
+
+.popup .listbox .footer {
+  background-color: var(--color-gray-10);
+  border: none;
+  border-bottom: 1px solid var(--color-gray-15);
+  border-top: 1px solid var(--color-gray-15);
+}
+.popup .listbox .footer.pagenav {
+  padding: 0 0.625rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.popup .listbox .footer.pagenav a {
+  width: 1.5rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  min-width: 0 !important;
+}
+.popup .listbox .footer.pagenav a::before {
+  content: "";
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background-color: var(--color-gray-40);
+}
+.popup .listbox .footer.pagenav a.prevpage {
+  margin-right: auto;
+}
+.popup .listbox .footer.pagenav a.nextpage {
+  margin-left: auto;
+}
+.popup .listbox .footer.pagenav a.firstpage::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:double-alt-arrow-left-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:double-alt-arrow-left-outline.svg");
+}
+.popup .listbox .footer.pagenav a.prevpage::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
+}
+.popup .listbox .footer.pagenav a.nextpage::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-right-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-right-outline.svg");
+}
+.popup .listbox .footer.pagenav a.lastpage::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:double-alt-arrow-right-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:double-alt-arrow-right-outline.svg");
+}
+.popup .listbox .footer.pagenav a.selection::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:check-square-outline.svg");
+}
+.popup .listbox .footer.pagenav .pagenav-text {
+  color: var(--color-gray-60);
+  font-weight: 500;
+  font-size: 0.6875rem;
+}
+.popup .listbox .footer.pagenav .form-control {
+  display: none;
 }
 
 .icon.user::before {
@@ -9914,6 +9993,12 @@ body {
 #directorylist li.selected,
 #settings-menu li.selected,
 #layout-sidebar .treelist li.selected {
+  background-color: transparent;
+}
+#mailboxlist li.selected:hover,
+#directorylist li.selected:hover,
+#settings-menu li.selected:hover,
+#layout-sidebar .treelist li.selected:hover {
   background-color: transparent;
 }
 #mailboxlist li.selected > a,
