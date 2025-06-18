@@ -480,6 +480,15 @@ html.touch .custom-switch,
       align-items: center;
       justify-content: center;
       margin: 0.625rem 0.5rem;
+      background-color: transparent;
+
+      &:hover,
+      &:focus,
+      &:active {
+        box-shadow: none;
+        background-color: transparent;
+        outline: none;
+      }
 
       &::before {
         content: '';

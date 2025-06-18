@@ -8282,6 +8282,13 @@ html.touch .custom-switch .custom-control-label::after,
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0.625rem 0.5rem;
+  background-color: transparent;
+}
+.ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close:hover, .ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close:focus, .ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  outline: none;
 }
 .ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close::before {
   content: "";
