@@ -11293,10 +11293,15 @@ html.layout-phone #layout-menu.popover #taskmenu a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  font-size: 0.9375rem;
-  font-weight: 500;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: 0.75rem;
 }
 html.layout-phone #layout-menu.popover #taskmenu a::before {
   width: 1.75rem;
   height: 1.75rem;
+}
+html.layout-phone #layout-menu.popover #taskmenu a .inner {
+  font-size: 0.9375rem;
+  font-weight: 500;
 }

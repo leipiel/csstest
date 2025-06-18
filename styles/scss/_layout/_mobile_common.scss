@@ -44,12 +44,18 @@ html.layout-phone {
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        font-size: 0.9375rem;
-        font-weight: 500;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-right: 0.75rem;
 
         &::before {
           width: 1.75rem;
           height: 1.75rem;
+        }
+
+        .inner {
+          font-size: 0.9375rem;
+          font-weight: 500;
         }
       }
     }
