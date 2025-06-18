@@ -8480,6 +8480,13 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
           mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
 }
+#directorylist li.contact a::before,
+#directorylist a.contact::before,
+ul.contactlist li.contact a::before,
+ul.contactlist a.contact::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:users-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:users-circle-outline.svg");
+}
 
 .header .menu.toolbar li a::before {
   content: "";
