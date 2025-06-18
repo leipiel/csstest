@@ -980,6 +980,13 @@ button.btn {
       mask-image: url('https://api.iconify.design/solar:paperclip-outline.svg');
     }
   }
+
+  &.import {
+    &::before {
+      content: '';
+      mask-image: url('https://api.iconify.design/solar:upload-outline.svg');
+    }
+  }
 }
 
 //html 에디터

@@ -9313,6 +9313,11 @@ button.btn.attach::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
           mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
 }
+button.btn.import::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:upload-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:upload-outline.svg");
+}
 
 .html-editor .editor-toolbar .mce-i-html {
   display: -webkit-box;
