@@ -8284,6 +8284,10 @@ html.touch .custom-switch .custom-control-label::after,
   line-height: 1;
   height: auto;
 }
+#contacts-table {
+  background-color: var(--color-bluegray-5);
+  border-top: 1px solid var(--color-bluegray-10);
+}
 #contacts-table tr.group td::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
           mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
@@ -8294,6 +8298,7 @@ html.touch .custom-switch .custom-control-label::after,
 }
 #contacts-table tr td {
   height: 2.5rem;
+  border-color: var(--color-bluegray-10);
 }
 #contacts-table tr td.contactgroup,
 #contacts-table tr td.contact {
@@ -8313,6 +8318,8 @@ html.touch .custom-switch .custom-control-label::after,
   -webkit-mask-size: contain;
           mask-size: contain;
   background-color: var(--color-gray-70);
+  position: relative;
+  top: 0.4375rem;
 }
 
 .popup .listbox .footer {
@@ -8360,8 +8367,6 @@ html.touch .custom-switch .custom-control-label::after,
   -webkit-mask-size: contain;
           mask-size: contain;
   background-color: var(--color-gray-70);
-  position: relative;
-  top: 0.4375rem;
 }
 .popup .listbox .footer.pagenav a.prevpage {
   margin-right: auto;
