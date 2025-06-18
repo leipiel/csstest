@@ -8360,6 +8360,8 @@ html.touch .custom-switch .custom-control-label::after,
   -webkit-mask-size: contain;
           mask-size: contain;
   background-color: var(--color-gray-70);
+  position: relative;
+  top: 0.4375rem;
 }
 .popup .listbox .footer.pagenav a.prevpage {
   margin-right: auto;
