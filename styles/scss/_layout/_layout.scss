@@ -411,8 +411,8 @@ body {
 }
 
 //폼 컨텐츠 패딩 간격 공통
-.task-settings,
-.task-addressbook {
+.formcontainer.task-settings,
+.formcontainer.task-addressbook {
   .formcontent {
     padding: 1.75rem;
   }
