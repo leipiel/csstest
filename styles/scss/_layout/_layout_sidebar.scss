@@ -91,6 +91,10 @@
     padding: 0;
     line-height: 1;
 
+    &:hover {
+      background-color: transparent;
+    }
+
     a {
       padding: 0.625rem 1.25rem;
       display: flex;
@@ -101,6 +105,10 @@
       cursor: pointer;
       height: 2.875rem;
 
+      &:hover {
+        background-color: #cbd5e18c;
+      }
+
       &::before {
         background-color: var(--color-gray-90);
         margin-right: 0.625rem;
@@ -109,9 +117,7 @@
 
     &.selected {
       background-color: transparent;
-      &:hover {
-        background-color: transparent;
-      }
+
       > a {
         background-color: #cbd5e18c;
       }

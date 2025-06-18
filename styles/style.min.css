@@ -9969,6 +9969,12 @@ body {
   padding: 0;
   line-height: 1;
 }
+#mailboxlist li:hover,
+#directorylist li:hover,
+#settings-menu li:hover,
+#layout-sidebar .treelist li:hover {
+  background-color: transparent;
+}
 #mailboxlist li a,
 #directorylist li a,
 #settings-menu li a,
@@ -9986,6 +9992,12 @@ body {
   cursor: pointer;
   height: 2.875rem;
 }
+#mailboxlist li a:hover,
+#directorylist li a:hover,
+#settings-menu li a:hover,
+#layout-sidebar .treelist li a:hover {
+  background-color: rgba(203, 213, 225, 0.5490196078);
+}
 #mailboxlist li a::before,
 #directorylist li a::before,
 #settings-menu li a::before,
@@ -9997,12 +10009,6 @@ body {
 #directorylist li.selected,
 #settings-menu li.selected,
 #layout-sidebar .treelist li.selected {
-  background-color: transparent;
-}
-#mailboxlist li.selected:hover,
-#directorylist li.selected:hover,
-#settings-menu li.selected:hover,
-#layout-sidebar .treelist li.selected:hover {
   background-color: transparent;
 }
 #mailboxlist li.selected > a,
