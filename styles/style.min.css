@@ -10159,19 +10159,7 @@ body {
   padding: 1.5rem;
   border: 2px dashed var(--color-bluegray-35);
 }
-.file-upload .upload-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.file-upload::after {
+.file-upload.droptarget::after {
   content: "";
   width: 3.5rem;
   height: 3.5rem;
@@ -10188,6 +10176,29 @@ body {
   -webkit-mask-image: url("https://api.iconify.design/solar:download-minimalistic-outline.svg");
           mask-image: url("https://api.iconify.design/solar:download-minimalistic-outline.svg");
   background-color: var(--color-bluegray-35);
+}
+.file-upload .upload-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.file-upload .upload-form button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 
 #layout-list table.listing tr {
