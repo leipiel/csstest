@@ -1,9 +1,38 @@
 //GNB 없음 1단
 html.layout-phone {
   //GNB
-  .popover {
+  #layout-menu.popover {
     .popover-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       height: 3.25rem;
+      padding: 1rem;
+
+      #logo {
+        width: 3.25rem;
+        height: 3.25rem;
+      }
+
+      a.button.icon.cancel {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+          content: '';
+          display: block;
+          width: 1.75rem;
+          height: 1.75rem;
+          mask-repeat: no-repeat;
+          mask-position: center left;
+          mask-size: contain;
+          mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
+          background-color: var(--color-white);
+        }
+      }
     }
   }
 }

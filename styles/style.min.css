@@ -11232,6 +11232,48 @@ body.status-flagged #message-header > .subject:before {
   margin-top: 1rem;
 }
 
-html.layout-phone .popover .popover-header {
+html.layout-phone #layout-menu.popover .popover-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 3.25rem;
+  padding: 1rem;
+}
+html.layout-phone #layout-menu.popover .popover-header #logo {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+html.layout-phone #layout-menu.popover .popover-header a.button.icon.cancel {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html.layout-phone #layout-menu.popover .popover-header a.button.icon.cancel::before {
+  content: "";
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
+  background-color: var(--color-white);
 }
