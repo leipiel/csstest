@@ -285,6 +285,22 @@
   .upload-form {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+  }
+
+  &::after {
+    content: '';
+    width: 3.5rem;
+    height: 3.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25rem;
+    mask-repeat: no-repeat;
+    mask-position: center left;
+    mask-size: contain;
+    mask-image: url('https://api.iconify.design/solar:download-minimalistic-outline.svg');
+    background-color: var(--color-bluegray-35);
   }
 }
 

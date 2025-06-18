@@ -10166,6 +10166,28 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.file-upload::after {
+  content: "";
+  width: 3.5rem;
+  height: 3.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.25rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:download-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:download-minimalistic-outline.svg");
+  background-color: var(--color-bluegray-35);
 }
 
 #layout-list table.listing tr {
