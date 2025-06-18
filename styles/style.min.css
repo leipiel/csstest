@@ -11283,6 +11283,7 @@ html.layout-phone #layout-menu.popover .popover-header a.button.icon.cancel::bef
   -webkit-mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
   background-color: var(--color-white);
+  margin: 0;
 }
 html.layout-phone #layout-menu.popover #taskmenu {
   margin-top: 1.5rem;
