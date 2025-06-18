@@ -9814,6 +9814,10 @@ body {
   .header .button.icon.toolbar-menu-button {
     display: block;
   }
+  #layout-content .header .menu.toolbar {
+    display: none;
+    visibility: hidden;
+  }
 }
 @media screen and (max-width: 480px) {
   .header .button.icon.task-menu-button {
@@ -11317,7 +11321,7 @@ html.layout-small .popover:not(.select-menu) .popover-header {
 }
 
 @media screen and (max-width: 768px) {
-  #layout.footer.menu {
+  #layout .footer.menu {
     height: 3.75rem;
     background-color: var(--color-bluegray-10);
     border-top: 1px solid var(--color-bluegray-30);

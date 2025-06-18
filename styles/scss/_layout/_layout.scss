@@ -315,6 +315,7 @@ body {
 
 //responsive
 @media screen and (max-width: 1200px) {
+  //헤더 기본 버튼 공통
   .header {
     .button.icon {
       &:hover {
@@ -366,6 +367,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  //헤더 기본 버튼 공통
   .header {
     .button.icon {
       &.toolbar-list-button {
@@ -375,6 +377,14 @@ body {
       &.toolbar-menu-button {
         display: block;
       }
+    }
+  }
+
+  //헤더 기능 툴바 숨김
+  #layout-content .header {
+    .menu.toolbar {
+      display: none;
+      visibility: hidden;
     }
   }
 }

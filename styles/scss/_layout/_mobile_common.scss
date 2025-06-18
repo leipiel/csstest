@@ -76,7 +76,7 @@ html.layout-small {
 
 //모바일 하단 푸터
 @media screen and (max-width: 768px) {
-  #layout.footer.menu {
+  #layout .footer.menu {
     height: 3.75rem;
     background-color: var(--color-bluegray-10);
     border-top: 1px solid var(--color-bluegray-30);
