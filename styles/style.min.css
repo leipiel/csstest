@@ -10668,11 +10668,17 @@ body.status-flagged #message-header > .subject:before {
   background-color: var(--color-white);
 }
 
+.task-addressbook.action-show .contact-header {
+  margin-bottom: 1.75rem;
+}
 .task-addressbook .nav-tabs {
   margin-left: -1.75rem;
   margin-right: -1.75rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  margin-bottom: 1.5rem;
 }
-.task-addressbook .nav-tabs .nav-link a {
+.task-addressbook .nav-tabs .nav-link {
   color: var(--color-primary-50);
 }
 
