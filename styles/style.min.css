@@ -9584,11 +9584,13 @@ body {
   color: var(--color-gray-50);
 }
 
-.formcontainer.content .formcontainer.task-settings .formcontent,
+.formcontainer.content .formcontent,
+.formcontainer.task-settings .formcontent,
 .formcontainer.task-addressbook .formcontent {
   padding: 1.75rem;
 }
-.formcontainer.content .formcontainer.task-settings .formbuttons,
+.formcontainer.content .formbuttons,
+.formcontainer.task-settings .formbuttons,
 .formcontainer.task-addressbook .formbuttons {
   padding: 0.5rem 1.75rem;
 }
