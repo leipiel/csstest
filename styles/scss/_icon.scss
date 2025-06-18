@@ -449,7 +449,8 @@ ul.contactlist {
 .popover {
   .popupmenu {
     .menu,
-    .listing {
+    .listing,
+    &.menu.toolbar {
       li {
         a {
           &::before {
