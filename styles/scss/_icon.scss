@@ -645,6 +645,16 @@ ul.contactlist {
             //플래그 제거
             mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
           }
+
+          &.recipient::before {
+            //참조
+            mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
+          }
+
+          &.recipient::before {
+            //참조
+            mask-image: url('https://api.iconify.design/solar:forward-outline.svg');
+          }
         }
       }
     }

@@ -289,6 +289,8 @@ body.status-flagged #message-header > .subject:before {
       a.button.icon {
         width: 1.125rem;
         height: 1.125rem;
+        margin-left: 0.25rem;
+        margin-top: 0.3125rem;
 
         &::before {
           content: '';
