@@ -4,10 +4,10 @@
 @use '_icon.scss';
 @use '_login.scss';
 
-@use '_layout/_layout';
-@use '_layout/_layout_menu';
+@use '_layout/_layout'; //미디어쿼리 사용
+@use '_layout/_layout_menu'; //미디어쿼리 사용
 @use '_layout/layout_sidebar';
-@use '_layout/layout_list';
+@use '_layout/layout_list'; //미디어쿼리 사용
 @use '_layout/layout_content';
 
 @use '_components/searchbar';

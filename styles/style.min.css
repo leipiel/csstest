@@ -9814,7 +9814,12 @@ body {
   .header .button.icon.toolbar-list-button {
     display: none;
   }
-  .header .button.icon.toolbar-menu-button, .header .button.icon.task-menu-button {
+  .header .button.icon.toolbar-menu-button {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header .button.icon.toolbar-task-button {
     display: block;
   }
 }
@@ -9890,7 +9895,7 @@ body {
   height: auto;
 }
 
-@media screen and (max-width: 1024.99px) {
+@media screen and (max-width: 1024px) {
   #layout-menu #taskmenu {
     margin-top: 0;
   }
