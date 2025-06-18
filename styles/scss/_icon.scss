@@ -936,6 +936,13 @@ button.btn {
       mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
     }
   }
+
+  &.edit {
+    &::before {
+      content: '';
+      mask-image: url('https://api.iconify.design/solar:pen-2-outline.svg');
+    }
+  }
 }
 
 //html 에디터
