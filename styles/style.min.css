@@ -10681,6 +10681,9 @@ body.status-flagged #message-header > .subject:before {
 .task-addressbook.action-show .contact-header {
   margin-bottom: 1.75rem;
 }
+.task-addressbook.action-show .tab-content .propform .row.input-group {
+  font-size: 0.9375rem;
+}
 .task-addressbook.action-show .tab-content .propform .row.input-group .form-control-plaintext {
   padding: 0;
   display: -webkit-box;
@@ -10689,6 +10692,12 @@ body.status-flagged #message-header > .subject:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.task-addressbook.action-show .tab-content .propform .row.input-group .form-control-plaintext a {
+  color: var(--color-primary-50);
+}
+.task-addressbook.action-show .tab-content .proplist li {
+  min-height: 2.625rem;
 }
 .task-addressbook.action-show fieldset:not(.tab-pane):nth-of-type(n + 2),
 .task-addressbook.action-show .propform fieldset:not(.tab-pane):nth-of-type(n + 2) {

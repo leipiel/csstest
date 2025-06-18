@@ -233,6 +233,8 @@ body.status-flagged #message-header > .subject:before {
     .tab-content {
       .propform {
         .row.input-group {
+          font-size: 0.9375rem;
+
           .input-group-prepend {
           }
 
@@ -240,7 +242,17 @@ body.status-flagged #message-header > .subject:before {
             padding: 0;
             display: flex;
             align-items: center;
+
+            a {
+              color: var(--color-primary-50);
+            }
           }
+        }
+      }
+
+      .proplist {
+        li {
+          min-height: 2.625rem;
         }
       }
     }
