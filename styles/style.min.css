@@ -8284,6 +8284,109 @@ html.touch .custom-switch .custom-control-label::after,
   line-height: 1;
   height: auto;
 }
+.ui-widget-content.ui-dialog #mailboxlist li {
+  border-bottom: none;
+  padding: 0;
+  line-height: 1;
+}
+.ui-widget-content.ui-dialog #mailboxlist li a {
+  padding: 0.625rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-gray-90);
+  cursor: pointer;
+  height: 2.875rem;
+}
+.ui-widget-content.ui-dialog #mailboxlist li a::before {
+  background-color: var(--color-gray-90);
+  margin-right: 0.625rem;
+}
+.ui-widget-content.ui-dialog #mailboxlist li.selected > a {
+  background-color: rgba(203, 213, 225, 0.5490196078);
+}
+.ui-widget-content.ui-dialog #mailboxlist li.mailbox .unreadcount {
+  margin: 0;
+  position: static;
+  top: auto;
+  right: auto;
+  margin-left: auto;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-white);
+  padding: 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--color-primary-50);
+  border-radius: 2.125rem;
+  height: 1.375rem;
+}
+.ui-widget-content.ui-dialog #directorylist.treelist div.treetoggle {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  top: 12px;
+  left: auto;
+  right: auto;
+  left: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ui-widget-content.ui-dialog #directorylist.treelist div.treetoggle::before {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 0.875rem;
+  height: 0.875rem;
+  display: block;
+  margin: 0;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
+  background-color: var(--color-gray-90);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.ui-widget-content.ui-dialog #directorylist.treelist div.treetoggle.expanded::before {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.ui-widget-content.ui-dialog #directorylist.treelist > li ul[role=group] {
+  border-top: none;
+}
+.ui-widget-content.ui-dialog #directorylist.treelist > li ul[role=group] > li a {
+  padding-left: 2rem;
+}
+.ui-widget-content.ui-dialog #directorylist.treelist > li ul[role=group] > li a::before {
+  background-color: var(--color-gray-90);
+}
+
 .icon.user::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
@@ -9143,6 +9246,11 @@ button.btn.send::before {
   content: "";
   -webkit-mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
           mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
+}
+button.btn.insert::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
 }
 
 .html-editor .editor-toolbar .mce-i-html {
@@ -10786,6 +10894,11 @@ body.status-flagged #message-header > .subject:before {
 
 .recipient-input {
   height: auto !important;
+}
+.recipient-input li.recipient {
+  background-color: var(--color-gray-10);
+  border: 1px solid var(--color-gray-30);
+  border-radius: 0.25rem;
 }
 .recipient-input li.recipient a.button.icon {
   width: 1.125rem;
