@@ -10606,6 +10606,7 @@ body.status-flagged #message-header > .subject:before {
   border-radius: 50%;
   background-color: var(--color-gray-20);
   position: relative;
+  overflow: visible;
 }
 #contactpic img {
   width: 100%;
@@ -10634,8 +10635,8 @@ body.status-flagged #message-header > .subject:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.875rem;
+  height: 1.875rem;
   border-radius: 50%;
   background-color: var(--color-primary-50);
   -webkit-box-pack: center;
@@ -10665,6 +10666,14 @@ body.status-flagged #message-header > .subject:before {
   -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
           mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
   background-color: var(--color-white);
+}
+
+.task-addressbook .nav-tabs {
+  margin-left: -1.75rem;
+  margin-right: -1.75rem;
+}
+.task-addressbook .nav-tabs .nav-link a {
+  color: var(--color-primary-50);
 }
 
 .searchbar {
