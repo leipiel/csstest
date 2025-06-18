@@ -69,6 +69,32 @@ button.btn {
         box-shadow: none;
       }
     }
+
+    &.disabled,
+    &:disabled {
+      background-color: var(--color-primary-20);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: var(--color-bluegray-40);
+    border-color: var(--color-bluegray-40);
+
+    &:not(.disabled) {
+      &:active,
+      &:active:focus,
+      &:focus,
+      &:hover {
+        background-color: var(--color-bluegray-50);
+        border-color: var(--color-bluegray-50);
+        box-shadow: none;
+      }
+    }
+
+    &.disabled,
+    &:disabled {
+      background-color: var(--color-bluegray-30);
+    }
   }
 
   &.btn-lg {

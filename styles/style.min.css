@@ -15,6 +15,8 @@
   --color-bluegray-5: #f8fafc;
   --color-bluegray-10: #f1f5f9;
   --color-bluegray-30: #cbd5e1;
+  --color-bluegray-35: #bccbdd;
+  --color-bluegray-40: #94a3b8;
   --color-bluegray-50: #64748b;
   --color-white: #fff;
   --color-black: #000;
@@ -7889,6 +7891,31 @@ button.btn.btn-primary:not(.disabled):hover {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+a.btn.btn-primary.disabled, a.btn.btn-primary:disabled,
+button.btn.btn-primary.disabled,
+button.btn.btn-primary:disabled {
+  background-color: var(--color-primary-20);
+}
+a.btn.btn-secondary,
+button.btn.btn-secondary {
+  background-color: var(--color-bluegray-40);
+  border-color: var(--color-bluegray-40);
+}
+a.btn.btn-secondary:not(.disabled):active, a.btn.btn-secondary:not(.disabled):active:focus, a.btn.btn-secondary:not(.disabled):focus, a.btn.btn-secondary:not(.disabled):hover,
+button.btn.btn-secondary:not(.disabled):active,
+button.btn.btn-secondary:not(.disabled):active:focus,
+button.btn.btn-secondary:not(.disabled):focus,
+button.btn.btn-secondary:not(.disabled):hover {
+  background-color: var(--color-bluegray-50);
+  border-color: var(--color-bluegray-50);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+a.btn.btn-secondary.disabled, a.btn.btn-secondary:disabled,
+button.btn.btn-secondary.disabled,
+button.btn.btn-secondary:disabled {
+  background-color: var(--color-bluegray-30);
+}
 a.btn.btn-lg,
 button.btn.btn-lg {
   border-radius: 0.5rem;
@@ -9268,6 +9295,11 @@ button.btn.insert::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
 }
+button.btn.attach::before {
+  content: "";
+  -webkit-mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
+}
 
 .html-editor .editor-toolbar .mce-i-html {
   display: -webkit-box;
@@ -10117,6 +10149,23 @@ body {
 
 #layout-sidebar.sidebar-right > .scroller {
   background-color: var(--color-white);
+}
+
+#compose-attachments {
+  margin: 1.75rem 1.75rem 0 1.75rem;
+}
+
+.file-upload.droptarget {
+  padding: 1.5rem;
+  border: 2px dashed var(--color-bluegray-35);
+}
+.file-upload .upload-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #layout-list table.listing tr {

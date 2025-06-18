@@ -973,6 +973,13 @@ button.btn {
       mask-image: url('https://api.iconify.design/solar:add-square-outline.svg');
     }
   }
+
+  &.attach {
+    &::before {
+      content: '';
+      mask-image: url('https://api.iconify.design/solar:paperclip-outline.svg');
+    }
+  }
 }
 
 //html 에디터
