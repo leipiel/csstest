@@ -7,7 +7,7 @@ html.layout-phone {
       justify-content: space-between;
       align-items: center;
       height: 3.25rem;
-      padding: 1rem;
+      padding: 1rem !important;
 
       #logo {
         width: 3.25rem;
@@ -20,6 +20,7 @@ html.layout-phone {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex: none;
 
         &::before {
           content: '';
@@ -32,6 +33,15 @@ html.layout-phone {
           mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
           background-color: var(--color-white);
         }
+      }
+    }
+
+    #taskmenu {
+      a {
+        border-bottom: none !important;
+        height: 3.75rem;
+        flex-direction: row;
+        align-items: center;
       }
     }
   }

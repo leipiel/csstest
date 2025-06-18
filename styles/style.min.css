@@ -3153,7 +3153,6 @@ a.toolbar-button {
     height: 47px;
     border-bottom: 1px solid #f1f3f4 !important;
     color: #2c363a;
-    font-size: 1.2rem;
   }
   #taskmenu a:before {
     float: left !important;
@@ -3207,7 +3206,6 @@ a.toolbar-button {
   #taskmenu a {
     width: 42px;
     height: 42px;
-    font-size: 1.2rem;
     padding: 0;
   }
   #taskmenu a:before {
@@ -3670,7 +3668,6 @@ ul.listing.simplelist li {
 html.touch .listing tbody td,
 html.touch .listing:not(.toolbar) li {
   line-height: 47px;
-  font-size: 1.2rem;
 }
 
 html.touch li input[type=checkbox] {
@@ -11243,7 +11240,7 @@ html.layout-phone #layout-menu.popover .popover-header {
       -ms-flex-align: center;
           align-items: center;
   height: 3.25rem;
-  padding: 1rem;
+  padding: 1rem !important;
 }
 html.layout-phone #layout-menu.popover .popover-header #logo {
   width: 3.25rem;
@@ -11261,6 +11258,9 @@ html.layout-phone #layout-menu.popover .popover-header a.button.icon.cancel {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 html.layout-phone #layout-menu.popover .popover-header a.button.icon.cancel::before {
   content: "";
@@ -11276,4 +11276,15 @@ html.layout-phone #layout-menu.popover .popover-header a.button.icon.cancel::bef
   -webkit-mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
   background-color: var(--color-white);
+}
+html.layout-phone #layout-menu.popover #taskmenu a {
+  border-bottom: none !important;
+  height: 3.75rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
