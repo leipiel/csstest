@@ -447,231 +447,233 @@ ul.contactlist {
 
 //popover
 .popover {
-  .popupmenu .menu,
-  .popupmenu .listing {
-    li {
-      a {
-        &::before {
-          content: '' !important;
-          width: 1.125rem !important;
-          height: 1.125rem !important;
-          display: block;
-          mask-repeat: no-repeat;
-          mask-position: center left;
-          mask-size: contain;
-        }
+  .popupmenu {
+    .menu,
+    .listing {
+      li {
+        a {
+          &::before {
+            content: '' !important;
+            width: 1.125rem !important;
+            height: 1.125rem !important;
+            display: block;
+            mask-repeat: no-repeat;
+            mask-position: center left;
+            mask-size: contain;
+          }
 
-        &[aria-haspopup]::after {
-          content: '';
-          width: 1.125rem;
-          height: 1.125rem;
-          display: block;
-          mask-repeat: no-repeat;
-          mask-position: center left;
-          mask-size: contain;
-          mask-image: url('https://api.iconify.design/solar:alt-arrow-right-outline.svg');
-        }
+          &[aria-haspopup]::after {
+            content: '';
+            width: 1.125rem;
+            height: 1.125rem;
+            display: block;
+            mask-repeat: no-repeat;
+            mask-position: center left;
+            mask-size: contain;
+            mask-image: url('https://api.iconify.design/solar:alt-arrow-right-outline.svg');
+          }
 
-        &.selection::before {
-          mask-image: url('https://api.iconify.design/solar:check-square-outline.svg');
-        }
+          &.selection::before {
+            mask-image: url('https://api.iconify.design/solar:check-square-outline.svg');
+          }
 
-        &.all::before {
-          mask-image: url('https://api.iconify.design/solar:check-read-outline.svg');
-        }
+          &.all::before {
+            mask-image: url('https://api.iconify.design/solar:check-read-outline.svg');
+          }
 
-        &.page::before {
-          mask-image: url('https://api.iconify.design/solar:hamburger-menu-outline.svg');
-        }
+          &.page::before {
+            mask-image: url('https://api.iconify.design/solar:hamburger-menu-outline.svg');
+          }
 
-        &.unread::before {
-          mask-image: url('https://api.iconify.design/solar:letter-outline.svg');
-        }
+          &.unread::before {
+            mask-image: url('https://api.iconify.design/solar:letter-outline.svg');
+          }
 
-        &.flagged::before {
-          mask-image: url('https://api.iconify.design/solar:flag-outline.svg');
-        }
+          &.flagged::before {
+            mask-image: url('https://api.iconify.design/solar:flag-outline.svg');
+          }
 
-        &.invert::before {
-          mask-image: url('https://api.iconify.design/solar:check-square-bold.svg');
-        }
+          &.invert::before {
+            mask-image: url('https://api.iconify.design/solar:check-square-bold.svg');
+          }
 
-        &.none::before {
-          mask-image: url('https://api.iconify.design/solar:close-square-outline.svg');
-        }
+          &.none::before {
+            mask-image: url('https://api.iconify.design/solar:close-square-outline.svg');
+          }
 
-        &.list::before {
-          //회신 목록
-          mask-image: url('https://api.iconify.design/solar:list-check-outline.svg');
-        }
+          &.list::before {
+            //회신 목록
+            mask-image: url('https://api.iconify.design/solar:list-check-outline.svg');
+          }
 
-        &.inline::before {
-          //본문내용으로 전달
-          mask-image: url('https://api.iconify.design/solar:document-text-outline.svg');
-        }
+          &.inline::before {
+            //본문내용으로 전달
+            mask-image: url('https://api.iconify.design/solar:document-text-outline.svg');
+          }
 
-        &.attachment::before {
-          //첨부파일로 전달
-          mask-image: url('https://api.iconify.design/solar:paperclip-outline.svg');
-        }
+          &.attachment::before {
+            //첨부파일로 전달
+            mask-image: url('https://api.iconify.design/solar:paperclip-outline.svg');
+          }
 
-        &.bounce::before {
-          //재전송
-          mask-image: url('https://api.iconify.design/solar:refresh-circle-outline.svg');
-        }
+          &.bounce::before {
+            //재전송
+            mask-image: url('https://api.iconify.design/solar:refresh-circle-outline.svg');
+          }
 
-        &.expunge::before {
-          //압축
-          mask-image: url('https://api.iconify.design/solar:minimize-square-2-outline.svg');
-        }
+          &.expunge::before {
+            //압축
+            mask-image: url('https://api.iconify.design/solar:minimize-square-2-outline.svg');
+          }
 
-        &.purge::before {
-          //비우기
-          mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
-        }
+          &.purge::before {
+            //비우기
+            mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
+          }
 
-        &.read::before {
-          //모두 읽은 상태로 표시
-          mask-image: url('https://api.iconify.design/solar:letter-opened-outline.svg');
-        }
+          &.read::before {
+            //모두 읽은 상태로 표시
+            mask-image: url('https://api.iconify.design/solar:letter-opened-outline.svg');
+          }
 
-        &.folders::before {
-          //폴더 관리
-          mask-image: url('https://api.iconify.design/solar:folder-outline.svg');
-        }
+          &.folders::before {
+            //폴더 관리
+            mask-image: url('https://api.iconify.design/solar:folder-outline.svg');
+          }
 
-        &.print::before {
-          //메시지 인쇄
-          mask-image: url('https://api.iconify.design/solar:printer-2-outline.svg');
-        }
+          &.print::before {
+            //메시지 인쇄
+            mask-image: url('https://api.iconify.design/solar:printer-2-outline.svg');
+          }
 
-        &.import::before {
-          //가져오기
-          mask-image: url('https://api.iconify.design/solar:upload-outline.svg');
-        }
+          &.import::before {
+            //가져오기
+            mask-image: url('https://api.iconify.design/solar:upload-outline.svg');
+          }
 
-        &.download::before {
-          //다운로드
-          mask-image: url('https://api.iconify.design/solar:download-outline.svg');
-        }
+          &.download::before {
+            //다운로드
+            mask-image: url('https://api.iconify.design/solar:download-outline.svg');
+          }
 
-        &.edit::before {
-          //새 메시지로 편집
-          mask-image: url('https://api.iconify.design/solar:pen-outline.svg');
-        }
+          &.edit::before {
+            //새 메시지로 편집
+            mask-image: url('https://api.iconify.design/solar:pen-outline.svg');
+          }
 
-        &.source::before {
-          //소스 표시
-          mask-image: url('https://api.iconify.design/solar:code-square-outline.svg');
-        }
+          &.source::before {
+            //소스 표시
+            mask-image: url('https://api.iconify.design/solar:code-square-outline.svg');
+          }
 
-        &.move::before {
-          //다음 위치로 이동
-          mask-image: url('https://api.iconify.design/solar:move-to-folder-outline.svg');
-        }
+          &.move::before {
+            //다음 위치로 이동
+            mask-image: url('https://api.iconify.design/solar:move-to-folder-outline.svg');
+          }
 
-        &.copy::before {
-          //다음 위치로 복사
-          mask-image: url('https://api.iconify.design/solar:copy-outline.svg');
-        }
+          &.copy::before {
+            //다음 위치로 복사
+            mask-image: url('https://api.iconify.design/solar:copy-outline.svg');
+          }
 
-        &.extwin::before {
-          //새 창에서 열기
-          mask-image: url('https://api.iconify.design/solar:square-top-down-outline.svg');
-        }
+          &.extwin::before {
+            //새 창에서 열기
+            mask-image: url('https://api.iconify.design/solar:square-top-down-outline.svg');
+          }
 
-        &.filterlink::before {
-          //필터 생성
-          mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
-        }
+          &.filterlink::before {
+            //필터 생성
+            mask-image: url('https://api.iconify.design/solar:filter-outline.svg');
+          }
 
-        &.create::before {
-          //그룹추가
-          mask-image: url('https://api.iconify.design/solar:add-square-outline.svg');
-        }
+          &.create::before {
+            //그룹추가
+            mask-image: url('https://api.iconify.design/solar:add-square-outline.svg');
+          }
 
-        &.rename::before {
-          //그룹명 바꾸기
-          mask-image: url('https://api.iconify.design/solar:pen-2-outline.svg');
-        }
+          &.rename::before {
+            //그룹명 바꾸기
+            mask-image: url('https://api.iconify.design/solar:pen-2-outline.svg');
+          }
 
-        &.delete::before {
-          //그룹 삭제
-          mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
-        }
+          &.delete::before {
+            //그룹 삭제
+            mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
+          }
 
-        &.search::before {
-          //검색 저장
-          mask-image: url('https://api.iconify.design/solar:diskette-outline.svg');
-        }
+          &.search::before {
+            //검색 저장
+            mask-image: url('https://api.iconify.design/solar:diskette-outline.svg');
+          }
 
-        &.search.delete::before {
-          //검색 삭제 //일단 위 상속 체크
-          mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-2-outline.svg');
-        }
+          &.search.delete::before {
+            //검색 삭제 //일단 위 상속 체크
+            mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-2-outline.svg');
+          }
 
-        &.export.select::before {
-          //선택한 항목 내보내기
-          mask-image: url('https://api.iconify.design/solar:check-square-outline.svg');
-        }
+          &.export.select::before {
+            //선택한 항목 내보내기
+            mask-image: url('https://api.iconify.design/solar:check-square-outline.svg');
+          }
 
-        &.qrcode::before {
-          //QR코드
-          mask-image: url('https://api.iconify.design/solar:qr-code-outline.svg');
-        }
+          &.qrcode::before {
+            //QR코드
+            mask-image: url('https://api.iconify.design/solar:qr-code-outline.svg');
+          }
 
-        &.assigngroup::before {
-          //그룹지정
-          mask-image: url('https://api.iconify.design/solar:folder-2-outline.svg');
-        }
+          &.assigngroup::before {
+            //그룹지정
+            mask-image: url('https://api.iconify.design/solar:folder-2-outline.svg');
+          }
 
-        &.removegroup::before {
-          //그룹에서 제거
-          mask-image: url('https://api.iconify.design/solar:folder-error-outline.svg');
-        }
+          &.removegroup::before {
+            //그룹에서 제거
+            mask-image: url('https://api.iconify.design/solar:folder-error-outline.svg');
+          }
 
-        &.status::before {
-          //필터세트 활성화/비활성화
-          mask-image: url('https://api.iconify.design/solar:power-outline.svg');
-        }
+          &.status::before {
+            //필터세트 활성화/비활성화
+            mask-image: url('https://api.iconify.design/solar:power-outline.svg');
+          }
 
-        &.flag::before {
-          //플래그 추가
-          mask-image: url('https://api.iconify.design/solar:check-circle-outline.svg');
-        }
+          &.flag::before {
+            //플래그 추가
+            mask-image: url('https://api.iconify.design/solar:check-circle-outline.svg');
+          }
 
-        &.unflag::before {
-          //플래그 제거
-          mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
-        }
+          &.unflag::before {
+            //플래그 제거
+            mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
+          }
 
-        &.recipient::before {
-          //참조
-          mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
-        }
+          &.recipient::before {
+            //참조
+            mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
+          }
 
-        &.recipient::before {
-          //참조
-          mask-image: url('https://api.iconify.design/solar:user-plus-outline.svg');
-        }
+          &.recipient::before {
+            //참조
+            mask-image: url('https://api.iconify.design/solar:user-plus-outline.svg');
+          }
 
-        &.insertresponse::before {
-          //응답삽입
-          mask-image: url('https://api.iconify.design/solar:chat-round-line-outline.svg');
+          &.insertresponse::before {
+            //응답삽입
+            mask-image: url('https://api.iconify.design/solar:chat-round-line-outline.svg');
+          }
         }
       }
     }
-  }
 
-  //셀렉션 목록
-  .popupmenu .selectable.listing {
-    li {
-      a {
-        &.selected {
-          &::before {
-            content: '';
-            flex: none;
-            mask-image: url('https://api.iconify.design/solar:unread-outline.svg');
+    //셀렉션 목록
+    .selectable.listing {
+      li {
+        a {
+          &.selected {
+            &::before {
+              content: '';
+              flex: none;
+              mask-image: url('https://api.iconify.design/solar:unread-outline.svg');
+            }
           }
         }
       }
