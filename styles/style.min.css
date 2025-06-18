@@ -10207,11 +10207,16 @@ body {
 }
 .file-upload .attachmentslist {
   padding: 0;
-  row-gap: 0;
 }
 .file-upload .attachmentslist li {
   margin: 0;
   width: 100%;
+  padding-left: 0.25rem;
+  background-color: var(--color-bluegray-5);
+  border-radius: 0.125rem;
+}
+.file-upload .attachmentslist li::before {
+  margin-right: 0.125rem;
 }
 .file-upload .attachmentslist li a.delete {
   width: 1.25rem;
