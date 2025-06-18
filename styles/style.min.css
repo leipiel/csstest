@@ -8284,109 +8284,6 @@ html.touch .custom-switch .custom-control-label::after,
   line-height: 1;
   height: auto;
 }
-.ui-widget-content.ui-dialog #mailboxlist li {
-  border-bottom: none;
-  padding: 0;
-  line-height: 1;
-}
-.ui-widget-content.ui-dialog #mailboxlist li a {
-  padding: 0.625rem 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 0.9375rem;
-  font-weight: 500;
-  color: var(--color-gray-90);
-  cursor: pointer;
-  height: 2.875rem;
-}
-.ui-widget-content.ui-dialog #mailboxlist li a::before {
-  background-color: var(--color-gray-90);
-  margin-right: 0.625rem;
-}
-.ui-widget-content.ui-dialog #mailboxlist li.selected > a {
-  background-color: rgba(203, 213, 225, 0.5490196078);
-}
-.ui-widget-content.ui-dialog #mailboxlist li.mailbox .unreadcount {
-  margin: 0;
-  position: static;
-  top: auto;
-  right: auto;
-  margin-left: auto;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  line-height: 1;
-  color: var(--color-white);
-  padding: 0 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: var(--color-primary-50);
-  border-radius: 2.125rem;
-  height: 1.375rem;
-}
-.ui-widget-content.ui-dialog #directorylist.treelist div.treetoggle {
-  width: 1.25rem;
-  height: 1.25rem;
-  position: absolute;
-  top: 12px;
-  left: auto;
-  right: auto;
-  left: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.ui-widget-content.ui-dialog #directorylist.treelist div.treetoggle::before {
-  content: "";
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  width: 0.875rem;
-  height: 0.875rem;
-  display: block;
-  margin: 0;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center left;
-          mask-position: center left;
-  -webkit-mask-size: contain;
-          mask-size: contain;
-  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:alt-arrow-down-outline.svg");
-  background-color: var(--color-gray-90);
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-}
-.ui-widget-content.ui-dialog #directorylist.treelist div.treetoggle.expanded::before {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
-.ui-widget-content.ui-dialog #directorylist.treelist > li ul[role=group] {
-  border-top: none;
-}
-.ui-widget-content.ui-dialog #directorylist.treelist > li ul[role=group] > li a {
-  padding-left: 2rem;
-}
-.ui-widget-content.ui-dialog #directorylist.treelist > li ul[role=group] > li a::before {
-  background-color: var(--color-gray-90);
-}
-
 .icon.user::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
@@ -9951,17 +9848,18 @@ body {
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
 }
-#layout-sidebar #mailboxlist li,
-#layout-sidebar #directorylist li,
-#layout-sidebar #settings-menu li,
+
+#mailboxlist li,
+#directorylist li,
+#settings-menu li,
 #layout-sidebar .treelist li {
   border-bottom: none;
   padding: 0;
   line-height: 1;
 }
-#layout-sidebar #mailboxlist li a,
-#layout-sidebar #directorylist li a,
-#layout-sidebar #settings-menu li a,
+#mailboxlist li a,
+#directorylist li a,
+#settings-menu li a,
 #layout-sidebar .treelist li a {
   padding: 0.625rem 1.25rem;
   display: -webkit-box;
@@ -9976,22 +9874,22 @@ body {
   cursor: pointer;
   height: 2.875rem;
 }
-#layout-sidebar #mailboxlist li a::before,
-#layout-sidebar #directorylist li a::before,
-#layout-sidebar #settings-menu li a::before,
+#mailboxlist li a::before,
+#directorylist li a::before,
+#settings-menu li a::before,
 #layout-sidebar .treelist li a::before {
   background-color: var(--color-gray-90);
   margin-right: 0.625rem;
 }
-#layout-sidebar #mailboxlist li.selected > a,
-#layout-sidebar #directorylist li.selected > a,
-#layout-sidebar #settings-menu li.selected > a,
+#mailboxlist li.selected > a,
+#directorylist li.selected > a,
+#settings-menu li.selected > a,
 #layout-sidebar .treelist li.selected > a {
   background-color: rgba(203, 213, 225, 0.5490196078);
 }
-#layout-sidebar #mailboxlist li.mailbox .unreadcount,
-#layout-sidebar #directorylist li.mailbox .unreadcount,
-#layout-sidebar #settings-menu li.mailbox .unreadcount,
+#mailboxlist li.mailbox .unreadcount,
+#directorylist li.mailbox .unreadcount,
+#settings-menu li.mailbox .unreadcount,
 #layout-sidebar .treelist li.mailbox .unreadcount {
   margin: 0;
   position: static;
@@ -10016,7 +9914,8 @@ body {
   border-radius: 2.125rem;
   height: 1.375rem;
 }
-#layout-sidebar #directorylist.treelist div.treetoggle {
+
+#directorylist.treelist div.treetoggle {
   width: 1.25rem;
   height: 1.25rem;
   position: absolute;
@@ -10034,7 +9933,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#layout-sidebar #directorylist.treelist div.treetoggle::before {
+#directorylist.treelist div.treetoggle::before {
   content: "";
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -10055,17 +9954,17 @@ body {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-#layout-sidebar #directorylist.treelist div.treetoggle.expanded::before {
+#directorylist.treelist div.treetoggle.expanded::before {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
-#layout-sidebar #directorylist.treelist > li ul[role=group] {
+#directorylist.treelist > li ul[role=group] {
   border-top: none;
 }
-#layout-sidebar #directorylist.treelist > li ul[role=group] > li a {
+#directorylist.treelist > li ul[role=group] > li a {
   padding-left: 2rem;
 }
-#layout-sidebar #directorylist.treelist > li ul[role=group] > li a::before {
+#directorylist.treelist > li ul[role=group] > li a::before {
   background-color: var(--color-gray-90);
 }
 
