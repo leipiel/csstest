@@ -11295,11 +11295,11 @@ html.layout-phone #layout-menu.popover #taskmenu a {
           justify-content: flex-start;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-right: 0.75rem;
 }
 html.layout-phone #layout-menu.popover #taskmenu a::before {
   width: 1.75rem;
   height: 1.75rem;
+  margin-right: 0.75rem;
 }
 html.layout-phone #layout-menu.popover #taskmenu a .inner {
   font-size: 0.9375rem;

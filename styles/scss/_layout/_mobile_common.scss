@@ -46,11 +46,11 @@ html.layout-phone {
         justify-content: flex-start;
         padding-left: 1rem;
         padding-right: 1rem;
-        margin-right: 0.75rem;
 
         &::before {
           width: 1.75rem;
           height: 1.75rem;
+          margin-right: 0.75rem;
         }
 
         .inner {
