@@ -10779,7 +10779,7 @@ body.status-flagged #message-header > .subject:before {
   line-height: 1.5;
 }
 .recipient-input li.input > input {
-  height: auto;
+  height: 2rem;
 }
 
 .searchbar {
