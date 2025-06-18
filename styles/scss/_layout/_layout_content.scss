@@ -212,11 +212,6 @@ body.status-flagged #message-header > .subject:before {
 }
 
 .task-addressbook {
-  &.action-show {
-    .contact-header {
-      margin-bottom: 1.75rem;
-    }
-  }
   .nav-tabs {
     margin-left: -1.75rem;
     margin-right: -1.75rem;
@@ -226,6 +221,33 @@ body.status-flagged #message-header > .subject:before {
 
     .nav-link {
       color: var(--color-primary-50);
+    }
+  }
+
+  //뷰화면일때
+  &.action-show {
+    .contact-header {
+      margin-bottom: 1.75rem;
+    }
+
+    .tab-content {
+      .propform {
+        .row.input-group {
+          .input-group-prepend {
+          }
+
+          .form-control-plaintext {
+            padding: 0;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    fieldset:not(.tab-pane):nth-of-type(n + 2),
+    .propform fieldset:not(.tab-pane):nth-of-type(n + 2) {
+      margin-top: 1.5rem;
     }
   }
 }
