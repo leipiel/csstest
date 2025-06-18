@@ -492,3 +492,39 @@ html.touch .custom-switch,
     }
   }
 }
+
+//모달 > 연락처 삽입
+#contacts-table {
+  tr {
+    &.group {
+      td::before {
+        mask-image: url('https://api.iconify.design/solar:users-group-rounded-outline.svg');
+      }
+    }
+
+    &.person {
+      td::before {
+        mask-image: url('https://api.iconify.design/solar:user-circle-outline.svg');
+      }
+    }
+
+    td {
+      height: 2.5rem;
+    }
+
+    td.contactgroup,
+    td.contact {
+      font-size: 0.9375rem;
+
+      &::before {
+        content: '';
+        width: 1.25rem;
+        height: 1.25rem;
+        display: inline-block;
+        mask-repeat: no-repeat;
+        mask-position: center left;
+        mask-size: contain;
+      }
+    }
+  }
+}

@@ -108,6 +108,7 @@
     }
 
     &.selected {
+      background-color: transparent;
       > a {
         background-color: #cbd5e18c;
       }

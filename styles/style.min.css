@@ -8284,6 +8284,35 @@ html.touch .custom-switch .custom-control-label::after,
   line-height: 1;
   height: auto;
 }
+#contacts-table tr.group td::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
+}
+#contacts-table tr.person td::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:user-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:user-circle-outline.svg");
+}
+#contacts-table tr td {
+  height: 2.5rem;
+}
+#contacts-table tr td.contactgroup,
+#contacts-table tr td.contact {
+  font-size: 0.9375rem;
+}
+#contacts-table tr td.contactgroup::before,
+#contacts-table tr td.contact::before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+
 .icon.user::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
@@ -8479,13 +8508,6 @@ ul.contactlist li.contactgroup a::before,
 ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
           mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
-}
-#directorylist li.contact a::before,
-#directorylist a.contact::before,
-ul.contactlist li.contact a::before,
-ul.contactlist a.contact::before {
-  -webkit-mask-image: url("https://api.iconify.design/solar:users-circle-outline.svg");
-          mask-image: url("https://api.iconify.design/solar:users-circle-outline.svg");
 }
 
 .header .menu.toolbar li a::before {
@@ -9887,6 +9909,12 @@ body {
 #layout-sidebar .treelist li a::before {
   background-color: var(--color-gray-90);
   margin-right: 0.625rem;
+}
+#mailboxlist li.selected,
+#directorylist li.selected,
+#settings-menu li.selected,
+#layout-sidebar .treelist li.selected {
+  background-color: transparent;
 }
 #mailboxlist li.selected > a,
 #directorylist li.selected > a,

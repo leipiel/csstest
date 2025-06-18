@@ -218,11 +218,6 @@ ul.contactlist {
   a.contactgroup::before {
     mask-image: url('https://api.iconify.design/solar:users-group-rounded-outline.svg');
   }
-
-  li.contact a::before,
-  a.contact::before {
-    mask-image: url('https://api.iconify.design/solar:users-circle-outline.svg');
-  }
 }
 
 //header toolbar icon
