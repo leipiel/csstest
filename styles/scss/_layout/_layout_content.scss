@@ -280,10 +280,36 @@ body.status-flagged #message-header > .subject:before {
       }
     }
   }
+
+  .formbuttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .float-right {
+      a.extwin {
+        color: var(--color-primary-50);
+
+        &::before {
+          content: '';
+          width: 1.25rem;
+          height: 1.25rem;
+          display: inline-block;
+          mask-repeat: no-repeat;
+          mask-position: center left;
+          mask-size: contain;
+          mask-image: url('https://api.iconify.design/solar:square-top-down-outline.svg');
+          background-color: var(--color-primary-50);
+        }
+      }
+    }
+  }
 }
 
 //인풋 안
 .recipient-input {
+  height: auto !important;
+
   li {
     &.recipient {
       a.button.icon {

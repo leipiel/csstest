@@ -10750,7 +10750,38 @@ body.status-flagged #message-header > .subject:before {
           align-items: center;
   font-weight: 500;
 }
+#compose-content .formbuttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#compose-content .formbuttons .float-right a.extwin {
+  color: var(--color-primary-50);
+}
+#compose-content .formbuttons .float-right a.extwin::before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center left;
+          mask-position: center left;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-image: url("https://api.iconify.design/solar:square-top-down-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:square-top-down-outline.svg");
+  background-color: var(--color-primary-50);
+}
 
+.recipient-input {
+  height: auto !important;
+}
 .recipient-input li.recipient a.button.icon {
   width: 1.125rem;
   height: 1.125rem;
