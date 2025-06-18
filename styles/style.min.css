@@ -10756,15 +10756,15 @@ body.status-flagged #message-header > .subject:before {
           mask-position: center;
   -webkit-mask-size: contain;
           mask-size: contain;
-  -webkit-mask-image: url("https://api.iconify.design/solar:close square-bold.svg");
-          mask-image: url("https://api.iconify.design/solar:close square-bold.svg");
+  -webkit-mask-image: url("https://api.iconify.design/solar:close-square-bold.svg");
+          mask-image: url("https://api.iconify.design/solar:close-square-bold.svg");
   background-color: var(--color-gray-60);
 }
 .recipient-input li.recipient .name {
-  line-height: 1;
+  line-height: 1.5;
 }
 .recipient-input li.recipient .email {
-  line-height: 1;
+  line-height: 1.5;
 }
 .recipient-input li.input > input {
   height: auto;
