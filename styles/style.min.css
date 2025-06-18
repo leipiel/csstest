@@ -8196,6 +8196,11 @@ html.touch .custom-switch .custom-control-label::after,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+.formcontainer .input-group .input-group-append a:focus {
+  background-color: rgba(163, 163, 163, 0.4);
 }
 .formcontainer .input-group .input-group-append a::before {
   content: "";
@@ -8213,6 +8218,18 @@ html.touch .custom-switch .custom-control-label::after,
 .formcontainer .input-group .input-group-append a.delete::before, .formcontainer .input-group .input-group-append a.reset::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
           mask-image: url("https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg");
+}
+.formcontainer .input-group .input-group-append a.edit::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:pen-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:pen-outline.svg");
+}
+.formcontainer .input-group .input-group-append a.add::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:users-group-rounded-outline.svg");
+}
+.formcontainer .input-group .input-group-append a.add.recipient::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
 }
 .formcontainer .input-group input {
   height: 2.5rem;
@@ -9562,6 +9579,15 @@ body {
   color: var(--color-gray-50);
 }
 
+.formcontainer.task-settings .formcontent,
+.formcontainer.task-addressbook .formcontent {
+  padding: 1.75rem;
+}
+.formcontainer.task-settings .formbuttons,
+.formcontainer.task-addressbook .formbuttons {
+  padding: 0.5rem 1.75rem;
+}
+
 @media screen and (max-width: 1200px) {
   #layout-list .header .button.icon:hover {
     background-color: transparent;
@@ -9629,15 +9655,6 @@ body {
     display: block;
   }
 }
-.formcontainer.task-settings .formcontent,
-.formcontainer.task-addressbook .formcontent {
-  padding: 1.75rem;
-}
-.formcontainer.task-settings .formbuttons,
-.formcontainer.task-addressbook .formbuttons {
-  padding: 0.5rem 1.75rem;
-}
-
 #layout-menu {
   background-color: var(--color-primary-50);
 }

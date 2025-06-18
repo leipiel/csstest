@@ -379,6 +379,7 @@ html.touch .custom-switch,
     }
   }
 
+  //인풋그룹 공통
   .input-group {
     .form-control {
       height: 2.625rem;
@@ -396,6 +397,11 @@ html.touch .custom-switch,
         color: transparent;
         align-items: center;
         justify-content: center;
+        transition: background-color 0.15s ease-in-out;
+
+        &:focus {
+          background-color: rgb(163 163 163 / 0.4);
+        }
 
         &::before {
           content: '';
@@ -411,6 +417,18 @@ html.touch .custom-switch,
         &.delete::before,
         &.reset::before {
           mask-image: url('https://api.iconify.design/solar:trash-bin-minimalistic-outline.svg');
+        }
+
+        &.edit::before {
+          mask-image: url('https://api.iconify.design/solar:pen-outline.svg');
+        }
+
+        &.add::before {
+          mask-image: url('https://api.iconify.design/solar:users-group-rounded-outline.svg');
+        }
+
+        &.add.recipient::before {
+          mask-image: url('https://api.iconify.design/solar:add-square-outline.svg');
         }
       }
     }

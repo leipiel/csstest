@@ -300,6 +300,18 @@ body {
   color: var(--color-gray-50);
 }
 
+//폼 컨텐츠 패딩 간격 공통
+.formcontainer.task-settings,
+.formcontainer.task-addressbook {
+  .formcontent {
+    padding: 1.75rem;
+  }
+
+  .formbuttons {
+    padding: 0.5rem 1.75rem;
+  }
+}
+
 //responsive
 @media screen and (max-width: 1200px) {
   //메일목록
@@ -407,18 +419,6 @@ body {
         display: block;
       }
     }
-  }
-}
-
-//폼 컨텐츠 패딩 간격 공통
-.formcontainer.task-settings,
-.formcontainer.task-addressbook {
-  .formcontent {
-    padding: 1.75rem;
-  }
-
-  .formbuttons {
-    padding: 0.5rem 1.75rem;
   }
 }
 
