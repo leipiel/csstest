@@ -9819,7 +9819,7 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
-  .header .button.icon.toolbar-task-button {
+  .header .button.icon.task-menu-button {
     display: block;
   }
 }

@@ -315,7 +315,6 @@ body {
 
 //responsive
 @media screen and (max-width: 1200px) {
-  //메일목록
   .header {
     .button.icon {
       &:hover {
@@ -367,7 +366,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  //메일목록
   .header {
     .button.icon {
       &.toolbar-list-button {
@@ -384,7 +382,7 @@ body {
 @media screen and (max-width: 480px) {
   .header {
     .button.icon {
-      &.toolbar-task-button {
+      &.task-menu-button {
         display: block;
       }
     }
