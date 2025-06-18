@@ -8437,6 +8437,12 @@ html.touch .custom-switch .custom-control-label::after,
   display: none;
 }
 
+.popup .task-addressbook .nav-tabs {
+  margin: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .icon.user::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-outline.svg");

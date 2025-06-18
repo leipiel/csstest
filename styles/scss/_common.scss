@@ -572,7 +572,6 @@ html.touch .custom-switch,
 }
 
 //모달 네비 푸터
-
 .popup {
   .listbox {
     .footer {
@@ -645,5 +644,14 @@ html.touch .custom-switch,
         }
       }
     }
+  }
+}
+
+//모달 내 탭
+.popup {
+  .task-addressbook .nav-tabs {
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
