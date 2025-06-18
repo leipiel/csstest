@@ -24,6 +24,7 @@ html.layout-phone {
         &::before {
           content: '';
           display: block;
+          flex: none;
           width: 1.75rem;
           height: 1.75rem;
           mask-repeat: no-repeat;
@@ -70,6 +71,26 @@ html.layout-small {
       padding: 0 1rem;
       display: flex;
       background-color: var(--color-primary-50);
+
+      a.button.icon.cancel {
+        display: flex;
+        align-items: center;
+        flex: none;
+        font-size: 0.9375rem;
+        font-weight: 600;
+
+        &::before {
+          content: '';
+          display: block;
+          width: 1.75rem;
+          height: 1.75rem;
+          mask-repeat: no-repeat;
+          mask-position: center left;
+          mask-size: contain;
+          mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
+          background-color: var(--color-white);
+        }
+      }
     }
   }
 }
