@@ -308,6 +308,35 @@
       flex: none;
     }
   }
+
+  .attachmentslist {
+    padding: 0;
+
+    li {
+      margin: 0;
+
+      a.delete {
+        width: 1.25rem;
+        height: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+          content: '';
+          display: block;
+          flex: none;
+          width: 1rem;
+          height: 1rem;
+          mask-repeat: no-repeat;
+          mask-position: center left;
+          mask-size: contain;
+          mask-image: url('https://api.iconify.design/solar:close-square-bold.svg');
+          background-color: var(--color-gray-70);
+        }
+      }
+    }
+  }
 }
 
 //responsive
