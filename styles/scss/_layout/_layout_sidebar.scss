@@ -276,6 +276,11 @@
   margin: 1.75rem 1.75rem 0 1.75rem;
 }
 
+#compose-options {
+  padding: 1.75rem;
+  padding-top: 1.25rem;
+}
+
 .file-upload {
   &.droptarget {
     padding: 1.5rem;
@@ -311,9 +316,11 @@
 
   .attachmentslist {
     padding: 0;
+    row-gap: 0;
 
     li {
       margin: 0;
+      width: 100%;
 
       a.delete {
         width: 1.25rem;
