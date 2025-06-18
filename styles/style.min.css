@@ -8359,7 +8359,7 @@ html.touch .custom-switch .custom-control-label::after,
           mask-position: center left;
   -webkit-mask-size: contain;
           mask-size: contain;
-  background-color: var(--color-gray-40);
+  background-color: var(--color-gray-70);
 }
 .popup .listbox .footer.pagenav a.prevpage {
   margin-right: auto;
