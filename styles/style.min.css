@@ -9779,20 +9779,20 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  #layout-list .header .button.icon:hover {
+  .header .button.icon:hover {
     background-color: transparent;
   }
-  #layout-list .header .button.icon.task-menu-button, #layout-list .header .button.icon.back-sidebar-button, #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.toolbar-list-button, #layout-list .header .button.icon.toolbar-button, #layout-list .header .button.icon.back-list-button {
+  .header .button.icon.task-menu-button, .header .button.icon.back-sidebar-button, .header .button.icon.toolbar-menu-button, .header .button.icon.toolbar-list-button, .header .button.icon.toolbar-button, .header .button.icon.back-list-button {
     display: block;
     width: 1.75rem !important;
     height: 1.75rem !important;
     padding: 0;
     margin: 0;
   }
-  #layout-list .header .button.icon.task-menu-button > .innder, #layout-list .header .button.icon.back-sidebar-button > .innder, #layout-list .header .button.icon.toolbar-menu-button > .innder, #layout-list .header .button.icon.toolbar-list-button > .innder, #layout-list .header .button.icon.toolbar-button > .innder, #layout-list .header .button.icon.back-list-button > .innder {
+  .header .button.icon.task-menu-button > .innder, .header .button.icon.back-sidebar-button > .innder, .header .button.icon.toolbar-menu-button > .innder, .header .button.icon.toolbar-list-button > .innder, .header .button.icon.toolbar-button > .innder, .header .button.icon.back-list-button > .innder {
     display: none;
   }
-  #layout-list .header .button.icon.task-menu-button::before, #layout-list .header .button.icon.back-sidebar-button::before, #layout-list .header .button.icon.toolbar-menu-button::before, #layout-list .header .button.icon.toolbar-list-button::before, #layout-list .header .button.icon.toolbar-button::before, #layout-list .header .button.icon.back-list-button::before {
+  .header .button.icon.task-menu-button::before, .header .button.icon.back-sidebar-button::before, .header .button.icon.toolbar-menu-button::before, .header .button.icon.toolbar-list-button::before, .header .button.icon.toolbar-button::before, .header .button.icon.back-list-button::before {
     width: 1.75rem !important;
     height: 1.75rem !important;
     -webkit-mask-repeat: no-repeat !important;
@@ -9803,45 +9803,18 @@ body {
             mask-size: contain !important;
     background-color: var(--color-bluegray-50);
   }
-  #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.task-menu-button {
+  .header .button.icon.toolbar-menu-button, .header .button.icon.task-menu-button {
     display: none;
   }
   #layout-sidebar .header .header-title {
     padding-left: 0;
   }
-  #layout-sidebar .header .button.icon:hover {
-    background-color: transparent;
-  }
-  #layout-sidebar .header .button.icon.back-list-button {
-    display: block;
-    width: 1.75rem !important;
-    height: 1.75rem !important;
-    padding: 0;
-    margin: 0;
-  }
-  #layout-sidebar .header .button.icon.back-list-button > .innder {
-    display: none;
-  }
-  #layout-sidebar .header .button.icon.back-list-button::before {
-    width: 1.75rem !important;
-    height: 1.75rem !important;
-    -webkit-mask-repeat: no-repeat !important;
-            mask-repeat: no-repeat !important;
-    -webkit-mask-position: center !important;
-            mask-position: center !important;
-    -webkit-mask-size: contain !important;
-            mask-size: contain !important;
-    background-color: var(--color-bluegray-50);
-  }
 }
 @media screen and (max-width: 768px) {
-  #layout-list .header .button.icon.toolbar-list-button {
+  .header .button.icon.toolbar-list-button {
     display: none;
   }
-  #layout-list .header .button.icon.toolbar-menu-button, #layout-list .header .button.icon.task-menu-button {
-    display: block;
-  }
-  #layout-content .header .button.icon.toolbar-menu-button {
+  .header .button.icon.toolbar-menu-button, .header .button.icon.task-menu-button {
     display: block;
   }
 }
