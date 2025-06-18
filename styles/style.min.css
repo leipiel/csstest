@@ -9579,11 +9579,11 @@ body {
   color: var(--color-gray-50);
 }
 
-.formcontainer.task-settings .formcontent,
+.formcontainer.content .formcontainer.task-settings .formcontent,
 .formcontainer.task-addressbook .formcontent {
   padding: 1.75rem;
 }
-.formcontainer.task-settings .formbuttons,
+.formcontainer.content .formcontainer.task-settings .formbuttons,
 .formcontainer.task-addressbook .formbuttons {
   padding: 0.5rem 1.75rem;
 }
@@ -10719,6 +10719,10 @@ body.status-flagged #message-header > .subject:before {
 .task-addressbook.action-show fieldset:not(.tab-pane):nth-of-type(n + 2),
 .task-addressbook.action-show .propform fieldset:not(.tab-pane):nth-of-type(n + 2) {
   margin-top: 1.5rem;
+}
+
+#compose-content {
+  padding: 0;
 }
 
 .searchbar {
