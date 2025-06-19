@@ -386,6 +386,34 @@ body {
     }
   }
 
+  //첨부파일 버튼::모바일
+  #composestatusbar {
+    right: 3rem;
+
+    .button.icon.attach {
+      display: block;
+      width: 1.75rem;
+      height: 1.75rem;
+      padding: 0;
+      margin: 0;
+
+      > .innder {
+        display: none;
+      }
+
+      &::before {
+        content: '';
+        width: 1.75rem;
+        height: 1.75rem;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+        background-color: var(--color-bluegray-50);
+        mask-image: url('https://api.iconify.design/solar:paperclip-outline.svg');
+      }
+    }
+  }
+
   //헤더 기능 툴바 숨김
   #layout-content .header {
     .menu.toolbar {

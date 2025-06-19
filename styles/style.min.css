@@ -9821,6 +9821,33 @@ body {
   .header .button.icon.back-content-button {
     display: block;
   }
+  #composestatusbar {
+    right: 3rem;
+  }
+  #composestatusbar .button.icon.attach {
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0;
+    margin: 0;
+  }
+  #composestatusbar .button.icon.attach > .innder {
+    display: none;
+  }
+  #composestatusbar .button.icon.attach::before {
+    content: "";
+    width: 1.75rem;
+    height: 1.75rem;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+            mask-position: center;
+    -webkit-mask-size: contain;
+            mask-size: contain;
+    background-color: var(--color-bluegray-50);
+    -webkit-mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
+            mask-image: url("https://api.iconify.design/solar:paperclip-outline.svg");
+  }
   #layout-content .header .menu.toolbar {
     display: none;
     visibility: hidden;
@@ -11583,7 +11610,7 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 1rem;
+    padding: 0;
   }
   #layout .footer.menu a.button {
     width: 4.25rem;
@@ -11605,6 +11632,9 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
         -ms-flex-pack: center;
             justify-content: center;
   }
+  #layout .footer.menu a.button:hover, #layout .footer.menu a.button:focus {
+    background-color: var(--color-bluegray-30);
+  }
   #layout .footer.menu a.button::before {
     content: "";
     -webkit-box-flex: 0;
@@ -11619,22 +11649,22 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
             mask-position: center left;
     -webkit-mask-size: contain;
             mask-size: contain;
-    background-color: var(--color-gray-90);
+    background-color: var(--color-bluegray-50);
   }
   #layout .footer.menu a.button .inner {
     line-height: 1;
     margin-top: 0.3125rem;
     font-size: 0.75rem;
     font-weight: 400;
-    color: var(--color-gray-90);
+    color: var(--color-bluegray-50);
   }
   #layout .footer.menu a.button.send::before {
     -webkit-mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
             mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
   }
   #layout .footer.menu a.button.save::before {
-    -webkit-mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
-            mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
+    -webkit-mask-image: url("https://api.iconify.design/solar:diskette-outline.svg");
+            mask-image: url("https://api.iconify.design/solar:diskette-outline.svg");
   }
   #layout .footer.menu a.button.prev::before {
     -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
