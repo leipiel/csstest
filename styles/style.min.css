@@ -11585,7 +11585,7 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
             align-items: center;
     padding: 0 1rem;
   }
-  #layout .footer.menu .buttons a.button {
+  #layout .footer.menu a.button {
     width: 4.25rem;
     height: 100%;
     -webkit-box-flex: 0;
@@ -11605,8 +11605,7 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #layout .footer.menu .buttons a.button::before {
-    content: "";
+  #layout .footer.menu a.button::before {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
@@ -11621,11 +11620,21 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
             mask-size: contain;
     background-color: var(--color-gray-90);
   }
-  #layout .footer.menu .buttons a.button .inner {
+  #layout .footer.menu a.button .inner {
     line-height: 1;
     margin-top: 0.3125rem;
     font-size: 0.75rem;
     font-weight: 400;
     color: var(--color-gray-90);
+  }
+  #layout .footer.menu a.button.send::before {
+    content: "";
+    -webkit-mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
+            mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
+  }
+  #layout .footer.menu a.button.save::before {
+    content: "";
+    -webkit-mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
+            mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
   }
 }
