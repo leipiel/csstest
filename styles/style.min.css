@@ -10442,6 +10442,9 @@ body {
 #layout-list table.messagelist:not(.withselection) tr.selected td.subject {
   border-left-color: var(--color-primary-50);
 }
+#layout-list table.messagelist.flagged {
+  background-color: #000;
+}
 #layout-list table.messagelist.flagged td span.fromto,
 #layout-list table.messagelist.flagged td span.date,
 #layout-list table.messagelist.flagged td span.size,
