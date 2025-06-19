@@ -263,7 +263,7 @@ html.layout-small {
       justify-content: center;
 
       &::before {
-        //content: '';
+        content: '';
         flex: none;
         margin: 0;
         width: 1.5rem;
@@ -286,7 +286,6 @@ html.layout-small {
       &.send {
         //보내기
         &::before {
-          content: '';
           mask-image: url('https://api.iconify.design/solar:plain-2-outline.svg');
         }
       }
@@ -294,9 +293,20 @@ html.layout-small {
       &.save {
         //저장
         &::before {
-          content: '';
           mask-image: url('https://api.iconify.design/solar:check-circle-outline.svg');
         }
+      }
+
+      &.prev::before {
+        mask-image: url('https://api.iconify.design/solar:alt-arrow-left-outline.svg');
+      }
+
+      &.next::before {
+        mask-image: url('https://api.iconify.design/solar:alt-arrow-right-outline.svg');
+      }
+
+      &.reply::before {
+        mask-image: url('https://api.iconify.design/solar:reply-outline.svg');
       }
     }
   }

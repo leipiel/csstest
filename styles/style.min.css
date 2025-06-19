@@ -11606,6 +11606,7 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
             justify-content: center;
   }
   #layout .footer.menu a.button::before {
+    content: "";
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
@@ -11628,13 +11629,23 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
     color: var(--color-gray-90);
   }
   #layout .footer.menu a.button.send::before {
-    content: "";
     -webkit-mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
             mask-image: url("https://api.iconify.design/solar:plain-2-outline.svg");
   }
   #layout .footer.menu a.button.save::before {
-    content: "";
     -webkit-mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
             mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
+  }
+  #layout .footer.menu a.button.prev::before {
+    -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
+            mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
+  }
+  #layout .footer.menu a.button.next::before {
+    -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-right-outline.svg");
+            mask-image: url("https://api.iconify.design/solar:alt-arrow-right-outline.svg");
+  }
+  #layout .footer.menu a.button.reply::before {
+    -webkit-mask-image: url("https://api.iconify.design/solar:reply-outline.svg");
+            mask-image: url("https://api.iconify.design/solar:reply-outline.svg");
   }
 }
