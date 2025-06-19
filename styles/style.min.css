@@ -10757,12 +10757,15 @@ body {
   }
 }
 @media screen and (max-width: 1024px) {
-  #layout-list table.messagelist tr td.flags .flag {
+  #layout-list table.messagelist tr:hover td.flags .flag {
     visibility: hidden;
   }
-  #layout-list table.messagelist tr td.flags .flag > span.flagged,
-  #layout-list table.messagelist tr td.flags .flag > span.unflagged {
+  #layout-list table.messagelist tr:hover td.flags .flag > span.flagged,
+  #layout-list table.messagelist tr:hover td.flags .flag > span.unflagged {
     visibility: hidden;
+  }
+  #layout-list #responses-table tr td::before {
+    top: 11px;
   }
 }
 #message-header {
@@ -11375,6 +11378,10 @@ html.layout-small .popover:not(.select-menu) .popover-header a.button.icon.back:
   -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
           mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
 }
+html.layout-phone .popover:not(.select-menu) .popover-body .selectable li,
+html.layout-small .popover:not(.select-menu) .popover-body .selectable li {
+  border-bottom: none;
+}
 html.layout-phone .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li,
 html.layout-phone .popover:not(.select-menu) .popover-body .menu li,
 html.layout-small .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li,
@@ -11454,6 +11461,48 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu.listing.iconize
 html.layout-small .popover:not(.select-menu) .popover-body .menu li a.more::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
           mask-image: url("https://api.iconify.design/solar:menu-dots-bold.svg");
+}
+html.layout-phone .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.save::before,
+html.layout-phone .popover:not(.select-menu) .popover-body .menu li a.save::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.save::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu li a.save::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:diskette-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:diskette-outline.svg");
+}
+html.layout-phone .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.signature::before,
+html.layout-phone .popover:not(.select-menu) .popover-body .menu li a.signature::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.signature::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu li a.signature::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:corkscrew-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:corkscrew-outline.svg");
+}
+html.layout-phone .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.responses::before,
+html.layout-phone .popover:not(.select-menu) .popover-body .menu li a.responses::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.responses::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu li a.responses::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:chat-round-line-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:chat-round-line-outline.svg");
+}
+html.layout-phone .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.spellcheck::before,
+html.layout-phone .popover:not(.select-menu) .popover-body .menu li a.spellcheck::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.spellcheck::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu li a.spellcheck::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:sort-by-alphabet-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:sort-by-alphabet-outline.svg");
+}
+html.layout-phone .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.export::before,
+html.layout-phone .popover:not(.select-menu) .popover-body .menu li a.export::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.export::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu li a.export::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:download-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:download-outline.svg");
+}
+html.layout-phone .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.actions::before,
+html.layout-phone .popover:not(.select-menu) .popover-body .menu li a.actions::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.actions::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu li a.actions::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg");
 }
 html.layout-phone .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li .dropbutton,
 html.layout-phone .popover:not(.select-menu) .popover-body .menu li .dropbutton,

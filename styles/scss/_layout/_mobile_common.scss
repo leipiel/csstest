@@ -107,6 +107,11 @@ html.layout-small {
     }
 
     .popover-body {
+      .selectable {
+        li {
+          border-bottom: none;
+        }
+      }
       .menu.listing.iconized.popupmenu,
       .menu {
         li {
@@ -164,6 +169,36 @@ html.layout-small {
             &.more::before {
               //더보기
               mask-image: url('https://api.iconify.design/solar:menu-dots-bold.svg');
+            }
+
+            &.save::before {
+              //저장
+              mask-image: url('https://api.iconify.design/solar:diskette-outline.svg');
+            }
+
+            &.signature::before {
+              //서명
+              mask-image: url('https://api.iconify.design/solar:corkscrew-outline.svg');
+            }
+
+            &.responses::before {
+              //응답
+              mask-image: url('https://api.iconify.design/solar:chat-round-line-outline.svg');
+            }
+
+            &.spellcheck::before {
+              //맞춤법
+              mask-image: url('https://api.iconify.design/solar:sort-by-alphabet-outline.svg');
+            }
+
+            &.export::before {
+              //내보내기
+              mask-image: url('https://api.iconify.design/solar:download-outline.svg');
+            }
+
+            &.actions::before {
+              //액션
+              mask-image: url('https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg');
             }
           }
 

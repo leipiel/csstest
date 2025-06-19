@@ -41,6 +41,7 @@
     tr {
       td {
         border-bottom: 1px solid var(--color-gray-20);
+
         &.subject {
           padding-top: 0.625rem;
           padding-bottom: 0.625rem;
@@ -524,16 +525,29 @@
   //.layout-normal.touch 시 메일리스트 플래그 히든
   #layout-list table.messagelist {
     tr {
-      td {
-        &.flags {
-          .flag {
-            visibility: hidden;
-
-            > span.flagged,
-            > span.unflagged {
+      &:hover {
+        td {
+          &.flags {
+            .flag {
               visibility: hidden;
+
+              > span.flagged,
+              > span.unflagged {
+                visibility: hidden;
+              }
             }
           }
+        }
+      }
+    }
+  }
+
+  //설정 > 응답 > 응답목록에서 아이콘 올라가는 현상
+  #layout-list #responses-table {
+    tr {
+      td {
+        &::before {
+          top: 11px;
         }
       }
     }
