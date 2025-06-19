@@ -11783,16 +11783,23 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
   }
 }
 @media screen and (max-width: 480px) {
-  .ui-widget-content.ui-dialog {
+  .ui-dialog {
     border-radius: 0;
   }
-  .ui-widget-content.ui-dialog .ui-dialog-titlebar {
+  .ui-dialog .ui-dialog-titlebar {
     border-radius: 0;
     height: 3.75rem;
     background-color: var(--color-bluegray-10);
     border-bottom: 1px solid var(--color-bluegray-30);
+  }
+  .ui-dialog .ui-dialog-titlebar .ui-dialog-title {
     font-size: 1rem;
     font-weight: 700;
     color: var(--color-gray-90);
+  }
+  .ui-dialog .ui-dialog-buttonpane {
+    height: 3.75rem;
+    background-color: var(--color-bluegray-10);
+    border-top: 1px solid var(--color-bluegray-30);
   }
 }
