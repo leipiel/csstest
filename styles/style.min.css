@@ -11770,10 +11770,16 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
 }
 
 @media screen and (max-width: 1024px) {
+  #layout-list #identities-table tr td::before,
   #layout-list #responses-table tr td::before,
+  #layout-list #filtersetslistbox tr td::before,
+  #layout-list #filterslist tr td::before,
+  #layout-list #keys-table tr td::before {
+    top: 11px;
+  }
   #contacts-table tr td.contactgroup::before,
   #contacts-table tr td.contact::before {
-    top: 11px;
+    top: 12px;
   }
 }
 @media screen and (max-width: 480px) {

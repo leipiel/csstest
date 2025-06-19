@@ -407,13 +407,20 @@ html.layout-small {
 @media screen and (max-width: 1024px) {
   //설정 > 응답 > 응답목록
   //연락처 사람 아이콘
+  #layout-list #identities-table tr td::before,
   #layout-list #responses-table tr td::before,
+  #layout-list #filtersetslistbox tr td::before,
+  #layout-list #filterslist tr td::before,
+  #layout-list #keys-table tr td::before {
+    top: 11px;
+  }
   #contacts-table tr td.contactgroup::before,
   #contacts-table tr td.contact::before {
-    top: 11px;
+    top: 12px;
   }
 }
 
+//모바일 전체 모달 스타일
 @media screen and (max-width: 480px) {
   .ui-widget-content.ui-dialog {
     border-radius: 0;
