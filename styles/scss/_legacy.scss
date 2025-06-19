@@ -75,18 +75,18 @@ ul.treelist li div.treetoggle:before {
 
 //아이콘 폰트를 제일 마지막에 적용
 
-// @font-face {
-//   font-family: Icons;
-//   font-style: normal;
-//   font-weight: 900;
-//   src: url('../fonts/fa-solid-900.woff2') format('woff2'), url('../fonts/fa-solid-900.woff') format('woff');
-// }
-// @font-face {
-//   font-family: Icons;
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url('../fonts/fa-regular-400.woff2') format('woff2'), url('../fonts/fa-regular-400.woff') format('woff');
-// }
+@font-face {
+  font-family: Icons;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/fa-solid-900.woff2') format('woff2'), url('../fonts/fa-solid-900.woff') format('woff');
+}
+@font-face {
+  font-family: Icons;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/fa-regular-400.woff2') format('woff2'), url('../fonts/fa-regular-400.woff') format('woff');
+}
 
 // @font-face {
 //   font-family: Roboto;
