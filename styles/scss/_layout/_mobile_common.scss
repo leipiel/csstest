@@ -328,6 +328,14 @@ html.layout-small {
   }
 }
 
+//
+@media screen and (max-width: 576px) {
+  .propform table.compact-table tr td.rowbuttons {
+    text-align: right;
+    padding-top: 0;
+  }
+}
+
 //GNB 없음 1단
 html.layout-phone {
 }

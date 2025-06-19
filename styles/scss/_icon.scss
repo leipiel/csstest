@@ -664,6 +664,11 @@ ul.contactlist {
             //응답삽입
             mask-image: url('https://api.iconify.design/solar:chat-round-line-outline.svg');
           }
+
+          &.insertresponse::before {
+            //동작
+            mask-image: url('https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg');
+          }
         }
       }
     }

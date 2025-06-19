@@ -9068,6 +9068,11 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:chat-round-line-outline.svg");
           mask-image: url("https://api.iconify.design/solar:chat-round-line-outline.svg");
 }
+.popover .popupmenu .menu li a.insertresponse::before,
+.popover .popupmenu .listing li a.insertresponse::before, .popover .popupmenu.menu.toolbar li a.insertresponse::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg");
+}
 .popover .popupmenu .selectable.listing li a.selected::before {
   content: "";
   -webkit-box-flex: 0;
@@ -11688,5 +11693,11 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
   #layout .footer.menu a.button.edit::before {
     -webkit-mask-image: url("https://api.iconify.design/solar:pen-outline.svg");
             mask-image: url("https://api.iconify.design/solar:pen-outline.svg");
+  }
+}
+@media screen and (max-width: 576px) {
+  .propform table.compact-table tr td.rowbuttons {
+    text-align: right;
+    padding-top: 0;
   }
 }
