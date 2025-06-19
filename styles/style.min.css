@@ -10804,9 +10804,6 @@ body {
   #layout-list table.messagelist tr:hover td.flags .flag > span.unflagged {
     visibility: hidden;
   }
-  #layout-list #responses-table tr td::before {
-    top: 11px;
-  }
 }
 #message-header {
   margin-bottom: 0.375rem;
@@ -11768,4 +11765,12 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
   background-color: var(--color-white);
   -webkit-mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
           mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
+}
+
+@media screen and (max-width: 1024px) {
+  #layout-list #responses-table tr td::before,
+  #contacts-table tr td.contactgroup::before,
+  #contacts-table tr td.contact::before {
+    top: 11px;
+  }
 }

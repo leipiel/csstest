@@ -403,6 +403,17 @@ html.layout-small {
   }
 }
 
+//목록 아이콘 중 세로중앙 조정이 필요한 영역 수정
+@media screen and (max-width: 1024px) {
+  //설정 > 응답 > 응답목록
+  //연락처 사람 아이콘
+  #layout-list #responses-table tr td::before,
+  #contacts-table tr td.contactgroup::before,
+  #contacts-table tr td.contact::before {
+    top: 11px;
+  }
+}
+
 //GNB 없음 1단
 html.layout-phone {
 }

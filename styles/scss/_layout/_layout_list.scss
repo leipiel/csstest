@@ -541,17 +541,6 @@
       }
     }
   }
-
-  //설정 > 응답 > 응답목록에서 아이콘 올라가는 현상
-  #layout-list #responses-table {
-    tr {
-      td {
-        &::before {
-          top: 11px;
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 480px) {
