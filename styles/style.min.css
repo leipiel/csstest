@@ -10442,9 +10442,10 @@ body {
 #layout-list table.messagelist:not(.withselection) tr.selected td.subject {
   border-left-color: var(--color-primary-50);
 }
-#layout-list table.messagelist.flagged td,
-#layout-list table.messagelist.flagged td a,
-#layout-list table.messagelist.flagged td span {
+#layout-list table.messagelist.flagged td span.fromto,
+#layout-list table.messagelist.flagged td span.date,
+#layout-list table.messagelist.flagged td span.size,
+#layout-list table.messagelist.flagged td span.subject {
   color: var(--color-primary-50) !important;
 }
 #layout-list table.contactlist tr.selected,
@@ -10756,8 +10757,9 @@ body {
   #layout-list table.messagelist tr td.flags .flag {
     visibility: hidden;
   }
-  #layout-list table.messagelist tr td.flags .flag > span {
-    visibility: inherit;
+  #layout-list table.messagelist tr td.flags .flag > span.flagged,
+  #layout-list table.messagelist tr td.flags .flag > span.unflagged {
+    visibility: hidden;
   }
 }
 #message-header {

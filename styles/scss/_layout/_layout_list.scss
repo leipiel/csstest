@@ -225,9 +225,10 @@
     }
 
     &.flagged {
-      td,
-      td a,
-      td span {
+      td span.fromto,
+      td span.date,
+      td span.size,
+      td span.subject {
         color: var(--color-primary-50) !important;
       }
     }
@@ -527,8 +528,9 @@
           .flag {
             visibility: hidden;
 
-            > span {
-              visibility: inherit;
+            > span.flagged,
+            > span.unflagged {
+              visibility: hidden;
             }
           }
         }
