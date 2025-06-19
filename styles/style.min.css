@@ -11801,6 +11801,12 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
     height: 3.75rem !important;
     background-color: var(--color-bluegray-10);
     border-top: 1px solid var(--color-bluegray-30);
+    border-radius: 0;
+    line-height: 1;
+  }
+  .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    line-height: 1;
+    height: 100%;
   }
   .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button {
     width: 4.25rem;
@@ -11827,6 +11833,7 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
     font-weight: 400;
     color: var(--color-bluegray-50);
     row-gap: 5px;
+    line-height: 1;
   }
   .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button.btn-danger {
     color: var(--color-bluegray-50);
@@ -11834,7 +11841,7 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
   .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button.btn-primary:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button.btn-secondary:hover {
     background-color: transparent;
   }
-  .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:focus, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:active {
+  .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button.btn-primary:focus, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button.btn-primary:active, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button.btn-secondary:focus, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button.btn-secondary:active {
     background-color: var(--color-bluegray-30);
   }
   .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button::before {
