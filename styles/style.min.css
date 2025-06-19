@@ -11798,7 +11798,7 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
     color: var(--color-gray-90);
   }
   .ui-dialog .ui-dialog-buttonpane {
-    height: 3.75rem;
+    height: 3.75rem !important;
     background-color: var(--color-bluegray-10);
     border-top: 1px solid var(--color-bluegray-30);
   }
@@ -11828,8 +11828,10 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
     color: var(--color-bluegray-50);
     row-gap: 5px;
   }
-  .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button .btn-primary:hover,
-  .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button .btn-secondary:hover {
+  .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button.btn-danger {
+    color: var(--color-bluegray-50);
+  }
+  .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button.btn-primary:hover, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button.btn-secondary:hover {
     background-color: transparent;
   }
   .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:focus, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:active {
