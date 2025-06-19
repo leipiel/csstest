@@ -11709,7 +11709,7 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
         -ms-flex-pack: right;
             justify-content: right;
   }
-  .propform table.compact-table tr td.rowbuttons > a {
+  .formcontainer.task-settings .compact-table tr td.rowbuttons > a {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;

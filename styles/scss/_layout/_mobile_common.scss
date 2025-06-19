@@ -336,10 +336,9 @@ html.layout-small {
     display: flex;
     align-items: center;
     justify-content: right;
-
-    > a {
-      width: fit-content;
-    }
+  }
+  .formcontainer.task-settings .compact-table tr td.rowbuttons > a {
+    width: fit-content;
   }
 }
 
