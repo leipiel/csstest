@@ -509,7 +509,18 @@ html.layout-small {
       margin: 0;
       width: 1.75rem;
       height: 1.75rem;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
       background-color: var(--color-white);
+    }
+
+    &.compose::before {
+      mask-image: url('https://api.iconify.design/solar:pen-outline.svg');
+    }
+
+    &.create::before {
+      mask-image: url('https://api.iconify.design/solar:add-square-outline.svg');
     }
   }
 }

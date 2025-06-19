@@ -11872,5 +11872,19 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
   margin: 0;
   width: 1.75rem;
   height: 1.75rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
   background-color: var(--color-white);
+}
+.floating-action-buttons a.button.compose::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:pen-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:pen-outline.svg");
+}
+.floating-action-buttons a.button.create::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
 }
