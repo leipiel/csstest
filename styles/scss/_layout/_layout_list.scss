@@ -436,6 +436,8 @@
         border-bottom: 0;
         padding-left: 1rem;
         padding-right: 1rem;
+        font-size: 0.9375rem;
+        color: var(--color-gray-90);
 
         &::before {
           display: inline-block;

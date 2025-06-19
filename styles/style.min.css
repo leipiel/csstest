@@ -10699,6 +10699,8 @@ body {
   border-bottom: 0;
   padding-left: 1rem;
   padding-right: 1rem;
+  font-size: 0.9375rem;
+  color: var(--color-gray-90);
 }
 #layout-list #identities-table tr td::before,
 #layout-list #responses-table tr td::before,
@@ -11772,5 +11774,19 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
   #contacts-table tr td.contactgroup::before,
   #contacts-table tr td.contact::before {
     top: 11px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ui-widget-content.ui-dialog {
+    border-radius: 0;
+  }
+  .ui-widget-content.ui-dialog .ui-dialog-titlebar {
+    border-radius: 0;
+    height: 3.75rem;
+    background-color: var(--color-bluegray-10);
+    border-bottom: 1px solid var(--color-bluegray-30);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-gray-90);
   }
 }

@@ -414,6 +414,22 @@ html.layout-small {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .ui-widget-content.ui-dialog {
+    border-radius: 0;
+
+    .ui-dialog-titlebar {
+      border-radius: 0;
+      height: 3.75rem;
+      background-color: var(--color-bluegray-10);
+      border-bottom: 1px solid var(--color-bluegray-30);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-gray-90);
+    }
+  }
+}
+
 //GNB 없음 1단
 html.layout-phone {
 }
