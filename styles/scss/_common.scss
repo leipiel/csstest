@@ -473,6 +473,16 @@ html.touch .custom-switch,
     border-radius: 6px 6px 0 0;
     background-color: var(--color-bluegray-5);
 
+    button.btn.btn-secondary:not(.disabled) {
+      &:hover,
+      &:focus,
+      &:active {
+        box-shadow: none;
+        background-color: transparent;
+        outline: none;
+      }
+    }
+
     .ui-dialog-titlebar-close {
       width: 2.5rem;
       height: 2.5rem;
@@ -481,14 +491,6 @@ html.touch .custom-switch,
       justify-content: center;
       margin: 0.625rem 0.5rem;
       background-color: transparent;
-
-      &:hover,
-      &:focus,
-      &:active {
-        box-shadow: none;
-        background-color: transparent;
-        outline: none;
-      }
 
       &::before {
         content: '';

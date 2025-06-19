@@ -8266,6 +8266,12 @@ html.touch .custom-switch .custom-control-label::after,
   border-radius: 6px 6px 0 0;
   background-color: var(--color-bluegray-5);
 }
+.ui-widget-content .ui-dialog-titlebar button.btn.btn-secondary:not(.disabled):hover, .ui-widget-content .ui-dialog-titlebar button.btn.btn-secondary:not(.disabled):focus, .ui-widget-content .ui-dialog-titlebar button.btn.btn-secondary:not(.disabled):active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  outline: none;
+}
 .ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close {
   width: 2.5rem;
   height: 2.5rem;
@@ -8280,12 +8286,6 @@ html.touch .custom-switch .custom-control-label::after,
           justify-content: center;
   margin: 0.625rem 0.5rem;
   background-color: transparent;
-}
-.ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close:hover, .ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close:focus, .ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: transparent;
-  outline: none;
 }
 .ui-widget-content .ui-dialog-titlebar .ui-dialog-titlebar-close::before {
   content: "";
@@ -9867,6 +9867,12 @@ body {
   .formcontainer.task-settings .formbuttons,
   .formcontainer.task-addressbook .formbuttons {
     padding: 0.5rem 1rem;
+  }
+  .task-addressbook .nav-tabs {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -11640,7 +11646,7 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
     -webkit-transition: background-color 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out;
   }
-  #layout .footer.menu a.button:hover, #layout .footer.menu a.button:focus {
+  #layout .footer.menu a.button:focus, #layout .footer.menu a.button:active {
     background-color: var(--color-bluegray-30);
   }
   #layout .footer.menu a.button::before {

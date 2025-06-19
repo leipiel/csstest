@@ -263,8 +263,8 @@ html.layout-small {
       justify-content: center;
       transition: background-color 0.15s ease-in-out;
 
-      &:hover,
-      &:focus {
+      &:focus,
+      &:active {
         background-color: var(--color-bluegray-30);
       }
 
