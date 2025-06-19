@@ -519,6 +519,22 @@
 }
 
 @media screen and (max-width: 1024px) {
+  //.layout-normal.touch 시 메일리스트 플래그 히든
+  #layout-list table.messagelist {
+    tr {
+      td {
+        &.flags {
+          .flag {
+            visibility: hidden;
+
+            > span {
+              visibility: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {

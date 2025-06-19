@@ -10752,6 +10752,14 @@ body {
     margin: 0 !important;
   }
 }
+@media screen and (max-width: 1024px) {
+  #layout-list table.messagelist tr td.flags .flag {
+    visibility: hidden;
+  }
+  #layout-list table.messagelist tr td.flags .flag > span {
+    visibility: inherit;
+  }
+}
 #message-header {
   margin-bottom: 0.375rem;
 }
