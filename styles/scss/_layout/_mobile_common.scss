@@ -328,11 +328,18 @@ html.layout-small {
   }
 }
 
-//
+//설정 > 메일분류 > 동작편집 상세 > 버튼셋
 @media screen and (max-width: 576px) {
   .propform table.compact-table tr td.rowbuttons {
     text-align: right;
     padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    > a {
+      width: fit-content;
+    }
   }
 }
 
