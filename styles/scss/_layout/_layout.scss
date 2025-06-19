@@ -389,6 +389,7 @@ body {
   //첨부파일 버튼::모바일
   #composestatusbar {
     right: 3rem;
+    opacity: 1;
 
     .button.icon.attach {
       display: block;
@@ -403,8 +404,8 @@ body {
 
       &::before {
         content: '';
-        width: 1.75rem;
-        height: 1.75rem;
+        width: 1.75rem !important;
+        height: 1.75rem !important;
         mask-repeat: no-repeat;
         mask-position: center;
         mask-size: contain;
@@ -421,16 +422,6 @@ body {
       visibility: hidden;
     }
   }
-}
-
-@media screen and (max-width: 480px) {
-  .header {
-    .button.icon {
-      &.task-menu-button {
-        display: block;
-      }
-    }
-  }
 
   //폼 컨텐츠 패딩 간격 공통
   .formcontainer.content,
@@ -442,6 +433,16 @@ body {
 
     .formbuttons {
       padding: 0.5rem 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    .button.icon {
+      &.task-menu-button {
+        display: block;
+      }
     }
   }
 }

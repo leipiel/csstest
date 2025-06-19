@@ -9823,6 +9823,7 @@ body {
   }
   #composestatusbar {
     right: 3rem;
+    opacity: 1;
   }
   #composestatusbar .button.icon.attach {
     display: block;
@@ -9836,8 +9837,8 @@ body {
   }
   #composestatusbar .button.icon.attach::before {
     content: "";
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 1.75rem !important;
+    height: 1.75rem !important;
     -webkit-mask-repeat: no-repeat;
             mask-repeat: no-repeat;
     -webkit-mask-position: center;
@@ -9852,11 +9853,6 @@ body {
     display: none;
     visibility: hidden;
   }
-}
-@media screen and (max-width: 480px) {
-  .header .button.icon.task-menu-button {
-    display: block;
-  }
   .formcontainer.content .formcontent,
   .formcontainer.task-settings .formcontent,
   .formcontainer.task-addressbook .formcontent {
@@ -9866,6 +9862,11 @@ body {
   .formcontainer.task-settings .formbuttons,
   .formcontainer.task-addressbook .formbuttons {
     padding: 0.5rem 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header .button.icon.task-menu-button {
+    display: block;
   }
 }
 #layout-menu {
@@ -11631,6 +11632,8 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-transition: background-color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
   }
   #layout .footer.menu a.button:hover, #layout .footer.menu a.button:focus {
     background-color: var(--color-bluegray-30);
@@ -11677,5 +11680,13 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
   #layout .footer.menu a.button.reply::before {
     -webkit-mask-image: url("https://api.iconify.design/solar:reply-outline.svg");
             mask-image: url("https://api.iconify.design/solar:reply-outline.svg");
+  }
+  #layout .footer.menu a.button.submit::before {
+    -webkit-mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
+            mask-image: url("https://api.iconify.design/solar:check-circle-outline.svg");
+  }
+  #layout .footer.menu a.button.edit::before {
+    -webkit-mask-image: url("https://api.iconify.design/solar:pen-outline.svg");
+            mask-image: url("https://api.iconify.design/solar:pen-outline.svg");
   }
 }

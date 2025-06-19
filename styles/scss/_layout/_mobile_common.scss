@@ -261,6 +261,7 @@ html.layout-small {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      transition: background-color 0.15s ease-in-out;
 
       &:hover,
       &:focus {
@@ -312,6 +313,16 @@ html.layout-small {
 
       &.reply::before {
         mask-image: url('https://api.iconify.design/solar:reply-outline.svg');
+      }
+
+      &.submit {
+        &::before {
+          mask-image: url('https://api.iconify.design/solar:check-circle-outline.svg');
+        }
+      }
+
+      &.edit::before {
+        mask-image: url('https://api.iconify.design/solar:pen-outline.svg');
       }
     }
   }
