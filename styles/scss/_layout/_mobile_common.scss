@@ -111,7 +111,7 @@ html.layout-small {
         li {
           border-bottom: none;
 
-          > a {
+          a {
             height: 3.5rem;
             font-size: 0.9375rem;
             padding-left: 1rem;
@@ -125,6 +125,9 @@ html.layout-small {
             .inner {
               font-size: 0.9375rem;
             }
+          }
+
+          .dropbutton {
           }
         }
       }
