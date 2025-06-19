@@ -200,6 +200,11 @@ html.layout-small {
               //액션
               mask-image: url('https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg');
             }
+
+            &.search::before {
+              //액션
+              mask-image: url('https://api.iconify.design/solar:minimalistic-magnifer-outline.svg');
+            }
           }
 
           .dropbutton {
