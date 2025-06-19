@@ -2240,9 +2240,7 @@ body {
 }
 #layout-sidebar #mailboxlist > li ul[role=group] {
   border-top: none;
-}
-#layout-sidebar #mailboxlist > li ul[role=group] > li a {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 #layout-sidebar #mailboxlist > li ul[role=group] > li a::before {
   background-color: var(--color-gray-90);
@@ -2821,7 +2819,7 @@ body {
 #layout-list ul.folderlist li.selected > a {
   background-color: rgba(203, 213, 225, 0.45);
 }
-#layout-list ul.folderlist li a {
+#layout-list ul.folderlist li > a {
   border-left: none;
   padding-left: 1.25rem;
   padding-right: 2.5rem;
@@ -2833,10 +2831,10 @@ body {
           align-items: center;
   height: 2.875rem;
 }
-#layout-list ul.folderlist li a:hover {
+#layout-list ul.folderlist li > a:hover {
   background-color: rgba(203, 213, 225, 0.27);
 }
-#layout-list ul.folderlist li a::before {
+#layout-list ul.folderlist li > a::before {
   width: 1.25rem;
   height: 1.25rem;
   background-color: var(--color-gray-90);
@@ -2893,7 +2891,9 @@ body {
 #layout-list ul.folderlist li ul[role=group] {
   border-top: none;
   background-color: rgba(245, 245, 245, 0.6);
-  padding-left: 0.5rem;
+}
+#layout-list ul.folderlist li ul[role=group] > li a {
+  padding-left: 1.5rem;
 }
 #layout-list ul.folderlist li ul[role=group] > li a::before {
   background-color: var(--color-gray-90);
