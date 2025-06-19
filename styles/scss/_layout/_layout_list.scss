@@ -224,13 +224,12 @@
       }
     }
 
-    &.flagged {
-      background-color: #000;
+    tr.flagged {
       td span.fromto,
       td span.date,
       td span.size,
       td span.subject {
-        color: var(--color-primary-50) !important;
+        color: var(--color-primary-50);
       }
     }
   }

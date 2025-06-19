@@ -10442,14 +10442,11 @@ body {
 #layout-list table.messagelist:not(.withselection) tr.selected td.subject {
   border-left-color: var(--color-primary-50);
 }
-#layout-list table.messagelist.flagged {
-  background-color: #000;
-}
-#layout-list table.messagelist.flagged td span.fromto,
-#layout-list table.messagelist.flagged td span.date,
-#layout-list table.messagelist.flagged td span.size,
-#layout-list table.messagelist.flagged td span.subject {
-  color: var(--color-primary-50) !important;
+#layout-list table.messagelist tr.flagged td span.fromto,
+#layout-list table.messagelist tr.flagged td span.date,
+#layout-list table.messagelist tr.flagged td span.size,
+#layout-list table.messagelist tr.flagged td span.subject {
+  color: var(--color-primary-50);
 }
 #layout-list table.contactlist tr.selected,
 #layout-list table.settings-default-icon tr.selected {
