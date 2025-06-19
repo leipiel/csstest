@@ -107,7 +107,8 @@ html.layout-small {
     }
 
     .popover-body {
-      .menu.listing.iconized.popupmenu {
+      .menu.listing.iconized.popupmenu,
+      .menu.listing.iconized {
         li {
           border-bottom: none;
 
@@ -188,6 +189,7 @@ html.layout-small {
                 height: 1.5rem;
                 background-color: var(--color-gray-90);
                 margin: 0;
+                margin-right: 0 !important;
                 display: block;
                 mask-repeat: no-repeat;
                 mask-position: center left;
