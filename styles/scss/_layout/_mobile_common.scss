@@ -342,6 +342,67 @@ html.layout-small {
   }
 }
 
+//컨텐츠 패딩 영역 모바일, 탭도 동일 변동
+@media screen and (max-width: 768px) {
+  //폼 컨텐츠 패딩 간격 공통
+  .formcontainer.content,
+  .formcontainer.task-settings,
+  .formcontainer.task-addressbook {
+    .formcontent {
+      padding: 1rem;
+    }
+
+    .formbuttons {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .task-addressbook {
+    .nav-tabs {
+      margin-left: -1rem;
+      margin-right: -1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+//작사, 모바일 셀렉트 목록 수정
+html.layout-phone,
+html.layout-small {
+  .popover.select-menu {
+    .popover-header {
+      height: 2.625rem;
+      min-height: 0;
+      line-height: 1;
+      padding: 0 1;
+      display: flex;
+      align-items: center;
+      background-color: var(--color-primary-50);
+
+      a.button.icon.cancel {
+        font-size: 0.9375rem;
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: '';
+          flex: none;
+          width: 1.125rem;
+          height: 1.125rem;
+          margin-right: 0.5rem;
+          mask-repeat: no-repeat;
+          mask-position: center;
+          mask-size: contain;
+          background-color: var(--color-white);
+          mask-image: url('https://api.iconify.design/solar:close-circle-outline.svg');
+        }
+      }
+    }
+  }
+}
+
 //GNB 없음 1단
 html.layout-phone {
 }

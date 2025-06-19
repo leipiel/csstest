@@ -9858,22 +9858,6 @@ body {
     display: none;
     visibility: hidden;
   }
-  .formcontainer.content .formcontent,
-  .formcontainer.task-settings .formcontent,
-  .formcontainer.task-addressbook .formcontent {
-    padding: 1rem;
-  }
-  .formcontainer.content .formbuttons,
-  .formcontainer.task-settings .formbuttons,
-  .formcontainer.task-addressbook .formbuttons {
-    padding: 0.5rem 1rem;
-  }
-  .task-addressbook .nav-tabs {
-    margin-left: -1rem;
-    margin-right: -1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 }
 @media screen and (max-width: 480px) {
   .header .button.icon.task-menu-button {
@@ -11720,4 +11704,68 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
     width: -moz-fit-content;
     width: fit-content;
   }
+}
+@media screen and (max-width: 768px) {
+  .formcontainer.content .formcontent,
+  .formcontainer.task-settings .formcontent,
+  .formcontainer.task-addressbook .formcontent {
+    padding: 1rem;
+  }
+  .formcontainer.content .formbuttons,
+  .formcontainer.task-settings .formbuttons,
+  .formcontainer.task-addressbook .formbuttons {
+    padding: 0.5rem 1rem;
+  }
+  .task-addressbook .nav-tabs {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+html.layout-phone .popover.select-menu .popover-header,
+html.layout-small .popover.select-menu .popover-header {
+  height: 2.625rem;
+  min-height: 0;
+  line-height: 1;
+  padding: 0 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-primary-50);
+}
+html.layout-phone .popover.select-menu .popover-header a.button.icon.cancel,
+html.layout-small .popover.select-menu .popover-header a.button.icon.cancel {
+  font-size: 0.9375rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html.layout-phone .popover.select-menu .popover-header a.button.icon.cancel::before,
+html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::before {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-right: 0.5rem;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background-color: var(--color-white);
+  -webkit-mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:close-circle-outline.svg");
 }

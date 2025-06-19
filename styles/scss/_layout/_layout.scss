@@ -422,28 +422,6 @@ body {
       visibility: hidden;
     }
   }
-
-  //폼 컨텐츠 패딩 간격 공통
-  .formcontainer.content,
-  .formcontainer.task-settings,
-  .formcontainer.task-addressbook {
-    .formcontent {
-      padding: 1rem;
-    }
-
-    .formbuttons {
-      padding: 0.5rem 1rem;
-    }
-  }
-
-  .task-addressbook {
-    .nav-tabs {
-      margin-left: -1rem;
-      margin-right: -1rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  }
 }
 
 @media screen and (max-width: 480px) {
