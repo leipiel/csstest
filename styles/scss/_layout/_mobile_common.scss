@@ -458,6 +458,13 @@ html.layout-small {
           color: var(--color-bluegray-50);
           row-gap: 5px;
 
+          .btn-primary,
+          .btn-secondary {
+            &:hover {
+              background-color: transparent;
+            }
+          }
+
           &:focus,
           &:active {
             background-color: var(--color-bluegray-30);

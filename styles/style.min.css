@@ -11828,6 +11828,10 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
     color: var(--color-bluegray-50);
     row-gap: 5px;
   }
+  .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button .btn-primary:hover,
+  .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button .btn-secondary:hover {
+    background-color: transparent;
+  }
   .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:focus, .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:active {
     background-color: var(--color-bluegray-30);
   }
