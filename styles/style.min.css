@@ -11543,10 +11543,10 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li a.actions::b
   -webkit-mask-image: url("https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg");
           mask-image: url("https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg");
 }
-html.layout-phone .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.search::before,
-html.layout-phone .popover:not(.select-menu) .popover-body .menu li a.search::before,
-html.layout-small .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.search::before,
-html.layout-small .popover:not(.select-menu) .popover-body .menu li a.search::before {
+html.layout-phone .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.search[title="고급 검색"]::before,
+html.layout-phone .popover:not(.select-menu) .popover-body .menu li a.search[title="고급 검색"]::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu.listing.iconized.popupmenu li a.search[title="고급 검색"]::before,
+html.layout-small .popover:not(.select-menu) .popover-body .menu li a.search[title="고급 검색"]::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
           mask-image: url("https://api.iconify.design/solar:minimalistic-magnifer-outline.svg");
 }

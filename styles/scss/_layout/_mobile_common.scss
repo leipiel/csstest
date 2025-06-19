@@ -201,8 +201,8 @@ html.layout-small {
               mask-image: url('https://api.iconify.design/solar:plaaylist-minimalistic-outline.svg');
             }
 
-            &.search::before {
-              //액션
+            &.search[title='고급 검색']::before {
+              //고급검색 //꼬일 수 있음
               mask-image: url('https://api.iconify.design/solar:minimalistic-magnifer-outline.svg');
             }
           }
