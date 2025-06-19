@@ -8840,6 +8840,10 @@ ul.contactlist a.contactgroup::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
           mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
 }
+.header .button.icon.back-content-button::before {
+  -webkit-mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:alt-arrow-left-outline.svg");
+}
 
 .popover .popupmenu .menu li a::before,
 .popover .popupmenu .listing li a::before, .popover .popupmenu.menu.toolbar li a::before {
@@ -9779,17 +9783,17 @@ body {
   .header .button.icon:hover {
     background-color: transparent;
   }
-  .header .button.icon.task-menu-button, .header .button.icon.back-sidebar-button, .header .button.icon.toolbar-menu-button, .header .button.icon.toolbar-list-button, .header .button.icon.toolbar-button, .header .button.icon.back-list-button {
+  .header .button.icon.task-menu-button, .header .button.icon.back-sidebar-button, .header .button.icon.toolbar-menu-button, .header .button.icon.toolbar-list-button, .header .button.icon.toolbar-button, .header .button.icon.back-list-button, .header .button.icon.back-content-button {
     display: block;
     width: 1.75rem !important;
     height: 1.75rem !important;
     padding: 0;
     margin: 0;
   }
-  .header .button.icon.task-menu-button > .innder, .header .button.icon.back-sidebar-button > .innder, .header .button.icon.toolbar-menu-button > .innder, .header .button.icon.toolbar-list-button > .innder, .header .button.icon.toolbar-button > .innder, .header .button.icon.back-list-button > .innder {
+  .header .button.icon.task-menu-button > .innder, .header .button.icon.back-sidebar-button > .innder, .header .button.icon.toolbar-menu-button > .innder, .header .button.icon.toolbar-list-button > .innder, .header .button.icon.toolbar-button > .innder, .header .button.icon.back-list-button > .innder, .header .button.icon.back-content-button > .innder {
     display: none;
   }
-  .header .button.icon.task-menu-button::before, .header .button.icon.back-sidebar-button::before, .header .button.icon.toolbar-menu-button::before, .header .button.icon.toolbar-list-button::before, .header .button.icon.toolbar-button::before, .header .button.icon.back-list-button::before {
+  .header .button.icon.task-menu-button::before, .header .button.icon.back-sidebar-button::before, .header .button.icon.toolbar-menu-button::before, .header .button.icon.toolbar-list-button::before, .header .button.icon.toolbar-button::before, .header .button.icon.back-list-button::before, .header .button.icon.back-content-button::before {
     width: 1.75rem !important;
     height: 1.75rem !important;
     -webkit-mask-repeat: no-repeat !important;
@@ -9800,7 +9804,7 @@ body {
             mask-size: contain !important;
     background-color: var(--color-bluegray-50);
   }
-  .header .button.icon.toolbar-menu-button, .header .button.icon.task-menu-button {
+  .header .button.icon.back-content-button, .header .button.icon.toolbar-menu-button, .header .button.icon.task-menu-button {
     display: none;
   }
   #layout-sidebar .header .header-title {
@@ -9812,6 +9816,9 @@ body {
     display: none;
   }
   .header .button.icon.toolbar-menu-button {
+    display: block;
+  }
+  .header .button.icon.back-content-button {
     display: block;
   }
   #layout-content .header .menu.toolbar {

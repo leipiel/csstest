@@ -327,7 +327,8 @@ body {
       &.toolbar-menu-button,
       &.toolbar-list-button,
       &.toolbar-button,
-      &.back-list-button {
+      &.back-list-button,
+      &.back-content-button {
         display: block;
         width: 1.75rem !important;
         height: 1.75rem !important;
@@ -348,6 +349,7 @@ body {
         }
       }
 
+      &.back-content-button,
       &.toolbar-menu-button,
       &.task-menu-button {
         display: none;
@@ -375,6 +377,10 @@ body {
       }
 
       &.toolbar-menu-button {
+        display: block;
+      }
+
+      &.back-content-button {
         display: block;
       }
     }

@@ -442,6 +442,9 @@ ul.contactlist {
     &.back-list-button::before {
       mask-image: url('https://api.iconify.design/solar:alt-arrow-left-outline.svg');
     }
+    &.back-content-button::before {
+      mask-image: url('https://api.iconify.design/solar:alt-arrow-left-outline.svg');
+    }
   }
 }
 
