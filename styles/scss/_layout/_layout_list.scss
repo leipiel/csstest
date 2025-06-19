@@ -345,7 +345,7 @@
         background-color: rgba(203, 213, 225, 0.45);
       }
 
-      > a {
+      a {
         border-left: none;
         padding-left: 1.25rem;
         padding-right: 2.5rem;
@@ -408,11 +408,10 @@
       ul[role='group'] {
         border-top: none;
         background-color: rgb(245 245 245 / 0.6);
+        padding-left: 0.5rem;
 
         > li {
           a {
-            padding-left: 1.5rem;
-
             &::before {
               background-color: var(--color-gray-90);
               mask-image: url('https://api.iconify.design/solar:letter-outline.svg');
