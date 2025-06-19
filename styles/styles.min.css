@@ -2213,6 +2213,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 0;
 }
 #layout-sidebar #mailboxlist div.treetoggle::before {
   content: "";
@@ -2249,6 +2250,15 @@ body {
 }
 #layout-sidebar #mailboxlist li > a {
   padding-left: 1.5rem;
+}
+#layout-sidebar #mailboxlist li > ul[role=group] > li > a {
+  padding-left: 2rem;
+}
+#layout-sidebar #mailboxlist li > ul[role=group] > li > ul[role=group] > li > a {
+  padding-left: 2.5rem;
+}
+#layout-sidebar #mailboxlist li > ul[role=group] > li > ul[role=group] > li > ul[role=group] > li > a {
+  padding-left: 3rem;
 }
 
 #mailboxlist li,
