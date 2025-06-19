@@ -115,11 +115,19 @@ html.layout-small {
             height: 3.5rem;
             font-size: 0.9375rem;
             padding-left: 1rem;
+            padding-right: 0.625rem;
 
             &::before {
               width: 1.5rem !important;
               height: 1.5rem !important;
               margin-right: 0.75rem;
+            }
+
+            &::after {
+              width: 1.5rem;
+              height: 1.5rem;
+              background-color: var(--color-gray-90);
+              margin: 0;
             }
 
             .inner {
@@ -128,6 +136,30 @@ html.layout-small {
           }
 
           .dropbutton {
+            a:not(.dropdown) {
+            }
+
+            a.dropdown {
+              padding: 0 0.625rem;
+              background-color: transparent;
+
+              &::after {
+                content: none;
+              }
+
+              &::before {
+                width: 1.5rem;
+                height: 1.5rem;
+                background-color: var(--color-gray-90);
+                margin: 0;
+                display: block;
+                mask-repeat: no-repeat;
+                mask-position: center left;
+                mask-size: contain;
+                background-color: var(--color-gray-90);
+                mask-image: url('https://api.iconify.design/solar:alt-arrow-right-outline.svg');
+              }
+            }
           }
         }
       }
