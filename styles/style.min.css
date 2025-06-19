@@ -10274,6 +10274,9 @@ body {
 #layout-list table.listing.withselection tr td.subject {
   padding-left: 0;
 }
+#layout-list table.messagelist tr td {
+  border-bottom: 1px solid var(--color-gray-20);
+}
 #layout-list table.messagelist tr td.subject {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
