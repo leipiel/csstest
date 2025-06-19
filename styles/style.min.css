@@ -9780,7 +9780,7 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  .header .button.icon:hover {
+  .header .button.icon:not(.disabled):hover {
     background-color: transparent;
   }
   .header .button.icon.task-menu-button, .header .button.icon.back-sidebar-button, .header .button.icon.toolbar-menu-button, .header .button.icon.toolbar-list-button, .header .button.icon.toolbar-button, .header .button.icon.back-list-button, .header .button.icon.back-content-button {
@@ -9829,6 +9829,16 @@ body {
 @media screen and (max-width: 480px) {
   .header .button.icon.task-menu-button {
     display: block;
+  }
+  .formcontainer.content .formcontent,
+  .formcontainer.task-settings .formcontent,
+  .formcontainer.task-addressbook .formcontent {
+    padding: 1rem;
+  }
+  .formcontainer.content .formbuttons,
+  .formcontainer.task-settings .formbuttons,
+  .formcontainer.task-addressbook .formbuttons {
+    padding: 0.5rem 1rem;
   }
 }
 #layout-menu {
@@ -11570,5 +11580,52 @@ html.layout-small .popover:not(.select-menu) .popover-body .menu li .dropbutton 
     height: 3.75rem;
     background-color: var(--color-bluegray-10);
     border-top: 1px solid var(--color-bluegray-30);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 1rem;
+  }
+  #layout .footer.menu .buttons a.button {
+    width: 4.25rem;
+    height: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #layout .footer.menu .buttons a.button::before {
+    content: "";
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    margin: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-position: center left;
+            mask-position: center left;
+    -webkit-mask-size: contain;
+            mask-size: contain;
+    background-color: var(--color-gray-90);
+  }
+  #layout .footer.menu .buttons a.button .inner {
+    line-height: 1;
+    margin-top: 0.3125rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--color-gray-90);
   }
 }

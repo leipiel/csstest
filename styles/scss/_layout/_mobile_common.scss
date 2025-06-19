@@ -246,6 +246,40 @@ html.layout-small {
     height: 3.75rem;
     background-color: var(--color-bluegray-10);
     border-top: 1px solid var(--color-bluegray-30);
+    align-items: center;
+    padding: 0 1rem;
+
+    .buttons {
+      a.button {
+        width: 4.25rem;
+        height: 100%;
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+          content: '';
+          flex: none;
+          margin: 0;
+          width: 1.5rem;
+          height: 1.5rem;
+          mask-repeat: no-repeat;
+          mask-position: center left;
+          mask-size: contain;
+          background-color: var(--color-gray-90);
+        }
+
+        .inner {
+          line-height: 1;
+          margin-top: 0.3125rem;
+          font-size: 0.75rem;
+          font-weight: 400;
+          color: var(--color-gray-90);
+        }
+      }
+    }
   }
 }
 

@@ -318,7 +318,7 @@ body {
   //헤더 기본 버튼 공통
   .header {
     .button.icon {
-      &:hover {
+      &:not(.disabled):hover {
         background-color: transparent;
       }
 
@@ -401,6 +401,19 @@ body {
       &.task-menu-button {
         display: block;
       }
+    }
+  }
+
+  //폼 컨텐츠 패딩 간격 공통
+  .formcontainer.content,
+  .formcontainer.task-settings,
+  .formcontainer.task-addressbook {
+    .formcontent {
+      padding: 1rem;
+    }
+
+    .formbuttons {
+      padding: 0.5rem 1rem;
     }
   }
 }
