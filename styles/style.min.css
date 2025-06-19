@@ -11866,9 +11866,21 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
   background-image: linear-gradient(142deg, #22aeff 0%, #0067de 100%);
   -webkit-box-shadow: 0px 0px 13px rgba(24, 151, 245, 0.35);
           box-shadow: 0px 0px 13px rgba(24, 151, 245, 0.35);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .floating-action-buttons a.button::before {
   content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   margin: 0;
   width: 1.75rem;
   height: 1.75rem;
