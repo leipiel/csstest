@@ -133,13 +133,49 @@ html.layout-small {
             .inner {
               font-size: 0.9375rem;
             }
+
+            //모바일쪽만 아이콘 모음
+            &.reply::before {
+              //회신
+              mask-image: url('https://api.iconify.design/solar:reply-outline.svg');
+            }
+
+            &.reply-all::before {
+              //전체회신
+              mask-image: url('https://api.iconify.design/solar:multiple-forward-left-outline.svg');
+            }
+
+            &.forward::before {
+              //전달
+              mask-image: url('https://api.iconify.design/solar:forward-outline.svg');
+            }
+
+            &.junk::before {
+              //스팸편지함
+              mask-image: url('https://api.iconify.design/solar:forbidden-circle-outline.svg');
+            }
+
+            &.markmessage::before {
+              //표시
+              mask-image: url('https://api.iconify.design/solar:tag-outline.svg');
+            }
+
+            &.more::before {
+              //더보기
+              mask-image: url('https://api.iconify.design/solar:menu-dots-bold.svg');
+            }
           }
 
           .dropbutton {
+            align-items: center;
+
             a:not(.dropdown) {
+              flex: 1;
             }
 
             a.dropdown {
+              width: auto;
+              flex: none;
               padding: 0 0.625rem;
               background-color: transparent;
 
