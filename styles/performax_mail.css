@@ -9799,6 +9799,10 @@ body {
   padding: 0.5rem 1.75rem;
 }
 
+.listing td.selection {
+  text-overflow: initial;
+}
+
 @media screen and (max-width: 1200px) {
   .header .button.icon:not(.disabled):hover {
     background-color: transparent;
@@ -10611,7 +10615,7 @@ body {
           mask-size: contain;
   background-color: var(--color-gray-90);
   position: relative;
-  top: 0.375rem;
+  top: 7px;
 }
 #layout-list table.contactlist tr td:not(.selection).name,
 #layout-list table.settings-default-icon tr td:not(.selection).name {
@@ -11907,6 +11911,9 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
   }
   #layout-list table.contactlist tr td:not(.selection).name::before,
   #layout-list table.settings-default-icon tr td:not(.selection).name::before {
+    top: 12px;
+  }
+  #layout-list table.settings-default-icon tr td:not(.selection)::before {
     top: 12px;
   }
 }

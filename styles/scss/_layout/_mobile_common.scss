@@ -428,6 +428,10 @@ html.layout-small {
   #layout-list table.settings-default-icon tr td:not(.selection).name::before {
     top: 12px;
   }
+
+  #layout-list table.settings-default-icon tr td:not(.selection)::before {
+    top: 12px;
+  }
 }
 
 //모바일 전체 모달 스타일
