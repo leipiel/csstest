@@ -658,11 +658,16 @@ html.touch .custom-switch,
   }
 }
 
-//ui 얼럿
+//ui 얼럿 버튼 문제 수정
 .ui.alert .btn {
   display: inline-block;
   padding-top: 0;
   padding-bottom: 0;
   height: 2.5rem;
   line-height: 2.5rem;
+}
+
+//메일목록 > 대화형 threads 기능 히든
+.messagelist td.threads {
+  display: none;
 }
