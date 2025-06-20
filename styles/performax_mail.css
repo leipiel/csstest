@@ -9678,6 +9678,9 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .popover .popupmenu .menu li a[aria-haspopup]::after,
 .popover .popupmenu .listing li a[aria-haspopup]::after {
@@ -10128,10 +10131,10 @@ body {
 #layout-sidebar .treelist li.mailbox {
   position: relative;
 }
-#mailboxlist li.mailbox:has(.unreadcount),
-#directorylist li.mailbox:has(.unreadcount),
-#settings-menu li.mailbox:has(.unreadcount),
-#layout-sidebar .treelist li.mailbox:has(.unreadcount) {
+#mailboxlist li.mailbox.unread > a,
+#directorylist li.mailbox.unread > a,
+#settings-menu li.mailbox.unread > a,
+#layout-sidebar .treelist li.mailbox.unread > a {
   padding-right: 4rem;
 }
 #mailboxlist li.mailbox .unreadcount,

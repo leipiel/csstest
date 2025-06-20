@@ -156,8 +156,10 @@
     &.mailbox {
       position: relative;
 
-      &:has(.unreadcount) {
-        padding-right: 4rem;
+      &.unread {
+        > a {
+          padding-right: 4rem;
+        }
       }
 
       .unreadcount {
