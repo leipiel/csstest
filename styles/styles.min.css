@@ -2531,7 +2531,7 @@ body {
   width: 2.75rem;
 }
 #layout-list table.listing.withselection tr td.selection > input[type=checkbox] {
-  display: block;
+  display: inline-block;
   width: 0.875rem;
   height: 0.875rem;
 }
@@ -2858,14 +2858,15 @@ body {
   right: 0.75rem;
   height: inherit;
 }
-#layout-list ul.folderlist li div.treetoggle {
-  width: 1.25rem;
-  height: 1.25rem;
+#layout-list ul.folderlist div.treetoggle {
+  width: 1.5rem;
+  height: 2.875rem;
   position: absolute;
-  top: 12px;
+  top: 0;
+  bottom: auto;
   left: auto;
   right: auto;
-  left: 4px;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2875,8 +2876,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 0;
 }
-#layout-list ul.folderlist li div.treetoggle::before {
+#layout-list ul.folderlist div.treetoggle::before {
   content: "";
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -2897,7 +2899,7 @@ body {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-#layout-list ul.folderlist li div.treetoggle.expanded::before {
+#layout-list ul.folderlist div.treetoggle.expanded::before {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
@@ -2905,13 +2907,22 @@ body {
   border-top: none;
   background-color: rgba(245, 245, 245, 0.6);
 }
-#layout-list ul.folderlist li ul[role=group] > li a {
-  padding-left: 1.5rem;
-}
 #layout-list ul.folderlist li ul[role=group] > li a::before {
   background-color: var(--color-gray-90);
   -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
           mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+}
+#layout-list ul.folderlist li > a {
+  padding-left: 1.5rem;
+}
+#layout-list ul.folderlist li > ul[role=group] > li > a {
+  padding-left: 2rem;
+}
+#layout-list ul.folderlist li > ul[role=group] > li > ul[role=group] > li > a {
+  padding-left: 2.5rem;
+}
+#layout-list ul.folderlist li > ul[role=group] > li > ul[role=group] > li > ul[role=group] > li > a {
+  padding-left: 3rem;
 }
 #layout-list #identities-table tr td,
 #layout-list #responses-table tr td,
@@ -4130,13 +4141,4 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
 .floating-action-buttons a.button.create::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
-}
-
-@media screen and (max-width: 768px) {
-  #layout-sidebar #mailboxlist.treelist li > a {
-    padding-left: 1.5rem;
-  }
-  #layout-sidebar #mailboxlist.treelist li ul[role=group] > li a {
-    padding-left: 1.75rem;
-  }
 }

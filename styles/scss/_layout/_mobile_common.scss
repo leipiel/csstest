@@ -536,26 +536,26 @@ html.layout-small {
 
 //폴더, 주소록 아코디언 버튼 작음 보완
 @media screen and (max-width: 768px) {
-  #layout-sidebar #mailboxlist.treelist {
-    li {
-      > a {
-        padding-left: 1.5rem;
-      }
+  // #layout-sidebar #mailboxlist.treelist {
+  //   li {
+  //     > a {
+  //       padding-left: 1.5rem;
+  //     }
 
-      div.treetoggle {
-        &::before {
-        }
-      }
+  //     div.treetoggle {
+  //       &::before {
+  //       }
+  //     }
 
-      ul[role='group'] {
-        > li {
-          a {
-            padding-left: 1.75rem;
-          }
-        }
-      }
-    }
-  }
+  //     ul[role='group'] {
+  //       > li {
+  //         a {
+  //           padding-left: 1.75rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 //GNB 없음 1단
