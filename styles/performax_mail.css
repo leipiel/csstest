@@ -10596,6 +10596,7 @@ body {
 }
 #layout-list table.contactlist tr td:not(.selection)::before,
 #layout-list table.settings-default-icon tr td:not(.selection)::before {
+  content: "";
   display: inline-block;
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -11902,6 +11903,10 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
   }
   #contacts-table tr td.contactgroup::before,
   #contacts-table tr td.contact::before {
+    top: 12px;
+  }
+  #layout-list table.contactlist tr td:not(.selection).name::before,
+  #layout-list table.settings-default-icon tr td:not(.selection).name::before {
     top: 12px;
   }
 }

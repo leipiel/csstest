@@ -423,6 +423,11 @@ html.layout-small {
   #contacts-table tr td.contact::before {
     top: 12px;
   }
+
+  #layout-list table.contactlist tr td:not(.selection).name::before,
+  #layout-list table.settings-default-icon tr td:not(.selection).name::before {
+    top: 12px;
+  }
 }
 
 //모바일 전체 모달 스타일

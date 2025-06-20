@@ -259,6 +259,7 @@
         text-overflow: ellipsis;
 
         &::before {
+          content: '';
           display: inline-block;
           flex: none;
           width: 1.25rem;
