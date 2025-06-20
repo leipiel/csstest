@@ -10125,17 +10125,13 @@ body {
 #layout-sidebar .treelist li.selected > a {
   background-color: rgba(203, 213, 225, 0.5490196078);
 }
-#mailboxlist li.mailbox,
-#directorylist li.mailbox,
-#settings-menu li.mailbox,
-#layout-sidebar .treelist li.mailbox {
-  position: relative;
-}
 #mailboxlist li.mailbox.unread > a,
 #directorylist li.mailbox.unread > a,
 #settings-menu li.mailbox.unread > a,
 #layout-sidebar .treelist li.mailbox.unread > a {
+  position: relative;
   padding-right: 4rem;
+  height: 2.875rem;
 }
 #mailboxlist li.mailbox .unreadcount,
 #directorylist li.mailbox .unreadcount,

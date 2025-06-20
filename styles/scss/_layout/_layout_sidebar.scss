@@ -154,11 +154,11 @@
     }
 
     &.mailbox {
-      position: relative;
-
       &.unread {
         > a {
+          position: relative;
           padding-right: 4rem;
+          height: 2.875rem;
         }
       }
 
