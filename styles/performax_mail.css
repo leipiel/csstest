@@ -10122,15 +10122,29 @@ body {
 #layout-sidebar .treelist li.selected > a {
   background-color: rgba(203, 213, 225, 0.5490196078);
 }
+#mailboxlist li.mailbox,
+#directorylist li.mailbox,
+#settings-menu li.mailbox,
+#layout-sidebar .treelist li.mailbox {
+  position: relative;
+}
+#mailboxlist li.mailbox:has(.unreadcount),
+#directorylist li.mailbox:has(.unreadcount),
+#settings-menu li.mailbox:has(.unreadcount),
+#layout-sidebar .treelist li.mailbox:has(.unreadcount) {
+  padding-right: 4rem;
+}
 #mailboxlist li.mailbox .unreadcount,
 #directorylist li.mailbox .unreadcount,
 #settings-menu li.mailbox .unreadcount,
 #layout-sidebar .treelist li.mailbox .unreadcount {
   margin: 0;
-  position: static;
-  top: auto;
-  right: auto;
-  margin-left: auto;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 1.25rem;
+  margin-right: 0;
   font-size: 0.8125rem;
   font-weight: 700;
   line-height: 1;
