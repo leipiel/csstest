@@ -497,10 +497,12 @@
     a.expand {
       flex: none;
       width: 1.25rem;
-      height: 1.25rem;
+      //height: 1.25rem;
+      height: 2.875rem;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-right: 3px;
 
       &::before {
         content: '';
