@@ -21,7 +21,7 @@ html.dark-mode {
 //버튼
 a.btn,
 button.btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
@@ -656,4 +656,13 @@ html.touch .custom-switch,
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+}
+
+//ui 얼럿
+.ui.alert .btn {
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 2.5rem;
+  line-height: 2.5rem;
 }

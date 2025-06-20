@@ -7840,9 +7840,9 @@ html.dark-mode body {
 
 a.btn,
 button.btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -8450,6 +8450,14 @@ html.touch .custom-switch .custom-control-label::after,
   margin: 0;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.ui.alert .btn {
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 2.5rem;
+  line-height: 2.5rem;
 }
 
 .icon.user::before {
