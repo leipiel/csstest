@@ -154,12 +154,21 @@
     }
 
     &.mailbox {
+      position: relative;
+
+      &:has(.unreadcount) {
+        padding-right: 4rem;
+      }
+
       .unreadcount {
         margin: 0;
-        position: static;
-        top: auto;
-        right: auto;
-        margin-left: auto;
+        //position: static;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 1.25rem;
+        //margin-left: auto;
+        margin-right: 0;
         font-size: 0.8125rem;
         font-weight: 700;
         line-height: 1;
