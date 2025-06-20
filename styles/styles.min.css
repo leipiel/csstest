@@ -2346,13 +2346,14 @@ body {
 }
 
 #directorylist.treelist div.treetoggle {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;
+  height: 2.875rem;
   position: absolute;
-  top: 12px;
+  top: 0;
+  bottom: auto;
   left: auto;
   right: auto;
-  left: 4px;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2362,6 +2363,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 0;
 }
 #directorylist.treelist div.treetoggle::before {
   content: "";
@@ -2388,14 +2390,25 @@ body {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
-#directorylist.treelist > li ul[role=group] {
+#directorylist.treelist li ul[role=group] {
   border-top: none;
 }
-#directorylist.treelist > li ul[role=group] > li a {
+#directorylist.treelist li ul[role=group] > li a::before {
+  background-color: var(--color-gray-90);
+  -webkit-mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+          mask-image: url("https://api.iconify.design/solar:letter-outline.svg");
+}
+#directorylist.treelist li > a {
+  padding-left: 1.5rem;
+}
+#directorylist.treelist li > ul[role=group] > li > a {
   padding-left: 2rem;
 }
-#directorylist.treelist > li ul[role=group] > li a::before {
-  background-color: var(--color-gray-90);
+#directorylist.treelist li > ul[role=group] > li > ul[role=group] > li > a {
+  padding-left: 2.5rem;
+}
+#directorylist.treelist li > ul[role=group] > li > ul[role=group] > li > ul[role=group] > li > a {
+  padding-left: 3rem;
 }
 
 .quota-widget .bar {
@@ -2858,7 +2871,7 @@ body {
   right: 0.75rem;
   height: inherit;
 }
-#layout-list ul.folderlist div.treetoggle {
+#layout-list ul.folderlist li div.treetoggle {
   width: 1.5rem;
   height: 2.875rem;
   position: absolute;
@@ -2878,7 +2891,7 @@ body {
           justify-content: center;
   font-size: 0;
 }
-#layout-list ul.folderlist div.treetoggle::before {
+#layout-list ul.folderlist li div.treetoggle::before {
   content: "";
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -2899,7 +2912,7 @@ body {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-#layout-list ul.folderlist div.treetoggle.expanded::before {
+#layout-list ul.folderlist li div.treetoggle.expanded::before {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
