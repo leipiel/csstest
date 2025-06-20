@@ -10049,6 +10049,11 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#layout-sidebar #mailboxlist li a::before {
+  display: block;
 }
 #layout-sidebar #mailboxlist li ul[role=group] {
   border-top: none;
