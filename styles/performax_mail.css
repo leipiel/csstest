@@ -10717,6 +10717,24 @@ body {
   right: 0.75rem;
   height: inherit;
 }
+#layout-list ul.folderlist li.mailbox a {
+  width: 100%;
+  display: block;
+  line-height: 2.875rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 4rem;
+}
+#layout-list ul.folderlist li.mailbox a::before {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
 #layout-list ul.folderlist li div.treetoggle {
   width: 1.5rem;
   height: 2.875rem;
