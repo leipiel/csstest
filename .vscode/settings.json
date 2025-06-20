@@ -6,5 +6,5 @@
       "savePath": "~/../"
     }
   ],
-  "liveSassCompile.settings.generateMap": false
+  "liveSassCompile.settings.generateMap": true
 }
