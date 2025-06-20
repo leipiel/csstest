@@ -10148,7 +10148,7 @@ body {
 #settings-menu li.mailbox.unread > a,
 #layout-sidebar .treelist li.mailbox.unread > a {
   position: relative;
-  padding-right: 4rem;
+  padding-right: 3.5rem;
   height: 2.875rem;
 }
 #mailboxlist li.mailbox .unreadcount,
