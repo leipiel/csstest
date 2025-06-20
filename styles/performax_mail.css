@@ -10044,6 +10044,11 @@ body {
 }
 #layout-sidebar #mailboxlist li a {
   width: 100%;
+  display: block;
+  line-height: 2.875rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #layout-sidebar #mailboxlist li ul[role=group] {
   border-top: none;
@@ -10142,7 +10147,7 @@ body {
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  right: 1.25rem;
+  right: 1rem;
   margin-right: 0;
   font-size: 0.8125rem;
   font-weight: 700;

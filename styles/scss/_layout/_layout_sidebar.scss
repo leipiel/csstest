@@ -69,6 +69,11 @@
     li {
       a {
         width: 100%;
+        display: block;
+        line-height: 2.875rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       ul[role='group'] {
@@ -168,7 +173,7 @@
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
-        right: 1.25rem;
+        right: 1rem;
         //margin-left: auto;
         margin-right: 0;
         font-size: 0.8125rem;
