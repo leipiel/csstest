@@ -443,6 +443,10 @@
       > ul[role='group'] > li > ul[role='group'] > li > ul[role='group'] > li > a {
         padding-left: 3rem;
       }
+
+      > ul[role='group'] > li > ul[role='group'] > li > ul[role='group'] > li > ul[role='group'] > li > a {
+        padding-left: 3.5rem;
+      }
     }
   }
 

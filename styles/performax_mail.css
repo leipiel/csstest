@@ -10742,6 +10742,9 @@ body {
 #layout-list ul.folderlist li > ul[role=group] > li > ul[role=group] > li > ul[role=group] > li > a {
   padding-left: 3rem;
 }
+#layout-list ul.folderlist li > ul[role=group] > li > ul[role=group] > li > ul[role=group] > li > ul[role=group] > li > a {
+  padding-left: 3.5rem;
+}
 #layout-list #identities-table tr td,
 #layout-list #responses-table tr td,
 #layout-list #filtersetslistbox tr td,
@@ -11959,4 +11962,4 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
 .floating-action-buttons a.button.create::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
-}/*# sourceMappingURL=styles.min.css.map */
+}/*# sourceMappingURL=performax_mail.css.map */
