@@ -10039,6 +10039,9 @@ body {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
+#layout-sidebar #mailboxlist li a {
+  width: 100%;
+}
 #layout-sidebar #mailboxlist li ul[role=group] {
   border-top: none;
 }
@@ -10050,14 +10053,17 @@ body {
 #layout-sidebar #mailboxlist li > a {
   padding-left: 1.5rem;
 }
-#layout-sidebar #mailboxlist li > ul[role=group] > li > a {
+#layout-sidebar #mailboxlist li > ul li a {
   padding-left: 2rem;
 }
-#layout-sidebar #mailboxlist li > ul[role=group] > li > ul[role=group] > li > a {
+#layout-sidebar #mailboxlist li > ul li li a {
   padding-left: 2.5rem;
 }
-#layout-sidebar #mailboxlist li > ul[role=group] > li > ul[role=group] > li > ul[role=group] > li > a {
+#layout-sidebar #mailboxlist li > ul li li li a {
   padding-left: 3rem;
+}
+#layout-sidebar #mailboxlist li > ul li li li li a {
+  padding-left: 3.5rem;
 }
 
 #mailboxlist li,
@@ -11953,4 +11959,4 @@ html.layout-small .popover.select-menu .popover-header a.button.icon.cancel::bef
 .floating-action-buttons a.button.create::before {
   -webkit-mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
           mask-image: url("https://api.iconify.design/solar:add-square-outline.svg");
-}/*# sourceMappingURL=fm_email.css.map */
+}/*# sourceMappingURL=styles.min.css.map */
