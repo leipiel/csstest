@@ -667,6 +667,21 @@ html.touch .custom-switch,
   line-height: 2.5rem;
 }
 
+@media screen and (max-width: 576px) {
+  .ui.alert {
+    flex-wrap: wrap;
+
+    .icon {
+      flex: none;
+    }
+
+    .boxbuttons {
+      flex: none;
+      width: 100%;
+    }
+  }
+}
+
 //메일목록 > 대화형 threads 기능 히든
 .messagelist td.threads {
   display: none;
